@@ -15,7 +15,7 @@
 <meta property="og:site_name" content="jar100 blog">
 <meta property="og:description" content="오늘의 공부 20180724 소수 구하기 프로그램 작성코드 구현를 구현 함.   소수의 특징 소수는 1과 자기 자신만으로 나눌 수 있는수 n 의 숫자중 1과 n 을 제외한 그 사이 수로 나눴을때 0이 나오면 소수가 아님.  코드 수정12345678for (var stack = 2; stack &amp;lt; input; stack++) &amp;#123;        i">
 <meta property="og:locale" content="ko">
-<meta property="og:updated_time" content="2018-07-26T14:45:45.299Z">
+<meta property="og:updated_time" content="2018-07-26T14:50:54.585Z">
 <meta name="twitter:card" content="summary">
 <meta name="twitter:title" content="TIL">
 <meta name="twitter:description" content="오늘의 공부 20180724 소수 구하기 프로그램 작성코드 구현를 구현 함.   소수의 특징 소수는 1과 자기 자신만으로 나눌 수 있는수 n 의 숫자중 1과 n 을 제외한 그 사이 수로 나눴을때 0이 나오면 소수가 아님.  코드 수정12345678for (var stack = 2; stack &amp;lt; input; stack++) &amp;#123;        i">
@@ -105,7 +105,8 @@
 <hr>
 <h2 id="구구단-프로그램-작성"><a href="#구구단-프로그램-작성" class="headerlink" title="구구단  프로그램 작성"></a>구구단  프로그램 작성</h2><p>강의 내용을 참고해 구구단 프로그램을 다시작성</p>
 <h3 id="코드-작성"><a href="#코드-작성" class="headerlink" title="코드 작성"></a>코드 작성</h3><figure class="highlight js"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br></pre></td><td class="code"><pre><span class="line">출력한 단수 :&lt;input type = 'text' id ='num' value = '8'&gt;&lt;br&gt;</span><br><span class="line">&lt;button onclick = 'runGugu()'&gt;확인&lt;/button&gt;</span><br><span class="line"></span><br><span class="line">document.write('&lt;h2&gt;'+i+ '단 &lt;/h2&gt;');</span><br><span class="line">for( var j = 1; j &lt; 10; j ++) &#123;</span><br><span class="line">    console.log(i+ ' x ' + j +' = ' + i*j);</span><br><span class="line">    document.write(i+ ' x ' + j +' = ' + i*j + '&lt;br&gt;');</span><br><span class="line">&#125;</span><br></pre></td></tr></table></figure>
-<h3 id="확인-사용"><a href="#확인-사용" class="headerlink" title="확인 사용"></a><strong><button onclick="runGugu()">확인</button></strong> 사용</h3><ul>
+<h3 id="버튼-만들기"><a href="#버튼-만들기" class="headerlink" title="버튼 만들기"></a>버튼 만들기</h3><figure class="highlight html"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line"><span class="tag">&lt;<span class="name">button</span> <span class="attr">onclick</span> = <span class="string">'runGugu()'</span>&gt;</span>확인<span class="tag">&lt;/<span class="name">button</span>&gt;</span>'</span><br></pre></td></tr></table></figure>
+<ul>
 <li>버튼을 만들어 함수를 동작시킴</li>
 <li>버튼이 한번누르면 사라지는 결과가 발생</li>
 </ul>

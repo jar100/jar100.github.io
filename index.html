@@ -66,6 +66,90 @@
       <div class="outer">
         <section id="main">
   
+    <article id="post-20180727" class="article article-type-post" itemscope itemprop="blogPost">
+  <div class="article-meta">
+    <a href="/2018/07/27/20180727/" class="article-date">
+  <time datetime="2018-07-27T14:23:51.000Z" itemprop="datePublished">2018-07-27</time>
+</a>
+    
+  </div>
+  <div class="article-inner">
+    
+    
+      <header class="article-header">
+        
+  
+    <h1 itemprop="name">
+      <a class="article-title" href="/2018/07/27/20180727/">TIL</a>
+    </h1>
+  
+
+      </header>
+    
+    <div class="article-entry" itemprop="articleBody">
+      
+        <h1 id="오늘의-공부-20180727"><a href="#오늘의-공부-20180727" class="headerlink" title="오늘의 공부 20180727"></a>오늘의 공부 20180727</h1><hr>
+<h2 id="강의"><a href="#강의" class="headerlink" title="강의"></a>강의</h2><ul>
+<li>2개 듣기</li>
+<li>새롭게 알게된점 적기</li>
+</ul>
+<h2 id="모래시계-수정"><a href="#모래시계-수정" class="headerlink" title="모래시계 수정"></a>모래시계 수정</h2><p>작성했던 코드 수정</p>
+<ul>
+<li><a href="https://github.com/jar100/CS-level1/blob/master/Hourglass.html" target="_blank" rel="noopener">https://github.com/jar100/CS-level1/blob/master/Hourglass.html</a></li>
+</ul>
+<p>### </p>
+<ul>
+<li></li>
+<li></li>
+</ul>
+<h2 id="연습문제"><a href="#연습문제" class="headerlink" title="연습문제"></a>연습문제</h2><p>하루에 2개 풀기</p>
+<h3 id="다이아몬드-출력하기"><a href="#다이아몬드-출력하기" class="headerlink" title="다이아몬드 출력하기"></a>다이아몬드 출력하기</h3><ul>
+<li>배열과 함수를 이용해 출력해보자</li>
+<li><p>코드</p>
+<figure class="highlight js"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br></pre></td><td class="code"><pre><span class="line"><span class="keyword">var</span> display = <span class="function"><span class="keyword">function</span>(<span class="params"></span>) </span>&#123;</span><br><span class="line">    <span class="keyword">var</span> str = <span class="string">''</span>;</span><br><span class="line">    <span class="keyword">for</span> (<span class="keyword">var</span> i = <span class="number">0</span>; i &lt; <span class="number">5</span>; i ++ ) &#123;</span><br><span class="line">       str += di[i].join(<span class="string">''</span>) + <span class="string">'&lt;br&gt;'</span>;</span><br><span class="line">    &#125;</span><br><span class="line">    screen.innerHTML = str;</span><br><span class="line">&#125;</span><br><span class="line">display();</span><br></pre></td></tr></table></figure>
+</li>
+<li><p>배열을 Html 창에 띄우는 코드 계속 햇갈린다 더 연습해야겠다.</p>
+</li>
+<li><a href="https://github.com/jar100/CS-level1/blob/master/diamond.html" target="_blank" rel="noopener">https://github.com/jar100/CS-level1/blob/master/diamond.html</a></li>
+</ul>
+<h3 id="모래시계-모양-출력하기"><a href="#모래시계-모양-출력하기" class="headerlink" title="모래시계 모양 출력하기"></a>모래시계 모양 출력하기</h3><ul>
+<li><a href="https://github.com/jar100/CS-level1/blob/master/hourglasDisplay.html" target="_blank" rel="noopener">https://github.com/jar100/CS-level1/blob/master/hourglasDisplay.html</a></li>
+</ul>
+<h2 id="프로그래머스"><a href="#프로그래머스" class="headerlink" title="프로그래머스"></a>프로그래머스</h2><p>알고리즘 문제 구현</p>
+<h3 id="2016년"><a href="#2016년" class="headerlink" title="2016년"></a>2016년</h3><p>저번에 노가다로 푼 코드를 배열을 통해 다시 구현</p>
+<ul>
+<li><p>코드</p>
+<figure class="highlight js"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br></pre></td><td class="code"><pre><span class="line"><span class="function"><span class="keyword">function</span> <span class="title">solution</span>(<span class="params">a, b</span>) </span>&#123;</span><br><span class="line">    <span class="keyword">var</span> answer = <span class="string">''</span>;</span><br><span class="line">    <span class="keyword">var</span> day = [<span class="string">'THU'</span>,<span class="string">'FRI'</span>,<span class="string">'SAT'</span>,<span class="string">'SUN'</span>,<span class="string">'MON'</span>,<span class="string">'TUE'</span>,<span class="string">'WED'</span>];</span><br><span class="line">    <span class="keyword">var</span> result = <span class="number">0</span> ;</span><br><span class="line">    <span class="keyword">var</span> count = <span class="number">0</span> ;</span><br><span class="line">    <span class="keyword">var</span> month = [<span class="number">31</span>,<span class="number">29</span>,<span class="number">31</span>,<span class="number">30</span>,<span class="number">31</span>,<span class="number">30</span>,<span class="number">31</span>,<span class="number">31</span>,<span class="number">30</span>,<span class="number">31</span>,<span class="number">30</span>,<span class="number">31</span>];</span><br><span class="line">    <span class="keyword">for</span> (<span class="keyword">var</span> i = <span class="number">0</span>; i &lt; a<span class="number">-1</span>; i++) &#123;</span><br><span class="line">        count += month[i];</span><br><span class="line">    &#125;    </span><br><span class="line">    result = (count+ b)%<span class="number">7</span>;</span><br><span class="line">    answer = day[result];</span><br><span class="line">    <span class="keyword">return</span> answer;</span><br><span class="line">&#125;</span><br></pre></td></tr></table></figure>
+</li>
+<li><p>a 달 요일을 구하려면 그 전달까지의 날을 다 더하고 b를 더한후 나누면됨</p>
+</li>
+</ul>
+<h3 id="서울에서-김서방-찾기"><a href="#서울에서-김서방-찾기" class="headerlink" title="서울에서 김서방 찾기"></a>서울에서 김서방 찾기</h3><p>String형 배열 seoul의 element중 Kim의 위치 x를 찾아, 김서방은 x에 있다는 String을 반환하는 함수, solution을 완성하세요. seoul에 Kim은 오직 한 번만 나타나며 잘못된 값이 입력되는 경우는 없습니다.</p>
+<ul>
+<li><p>코드</p>
+<figure class="highlight js"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br></pre></td><td class="code"><pre><span class="line"><span class="function"><span class="keyword">function</span> <span class="title">solution</span>(<span class="params">seoul</span>) </span>&#123;</span><br><span class="line">    <span class="keyword">var</span> answer = <span class="string">''</span>;</span><br><span class="line">    <span class="keyword">for</span> (<span class="keyword">var</span> i = <span class="number">0</span>; i &lt; seoul.length; i++) &#123;</span><br><span class="line">        <span class="keyword">if</span> (seoul[i] === <span class="string">'Kim'</span>) &#123;</span><br><span class="line">            answer = <span class="string">'김서방은 '</span> + i + <span class="string">'에 있다'</span>;</span><br><span class="line">            <span class="keyword">break</span>;</span><br><span class="line">        &#125;</span><br><span class="line">    &#125;</span><br><span class="line">    <span class="keyword">return</span> answer;</span><br><span class="line">&#125;</span><br></pre></td></tr></table></figure>
+</li>
+<li><p>재밌다</p>
+</li>
+</ul>
+<h2 id=""><a href="#" class="headerlink" title="### "></a>### </h2><h2 id="TO-DO"><a href="#TO-DO" class="headerlink" title="TO-DO"></a>TO-DO</h2><p><del>모래시계 배열</del><br><del>연습문제2개</del><br><del>프래그래머스 알고리즘 1개</del><br>강의 2개(인프런)</p>
+<hr>
+
+      
+    </div>
+    <footer class="article-footer">
+      <a data-url="http://yoursite.com/2018/07/27/20180727/" data-id="cjk3pcdi10000w4v0r5zo12kp" class="article-share-link">공유</a>
+      
+      
+  <ul class="article-tag-list"><li class="article-tag-list-item"><a class="article-tag-list-link" href="/tags/TIL/">TIL</a></li></ul>
+
+    </footer>
+  </div>
+  
+</article>
+
+
+  
     <article id="post-20180726" class="article article-type-post" itemscope itemprop="blogPost">
   <div class="article-meta">
     <a href="/2018/07/26/20180726/" class="article-date">
@@ -90,8 +174,8 @@
       
         <h1 id="오늘의-공부-20180726"><a href="#오늘의-공부-20180726" class="headerlink" title="오늘의 공부 20180726"></a>오늘의 공부 20180726</h1><hr>
 <h2 id="모래시계-수정"><a href="#모래시계-수정" class="headerlink" title="모래시계 수정"></a>모래시계 수정</h2><ul>
-<li>‘setTimeout’ 을  ‘setInterval’ 로 수정 </li>
-<li>‘clearInterval’ 멈춘다.</li>
+<li><code>setTimeout</code> 을  <code>setInterval</code> 로 수정 </li>
+<li><code>clearInterval</code> 멈춘다.</li>
 <li>수작업으로 그린 모래시계를 배열을 이용해 그리기</li>
 </ul>
 <hr>
@@ -99,12 +183,25 @@
 <h2 id="계산-문제"><a href="#계산-문제" class="headerlink" title="계산 문제"></a>계산 문제</h2><ul>
 <li>카운트다운 구현하기 ㅇ</li>
 </ul>
-<h2 id="별-찍기문제"><a href="#별-찍기문제" class="headerlink" title="별 찍기문제"></a>별 찍기문제</h2><h3 id="n-m-직사각형-찍기"><a href="#n-m-직사각형-찍기" class="headerlink" title="n*m 직사각형 찍기"></a>n*m 직사각형 찍기</h3><h3 id="n-m-직사각형-가운데-비우기"><a href="#n-m-직사각형-가운데-비우기" class="headerlink" title="n*m 직사각형 가운데 비우기"></a>n*m 직사각형 가운데 비우기</h3><p>둘다 배열을 이용해 구현<br>가운데 비울때 조건을 좀더 공부해 봐야겠다<br><figure class="highlight js"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br></pre></td><td class="code"><pre><span class="line"><span class="keyword">for</span> (<span class="keyword">var</span> j = <span class="number">0</span>; j &lt; <span class="built_in">Number</span>(res[<span class="number">1</span>]); j++) &#123;</span><br><span class="line">    <span class="keyword">if</span> (i=== <span class="number">0</span> || i===(<span class="built_in">Number</span>(res[<span class="number">0</span>])<span class="number">-1</span>) || j === <span class="number">0</span> || j === (<span class="built_in">Number</span>(res[<span class="number">1</span>])<span class="number">-1</span>) ) &#123;</span><br><span class="line">    square[i][j] = <span class="string">'*'</span>;</span><br><span class="line">    &#125; <span class="keyword">else</span> &#123;</span><br><span class="line">    square[i][j] = <span class="string">'&amp;nbsp;'</span>;</span><br><span class="line">    &#125;</span><br><span class="line">&#125;</span><br></pre></td></tr></table></figure></p>
-<ul>
+<h2 id="별-찍기문제"><a href="#별-찍기문제" class="headerlink" title="별 찍기문제"></a>별 찍기문제</h2><ul>
+<li>n*m 직사각형 찍기 </li>
+<li>n*m 직사각형 가운데 비우기<br>둘다 배열을 이용해 구현<br>가운데 비울때 조건을 좀더 공부해 봐야겠다</li>
+<li><p>코드 </p>
+<figure class="highlight js"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br></pre></td><td class="code"><pre><span class="line"><span class="keyword">for</span> (<span class="keyword">var</span> j = <span class="number">0</span>; j &lt; <span class="built_in">Number</span>(res[<span class="number">1</span>]); j++) &#123;</span><br><span class="line">    <span class="keyword">if</span> (i=== <span class="number">0</span> || i===(<span class="built_in">Number</span>(res[<span class="number">0</span>])<span class="number">-1</span>) || j === <span class="number">0</span> || j === (<span class="built_in">Number</span>(res[<span class="number">1</span>])<span class="number">-1</span>) ) &#123;</span><br><span class="line">    square[i][j] = <span class="string">'*'</span>;</span><br><span class="line">    &#125; <span class="keyword">else</span> &#123;</span><br><span class="line">    square[i][j] = <span class="string">'&amp;nbsp;'</span>;</span><br><span class="line">    &#125;</span><br><span class="line">&#125;</span><br></pre></td></tr></table></figure>
+</li>
+<li><p>배열을 이용해 구현</p>
+</li>
 <li>if 조건이 너무 많은거같다.</li>
 </ul>
 <hr>
-<h2 id="프로그래머스-알고리즘"><a href="#프로그래머스-알고리즘" class="headerlink" title="프로그래머스 알고리즘"></a>프로그래머스 알고리즘</h2><h3 id="가운데-글자-가져오기"><a href="#가운데-글자-가져오기" class="headerlink" title="가운데 글자 가져오기"></a>가운데 글자 가져오기</h3><figure class="highlight js"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br></pre></td><td class="code"><pre><span class="line"><span class="function"><span class="keyword">function</span> <span class="title">solution</span>(<span class="params">s</span>) </span>&#123;</span><br><span class="line">    <span class="keyword">var</span> answer = <span class="string">''</span>;</span><br><span class="line">    <span class="keyword">if</span> (s.length%<span class="number">2</span> === <span class="number">0</span>)&#123;</span><br><span class="line">       answer = s[s.length/<span class="number">2</span><span class="number">-1</span>] +s[s.length/<span class="number">2</span>]</span><br><span class="line">    &#125; <span class="keyword">else</span> &#123;</span><br><span class="line">       answer =  s[<span class="built_in">Math</span>.floor(s.length/<span class="number">2</span>)];</span><br><span class="line">    &#125;</span><br><span class="line">    <span class="keyword">return</span> answer;</span><br><span class="line">&#125;</span><br></pre></td></tr></table></figure>
+<h2 id="프로그래머스-알고리즘"><a href="#프로그래머스-알고리즘" class="headerlink" title="프로그래머스 알고리즘"></a>프로그래머스 알고리즘</h2><h3 id="가운데-글자-가져오기"><a href="#가운데-글자-가져오기" class="headerlink" title="가운데 글자 가져오기"></a>가운데 글자 가져오기</h3><ul>
+<li><p>코드</p>
+<figure class="highlight js"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br></pre></td><td class="code"><pre><span class="line"><span class="function"><span class="keyword">function</span> <span class="title">solution</span>(<span class="params">s</span>) </span>&#123;</span><br><span class="line">    <span class="keyword">var</span> answer = <span class="string">''</span>;</span><br><span class="line">    <span class="keyword">if</span> (s.length%<span class="number">2</span> === <span class="number">0</span>)&#123;</span><br><span class="line">       answer = s[s.length/<span class="number">2</span><span class="number">-1</span>] +s[s.length/<span class="number">2</span>]</span><br><span class="line">    &#125; <span class="keyword">else</span> &#123;</span><br><span class="line">       answer =  s[<span class="built_in">Math</span>.floor(s.length/<span class="number">2</span>)];</span><br><span class="line">    &#125;</span><br><span class="line">    <span class="keyword">return</span> answer;</span><br><span class="line">&#125;</span><br></pre></td></tr></table></figure>
+</li>
+<li><p><code>s.length</code> 로 길이를 구해 작성함.</p>
+</li>
+<li><code>Math.floor</code> 로 소숫점아래를 버려 정수로 바꿈</li>
+</ul>
 <h3 id="2016년"><a href="#2016년" class="headerlink" title="2016년"></a>2016년</h3><ul>
 <li>풀긴 풀었지만 if else로 노가다로 품</li>
 <li>다른사람 정답을 보니 배열로 풀었던데 내일 다시 도전해보기</li>
@@ -154,13 +251,11 @@
       
         <h1 id="오늘의-공부-20180725"><a href="#오늘의-공부-20180725" class="headerlink" title="오늘의 공부 20180725"></a>오늘의 공부 20180725</h1><hr>
 <h2 id="오프라인-강의"><a href="#오프라인-강의" class="headerlink" title="오프라인 강의"></a>오프라인 강의</h2><ul>
-<li>배열</li>
-<li>객체</li>
-<li>함수</li>
-</ul>
+<li><p>스타일 변경</p>
 <figure class="highlight html"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br></pre></td><td class="code"><pre><span class="line"><span class="tag">&lt;<span class="name">style</span>&gt;</span><span class="undefined"></span></span><br><span class="line"><span class="undefined">    p &#123;</span></span><br><span class="line"><span class="undefined">        font-family: "Courier New", Courier, monospace;</span></span><br><span class="line"><span class="undefined">        font-size: 2em;    </span></span><br><span class="line"><span class="undefined">    &#125;</span></span><br><span class="line"><span class="undefined"></span><span class="tag">&lt;/<span class="name">style</span>&gt;</span></span><br></pre></td></tr></table></figure>
-<ul>
-<li>코딩을할땐 모노스페이스를 사용하면 된다 (글자의 크기가 일정하다)</li>
+</li>
+<li><p>코딩을할땐 모노스페이스를 사용하면 된다 (글자의 크기가 일정하다)</p>
+</li>
 </ul>
 <h3 id="모래시계"><a href="#모래시계" class="headerlink" title="모래시계"></a>모래시계</h3><ul>
 <li><strong>setInterval(value,1000)</strong> value를 1초마다 실행</li>
@@ -230,17 +325,26 @@
 <li>소수는 1과 자기 자신만으로 나눌 수 있는수</li>
 <li>n 의 숫자중 1과 n 을 제외한 그 사이 수로 나눴을때 0이 나오면 소수가 아님.</li>
 </ul>
-<h3 id="코드-수정"><a href="#코드-수정" class="headerlink" title="코드 수정"></a>코드 수정</h3><figure class="highlight js"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br></pre></td><td class="code"><pre><span class="line"></span><br><span class="line"><span class="keyword">for</span> (<span class="keyword">var</span> stack = <span class="number">2</span>; stack &lt; input; stack++) &#123;</span><br><span class="line">    </span><br><span class="line">    <span class="keyword">if</span> (input % stack === <span class="number">0</span>) &#123;</span><br><span class="line">        isPrime = <span class="literal">false</span>;  </span><br><span class="line">        <span class="keyword">break</span>;             </span><br><span class="line">    &#125;</span><br><span class="line">&#125;</span><br></pre></td></tr></table></figure>
-<ul>
-<li>혼자 구현한거와 강의를 보니 조금 차이가 있었다 조금더 간소하게 생각할 필요가 있는거같다.</li>
+<h3 id="코드-수정"><a href="#코드-수정" class="headerlink" title="코드 수정"></a>코드 수정</h3><ul>
+<li><p>수정 코드</p>
+<figure class="highlight js"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br></pre></td><td class="code"><pre><span class="line"></span><br><span class="line"><span class="keyword">for</span> (<span class="keyword">var</span> stack = <span class="number">2</span>; stack &lt; input; stack++) &#123;</span><br><span class="line">    </span><br><span class="line">    <span class="keyword">if</span> (input % stack === <span class="number">0</span>) &#123;</span><br><span class="line">        isPrime = <span class="literal">false</span>;  </span><br><span class="line">        <span class="keyword">break</span>;             </span><br><span class="line">    &#125;</span><br><span class="line">&#125;</span><br></pre></td></tr></table></figure>
+</li>
+<li><p>혼자 구현한거와 강의를 보니 조금 차이가 있었다 조금더 간소하게 생각할 필요가 있는거같다.</p>
+</li>
 <li>강의를 보고 간소화함.</li>
 </ul>
 <hr>
 <h2 id="구구단-프로그램-작성"><a href="#구구단-프로그램-작성" class="headerlink" title="구구단  프로그램 작성"></a>구구단  프로그램 작성</h2><p>강의 내용을 참고해 구구단 프로그램을 다시작성</p>
-<h3 id="코드-작성"><a href="#코드-작성" class="headerlink" title="코드 작성"></a>코드 작성</h3><figure class="highlight js"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br></pre></td><td class="code"><pre><span class="line">출력한 단수 :&lt;input type = 'text' id ='num' value = '8'&gt;&lt;br&gt;</span><br><span class="line">&lt;button onclick = 'runGugu()'&gt;확인&lt;/button&gt;</span><br><span class="line"></span><br><span class="line">document.write('&lt;h2&gt;'+i+ '단 &lt;/h2&gt;');</span><br><span class="line">for( var j = 1; j &lt; 10; j ++) &#123;</span><br><span class="line">    console.log(i+ ' x ' + j +' = ' + i*j);</span><br><span class="line">    document.write(i+ ' x ' + j +' = ' + i*j + '&lt;br&gt;');</span><br><span class="line">&#125;</span><br></pre></td></tr></table></figure>
-<h3 id="버튼-만들기"><a href="#버튼-만들기" class="headerlink" title="버튼 만들기"></a>버튼 만들기</h3><figure class="highlight html"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line"><span class="tag">&lt;<span class="name">button</span> <span class="attr">onclick</span> = <span class="string">'runGugu()'</span>&gt;</span>확인<span class="tag">&lt;/<span class="name">button</span>&gt;</span>'</span><br></pre></td></tr></table></figure>
-<ul>
-<li>버튼을 만들어 함수를 동작시킴</li>
+<h3 id="코드-작성"><a href="#코드-작성" class="headerlink" title="코드 작성"></a>코드 작성</h3><ul>
+<li>작성 코드<figure class="highlight js"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br></pre></td><td class="code"><pre><span class="line">출력한 단수 :&lt;input type = 'text' id ='num' value = '8'&gt;&lt;br&gt;</span><br><span class="line">&lt;button onclick = 'runGugu()'&gt;확인&lt;/button&gt;</span><br><span class="line"></span><br><span class="line">document.write('&lt;h2&gt;'+i+ '단 &lt;/h2&gt;');</span><br><span class="line">for( var j = 1; j &lt; 10; j ++) &#123;</span><br><span class="line">    console.log(i+ ' x ' + j +' = ' + i*j);</span><br><span class="line">    document.write(i+ ' x ' + j +' = ' + i*j + '&lt;br&gt;');</span><br><span class="line">&#125;</span><br></pre></td></tr></table></figure>
+</li>
+</ul>
+<h3 id="버튼-만들기"><a href="#버튼-만들기" class="headerlink" title="버튼 만들기"></a>버튼 만들기</h3><ul>
+<li><p>작성 코드</p>
+<figure class="highlight html"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line"><span class="tag">&lt;<span class="name">button</span> <span class="attr">onclick</span> = <span class="string">'runGugu()'</span>&gt;</span>확인<span class="tag">&lt;/<span class="name">button</span>&gt;</span>'</span><br></pre></td></tr></table></figure>
+</li>
+<li><p>버튼을 만들어 함수를 동작시킴</p>
+</li>
 <li>버튼이 한번누르면 사라지는 결과가 발생</li>
 </ul>
 <h3 id="document-write-를-사용"><a href="#document-write-를-사용" class="headerlink" title="document.write 를 사용"></a><strong>document.write</strong> 를 사용</h3><ul>
@@ -324,7 +428,10 @@
 <li>소수는 1과 자기 자신만으로 나눌 수 있는수</li>
 <li>n 의 숫자중 1과 n 을 제외한 그 사이 수로 나눴을때 0이 나오면 소수가 아님.</li>
 </ul>
-<h3 id="코드-구현"><a href="#코드-구현" class="headerlink" title="코드 구현"></a>코드 구현</h3> <figure class="highlight js"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br></pre></td><td class="code"><pre><span class="line">   <span class="keyword">for</span> (<span class="keyword">var</span> stack = <span class="number">1</span>; stack &lt;= input; stack++) &#123;</span><br><span class="line">       trueSosu = input%stack;</span><br><span class="line">       <span class="keyword">if</span> (trueSosu === <span class="number">0</span>) &#123;</span><br><span class="line">           sosuStack ++;                </span><br><span class="line">       &#125;</span><br><span class="line">   &#125;</span><br><span class="line"><span class="comment">// trueSosu를 이용해 input까지 계속 나머지 0 인 값을 구해 나머지가 0 이상이 3개이상이면 소수가 아니라고 판별</span></span><br><span class="line"><span class="comment">// 나머지0의 갯수가 2면 소수</span></span><br></pre></td></tr></table></figure>
+<h3 id="코드-구현"><a href="#코드-구현" class="headerlink" title="코드 구현"></a>코드 구현</h3><ul>
+<li>작성 코드<figure class="highlight js"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br></pre></td><td class="code"><pre><span class="line"></span><br><span class="line">   <span class="keyword">for</span> (<span class="keyword">var</span> stack = <span class="number">1</span>; stack &lt;= input; stack++) &#123;</span><br><span class="line">       trueSosu = input%stack;</span><br><span class="line">       <span class="keyword">if</span> (trueSosu === <span class="number">0</span>) &#123;</span><br><span class="line">           sosuStack ++;                </span><br><span class="line">       &#125;</span><br><span class="line">   &#125;</span><br><span class="line"><span class="comment">// trueSosu를 이용해 input까지 계속 나머지 0 인 값을 구해 나머지가 0 이상이 3개이상이면 소수가 아니라고 판별</span></span><br><span class="line"><span class="comment">// 나머지0의 갯수가 2면 소수</span></span><br></pre></td></tr></table></figure>
+</li>
+</ul>
 <h2 id="Visual-Studio-Code-유용한-명령어"><a href="#Visual-Studio-Code-유용한-명령어" class="headerlink" title="Visual Studio Code 유용한 명령어"></a>Visual Studio Code 유용한 명령어</h2><p>사용하면 유용한 명령어들</p>
 <ul>
 <li>한 줄 복사하기: shift + alt + 아래 화살표</li>
@@ -429,11 +536,16 @@
     <div class="article-entry" itemprop="articleBody">
       
         <h1 id="오늘의-공부-20180719"><a href="#오늘의-공부-20180719" class="headerlink" title="오늘의 공부 20180719"></a>오늘의 공부 20180719</h1><hr>
-<h2 id="구구단-작성"><a href="#구구단-작성" class="headerlink" title="구구단 작성"></a>구구단 작성</h2><p>코드 구현를 구현 함.<br> <figure class="highlight js"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br></pre></td><td class="code"><pre><span class="line">&lt;p id = <span class="string">'result'</span>&gt;구구단&lt;<span class="regexp">/p&gt;</span></span><br><span class="line"><span class="regexp"> var p = document.getElementById('result');</span></span><br></pre></td></tr></table></figure></p>
+<h2 id="구구단-작성"><a href="#구구단-작성" class="headerlink" title="구구단 작성"></a>구구단 작성</h2><p>코드 구현를 구현 함.</p>
+<ul>
+<li><p>작성 코드  </p>
+<figure class="highlight js"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br></pre></td><td class="code"><pre><span class="line">&lt;p id = <span class="string">'result'</span>&gt;구구단&lt;<span class="regexp">/p&gt;</span></span><br><span class="line"><span class="regexp"> var p = document.getElementById('result');</span></span><br></pre></td></tr></table></figure>
 <ul>
 <li><strong>getElementById</strong> 를 이용해서 아이디를 찾고 정의함</li>
 <li>p.<strong>innerHTML</strong> = str;</li>
 <li><strong>innerHTML</strong>을 사용해서 id가 ‘result’ 를 str로 변경</li>
+</ul>
+</li>
 </ul>
 <h2 id="마크다운-문법-공부"><a href="#마크다운-문법-공부" class="headerlink" title="마크다운 문법 공부"></a>마크다운 문법 공부</h2><ul>
 <li><a href="https://namu.wiki/w/%EB%A7%88%ED%81%AC%EB%8B%A4%EC%9A%B4" target="_blank" rel="noopener">hyperlink syntax</a></li>
@@ -500,6 +612,10 @@
       <ul>
         
           <li>
+            <a href="/2018/07/27/20180727/">TIL</a>
+          </li>
+        
+          <li>
             <a href="/2018/07/26/20180726/">TIL</a>
           </li>
         
@@ -513,10 +629,6 @@
         
           <li>
             <a href="/2018/07/23/20180723/">TIL</a>
-          </li>
-        
-          <li>
-            <a href="/2018/07/20/20180720/">TIL</a>
           </li>
         
       </ul>

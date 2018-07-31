@@ -15,7 +15,7 @@
 <meta property="og:site_name" content="jar100 blog">
 <meta property="og:description" content="오늘의 공부 20180730 강의 구구단 배열로 출력하기  생활코딩 오늘 안함 내일 꼭들어야겠따…  연습문제 소용돌이 작업  소용돌이 오름차순 완성 내림차순 완성 자리수를 계산해 정렬 시킴 코드 123456789101112var blank1 = function() &amp;#123;    var numLegth = num.toString().length;    v">
 <meta property="og:locale" content="ko">
-<meta property="og:updated_time" content="2018-07-30T14:58:27.172Z">
+<meta property="og:updated_time" content="2018-07-31T05:36:47.784Z">
 <meta name="twitter:card" content="summary">
 <meta name="twitter:title" content="TIL">
 <meta name="twitter:description" content="오늘의 공부 20180730 강의 구구단 배열로 출력하기  생활코딩 오늘 안함 내일 꼭들어야겠따…  연습문제 소용돌이 작업  소용돌이 오름차순 완성 내림차순 완성 자리수를 계산해 정렬 시킴 코드 123456789101112var blank1 = function() &amp;#123;    var numLegth = num.toString().length;    v">
@@ -113,9 +113,12 @@
 <li><code>toString</code> 숫자를 문자로 바꿈 num.toStirng();</li>
 <li><a href="https://github.com/jar100/CS-level1/blob/master/snail2.html" target="_blank" rel="noopener">https://github.com/jar100/CS-level1/blob/master/snail2.html</a></li>
 </ul>
-<h2 id="프로그래머스"><a href="#프로그래머스" class="headerlink" title="프로그래머스"></a>프로그래머스</h2><h3 id="약수들의-합"><a href="#약수들의-합" class="headerlink" title="약수들의 합"></a>약수들의 합</h3><p>-코드<br><figure class="highlight js"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br></pre></td><td class="code"><pre><span class="line"><span class="function"><span class="keyword">function</span> <span class="title">solution</span>(<span class="params">n</span>)</span></span><br><span class="line"><span class="function"></span>&#123;</span><br><span class="line">    <span class="keyword">var</span> answer = <span class="number">0</span>;</span><br><span class="line">    <span class="keyword">var</span> num = <span class="number">0</span> ;</span><br><span class="line">    <span class="keyword">var</span> numLength = n.toString().length;</span><br><span class="line">    <span class="keyword">for</span> (<span class="keyword">var</span> i=numLength; i &gt;<span class="number">0</span> ; i --) &#123;</span><br><span class="line">        num = <span class="built_in">Math</span>.floor(n/<span class="built_in">Math</span>.pow(<span class="number">10</span>,(i<span class="number">-1</span>))) ;</span><br><span class="line">        n = n%<span class="built_in">Math</span>.pow(<span class="number">10</span>,(i<span class="number">-1</span>));</span><br><span class="line">        answer += num;</span><br><span class="line">    &#125;</span><br><span class="line">    <span class="keyword">return</span> answer;</span><br><span class="line">&#125;</span><br></pre></td></tr></table></figure></p>
-<ul>
-<li><code>Math.pow</code> 제곱 구하는함수 Math.pow(10,1);</li>
+<h2 id="프로그래머스"><a href="#프로그래머스" class="headerlink" title="프로그래머스"></a>프로그래머스</h2><h3 id="약수들의-합"><a href="#약수들의-합" class="headerlink" title="약수들의 합"></a>약수들의 합</h3><ul>
+<li><p>코드</p>
+<figure class="highlight js"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br></pre></td><td class="code"><pre><span class="line"><span class="function"><span class="keyword">function</span> <span class="title">solution</span>(<span class="params">n</span>)</span></span><br><span class="line"><span class="function"></span>&#123;</span><br><span class="line">    <span class="keyword">var</span> answer = <span class="number">0</span>;</span><br><span class="line">    <span class="keyword">var</span> num = <span class="number">0</span> ;</span><br><span class="line">    <span class="keyword">var</span> numLength = n.toString().length;</span><br><span class="line">    <span class="keyword">for</span> (<span class="keyword">var</span> i=numLength; i &gt;<span class="number">0</span> ; i --) &#123;</span><br><span class="line">        num = <span class="built_in">Math</span>.floor(n/<span class="built_in">Math</span>.pow(<span class="number">10</span>,(i<span class="number">-1</span>))) ;</span><br><span class="line">        n = n%<span class="built_in">Math</span>.pow(<span class="number">10</span>,(i<span class="number">-1</span>));</span><br><span class="line">        answer += num;</span><br><span class="line">    &#125;</span><br><span class="line">    <span class="keyword">return</span> answer;</span><br><span class="line">&#125;</span><br></pre></td></tr></table></figure>
+</li>
+<li><p><code>Math.pow</code> 제곱 구하는함수 Math.pow(10,1);</p>
+</li>
 </ul>
 <h3 id="제곱근-판별"><a href="#제곱근-판별" class="headerlink" title="제곱근 판별"></a>제곱근 판별</h3><ul>
 <li><p>코드</p>
@@ -140,6 +143,15 @@
   
     
 <nav id="article-nav">
+  
+    <a href="/2018/07/31/20180731/" id="article-nav-newer" class="article-nav-link-wrap">
+      <strong class="article-nav-caption">최신</strong>
+      <div class="article-nav-title">
+        
+          TIL
+        
+      </div>
+    </a>
   
   
     <a href="/2018/07/29/20180729/" id="article-nav-older" class="article-nav-link-wrap">
@@ -195,6 +207,10 @@
       <ul>
         
           <li>
+            <a href="/2018/07/31/20180731/">TIL</a>
+          </li>
+        
+          <li>
             <a href="/2018/07/30/20180730/">TIL</a>
           </li>
         
@@ -208,10 +224,6 @@
         
           <li>
             <a href="/2018/07/27/20180727/">TIL</a>
-          </li>
-        
-          <li>
-            <a href="/2018/07/26/20180726/">TIL</a>
           </li>
         
       </ul>

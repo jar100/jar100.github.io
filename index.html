@@ -66,6 +66,75 @@
       <div class="outer">
         <section id="main">
   
+    <article id="post-20180805" class="article article-type-post" itemscope itemprop="blogPost">
+  <div class="article-meta">
+    <a href="/2018/08/05/20180805/" class="article-date">
+  <time datetime="2018-08-05T14:23:51.000Z" itemprop="datePublished">2018-08-05</time>
+</a>
+    
+  </div>
+  <div class="article-inner">
+    
+    
+      <header class="article-header">
+        
+  
+    <h1 itemprop="name">
+      <a class="article-title" href="/2018/08/05/20180805/">TIL</a>
+    </h1>
+  
+
+      </header>
+    
+    <div class="article-entry" itemprop="articleBody">
+      
+        <h1 id="오늘의-공부-20180805"><a href="#오늘의-공부-20180805" class="headerlink" title="오늘의 공부 20180805"></a>오늘의 공부 20180805</h1><ul>
+<li>프로그래머스 알고리즘 1개</li>
+<li>java 공부</li>
+<li>js 공부</li>
+</ul>
+<h2 id="java-공부"><a href="#java-공부" class="headerlink" title="java 공부"></a>java 공부</h2><ul>
+<li>제네릭 타입</li>
+</ul>
+<h2 id="js-공부"><a href="#js-공부" class="headerlink" title="js 공부"></a>js 공부</h2><ul>
+<li><code>sort</code> 명령어 사용<h3 id="sort"><a href="#sort" class="headerlink" title="sort"></a>sort</h3></li>
+<li>숫자로 정렬법</li>
+<li><p><code>compare function</code>을 호출해 음수면 작다 양수면 크다 판별</p>
+<figure class="highlight js"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br></pre></td><td class="code"><pre><span class="line"><span class="keyword">var</span> points = [<span class="number">40</span>, <span class="number">100</span>, <span class="number">1</span>, <span class="number">5</span>, <span class="number">25</span>, <span class="number">10</span>];</span><br><span class="line">points.sort(<span class="function"><span class="keyword">function</span>(<span class="params">a, b</span>)</span>&#123;<span class="keyword">return</span> a - b&#125;);</span><br></pre></td></tr></table></figure>
+</li>
+<li><p>랜덤으로 섞는 방법</p>
+<figure class="highlight js"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br></pre></td><td class="code"><pre><span class="line"><span class="keyword">var</span> points = [<span class="number">40</span>, <span class="number">100</span>, <span class="number">1</span>, <span class="number">5</span>, <span class="number">25</span>, <span class="number">10</span>];</span><br><span class="line">points.sort(<span class="function"><span class="keyword">function</span>(<span class="params">a, b</span>)</span>&#123;<span class="keyword">return</span> <span class="number">0.5</span> - <span class="built_in">Math</span>.random()&#125;);</span><br></pre></td></tr></table></figure>
+</li>
+</ul>
+<h3 id="제네릭-타입"><a href="#제네릭-타입" class="headerlink" title="제네릭 타입"></a>제네릭 타입</h3><ul>
+<li>제네릭 타입이란 타입을 파라미터로 가지는 클레스와 인터페이스를 말한다.</li>
+<li>부호 뒤에 <code>&lt;t&gt;</code>부호가 붙고, 사이에 파라미터가 위치한다.</li>
+<li>타입은 일반적으로 대문자 한글자로 표현</li>
+</ul>
+<h2 id="프로그래머스"><a href="#프로그래머스" class="headerlink" title="프로그래머스"></a>프로그래머스</h2><ul>
+<li>문자열 마음대로 정렬</li>
+</ul>
+<h3 id="문자열-마음대로-정렬"><a href="#문자열-마음대로-정렬" class="headerlink" title="문자열 마음대로 정렬"></a>문자열 마음대로 정렬</h3><ul>
+<li>배열을 위치의 값으로 정렬하자.<figure class="highlight js"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br><span class="line">15</span><br></pre></td><td class="code"><pre><span class="line"><span class="function"><span class="keyword">function</span> <span class="title">solution</span>(<span class="params">strings, n</span>) </span>&#123;</span><br><span class="line">    <span class="keyword">var</span> answer = [];</span><br><span class="line">    <span class="keyword">var</span> n = n;</span><br><span class="line">    answer = strings.sort(<span class="function"><span class="keyword">function</span> (<span class="params">a,b</span>)</span>&#123;</span><br><span class="line">        <span class="keyword">var</span> x = a[n];</span><br><span class="line">        <span class="keyword">var</span> y = b[n];</span><br><span class="line">        <span class="keyword">if</span>(x == y) &#123;</span><br><span class="line">            x =a[n+<span class="number">1</span>];</span><br><span class="line">            y = b[n+<span class="number">1</span>];</span><br><span class="line">        &#125;</span><br><span class="line">        <span class="keyword">if</span> (x &lt; y) &#123;<span class="keyword">return</span> <span class="number">-1</span>;&#125;</span><br><span class="line">        <span class="keyword">if</span> (x &gt; y) &#123;<span class="keyword">return</span> <span class="number">1</span>;&#125;</span><br><span class="line">    &#125;);</span><br><span class="line">    <span class="keyword">return</span> answer;</span><br><span class="line">&#125;</span><br></pre></td></tr></table></figure>
+</li>
+</ul>
+<p>이렇게 했는데 실행은 맞는데 채점할땐 3개빼고 다틀렸다 왜그럴까..<br>내일 더해보자.. 오늘은 공부가 너무 안된다 망했다….</p>
+
+      
+    </div>
+    <footer class="article-footer">
+      <a data-url="http://yoursite.com/2018/08/05/20180805/" data-id="cjkh08dcl0000fsv082rsdlt4" class="article-share-link">공유</a>
+      
+      
+  <ul class="article-tag-list"><li class="article-tag-list-item"><a class="article-tag-list-link" href="/tags/TIL/">TIL</a></li></ul>
+
+    </footer>
+  </div>
+  
+</article>
+
+
+  
     <article id="post-20180803" class="article article-type-post" itemscope itemprop="blogPost">
   <div class="article-meta">
     <a href="/2018/08/03/20180803/" class="article-date">
@@ -95,6 +164,7 @@
 </ul>
 </li>
 <li>프로그래머스 알고리즘 2개 풀기</li>
+<li>늦었지만 코딩야학 공부 시작.</li>
 </ul>
 <h2 id="java-공부"><a href="#java-공부" class="headerlink" title="java 공부"></a>java 공부</h2><ul>
 <li>java 는 유도리가 없는거 같다.</li>
@@ -816,76 +886,6 @@
 
 
   
-    <article id="post-20180725" class="article article-type-post" itemscope itemprop="blogPost">
-  <div class="article-meta">
-    <a href="/2018/07/25/20180725/" class="article-date">
-  <time datetime="2018-07-25T14:53:51.000Z" itemprop="datePublished">2018-07-25</time>
-</a>
-    
-  </div>
-  <div class="article-inner">
-    
-    
-      <header class="article-header">
-        
-  
-    <h1 itemprop="name">
-      <a class="article-title" href="/2018/07/25/20180725/">TIL</a>
-    </h1>
-  
-
-      </header>
-    
-    <div class="article-entry" itemprop="articleBody">
-      
-        <h1 id="오늘의-공부-20180725"><a href="#오늘의-공부-20180725" class="headerlink" title="오늘의 공부 20180725"></a>오늘의 공부 20180725</h1><hr>
-<h2 id="오프라인-강의"><a href="#오프라인-강의" class="headerlink" title="오프라인 강의"></a>오프라인 강의</h2><ul>
-<li><p>스타일 변경</p>
-<figure class="highlight html"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br></pre></td><td class="code"><pre><span class="line"><span class="tag">&lt;<span class="name">style</span>&gt;</span><span class="undefined"></span></span><br><span class="line"><span class="undefined">    p &#123;</span></span><br><span class="line"><span class="undefined">        font-family: "Courier New", Courier, monospace;</span></span><br><span class="line"><span class="undefined">        font-size: 2em;    </span></span><br><span class="line"><span class="undefined">    &#125;</span></span><br><span class="line"><span class="undefined"></span><span class="tag">&lt;/<span class="name">style</span>&gt;</span></span><br></pre></td></tr></table></figure>
-</li>
-<li><p>코딩을할땐 모노스페이스를 사용하면 된다 (글자의 크기가 일정하다)</p>
-</li>
-</ul>
-<h3 id="모래시계"><a href="#모래시계" class="headerlink" title="모래시계"></a>모래시계</h3><ul>
-<li><strong>setInterval(value,1000)</strong> value를 1초마다 실행</li>
-<li><strong>clearInterval</strong> 멈춘다.</li>
-<li><strong>2차원 배열</strong>을 이용해서 그린다. </li>
-</ul>
-<h3 id="문제"><a href="#문제" class="headerlink" title="문제"></a>문제</h3><ul>
-<li>print10() 이라는 화면에 1-10까지 뿌려주는 함수</li>
-<li>printN(n) 이라는 화면에 1부터 n까지 뿌려주는 함수</li>
-<li>isEven(n) 이라는 짝수면 true, 홀수면 false를 리턴하는 함수</li>
-<li>myReminder(a, b) 나머지를 리턴하는 함수</li>
-<li>square(n) 이라는 화면에 n * n 네모를 출력하는 함수<br>전부 구현완료</li>
-</ul>
-<h2 id="연습문제"><a href="#연습문제" class="headerlink" title="연습문제"></a>연습문제</h2><p>연습문제를 풀었다.</p>
-<h3 id="계산-문제"><a href="#계산-문제" class="headerlink" title="계산 문제"></a>계산 문제</h3><ul>
-<li>1부터 100 까지 합구하기 ㅇ</li>
-<li>1부터 100 까지 홀수의 합 구하기 ㅇ  </li>
-<li>1부터 100 까지 짝수의 합 구하기 ㅇ</li>
-<li>카운트다운 구현하기 document.write 이상함 x</li>
-</ul>
-<hr>
-<h2 id="마크다운-문법-공부"><a href="#마크다운-문법-공부" class="headerlink" title="마크다운 문법 공부"></a>마크다운 문법 공부</h2><ul>
-<li><a href="https://namu.wiki/w/%EB%A7%88%ED%81%AC%EB%8B%A4%EC%9A%B4" target="_blank" rel="noopener">hyperlink syntax</a></li>
-<li>(나무위키를 통해 복습)</li>
-</ul>
-
-      
-    </div>
-    <footer class="article-footer">
-      <a data-url="http://yoursite.com/2018/07/25/20180725/" data-id="cjk194tdv00058gv0qt44b6pu" class="article-share-link">공유</a>
-      
-      
-  <ul class="article-tag-list"><li class="article-tag-list-item"><a class="article-tag-list-link" href="/tags/TIL/">TIL</a></li></ul>
-
-    </footer>
-  </div>
-  
-</article>
-
-
-  
 
 
   <nav id="page-nav">
@@ -936,6 +936,10 @@
       <ul>
         
           <li>
+            <a href="/2018/08/05/20180805/">TIL</a>
+          </li>
+        
+          <li>
             <a href="/2018/08/03/20180803/">TIL</a>
           </li>
         
@@ -949,10 +953,6 @@
         
           <li>
             <a href="/2018/07/31/20180731/">TIL</a>
-          </li>
-        
-          <li>
-            <a href="/2018/07/30/20180730/">TIL</a>
           </li>
         
       </ul>

@@ -15,7 +15,7 @@
 <meta property="og:site_name" content="jar100 blog">
 <meta property="og:description" content="오늘의 공부 20180810 프로그래머스 알고리즘 1개 java 강의 생활코딩 듣기   java야구 코드를 수정 해봤다. 아직도 어렵다 두리뭉실  jsarrayvar a = new Array(); 와 var a = []; 차이는 무엇일까  배열 크기를 미리 정할 수 있다와 없다 인거같다. 둘다 배열을 생성하지만 new Array(n) n에 값을 넣으면 그만">
 <meta property="og:locale" content="ko">
-<meta property="og:updated_time" content="2018-08-10T14:20:07.954Z">
+<meta property="og:updated_time" content="2018-08-10T14:43:21.281Z">
 <meta name="twitter:card" content="summary">
 <meta name="twitter:title" content="TIL">
 <meta name="twitter:description" content="오늘의 공부 20180810 프로그래머스 알고리즘 1개 java 강의 생활코딩 듣기   java야구 코드를 수정 해봤다. 아직도 어렵다 두리뭉실  jsarrayvar a = new Array(); 와 var a = []; 차이는 무엇일까  배열 크기를 미리 정할 수 있다와 없다 인거같다. 둘다 배열을 생성하지만 new Array(n) n에 값을 넣으면 그만">
@@ -117,6 +117,13 @@
 </ul>
 <h3 id="String-fromCharCode"><a href="#String-fromCharCode" class="headerlink" title="String.fromCharCode"></a>String.fromCharCode</h3><p>유니코드 값을 문자열로 반환</p>
 <hr>
+<h2 id="프로그래머스"><a href="#프로그래머스" class="headerlink" title="프로그래머스"></a>프로그래머스</h2><p>시저 암호</p>
+<ul>
+<li>내가 푼 코드<figure class="highlight js"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br><span class="line">15</span><br><span class="line">16</span><br><span class="line">17</span><br><span class="line">18</span><br><span class="line">19</span><br><span class="line">20</span><br><span class="line">21</span><br><span class="line">22</span><br><span class="line">23</span><br><span class="line">24</span><br></pre></td><td class="code"><pre><span class="line"><span class="function"><span class="keyword">function</span> <span class="title">solution</span>(<span class="params">s, n</span>) </span>&#123;</span><br><span class="line">    <span class="keyword">var</span> answer = <span class="string">''</span>;</span><br><span class="line">    <span class="keyword">var</span> answerArr = [];</span><br><span class="line">    <span class="keyword">for</span> (<span class="keyword">var</span> i = <span class="number">0</span> ; i &lt; s.length; i++) &#123;</span><br><span class="line">        <span class="keyword">var</span> a = s.charCodeAt(i);</span><br><span class="line">        <span class="keyword">if</span> (a &lt;= <span class="number">90</span> &amp;&amp; a &gt;= <span class="number">65</span>) &#123;</span><br><span class="line">            <span class="comment">//Z 90 z 122  A 65 a 97</span></span><br><span class="line">            a = a+n;</span><br><span class="line">            <span class="keyword">if</span>(a &gt; <span class="number">90</span>) &#123;</span><br><span class="line">                <span class="keyword">var</span> b = a - <span class="number">90</span>;</span><br><span class="line">                a = <span class="number">64</span> + b;</span><br><span class="line">            &#125;</span><br><span class="line">        &#125; <span class="keyword">else</span> <span class="keyword">if</span> (a &lt;= <span class="number">122</span> &amp;&amp; a &gt;= <span class="number">97</span>) &#123;</span><br><span class="line">            a = a+n;</span><br><span class="line">            <span class="keyword">if</span>(a &gt; <span class="number">122</span>) &#123;</span><br><span class="line">                <span class="keyword">var</span> b = a - <span class="number">122</span>;</span><br><span class="line">                a = <span class="number">96</span> + b;</span><br><span class="line">            &#125;           </span><br><span class="line">        &#125; </span><br><span class="line">        answerArr[i]=<span class="built_in">String</span>.fromCharCode(a);</span><br><span class="line">    &#125;</span><br><span class="line">    answer = answerArr.join(<span class="string">""</span>);</span><br><span class="line">    <span class="keyword">return</span> answer;</span><br><span class="line">&#125;</span><br></pre></td></tr></table></figure>
+</li>
+</ul>
+<p>n 의 값에 따라 범위를 초과하는 일이 발생해 초과하는 경우를 막았다…. 너무 바보같이 코딩한거같다.</p>
+<hr>
 <h2 id="생활코딩-코딩야학"><a href="#생활코딩-코딩야학" class="headerlink" title="생활코딩 코딩야학"></a>생활코딩 코딩야학</h2><p>크립토좀비 해봐야겠다.</p>
 <ul>
 <li><a href="https://cryptozombies.io/" target="_blank" rel="noopener">https://cryptozombies.io/</a> ko/</li>
@@ -135,6 +142,15 @@
   
     
 <nav id="article-nav">
+  
+    <a href="/2018/08/10/20180811/" id="article-nav-newer" class="article-nav-link-wrap">
+      <strong class="article-nav-caption">최신</strong>
+      <div class="article-nav-title">
+        
+          TIL
+        
+      </div>
+    </a>
   
   
     <a href="/2018/08/09/20180809/" id="article-nav-older" class="article-nav-link-wrap">
@@ -190,6 +206,14 @@
       <ul>
         
           <li>
+            <a href="/2018/08/13/20180813/">TIL</a>
+          </li>
+        
+          <li>
+            <a href="/2018/08/10/20180811/">TIL</a>
+          </li>
+        
+          <li>
             <a href="/2018/08/10/20180810/">TIL</a>
           </li>
         
@@ -199,14 +223,6 @@
         
           <li>
             <a href="/2018/08/08/20180808/">TIL</a>
-          </li>
-        
-          <li>
-            <a href="/2018/08/07/20180807/">TIL</a>
-          </li>
-        
-          <li>
-            <a href="/2018/08/06/20180806/">TIL</a>
           </li>
         
       </ul>

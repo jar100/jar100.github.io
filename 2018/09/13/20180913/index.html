@@ -7,18 +7,18 @@
   
   <title>TIL | jar100 blog</title>
   <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
-  <meta name="description" content="오늘의 공부 20180725 오프라인 강의 스타일 변경 123456&amp;lt;style&amp;gt;    p &amp;#123;        font-family: &quot;Courier New&quot;, Courier, monospace;        font-size: 2em;        &amp;#125;&amp;lt;/style&amp;gt;  코딩을할땐 모노스페이스를 사용하면 된다 (글자의 크기가">
+  <meta name="description" content="오늘의 공부 20180913 java강의코딩 컨벤션 ( codeing conventions )  상수값은 가장 먼저 구현 해야한다. 대문자,_사용 이름을 만들땐 형태를 넣지말자 리네임 리펙토리 (shift + F6)   일반변수 생성자 메서드 메서드 분리 단축키 ctrl + art + m static 이 없으면 인스턴스 메서드 붙으면 클래스 메서드 메스드">
 <meta name="keywords" content="TIL">
 <meta property="og:type" content="article">
 <meta property="og:title" content="TIL">
-<meta property="og:url" content="http://yoursite.com/2018/07/25/201807/20180725/index.html">
+<meta property="og:url" content="http://yoursite.com/2018/09/13/20180913/index.html">
 <meta property="og:site_name" content="jar100 blog">
-<meta property="og:description" content="오늘의 공부 20180725 오프라인 강의 스타일 변경 123456&amp;lt;style&amp;gt;    p &amp;#123;        font-family: &quot;Courier New&quot;, Courier, monospace;        font-size: 2em;        &amp;#125;&amp;lt;/style&amp;gt;  코딩을할땐 모노스페이스를 사용하면 된다 (글자의 크기가">
+<meta property="og:description" content="오늘의 공부 20180913 java강의코딩 컨벤션 ( codeing conventions )  상수값은 가장 먼저 구현 해야한다. 대문자,_사용 이름을 만들땐 형태를 넣지말자 리네임 리펙토리 (shift + F6)   일반변수 생성자 메서드 메서드 분리 단축키 ctrl + art + m static 이 없으면 인스턴스 메서드 붙으면 클래스 메서드 메스드">
 <meta property="og:locale" content="ko">
-<meta property="og:updated_time" content="2018-08-30T05:45:17.864Z">
+<meta property="og:updated_time" content="2018-09-13T15:09:38.087Z">
 <meta name="twitter:card" content="summary">
 <meta name="twitter:title" content="TIL">
-<meta name="twitter:description" content="오늘의 공부 20180725 오프라인 강의 스타일 변경 123456&amp;lt;style&amp;gt;    p &amp;#123;        font-family: &quot;Courier New&quot;, Courier, monospace;        font-size: 2em;        &amp;#125;&amp;lt;/style&amp;gt;  코딩을할땐 모노스페이스를 사용하면 된다 (글자의 크기가">
+<meta name="twitter:description" content="오늘의 공부 20180913 java강의코딩 컨벤션 ( codeing conventions )  상수값은 가장 먼저 구현 해야한다. 대문자,_사용 이름을 만들땐 형태를 넣지말자 리네임 리펙토리 (shift + F6)   일반변수 생성자 메서드 메서드 분리 단축키 ctrl + art + m static 이 없으면 인스턴스 메서드 붙으면 클래스 메서드 메스드">
   
     <link rel="alternate" href="/atom.xml" title="jar100 blog" type="application/atom+xml">
   
@@ -69,10 +69,10 @@
   </div>
 </header>
       <div class="outer">
-        <section id="main"><article id="post-201807/20180725" class="article article-type-post" itemscope itemprop="blogPost">
+        <section id="main"><article id="post-20180913" class="article article-type-post" itemscope itemprop="blogPost">
   <div class="article-meta">
-    <a href="/2018/07/25/201807/20180725/" class="article-date">
-  <time datetime="2018-07-25T14:53:51.000Z" itemprop="datePublished">2018-07-25</time>
+    <a href="/2018/09/13/20180913/" class="article-date">
+  <time datetime="2018-09-13T14:23:51.000Z" itemprop="datePublished">2018-09-13</time>
 </a>
     
   </div>
@@ -91,43 +91,45 @@
     
     <div class="article-entry" itemprop="articleBody">
       
-        <h1 id="오늘의-공부-20180725"><a href="#오늘의-공부-20180725" class="headerlink" title="오늘의 공부 20180725"></a>오늘의 공부 20180725</h1><hr>
-<h2 id="오프라인-강의"><a href="#오프라인-강의" class="headerlink" title="오프라인 강의"></a>오프라인 강의</h2><ul>
-<li><p>스타일 변경</p>
-<figure class="highlight html"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br></pre></td><td class="code"><pre><span class="line"><span class="tag">&lt;<span class="name">style</span>&gt;</span><span class="undefined"></span></span><br><span class="line"><span class="undefined">    p &#123;</span></span><br><span class="line"><span class="undefined">        font-family: "Courier New", Courier, monospace;</span></span><br><span class="line"><span class="undefined">        font-size: 2em;    </span></span><br><span class="line"><span class="undefined">    &#125;</span></span><br><span class="line"><span class="undefined"></span><span class="tag">&lt;/<span class="name">style</span>&gt;</span></span><br></pre></td></tr></table></figure>
+        <h1 id="오늘의-공부-20180913"><a href="#오늘의-공부-20180913" class="headerlink" title="오늘의 공부 20180913"></a>오늘의 공부 20180913</h1><hr>
+<h2 id="java"><a href="#java" class="headerlink" title="java"></a>java</h2><h3 id="강의"><a href="#강의" class="headerlink" title="강의"></a>강의</h3><p>코딩 컨벤션 ( codeing conventions )</p>
+<ol>
+<li>상수값은 가장 먼저 구현 해야한다.<ul>
+<li>대문자,_사용</li>
+<li>이름을 만들땐 형태를 넣지말자</li>
+<li>리네임 리펙토리 (<code>shift + F6</code>)</li>
+</ul>
 </li>
-<li><p>코딩을할땐 모노스페이스를 사용하면 된다 (글자의 크기가 일정하다)</p>
+<li>일반변수</li>
+<li>생성자</li>
+<li>메서드<ul>
+<li>메서드 분리 단축키 <code>ctrl + art + m</code></li>
+<li>static 이 없으면 인스턴스 메서드 붙으면 클래스 메서드</li>
+<li>메스드 내에 생성된 변수를 로컬변수라 한다. 구지 로컬변수로 구현할 필요 없다.</li>
+<li>fori 탭 자동완성</li>
+<li>iter 탭 for ecah 구문 자동완성</li>
+<li>public private 순으로 작성하고 연관성 있게 순서대로 구성하면 좋다.</li>
+</ul>
 </li>
-</ul>
-<h3 id="모래시계"><a href="#모래시계" class="headerlink" title="모래시계"></a>모래시계</h3><ul>
-<li><strong>setInterval(value,1000)</strong> value를 1초마다 실행</li>
-<li><strong>clearInterval</strong> 멈춘다.</li>
-<li><strong>2차원 배열</strong>을 이용해서 그린다. </li>
-</ul>
-<h3 id="문제"><a href="#문제" class="headerlink" title="문제"></a>문제</h3><ul>
-<li>print10() 이라는 화면에 1-10까지 뿌려주는 함수</li>
-<li>printN(n) 이라는 화면에 1부터 n까지 뿌려주는 함수</li>
-<li>isEven(n) 이라는 짝수면 true, 홀수면 false를 리턴하는 함수</li>
-<li>myReminder(a, b) 나머지를 리턴하는 함수</li>
-<li>square(n) 이라는 화면에 n * n 네모를 출력하는 함수<br>전부 구현완료</li>
-</ul>
-<h2 id="연습문제"><a href="#연습문제" class="headerlink" title="연습문제"></a>연습문제</h2><p>연습문제를 풀었다.</p>
-<h3 id="계산-문제"><a href="#계산-문제" class="headerlink" title="계산 문제"></a>계산 문제</h3><ul>
-<li>1부터 100 까지 합구하기 ㅇ</li>
-<li>1부터 100 까지 홀수의 합 구하기 ㅇ  </li>
-<li>1부터 100 까지 짝수의 합 구하기 ㅇ</li>
-<li>카운트다운 구현하기 document.write 이상함 x</li>
-</ul>
+</ol>
+<h3 id="우아한-형제-합격자-Q-amp-A"><a href="#우아한-형제-합격자-Q-amp-A" class="headerlink" title="우아한 형제 합격자 Q&amp;A"></a>우아한 형제 합격자 Q&amp;A</h3><p>6개월 맞치고 우아한형제들 입사.<br>비전공자 지식이 거의 없었다.<br>대화를 많이 하면 좋다. TIL 이 많은 도움이 되었다.<br>처음으로 돌아가서 다시 공부했다.<br>내가 알고 있는것을 풀어서 설명하면 좋을거 같다.</p>
 <hr>
-<h2 id="마크다운-문법-공부"><a href="#마크다운-문법-공부" class="headerlink" title="마크다운 문법 공부"></a>마크다운 문법 공부</h2><ul>
-<li><a href="https://namu.wiki/w/%EB%A7%88%ED%81%AC%EB%8B%A4%EC%9A%B4" target="_blank" rel="noopener">hyperlink syntax</a></li>
-<li>(나무위키를 통해 복습)</li>
+<h2 id="피드백"><a href="#피드백" class="headerlink" title="피드백"></a>피드백</h2><ol>
+<li>static 대해 좀더 공부하자</li>
+<li>class 와 instance<ul>
+<li>class 추상화한 값 (도면?) ex)치와와</li>
+<li>instance 는 실제값 (물건?) ex)서울시에 사는 5살짜리 초코라는 이름을 가진 치와와 (객체는 인스턴스 라고 설명할 수 있다. 하지만 다른점도 있는데 다른점은 나중에 생각하자.)</li>
+<li>인스턴스 변수와 메서드는 인스턴스를 만든 후 에만 접근 가능.</li>
+<li>클래스 변수와 메서드는 인스턴스를 만들지 않아도 접근 가능.</li>
 </ul>
+</li>
+</ol>
+<hr>
 
       
     </div>
     <footer class="article-footer">
-      <a data-url="http://yoursite.com/2018/07/25/201807/20180725/" data-id="cjllzogx3000fykv089s1izba" class="article-share-link">공유</a>
+      <a data-url="http://yoursite.com/2018/09/13/20180913/" data-id="cjm0pn4fu0000jov0kehzhrhl" class="article-share-link">공유</a>
       
       
   <ul class="article-tag-list"><li class="article-tag-list-item"><a class="article-tag-list-link" href="/tags/TIL/">TIL</a></li></ul>
@@ -138,17 +140,8 @@
     
 <nav id="article-nav">
   
-    <a href="/2018/07/26/201807/20180726/" id="article-nav-newer" class="article-nav-link-wrap">
-      <strong class="article-nav-caption">최신</strong>
-      <div class="article-nav-title">
-        
-          TIL
-        
-      </div>
-    </a>
   
-  
-    <a href="/2018/07/24/201807/20180724/" id="article-nav-older" class="article-nav-link-wrap">
+    <a href="/2018/09/11/20180911/" id="article-nav-older" class="article-nav-link-wrap">
       <strong class="article-nav-caption">이전</strong>
       <div class="article-nav-title">TIL</div>
     </a>

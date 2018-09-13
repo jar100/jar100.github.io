@@ -66,6 +66,67 @@
       <div class="outer">
         <section id="main">
   
+    <article id="post-201808/20180816" class="article article-type-post" itemscope itemprop="blogPost">
+  <div class="article-meta">
+    <a href="/2018/08/16/201808/20180816/" class="article-date">
+  <time datetime="2018-08-16T14:23:51.000Z" itemprop="datePublished">2018-08-16</time>
+</a>
+    
+  </div>
+  <div class="article-inner">
+    
+    
+      <header class="article-header">
+        
+  
+    <h1 itemprop="name">
+      <a class="article-title" href="/2018/08/16/201808/20180816/">TIL</a>
+    </h1>
+  
+
+      </header>
+    
+    <div class="article-entry" itemprop="articleBody">
+      
+        <h1 id="오늘의-공부-20180816"><a href="#오늘의-공부-20180816" class="headerlink" title="오늘의 공부 20180816"></a>오늘의 공부 20180816</h1><ul>
+<li>프로그래머스</li>
+<li>크립토 좀비</li>
+</ul>
+<hr>
+<h2 id="프로그래머스"><a href="#프로그래머스" class="headerlink" title="프로그래머스"></a>프로그래머스</h2><p>알고리즘 풀어보기</p>
+<ul>
+<li><p>정수 내림차순으로 배치하기</p>
+<figure class="highlight js"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br></pre></td><td class="code"><pre><span class="line"><span class="function"><span class="keyword">function</span> <span class="title">solution</span>(<span class="params">s</span>) </span>&#123;</span><br><span class="line">    <span class="keyword">var</span> answer = <span class="string">''</span>;</span><br><span class="line">    <span class="keyword">var</span> a = s.toString();</span><br><span class="line">    <span class="keyword">var</span> output = a.split(<span class="string">""</span>);</span><br><span class="line">        answer = output.sort(com);</span><br><span class="line">        answer = answer.join(<span class="string">""</span>);</span><br><span class="line">    <span class="function"><span class="keyword">function</span> <span class="title">com</span>(<span class="params">a, b</span>) </span>&#123;</span><br><span class="line">        <span class="keyword">if</span> (a &gt; b) <span class="keyword">return</span> <span class="number">-1</span>;</span><br><span class="line">        <span class="keyword">if</span> (b &gt; a) <span class="keyword">return</span> <span class="number">1</span>;</span><br><span class="line">        <span class="keyword">return</span> <span class="number">0</span>;</span><br><span class="line">    &#125;</span><br><span class="line">    <span class="keyword">return</span> <span class="built_in">Number</span>(answer);</span><br><span class="line">&#125;</span><br></pre></td></tr></table></figure>
+</li>
+<li><p>자연수 뒤집어서 배열로 출력</p>
+<figure class="highlight js"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br></pre></td><td class="code"><pre><span class="line"><span class="function"><span class="keyword">function</span> <span class="title">solution</span>(<span class="params">n</span>) </span>&#123;</span><br><span class="line">    <span class="keyword">var</span> answer = [];</span><br><span class="line">    <span class="keyword">var</span> num = n.toString().split(<span class="string">""</span>);</span><br><span class="line">    <span class="keyword">for</span> (<span class="keyword">var</span> i = num.length<span class="number">-1</span>; i &gt;=<span class="number">0</span>; i --) &#123;</span><br><span class="line">        answer.push(<span class="built_in">Number</span>(num[i]));</span><br><span class="line">    &#125;</span><br><span class="line">    <span class="keyword">return</span> answer;</span><br><span class="line">&#125;</span><br></pre></td></tr></table></figure>
+</li>
+</ul>
+<h2 id="크립토-좀비"><a href="#크립토-좀비" class="headerlink" title="크립토 좀비"></a>크립토 좀비</h2><ul>
+<li><a href="https://cryptozombies.io/ko/" target="_blank" rel="noopener">https://cryptozombies.io/ko/</a><br>2챕터 완료</li>
+</ul>
+<h3 id="Internal과-External"><a href="#Internal과-External" class="headerlink" title="Internal과 External"></a>Internal과 External</h3><p><code>public</code>과 <code>private</code> 이외에도 솔리디티에는 <code>internal</code>과 <code>external</code>이라는 함수 접근 제어자가 있다.</p>
+<ul>
+<li><code>internal</code>은 함수가 정의된 컨트랙트를 상속하는 컨트랙트에서도 접근이 가능하다 점을 제외하면 <code>private</code>과 동일</li>
+<li><code>external</code>은 함수가 컨트랙트 바깥에서만 호출될 수 있고 컨트랙트 내의 다른 함수에 의해 호출될 수 없다는 점을 제외하면 <code>public</code>과 동일</li>
+</ul>
+<hr>
+<h2 id="java-인프런-기초-강의-듣자"><a href="#java-인프런-기초-강의-듣자" class="headerlink" title="java 인프런 기초 강의 듣자"></a>java 인프런 기초 강의 듣자</h2><h2 id="열심히-듣자"><a href="#열심히-듣자" class="headerlink" title="열심히 듣자."></a>열심히 듣자.</h2>
+      
+    </div>
+    <footer class="article-footer">
+      <a data-url="http://yoursite.com/2018/08/16/201808/20180816/" data-id="cjllzogy2001hykv0dsvq4eun" class="article-share-link">공유</a>
+      
+      
+  <ul class="article-tag-list"><li class="article-tag-list-item"><a class="article-tag-list-link" href="/tags/TIL/">TIL</a></li></ul>
+
+    </footer>
+  </div>
+  
+</article>
+
+
+  
     <article id="post-201808/20180815" class="article article-type-post" itemscope itemprop="blogPost">
   <div class="article-meta">
     <a href="/2018/08/15/201808/20180815/" class="article-date">
@@ -205,6 +266,70 @@
 
 
   
+    <article id="post-201808/20180811" class="article article-type-post" itemscope itemprop="blogPost">
+  <div class="article-meta">
+    <a href="/2018/08/10/201808/20180811/" class="article-date">
+  <time datetime="2018-08-10T14:23:51.000Z" itemprop="datePublished">2018-08-10</time>
+</a>
+    
+  </div>
+  <div class="article-inner">
+    
+    
+      <header class="article-header">
+        
+  
+    <h1 itemprop="name">
+      <a class="article-title" href="/2018/08/10/201808/20180811/">TIL</a>
+    </h1>
+  
+
+      </header>
+    
+    <div class="article-entry" itemprop="articleBody">
+      
+        <h1 id="오늘의-공부-20180810"><a href="#오늘의-공부-20180810" class="headerlink" title="오늘의 공부 20180810"></a>오늘의 공부 20180810</h1><ul>
+<li>프로그래머스 알고리즘 1개</li>
+<li>java 강의</li>
+<li>생활코딩 듣기</li>
+</ul>
+<hr>
+<h2 id="java"><a href="#java" class="headerlink" title="java"></a>java</h2><hr>
+<h2 id="js"><a href="#js" class="headerlink" title="js"></a>js</h2><p>숫자 퍼즐 구현중<br>키보드 값 입력받는걸 구현해보자</p>
+<ul>
+<li><p>예제</p>
+<figure class="highlight js"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br><span class="line">15</span><br><span class="line">16</span><br><span class="line">17</span><br><span class="line">18</span><br><span class="line">19</span><br><span class="line">20</span><br><span class="line">21</span><br><span class="line">22</span><br></pre></td><td class="code"><pre><span class="line">&lt;body onkeydown=<span class="string">'on_key_down()'</span>&gt;</span><br><span class="line">        아무 키나 입력해보세요.</span><br><span class="line">        &lt;br&gt;char &lt;input type=<span class="string">'text'</span> id=<span class="string">'keychar'</span> /&gt;</span><br><span class="line">        &lt;br&gt;keycode &lt;input type=<span class="string">'text'</span> id=<span class="string">'keycode'</span> /&gt;</span><br><span class="line">        &lt;br&gt;Alt키 &lt;input type=<span class="string">'checkbox'</span> id=<span class="string">'altkey'</span> /&gt;</span><br><span class="line">        &lt;br&gt;Ctrl키 &lt;input type=<span class="string">'checkbox'</span> id=<span class="string">'ctrlkey'</span> /&gt;</span><br><span class="line">        &lt;br&gt;Shift키 &lt;input type=<span class="string">'checkbox'</span> id=<span class="string">'shiftkey'</span> /&gt;</span><br><span class="line">        </span><br><span class="line">        &lt;script&gt;</span><br><span class="line">        <span class="function"><span class="keyword">function</span> <span class="title">on_key_down</span>(<span class="params"></span>) </span>&#123;</span><br><span class="line">            <span class="keyword">var</span> keycode = event.keyCode;</span><br><span class="line">            <span class="keyword">if</span> ( keycode == <span class="number">8</span> <span class="comment">// 백스페이스 </span></span><br><span class="line">                || keycode == <span class="number">116</span> <span class="comment">// F5</span></span><br><span class="line">            ) event.returnValue = <span class="literal">false</span>; <span class="comment">// 브라우저 기능 키 무효화</span></span><br><span class="line">            <span class="built_in">document</span>.getElementById(<span class="string">'keychar'</span>).value = <span class="built_in">String</span>.fromCharCode( keycode );</span><br><span class="line">            <span class="built_in">document</span>.getElementById(<span class="string">'keycode'</span>).value = keycode;</span><br><span class="line">            <span class="built_in">document</span>.getElementById(<span class="string">'altkey'</span>).checked = event.altKey;</span><br><span class="line">            <span class="built_in">document</span>.getElementById(<span class="string">'ctrlkey'</span>).checked = event.ctrlKey;</span><br><span class="line">            <span class="built_in">document</span>.getElementById(<span class="string">'shiftkey'</span>).checked = event.shiftKey;</span><br><span class="line">        &#125;	</span><br><span class="line">        &lt;<span class="regexp">/script&gt;    </span></span><br><span class="line"><span class="regexp">&lt;/</span>body&gt;</span><br></pre></td></tr></table></figure>
+</li>
+<li><p>숫자퍼즐 구현 완료 하지만 랜덤으로 섞으면 가끔 답이 안맞는 문제가 발생 수정해야겠다.</p>
+</li>
+<li>2차원 배열은 그 값들에 array[y][x] 와 같이 접근할 수도 있고, array[y * X-length + x] 와 같이 1차원 적으로도 접근할 수 있습니다.</li>
+</ul>
+<hr>
+<h2 id="프로그래머스"><a href="#프로그래머스" class="headerlink" title="프로그래머스"></a>프로그래머스</h2><p>시저 암호</p>
+<ul>
+<li>내가 푼 코드</li>
+</ul>
+<hr>
+<h2 id="생활코딩-코딩야학"><a href="#생활코딩-코딩야학" class="headerlink" title="생활코딩 코딩야학"></a>생활코딩 코딩야학</h2><p>크립토좀비 해봐야겠다.</p>
+<ul>
+<li><a href="https://cryptozombies.io/" target="_blank" rel="noopener">https://cryptozombies.io/</a> ko/</li>
+</ul>
+
+      
+    </div>
+    <footer class="article-footer">
+      <a data-url="http://yoursite.com/2018/08/10/201808/20180811/" data-id="cjllzogxz001dykv0mkigoc89" class="article-share-link">공유</a>
+      
+      
+  <ul class="article-tag-list"><li class="article-tag-list-item"><a class="article-tag-list-link" href="/tags/TIL/">TIL</a></li></ul>
+
+    </footer>
+  </div>
+  
+</article>
+
+
+  
     <article id="post-201808/20180810" class="article article-type-post" itemscope itemprop="blogPost">
   <div class="article-meta">
     <a href="/2018/08/10/201808/20180810/" class="article-date">
@@ -269,70 +394,6 @@
     </div>
     <footer class="article-footer">
       <a data-url="http://yoursite.com/2018/08/10/201808/20180810/" data-id="cjllzogxw0019ykv0by39c0uf" class="article-share-link">공유</a>
-      
-      
-  <ul class="article-tag-list"><li class="article-tag-list-item"><a class="article-tag-list-link" href="/tags/TIL/">TIL</a></li></ul>
-
-    </footer>
-  </div>
-  
-</article>
-
-
-  
-    <article id="post-201808/20180811" class="article article-type-post" itemscope itemprop="blogPost">
-  <div class="article-meta">
-    <a href="/2018/08/10/201808/20180811/" class="article-date">
-  <time datetime="2018-08-10T14:23:51.000Z" itemprop="datePublished">2018-08-10</time>
-</a>
-    
-  </div>
-  <div class="article-inner">
-    
-    
-      <header class="article-header">
-        
-  
-    <h1 itemprop="name">
-      <a class="article-title" href="/2018/08/10/201808/20180811/">TIL</a>
-    </h1>
-  
-
-      </header>
-    
-    <div class="article-entry" itemprop="articleBody">
-      
-        <h1 id="오늘의-공부-20180810"><a href="#오늘의-공부-20180810" class="headerlink" title="오늘의 공부 20180810"></a>오늘의 공부 20180810</h1><ul>
-<li>프로그래머스 알고리즘 1개</li>
-<li>java 강의</li>
-<li>생활코딩 듣기</li>
-</ul>
-<hr>
-<h2 id="java"><a href="#java" class="headerlink" title="java"></a>java</h2><hr>
-<h2 id="js"><a href="#js" class="headerlink" title="js"></a>js</h2><p>숫자 퍼즐 구현중<br>키보드 값 입력받는걸 구현해보자</p>
-<ul>
-<li><p>예제</p>
-<figure class="highlight js"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br><span class="line">15</span><br><span class="line">16</span><br><span class="line">17</span><br><span class="line">18</span><br><span class="line">19</span><br><span class="line">20</span><br><span class="line">21</span><br><span class="line">22</span><br></pre></td><td class="code"><pre><span class="line">&lt;body onkeydown=<span class="string">'on_key_down()'</span>&gt;</span><br><span class="line">        아무 키나 입력해보세요.</span><br><span class="line">        &lt;br&gt;char &lt;input type=<span class="string">'text'</span> id=<span class="string">'keychar'</span> /&gt;</span><br><span class="line">        &lt;br&gt;keycode &lt;input type=<span class="string">'text'</span> id=<span class="string">'keycode'</span> /&gt;</span><br><span class="line">        &lt;br&gt;Alt키 &lt;input type=<span class="string">'checkbox'</span> id=<span class="string">'altkey'</span> /&gt;</span><br><span class="line">        &lt;br&gt;Ctrl키 &lt;input type=<span class="string">'checkbox'</span> id=<span class="string">'ctrlkey'</span> /&gt;</span><br><span class="line">        &lt;br&gt;Shift키 &lt;input type=<span class="string">'checkbox'</span> id=<span class="string">'shiftkey'</span> /&gt;</span><br><span class="line">        </span><br><span class="line">        &lt;script&gt;</span><br><span class="line">        <span class="function"><span class="keyword">function</span> <span class="title">on_key_down</span>(<span class="params"></span>) </span>&#123;</span><br><span class="line">            <span class="keyword">var</span> keycode = event.keyCode;</span><br><span class="line">            <span class="keyword">if</span> ( keycode == <span class="number">8</span> <span class="comment">// 백스페이스 </span></span><br><span class="line">                || keycode == <span class="number">116</span> <span class="comment">// F5</span></span><br><span class="line">            ) event.returnValue = <span class="literal">false</span>; <span class="comment">// 브라우저 기능 키 무효화</span></span><br><span class="line">            <span class="built_in">document</span>.getElementById(<span class="string">'keychar'</span>).value = <span class="built_in">String</span>.fromCharCode( keycode );</span><br><span class="line">            <span class="built_in">document</span>.getElementById(<span class="string">'keycode'</span>).value = keycode;</span><br><span class="line">            <span class="built_in">document</span>.getElementById(<span class="string">'altkey'</span>).checked = event.altKey;</span><br><span class="line">            <span class="built_in">document</span>.getElementById(<span class="string">'ctrlkey'</span>).checked = event.ctrlKey;</span><br><span class="line">            <span class="built_in">document</span>.getElementById(<span class="string">'shiftkey'</span>).checked = event.shiftKey;</span><br><span class="line">        &#125;	</span><br><span class="line">        &lt;<span class="regexp">/script&gt;    </span></span><br><span class="line"><span class="regexp">&lt;/</span>body&gt;</span><br></pre></td></tr></table></figure>
-</li>
-<li><p>숫자퍼즐 구현 완료 하지만 랜덤으로 섞으면 가끔 답이 안맞는 문제가 발생 수정해야겠다.</p>
-</li>
-<li>2차원 배열은 그 값들에 array[y][x] 와 같이 접근할 수도 있고, array[y * X-length + x] 와 같이 1차원 적으로도 접근할 수 있습니다.</li>
-</ul>
-<hr>
-<h2 id="프로그래머스"><a href="#프로그래머스" class="headerlink" title="프로그래머스"></a>프로그래머스</h2><p>시저 암호</p>
-<ul>
-<li>내가 푼 코드</li>
-</ul>
-<hr>
-<h2 id="생활코딩-코딩야학"><a href="#생활코딩-코딩야학" class="headerlink" title="생활코딩 코딩야학"></a>생활코딩 코딩야학</h2><p>크립토좀비 해봐야겠다.</p>
-<ul>
-<li><a href="https://cryptozombies.io/" target="_blank" rel="noopener">https://cryptozombies.io/</a> ko/</li>
-</ul>
-
-      
-    </div>
-    <footer class="article-footer">
-      <a data-url="http://yoursite.com/2018/08/10/201808/20180811/" data-id="cjllzogxz001dykv0mkigoc89" class="article-share-link">공유</a>
       
       
   <ul class="article-tag-list"><li class="article-tag-list-item"><a class="article-tag-list-link" href="/tags/TIL/">TIL</a></li></ul>
@@ -717,100 +778,6 @@
 
 
   
-    <article id="post-201808/20180803" class="article article-type-post" itemscope itemprop="blogPost">
-  <div class="article-meta">
-    <a href="/2018/08/03/201808/20180803/" class="article-date">
-  <time datetime="2018-08-03T14:23:51.000Z" itemprop="datePublished">2018-08-03</time>
-</a>
-    
-  </div>
-  <div class="article-inner">
-    
-    
-      <header class="article-header">
-        
-  
-    <h1 itemprop="name">
-      <a class="article-title" href="/2018/08/03/201808/20180803/">TIL</a>
-    </h1>
-  
-
-      </header>
-    
-    <div class="article-entry" itemprop="articleBody">
-      
-        <h1 id="오늘의-공부-20180803"><a href="#오늘의-공부-20180803" class="headerlink" title="오늘의 공부 20180803"></a>오늘의 공부 20180803</h1><ul>
-<li>java 공부</li>
-<li>js 공부<ul>
-<li>로또 뽑기 만들어보자</li>
-</ul>
-</li>
-<li>프로그래머스 알고리즘 2개 풀기</li>
-<li>늦었지만 코딩야학 공부 시작.</li>
-</ul>
-<h2 id="java-공부"><a href="#java-공부" class="headerlink" title="java 공부"></a>java 공부</h2><ul>
-<li>java 는 유도리가 없는거 같다.</li>
-<li>그 대신 명확한거 같다. js 보다 상당히 어렵다.<h3 id="String"><a href="#String" class="headerlink" title="String"></a>String</h3></li>
-<li><code>StringBuffer</code> 메모리에 저장하면서 <code>append</code>를 할 수 있다.</li>
-<li><code>String</code> 은 생성 할 때 마다 새로운 값을 할당한다.</li>
-<li><code>String</code> 보단 <code>StringBuffer</code>를 더 자주 사용하자.<h3 id="for"><a href="#for" class="headerlink" title="for"></a>for</h3></li>
-<li>for문을 배열로 진행시킬수있다<figure class="highlight java"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br></pre></td><td class="code"><pre><span class="line">String[] elements = &#123; <span class="string">"a"</span>,<span class="string">"a"</span>,<span class="string">"a"</span>,<span class="string">"a"</span> &#125;;   </span><br><span class="line"><span class="keyword">for</span> (String s: elements) &#123;           </span><br><span class="line">        <span class="comment">//Do your stuff here</span></span><br><span class="line">        System.out.println(s); </span><br><span class="line">    &#125;</span><br></pre></td></tr></table></figure>
-</li>
-</ul>
-<h2 id="js-공부"><a href="#js-공부" class="headerlink" title="js 공부"></a>js 공부</h2><ul>
-<li>java 보다 훨씬 쉽다. 다양한 방법으로도 구현이 가능한거 같다.<h3 id="로또-뽑기-구현"><a href="#로또-뽑기-구현" class="headerlink" title="로또 뽑기 구현"></a>로또 뽑기 구현</h3></li>
-<li>배열을 이용해 전체 숫자 배열 생성후 하나씩 뽑아 생성</li>
-<li>random 값을 범위를 지정하는게 좀 어렵다. 햇갈린다 연습을 좀 더 해서 확실하게 범위를 만들 수 있도록하자.</li>
-</ul>
-<h2 id="프로그래머스"><a href="#프로그래머스" class="headerlink" title="프로그래머스"></a>프로그래머스</h2><h3 id="두-정수-사이의-합"><a href="#두-정수-사이의-합" class="headerlink" title="두 정수 사이의 합"></a>두 정수 사이의 합</h3><ul>
-<li><p>java 코드</p>
-<figure class="highlight java"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br><span class="line">15</span><br><span class="line">16</span><br><span class="line">17</span><br><span class="line">18</span><br></pre></td><td class="code"><pre><span class="line"><span class="class"><span class="keyword">class</span> <span class="title">Solution</span> </span>&#123;</span><br><span class="line">  <span class="function"><span class="keyword">public</span> <span class="keyword">long</span> <span class="title">solution</span><span class="params">(<span class="keyword">int</span> a, <span class="keyword">int</span> b)</span> </span>&#123;</span><br><span class="line">      <span class="keyword">long</span> answer = <span class="number">0</span>;</span><br><span class="line">      <span class="keyword">int</span> min = <span class="number">0</span>;</span><br><span class="line">      <span class="keyword">int</span> max = <span class="number">0</span>; </span><br><span class="line">      <span class="keyword">if</span> ( a &gt; b) &#123;</span><br><span class="line">          min = b;</span><br><span class="line">          max = a;</span><br><span class="line">      &#125; <span class="keyword">else</span> &#123;</span><br><span class="line">          min = a;</span><br><span class="line">          max = b;</span><br><span class="line">      &#125;</span><br><span class="line">      <span class="keyword">for</span> (<span class="keyword">int</span> i =min; i&lt;(max + <span class="number">1</span>); i++ ) &#123;</span><br><span class="line">          answer += i;</span><br><span class="line">      &#125;</span><br><span class="line">      <span class="keyword">return</span> answer;</span><br><span class="line">  &#125;</span><br><span class="line">&#125;</span><br></pre></td></tr></table></figure>
-</li>
-<li><p>다른 사람들 참고할 점</p>
-<ul>
-<li><code>Math.min(a,b)</code> 와 <code>Math.max(a,b)</code> 사용</li>
-<li>변수형 <code>long</code>의 특징 64비트의 정수 (<code>int</code>는 32비트) <code>long</code>은 <code>int</code> 에 비해 느려 필요할 때만 사용하자</li>
-</ul>
-</li>
-<li><p>js 코드</p>
-<figure class="highlight js"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br><span class="line">15</span><br><span class="line">16</span><br></pre></td><td class="code"><pre><span class="line"><span class="function"><span class="keyword">function</span> <span class="title">solution</span>(<span class="params">a, b</span>) </span>&#123;</span><br><span class="line">    <span class="keyword">var</span> answer = <span class="number">0</span>;</span><br><span class="line">    <span class="keyword">var</span> min = <span class="number">0</span> ;</span><br><span class="line">    <span class="keyword">var</span> max = <span class="number">0</span>;</span><br><span class="line">    <span class="keyword">if</span> (a &gt; b) &#123;</span><br><span class="line">        min = b;</span><br><span class="line">        max = a;</span><br><span class="line">    &#125; <span class="keyword">else</span> &#123;</span><br><span class="line">        min = a;</span><br><span class="line">        max = b;</span><br><span class="line">    &#125;</span><br><span class="line">    <span class="keyword">for</span> (<span class="keyword">var</span> i = min; i &lt;= max ; i++) &#123;</span><br><span class="line">        answer += i;</span><br><span class="line">    &#125;</span><br><span class="line">    <span class="keyword">return</span> answer;</span><br><span class="line">&#125;</span><br></pre></td></tr></table></figure>
-</li>
-<li><p>다른 사람들 참고할 점</p>
-<ul>
-<li><code>Math.abs()</code> 사용 절대값 구하는 함수</li>
-</ul>
-</li>
-</ul>
-<h3 id="이상한-문자"><a href="#이상한-문자" class="headerlink" title="이상한 문자"></a>이상한 문자</h3><ul>
-<li><p>js 코드</p>
-<figure class="highlight js"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br><span class="line">15</span><br><span class="line">16</span><br><span class="line">17</span><br><span class="line">18</span><br><span class="line">19</span><br><span class="line">20</span><br><span class="line">21</span><br><span class="line">22</span><br><span class="line">23</span><br><span class="line">24</span><br><span class="line">25</span><br><span class="line">26</span><br><span class="line">27</span><br><span class="line">28</span><br><span class="line">29</span><br></pre></td><td class="code"><pre><span class="line"><span class="function"><span class="keyword">function</span> <span class="title">solution</span>(<span class="params">s</span>) </span>&#123;</span><br><span class="line">    <span class="keyword">var</span> answer = <span class="string">''</span>;</span><br><span class="line">    <span class="keyword">var</span> strangeStr = s.split(<span class="string">" "</span>);</span><br><span class="line">    <span class="keyword">var</span> str =[];</span><br><span class="line">    <span class="keyword">for</span> (<span class="keyword">var</span> i = <span class="number">0</span>; i &lt; strangeStr.length; i++) &#123;</span><br><span class="line">    str[i] = strangeStr[i].split(<span class="string">""</span>);</span><br><span class="line">        </span><br><span class="line">    &#125; </span><br><span class="line">    <span class="built_in">console</span>.log(str);</span><br><span class="line">    <span class="keyword">for</span> (<span class="keyword">var</span> j =<span class="number">0</span> ; j &lt;str.length; j++) &#123;</span><br><span class="line">        <span class="keyword">for</span> (<span class="keyword">var</span> i =<span class="number">0</span>; i &lt;str[j].length; i++) &#123;</span><br><span class="line">            <span class="keyword">if</span>(<span class="built_in">Math</span>.floor(i %<span class="number">2</span>) === <span class="number">0</span>) &#123;</span><br><span class="line">                str[j][i] =str[j][i].toUpperCase();</span><br><span class="line">                answer += str[j][i];</span><br><span class="line">            &#125; <span class="keyword">else</span> <span class="keyword">if</span>(<span class="built_in">Math</span>.floor(i%<span class="number">2</span>) ===<span class="number">1</span>) &#123;</span><br><span class="line">                str[j][i] =str[j][i].toLowerCase();</span><br><span class="line">                answer += str[j][i];</span><br><span class="line">            &#125;</span><br><span class="line">            </span><br><span class="line">        &#125; </span><br><span class="line">        <span class="keyword">if</span>(j !== (str.length<span class="number">-1</span>)) &#123;</span><br><span class="line">            answer += <span class="string">" "</span>;</span><br><span class="line">        &#125;</span><br><span class="line"></span><br><span class="line">    &#125;</span><br><span class="line">    <span class="built_in">console</span>.log(answer);</span><br><span class="line">  </span><br><span class="line">    <span class="keyword">return</span> answer;</span><br><span class="line">&#125;</span><br></pre></td></tr></table></figure>
-</li>
-<li><p>다른 사람의 풀이 참고할 점</p>
-<ul>
-<li>난 너무 복잡하게 생각했다</li>
-<li>split 나눠 하나하나 숫자로 카운터를 올리는 방법이 인상깊었다. </li>
-<li>공백이 나오면 카운터 초기화하고 문자열에 공백을 더하는것이 인상깊었다.</li>
-</ul>
-</li>
-<li><p>java 코드</p>
-<figure class="highlight java"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br><span class="line">15</span><br><span class="line">16</span><br><span class="line">17</span><br><span class="line">18</span><br><span class="line">19</span><br><span class="line">20</span><br><span class="line">21</span><br><span class="line">22</span><br><span class="line">23</span><br><span class="line">24</span><br><span class="line">25</span><br><span class="line">26</span><br></pre></td><td class="code"><pre><span class="line"><span class="keyword">import</span> java.util.Arrays;</span><br><span class="line"></span><br><span class="line"><span class="keyword">public</span> <span class="class"><span class="keyword">class</span> <span class="title">strangeString</span> </span>&#123;</span><br><span class="line">	<span class="function"><span class="keyword">public</span> <span class="keyword">static</span> <span class="keyword">void</span> <span class="title">main</span><span class="params">(String[] arg)</span> </span>&#123;</span><br><span class="line">		String s = <span class="string">"try hello world"</span>;</span><br><span class="line">		<span class="keyword">char</span>[] arr = s.toCharArray();</span><br><span class="line">		StringBuffer answer =  <span class="keyword">new</span> StringBuffer();</span><br><span class="line">		<span class="keyword">int</span> count = <span class="number">0</span>;</span><br><span class="line">		<span class="keyword">for</span> (<span class="keyword">int</span> i = <span class="number">0</span>; i &lt; arr.length; i++) &#123;</span><br><span class="line">			<span class="keyword">if</span> (arr[i] == <span class="string">' '</span>) &#123;</span><br><span class="line">				count = <span class="number">0</span>;</span><br><span class="line">				answer.append(<span class="string">" "</span>);</span><br><span class="line">				<span class="keyword">continue</span>;</span><br><span class="line">			&#125;</span><br><span class="line">			<span class="keyword">if</span>(count % <span class="number">2</span> == <span class="number">0</span>) &#123;</span><br><span class="line">				answer.append(Character.toUpperCase(arr[i]));</span><br><span class="line">				count +=<span class="number">1</span>;</span><br><span class="line">			&#125; <span class="keyword">else</span> <span class="keyword">if</span>(count % <span class="number">2</span> == <span class="number">1</span>) &#123;</span><br><span class="line">				answer.append(Character.toLowerCase(arr[i]));</span><br><span class="line">				count +=<span class="number">1</span>;</span><br><span class="line">			&#125;</span><br><span class="line">			</span><br><span class="line">		&#125;</span><br><span class="line">		System.out.println(answer.toString());</span><br><span class="line">	&#125;</span><br><span class="line">&#125;</span><br></pre></td></tr></table></figure></li>
-</ul>
-
-      
-    </div>
-    <footer class="article-footer">
-      <a data-url="http://yoursite.com/2018/08/03/201808/20180803/" data-id="cjllzogxe000pykv0a4oe8jom" class="article-share-link">공유</a>
-      
-      
-  <ul class="article-tag-list"><li class="article-tag-list-item"><a class="article-tag-list-link" href="/tags/TIL/">TIL</a></li></ul>
-
-    </footer>
-  </div>
-  
-</article>
-
-
-  
 
 
   <nav id="page-nav">
@@ -861,6 +828,10 @@
       <ul>
         
           <li>
+            <a href="/2018/09/13/20180913/">TIL</a>
+          </li>
+        
+          <li>
             <a href="/2018/09/11/20180911/">TIL</a>
           </li>
         
@@ -874,10 +845,6 @@
         
           <li>
             <a href="/2018/08/31/201808/20180831/">TIL</a>
-          </li>
-        
-          <li>
-            <a href="/2018/08/30/201808/20180830/">TIL</a>
           </li>
         
       </ul>

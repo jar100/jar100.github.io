@@ -66,6 +66,79 @@
       <div class="outer">
         <section id="main">
   
+    <article id="post-20180917" class="article article-type-post" itemscope itemprop="blogPost">
+  <div class="article-meta">
+    <a href="/2018/09/17/20180917/" class="article-date">
+  <time datetime="2018-09-17T14:23:51.000Z" itemprop="datePublished">2018-09-17</time>
+</a>
+    
+  </div>
+  <div class="article-inner">
+    
+    
+      <header class="article-header">
+        
+  
+    <h1 itemprop="name">
+      <a class="article-title" href="/2018/09/17/20180917/">TIL</a>
+    </h1>
+  
+
+      </header>
+    
+    <div class="article-entry" itemprop="articleBody">
+      
+        <h1 id="오늘의-공부-20180917"><a href="#오늘의-공부-20180917" class="headerlink" title="오늘의 공부 20180917"></a>오늘의 공부 20180917</h1><hr>
+<h2 id="java"><a href="#java" class="headerlink" title="java"></a>java</h2><p>알게된점과 강의시간에 배운 내용</p>
+<h3 id="강의"><a href="#강의" class="headerlink" title="강의"></a>강의</h3><p>필드. 메소드 static 언제 쓰는지<br>생성자 =&gt; 초기화<br>ArrayList =&gt; winner 구할때 지역변수로 하라는 이유<br>getter 와 setter </p>
+<ol>
+<li>String 도 하나의 클래스 import 하지 않는 이유는 java.leng 에 있는건 자주 써서 안써도 된다.</li>
+<li>생성자<ul>
+<li>반환 타입이 없다.</li>
+<li>클래스와 이름이 같다.</li>
+<li>생성할때 파라미터를 강제할 수 있다.</li>
+<li>setter 를 안 쓸 수 있다. (생성자를 생성하면서 파라미터를 넣으면 그자체가 setter);</li>
+<li>this 현제 생성한 인스턴스 의 변수를 찾는다.</li>
+<li>test 코드는 src/test/ 안의 코드, prduction 코드는 실제 사용하는 코드</li>
+</ul>
+</li>
+<li>import<ul>
+<li>import static org.asssertj.core.api.Assertions.assertThat; 메소드를 import 할 수 있다.</li>
+</ul>
+</li>
+<li>liveCoding<ul>
+<li>메소드 이름을 자료구조형태를 적지말자.</li>
+<li>클래스 메소드를 사용하면 인스턴스 메소드보다 검증이 쉽다.</li>
+<li>인스턴스 변수는 진짜 필요할때만 만들어라.</li>
+<li>하나씩 쪼개서 구현해서 하나로 합치는 연습을 해라.</li>
+</ul>
+</li>
+<li>상태 데이터를 갖고있는 메세지를 보내 일을 시켜라.</li>
+<li>getter 를 최대한 줄여보고 어쩔 수 없으면 써라.(output 에선 get 을 쓰는게 낫다.) </li>
+<li>JUnit<ul>
+<li>assertThat(winners[0]).isEqualTo(“podo”) </li>
+</ul>
+</li>
+</ol>
+<h3 id="알게-된점"><a href="#알게-된점" class="headerlink" title="알게 된점"></a>알게 된점</h3><p>처음 프로젝트를 import 할때 gradle 로 해야한다.<br>import project 할 때 gradle로 해야 한다.</p>
+<hr>
+<h2 id="피드백"><a href="#피드백" class="headerlink" title="피드백"></a>피드백</h2><hr>
+
+      
+    </div>
+    <footer class="article-footer">
+      <a data-url="http://yoursite.com/2018/09/17/20180917/" data-id="cjm6cjihk0000m0v04dpa1kh1" class="article-share-link">공유</a>
+      
+      
+  <ul class="article-tag-list"><li class="article-tag-list-item"><a class="article-tag-list-link" href="/tags/TIL/">TIL</a></li></ul>
+
+    </footer>
+  </div>
+  
+</article>
+
+
+  
     <article id="post-20180914" class="article article-type-post" itemscope itemprop="blogPost">
   <div class="article-meta">
     <a href="/2018/09/14/20180914/" class="article-date">
@@ -722,68 +795,6 @@
 
 
   
-    <article id="post-201808/20180824" class="article article-type-post" itemscope itemprop="blogPost">
-  <div class="article-meta">
-    <a href="/2018/08/24/201808/20180824/" class="article-date">
-  <time datetime="2018-08-24T14:23:51.000Z" itemprop="datePublished">2018-08-24</time>
-</a>
-    
-  </div>
-  <div class="article-inner">
-    
-    
-      <header class="article-header">
-        
-  
-    <h1 itemprop="name">
-      <a class="article-title" href="/2018/08/24/201808/20180824/">TIL</a>
-    </h1>
-  
-
-      </header>
-    
-    <div class="article-entry" itemprop="articleBody">
-      
-        <h1 id="오늘의-공부-20180824"><a href="#오늘의-공부-20180824" class="headerlink" title="오늘의 공부 20180824"></a>오늘의 공부 20180824</h1><ul>
-<li>프로그래머스</li>
-<li>크립토 좀비</li>
-</ul>
-<hr>
-<h2 id="프로그래머스"><a href="#프로그래머스" class="headerlink" title="프로그래머스"></a>프로그래머스</h2><p>알고리즘 풀어보기</p>
-<ul>
-<li>제일 작은수 제거<figure class="highlight js"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br></pre></td><td class="code"><pre><span class="line"><span class="function"><span class="keyword">function</span> <span class="title">solution</span>(<span class="params">arr</span>) </span>&#123;</span><br><span class="line">    <span class="keyword">var</span> answer = [];</span><br><span class="line">    <span class="keyword">if</span> ( arr.length == <span class="number">1</span>) &#123;</span><br><span class="line">        answer.push(<span class="number">-1</span>);</span><br><span class="line">    &#125;</span><br><span class="line">    <span class="keyword">else</span> &#123;</span><br><span class="line">        <span class="keyword">var</span> min = <span class="built_in">Math</span>.min(arr);</span><br><span class="line">        arr.splice(arr.indexOf(min),<span class="number">1</span>);</span><br><span class="line">        answer = arr;</span><br><span class="line">    &#125;</span><br><span class="line">    <span class="built_in">console</span>.log(arr.length);</span><br><span class="line">    <span class="keyword">return</span> answer;</span><br><span class="line">&#125;</span><br></pre></td></tr></table></figure>
-</li>
-</ul>
-<p><code>call</code> , <code>apply</code></p>
-<ul>
-<li><code>call</code> 다른 객체의 함수를 자기것인 마냥 사용할수 있다.</li>
-<li><p><code>call</code> , <code>apply</code> 의 null 은 this 의 의미</p>
-</li>
-<li><p>짝수와 홀수</p>
-<figure class="highlight js"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br></pre></td><td class="code"><pre><span class="line"><span class="function"><span class="keyword">function</span> <span class="title">solution</span>(<span class="params">num</span>) </span>&#123;</span><br><span class="line">    <span class="keyword">var</span> answer = <span class="string">''</span>;</span><br><span class="line">    <span class="keyword">if</span>(num % <span class="number">2</span> === <span class="number">0</span>) &#123;</span><br><span class="line">        answer = <span class="string">'Even'</span>;</span><br><span class="line">    &#125;</span><br><span class="line">    <span class="keyword">else</span> &#123;</span><br><span class="line">        answer = <span class="string">'Odd'</span>;</span><br><span class="line">    &#125;</span><br><span class="line">    <span class="keyword">return</span> answer;</span><br><span class="line">&#125;</span><br></pre></td></tr></table></figure>
-</li>
-</ul>
-<p>정수의 범위는 - 0, 음수 , 양수 </p>
-<ul>
-<li>콜라츠 추측<figure class="highlight js"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br><span class="line">15</span><br><span class="line">16</span><br><span class="line">17</span><br><span class="line">18</span><br><span class="line">19</span><br></pre></td><td class="code"><pre><span class="line"><span class="function"><span class="keyword">function</span> <span class="title">solution</span>(<span class="params">num</span>) </span>&#123;</span><br><span class="line">    <span class="keyword">var</span> answer = <span class="number">0</span>;</span><br><span class="line">    <span class="keyword">for</span> (<span class="keyword">var</span> i = <span class="number">0</span>; i &lt; <span class="number">500</span> ; i++) &#123;</span><br><span class="line">        <span class="keyword">if</span> ( num % <span class="number">2</span> === <span class="number">0</span> ) &#123;</span><br><span class="line">            num = <span class="built_in">Math</span>.floor(num/<span class="number">2</span>);</span><br><span class="line">          </span><br><span class="line">        &#125;</span><br><span class="line">        <span class="keyword">else</span> <span class="keyword">if</span> ( num % <span class="number">2</span> === <span class="number">1</span> &amp;&amp; num !==<span class="number">1</span>) &#123;</span><br><span class="line">            num = (num * <span class="number">3</span>) + <span class="number">1</span> ;</span><br><span class="line">            </span><br><span class="line">        &#125;</span><br><span class="line">        <span class="keyword">else</span> <span class="keyword">if</span> ( num === <span class="number">1</span>) &#123;</span><br><span class="line">            answer = i ;</span><br><span class="line">            <span class="keyword">break</span>;</span><br><span class="line">        &#125;</span><br><span class="line">        answer = <span class="number">-1</span>;</span><br><span class="line">    &#125;</span><br><span class="line">    <span class="keyword">return</span> answer;</span><br><span class="line">&#125;</span><br></pre></td></tr></table></figure>
-</li>
-</ul>
-
-      
-    </div>
-    <footer class="article-footer">
-      <a data-url="http://yoursite.com/2018/08/24/201808/20180824/" data-id="cjllzogy8001pykv0sj0sinee" class="article-share-link">공유</a>
-      
-      
-  <ul class="article-tag-list"><li class="article-tag-list-item"><a class="article-tag-list-link" href="/tags/TIL/">TIL</a></li></ul>
-
-    </footer>
-  </div>
-  
-</article>
-
-
-  
 
 
   <nav id="page-nav">
@@ -834,6 +845,10 @@
       <ul>
         
           <li>
+            <a href="/2018/09/17/20180917/">TIL</a>
+          </li>
+        
+          <li>
             <a href="/2018/09/14/20180914/">TIL</a>
           </li>
         
@@ -847,10 +862,6 @@
         
           <li>
             <a href="/2018/09/03/20180903/">TIL</a>
-          </li>
-        
-          <li>
-            <a href="/2018/09/01/20180901/">TIL</a>
           </li>
         
       </ul>

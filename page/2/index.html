@@ -66,6 +66,117 @@
       <div class="outer">
         <section id="main">
   
+    <article id="post-201808/20180829" class="article article-type-post" itemscope itemprop="blogPost">
+  <div class="article-meta">
+    <a href="/2018/08/29/201808/20180829/" class="article-date">
+  <time datetime="2018-08-29T14:23:51.000Z" itemprop="datePublished">2018-08-29</time>
+</a>
+    
+  </div>
+  <div class="article-inner">
+    
+    
+      <header class="article-header">
+        
+  
+    <h1 itemprop="name">
+      <a class="article-title" href="/2018/08/29/201808/20180829/">TIL</a>
+    </h1>
+  
+
+      </header>
+    
+    <div class="article-entry" itemprop="articleBody">
+      
+        <h1 id="오늘의-공부-20180829"><a href="#오늘의-공부-20180829" class="headerlink" title="오늘의 공부 20180829"></a>오늘의 공부 20180829</h1><ul>
+<li>프로그래머스</li>
+<li>크립토 좀비</li>
+<li>java</li>
+</ul>
+<hr>
+<h2 id="프로그래머스"><a href="#프로그래머스" class="headerlink" title="프로그래머스"></a>프로그래머스</h2><p>알고리즘 풀어보기 1레벨 완료</p>
+<ul>
+<li>최대공약수와 최소공배수</li>
+<li>평균 구하기</li>
+<li>하샤드 수</li>
+<li>핸드폰 번호 가리기</li>
+<li>행렬의 덧샘</li>
+<li>x만큼 간격이 있는 n개의 숫자</li>
+<li>직사각형 별찍기</li>
+</ul>
+<h3 id="최대공약수와-최소공배수"><a href="#최대공약수와-최소공배수" class="headerlink" title="최대공약수와 최소공배수"></a>최대공약수와 최소공배수</h3><ul>
+<li>코드<figure class="highlight js"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br><span class="line">15</span><br><span class="line">16</span><br><span class="line">17</span><br></pre></td><td class="code"><pre><span class="line"><span class="function"><span class="keyword">function</span> <span class="title">solution</span>(<span class="params">n, m</span>) </span>&#123;</span><br><span class="line">    <span class="keyword">var</span> answer = [];</span><br><span class="line">    answer.push(gcd(n,m));</span><br><span class="line">    <span class="keyword">var</span> num1 = n/answer[<span class="number">0</span>];</span><br><span class="line">    <span class="keyword">var</span> num2 = m/answer[<span class="number">0</span>];</span><br><span class="line">    answer.push(num1*num2*answer[<span class="number">0</span>]);</span><br><span class="line">    <span class="built_in">console</span>.log(answer);</span><br><span class="line"></span><br><span class="line">    <span class="keyword">return</span> answer;</span><br><span class="line">&#125;</span><br><span class="line"><span class="function"><span class="keyword">function</span> <span class="title">gcd</span>(<span class="params">a,b</span>)</span></span><br><span class="line"><span class="function"></span>&#123; <span class="comment">//재귀 함수형</span></span><br><span class="line">    <span class="keyword">if</span>( a % b == <span class="number">0</span> )</span><br><span class="line">        <span class="keyword">return</span> b;</span><br><span class="line">    <span class="keyword">else</span></span><br><span class="line">        <span class="keyword">return</span> gcd(b, a % b);</span><br><span class="line">&#125;</span><br></pre></td></tr></table></figure>
+</li>
+</ul>
+<p>최대공약수를 구해 최대공배수 구함.<br>재귀 함수를 이용 해 최대공약수 구함.</p>
+<h3 id="평균-구하기"><a href="#평균-구하기" class="headerlink" title="평균 구하기"></a>평균 구하기</h3><ul>
+<li>코드<figure class="highlight js"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br></pre></td><td class="code"><pre><span class="line"><span class="function"><span class="keyword">function</span> <span class="title">solution</span>(<span class="params">arr</span>) </span>&#123;</span><br><span class="line">    <span class="keyword">var</span> answer = <span class="number">0</span>;</span><br><span class="line">    <span class="keyword">for</span>(<span class="keyword">var</span> i = <span class="number">0</span>; i &lt;arr.length; i++) &#123;</span><br><span class="line">        answer +=arr[i];</span><br><span class="line">    &#125;</span><br><span class="line">    answer = answer / arr.length;</span><br><span class="line">    <span class="keyword">return</span> answer;</span><br><span class="line">&#125;</span><br></pre></td></tr></table></figure>
+</li>
+</ul>
+<h3 id="하샤드-수"><a href="#하샤드-수" class="headerlink" title="하샤드 수"></a>하샤드 수</h3><ul>
+<li>코드 <figure class="highlight js"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br></pre></td><td class="code"><pre><span class="line"><span class="function"><span class="keyword">function</span> <span class="title">solution</span>(<span class="params">x</span>) </span>&#123;</span><br><span class="line">    <span class="keyword">var</span> answer = <span class="literal">true</span>;</span><br><span class="line">    <span class="keyword">var</span> x = x.toString();</span><br><span class="line">    <span class="keyword">var</span> sum = <span class="number">0</span>;</span><br><span class="line">    <span class="keyword">for</span> (<span class="keyword">var</span> i = <span class="number">0</span>; i &lt; x.length; i++ ) &#123;</span><br><span class="line">        sum += <span class="built_in">Number</span>(x[i]);</span><br><span class="line">    &#125;</span><br><span class="line">    <span class="keyword">if</span> (<span class="built_in">Number</span>(x) % sum !== <span class="number">0</span>) &#123;</span><br><span class="line">        answer = <span class="literal">false</span>;</span><br><span class="line">    &#125;</span><br><span class="line">    <span class="keyword">return</span> answer;</span><br><span class="line">&#125;</span><br></pre></td></tr></table></figure>
+</li>
+</ul>
+<p>x 값을 문자열로 변경해서 자리수 많큼 for 문을 돌려 구현.</p>
+<h3 id="핸드폰-번호-가리기"><a href="#핸드폰-번호-가리기" class="headerlink" title="핸드폰 번호 가리기"></a>핸드폰 번호 가리기</h3><ul>
+<li>코드<figure class="highlight js"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br></pre></td><td class="code"><pre><span class="line"><span class="function"><span class="keyword">function</span> <span class="title">solution</span>(<span class="params">phone_number</span>) </span>&#123;</span><br><span class="line">    <span class="keyword">var</span> answer = <span class="string">''</span>;</span><br><span class="line">    <span class="keyword">var</span> displayNum = <span class="number">4</span>;</span><br><span class="line">    <span class="keyword">var</span> phone_number = phone_number.split(<span class="string">''</span>);</span><br><span class="line">    <span class="keyword">for</span> ( <span class="keyword">var</span> i = <span class="number">0</span>; i &lt;phone_number.length -displayNum; i++) &#123;</span><br><span class="line">        phone_number[i] = <span class="string">'*'</span>;</span><br><span class="line">    &#125;</span><br><span class="line">    answer = phone_number.join(<span class="string">''</span>);</span><br><span class="line">    <span class="keyword">return</span> answer;</span><br><span class="line">&#125;</span><br></pre></td></tr></table></figure>
+</li>
+</ul>
+<p>뒤에서 4번째까지만 숫자 출력 하는거니까 범위를 phone_number.length -displayNum 으로 구현.</p>
+<h3 id="행렬의-덧셈"><a href="#행렬의-덧셈" class="headerlink" title="행렬의 덧셈"></a>행렬의 덧셈</h3><ul>
+<li>코드<figure class="highlight js"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br></pre></td><td class="code"><pre><span class="line"><span class="function"><span class="keyword">function</span> <span class="title">solution</span>(<span class="params">arr1, arr2</span>) </span>&#123;</span><br><span class="line">    <span class="keyword">var</span> answer = [[]];</span><br><span class="line">    answer = arr1;</span><br><span class="line">    <span class="keyword">for</span> ( <span class="keyword">var</span> i = <span class="number">0</span> ; i &lt; arr1.length; i++) &#123;</span><br><span class="line">        <span class="keyword">for</span>(<span class="keyword">var</span> j = <span class="number">0</span>; j &lt; arr1[<span class="number">0</span>].length; j++) &#123;</span><br><span class="line">            answer[i][j] = arr1[i][j] + arr2[i][j] ;</span><br><span class="line">        &#125;</span><br><span class="line">    &#125;</span><br><span class="line">    <span class="keyword">return</span> answer;</span><br><span class="line">&#125;</span><br></pre></td></tr></table></figure>
+</li>
+</ul>
+<p>이중 for 문으로 구현해 봤는데 범위설정에 문제가 발생 그래서 arr1[0].length 를 이용해서 j 크기를 결정함 해결.</p>
+<h3 id="x만큼-간격이-있는-n개의-숫자"><a href="#x만큼-간격이-있는-n개의-숫자" class="headerlink" title="x만큼 간격이 있는 n개의 숫자"></a>x만큼 간격이 있는 n개의 숫자</h3><ul>
+<li>코드<figure class="highlight js"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br></pre></td><td class="code"><pre><span class="line"><span class="function"><span class="keyword">function</span> <span class="title">solution</span>(<span class="params">x, n</span>) </span>&#123;</span><br><span class="line">    <span class="keyword">var</span> answer = [];</span><br><span class="line">    <span class="keyword">for</span> (<span class="keyword">var</span> i = <span class="number">0</span>; i &lt; n; i++) &#123;</span><br><span class="line">        answer.push(x*(i+<span class="number">1</span>));</span><br><span class="line">    &#125;</span><br><span class="line">    <span class="keyword">return</span> answer;</span><br><span class="line">&#125;</span><br></pre></td></tr></table></figure>
+</li>
+</ul>
+<h3 id="직사각형-별찍기"><a href="#직사각형-별찍기" class="headerlink" title="직사각형 별찍기"></a>직사각형 별찍기</h3><ul>
+<li>코드<figure class="highlight java"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br><span class="line">15</span><br><span class="line">16</span><br></pre></td><td class="code"><pre><span class="line"><span class="keyword">import</span> java.util.Scanner;</span><br><span class="line"></span><br><span class="line"><span class="keyword">public</span> <span class="class"><span class="keyword">class</span> <span class="title">Solution</span> </span>&#123;</span><br><span class="line">    <span class="function"><span class="keyword">public</span> <span class="keyword">static</span> <span class="keyword">void</span> <span class="title">main</span><span class="params">(String[] args)</span> </span>&#123;</span><br><span class="line">        Scanner sc = <span class="keyword">new</span> Scanner(System.in);</span><br><span class="line">        <span class="keyword">int</span> a = sc.nextInt();</span><br><span class="line">        <span class="keyword">int</span> b = sc.nextInt();</span><br><span class="line">        String str = <span class="string">""</span>;</span><br><span class="line">        <span class="keyword">for</span>(<span class="keyword">int</span> j = <span class="number">0</span>; j &lt; a; j++) &#123;</span><br><span class="line">            str +=<span class="string">"*"</span>;</span><br><span class="line">        &#125;</span><br><span class="line">        <span class="keyword">for</span>(<span class="keyword">int</span> i = <span class="number">1</span>; i &lt;= b; i++) &#123;</span><br><span class="line">            System.out.println(str);</span><br><span class="line">        &#125;</span><br><span class="line">    &#125;</span><br><span class="line">&#125;</span><br></pre></td></tr></table></figure>
+</li>
+</ul>
+<p>문제가 js 는 안되 java 로 구현.</p>
+<hr>
+<h2 id="크립토-좀비"><a href="#크립토-좀비" class="headerlink" title="크립토 좀비"></a>크립토 좀비</h2><p>솔리디티를 이용한 코드 구현</p>
+<hr>
+<h2 id="java"><a href="#java" class="headerlink" title="java"></a>java</h2><p>공부했던것들 정리</p>
+<h3 id="환경변수"><a href="#환경변수" class="headerlink" title="환경변수"></a>환경변수</h3><p>컴파일러와 실행을 구동하기 위해 환경변수를 설정안하면 같은디렉토리에 있어야 실행된다.</p>
+<h3 id="변수"><a href="#변수" class="headerlink" title="변수"></a>변수</h3><p>데이터(자료)를 임시로 담을 수 있는 상자(메모리 공간에 저장)<br>변수 값은 2진수로 변환되 저장된다.</p>
+<h3 id="자료형"><a href="#자료형" class="headerlink" title="자료형"></a>자료형</h3><p>기본 자료형 , 객체자료형</p>
+<ul>
+<li><p><code>기본자료형</code> 데이터가 변수에 직접 저장된다.</p>
+<ul>
+<li>정수형: <code>char</code>, <code>int</code>, long </li>
+<li>실수형: float, <code>double</code> </li>
+<li>논리형: <code>boolean</code> </li>
+<li>변수의 크기가 다 다르다.</li>
+</ul>
+</li>
+<li><p><code>객체자료형</code> 객체 메모리 주소가 변수에 저장된다.</p>
+<ul>
+<li>String</li>
+<li><code>c언어</code>: 포인터 <code>java</code>: 레퍼런스 항상 주소만 들어있어 4byte</li>
+</ul>
+</li>
+</ul>
+<hr>
+
+      
+    </div>
+    <footer class="article-footer">
+      <a data-url="http://yoursite.com/2018/08/29/201808/20180829/" data-id="cjllzogy5001lykv0tf3voyru" class="article-share-link">공유</a>
+      
+      
+  <ul class="article-tag-list"><li class="article-tag-list-item"><a class="article-tag-list-link" href="/tags/TIL/">TIL</a></li></ul>
+
+    </footer>
+  </div>
+  
+</article>
+
+
+  
     <article id="post-201808/20180828" class="article article-type-post" itemscope itemprop="blogPost">
   <div class="article-meta">
     <a href="/2018/08/28/201808/20180828/" class="article-date">
@@ -656,72 +767,6 @@
 
 
   
-    <article id="post-201808/20180808" class="article article-type-post" itemscope itemprop="blogPost">
-  <div class="article-meta">
-    <a href="/2018/08/08/201808/20180808/" class="article-date">
-  <time datetime="2018-08-08T14:23:51.000Z" itemprop="datePublished">2018-08-08</time>
-</a>
-    
-  </div>
-  <div class="article-inner">
-    
-    
-      <header class="article-header">
-        
-  
-    <h1 itemprop="name">
-      <a class="article-title" href="/2018/08/08/201808/20180808/">TIL</a>
-    </h1>
-  
-
-      </header>
-    
-    <div class="article-entry" itemprop="articleBody">
-      
-        <h1 id="오늘의-공부-20180808"><a href="#오늘의-공부-20180808" class="headerlink" title="오늘의 공부 20180808"></a>오늘의 공부 20180808</h1><hr>
-<h2 id="오프라인-강의"><a href="#오프라인-강의" class="headerlink" title="오프라인 강의"></a>오프라인 강의</h2><ul>
-<li>cope 기계어 프로그램</li>
-<li>data 전역 변수</li>
-<li>heap 객체 저장 </li>
-<li>stack 지역변수 넘치면 스텍 오버플로우 발생 <ul>
-<li>함수를 닫으면 전역변수 스텍에서 제거</li>
-</ul>
-</li>
-<li>안정정렬 이면 더쉽게 할 수 있다. ( 편법 )</li>
-</ul>
-<h3 id="js"><a href="#js" class="headerlink" title="js"></a>js</h3><p>켄버스를 이용해 다양한것을 그릴 수 있다.</p>
-<h3 id="공부하는데-도움될만한-것들"><a href="#공부하는데-도움될만한-것들" class="headerlink" title="공부하는데 도움될만한 것들"></a>공부하는데 도움될만한 것들</h3><ul>
-<li>취업하는데 필요할것들<br><a href="https://codeburst.io/the-2018-web-developer-roadmap-826b1b806e8d" target="_blank" rel="noopener">https://codeburst.io/the-2018-web-developer-roadmap-826b1b806e8d</a></li>
-</ul>
-<h2 id="프로그래머스"><a href="#프로그래머스" class="headerlink" title="프로그래머스"></a>프로그래머스</h2><ul>
-<li><p>문자열 내림차순 정렬</p>
-<figure class="highlight js"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br><span class="line">15</span><br><span class="line">16</span><br><span class="line">17</span><br><span class="line">18</span><br></pre></td><td class="code"><pre><span class="line"><span class="function"><span class="keyword">function</span> <span class="title">solution</span>(<span class="params">s</span>) </span>&#123;</span><br><span class="line">    <span class="keyword">var</span> answer = <span class="string">''</span>;</span><br><span class="line">    <span class="keyword">var</span> output = s.split(<span class="string">""</span>);</span><br><span class="line">        answer = output.sort(com);</span><br><span class="line">        answer = answer.join(<span class="string">""</span>);</span><br><span class="line">    <span class="function"><span class="keyword">function</span> <span class="title">com</span>(<span class="params">a, b</span>) </span>&#123;</span><br><span class="line">        <span class="keyword">if</span> (a &gt; b) &#123;</span><br><span class="line">            <span class="keyword">return</span> <span class="number">-1</span>;</span><br><span class="line">        &#125;</span><br><span class="line">        <span class="keyword">if</span> (b &gt; a) &#123;</span><br><span class="line">            <span class="keyword">return</span> <span class="number">1</span>;</span><br><span class="line">        &#125; <span class="keyword">else</span> &#123;</span><br><span class="line">            <span class="keyword">return</span> <span class="number">0</span>;</span><br><span class="line">        &#125;</span><br><span class="line">    &#125;</span><br><span class="line">    <span class="built_in">console</span>.log(output)</span><br><span class="line">    <span class="keyword">return</span> answer;</span><br><span class="line">&#125;</span><br></pre></td></tr></table></figure>
-</li>
-<li><p>sort 를 이용해서 구현 함수 값을 반환시켜 구현했다.</p>
-</li>
-</ul>
-<h2 id="반성"><a href="#반성" class="headerlink" title="반성"></a>반성</h2><p>오늘은 오프라인강의도 있고 해서 혼자 공부를 많이 못했다.<br>내일 많이 해야겠다.<br>내일 해보고싶은것</p>
-<ul>
-<li>15퍼즐</li>
-<li>벽돌깨기</li>
-<li>java로 야구게임 더 수정해보기</li>
-</ul>
-
-      
-    </div>
-    <footer class="article-footer">
-      <a data-url="http://yoursite.com/2018/08/08/201808/20180808/" data-id="cjllzogxn000zykv0i6n0d39v" class="article-share-link">공유</a>
-      
-      
-  <ul class="article-tag-list"><li class="article-tag-list-item"><a class="article-tag-list-link" href="/tags/TIL/">TIL</a></li></ul>
-
-    </footer>
-  </div>
-  
-</article>
-
-
-  
 
 
   <nav id="page-nav">
@@ -772,6 +817,10 @@
       <ul>
         
           <li>
+            <a href="/2018/09/18/20180920/">TIL</a>
+          </li>
+        
+          <li>
             <a href="/2018/09/18/20180918/">TIL</a>
           </li>
         
@@ -785,10 +834,6 @@
         
           <li>
             <a href="/2018/09/13/20180913/">TIL</a>
-          </li>
-        
-          <li>
-            <a href="/2018/09/11/20180911/">TIL</a>
           </li>
         
       </ul>

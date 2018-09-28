@@ -66,6 +66,137 @@
       <div class="outer">
         <section id="main">
   
+    <article id="post-201807/20180730" class="article article-type-post" itemscope itemprop="blogPost">
+  <div class="article-meta">
+    <a href="/2018/07/30/201807/20180730/" class="article-date">
+  <time datetime="2018-07-30T14:23:51.000Z" itemprop="datePublished">2018-07-30</time>
+</a>
+    
+  </div>
+  <div class="article-inner">
+    
+    
+      <header class="article-header">
+        
+  
+    <h1 itemprop="name">
+      <a class="article-title" href="/2018/07/30/201807/20180730/">TIL</a>
+    </h1>
+  
+
+      </header>
+    
+    <div class="article-entry" itemprop="articleBody">
+      
+        <h1 id="오늘의-공부-20180730"><a href="#오늘의-공부-20180730" class="headerlink" title="오늘의 공부 20180730"></a>오늘의 공부 20180730</h1><hr>
+<h2 id="강의"><a href="#강의" class="headerlink" title="강의"></a>강의</h2><ul>
+<li>구구단 배열로 출력하기</li>
+</ul>
+<h3 id="생활코딩"><a href="#생활코딩" class="headerlink" title="생활코딩"></a>생활코딩</h3><ul>
+<li>오늘 안함 내일 꼭들어야겠따…</li>
+</ul>
+<h2 id="연습문제"><a href="#연습문제" class="headerlink" title="연습문제"></a>연습문제</h2><ul>
+<li>소용돌이 작업</li>
+</ul>
+<h3 id="소용돌이"><a href="#소용돌이" class="headerlink" title="소용돌이"></a>소용돌이</h3><ul>
+<li>오름차순 완성</li>
+<li>내림차순 완성</li>
+<li>자리수를 계산해 정렬 시킴</li>
+<li><p>코드</p>
+<figure class="highlight js"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br></pre></td><td class="code"><pre><span class="line"><span class="keyword">var</span> blank1 = <span class="function"><span class="keyword">function</span>(<span class="params"></span>) </span>&#123;</span><br><span class="line">    <span class="keyword">var</span> numLegth = num.toString().length;</span><br><span class="line">    <span class="keyword">var</span> numStack =maxnumLegth-numLegth;</span><br><span class="line">    <span class="keyword">var</span> numString = num.toString();</span><br><span class="line">    <span class="keyword">var</span> numBlank = <span class="string">''</span>;</span><br><span class="line">    <span class="keyword">for</span> (<span class="keyword">var</span> i = <span class="number">0</span>; i &lt; numStack; i ++) &#123;</span><br><span class="line">        numBlank += <span class="string">'&amp;nbsp;'</span></span><br><span class="line">    &#125;</span><br><span class="line">    numBlank = numBlank.concat(numString);</span><br><span class="line">    <span class="keyword">return</span> numBlank;</span><br><span class="line"></span><br><span class="line">&#125;</span><br></pre></td></tr></table></figure>
+</li>
+<li><p><code>cocat</code> 문자열 합치는 거 d= d.cocat(b); 하면 합쳐짐</p>
+</li>
+<li><code>toString</code> 숫자를 문자로 바꿈 num.toStirng();</li>
+<li><a href="https://github.com/jar100/CS-level1/blob/master/snail2.html" target="_blank" rel="noopener">https://github.com/jar100/CS-level1/blob/master/snail2.html</a></li>
+</ul>
+<h2 id="프로그래머스"><a href="#프로그래머스" class="headerlink" title="프로그래머스"></a>프로그래머스</h2><h3 id="약수들의-합"><a href="#약수들의-합" class="headerlink" title="약수들의 합"></a>약수들의 합</h3><ul>
+<li><p>코드</p>
+<figure class="highlight js"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br></pre></td><td class="code"><pre><span class="line"><span class="function"><span class="keyword">function</span> <span class="title">solution</span>(<span class="params">n</span>)</span></span><br><span class="line"><span class="function"></span>&#123;</span><br><span class="line">    <span class="keyword">var</span> answer = <span class="number">0</span>;</span><br><span class="line">    <span class="keyword">var</span> num = <span class="number">0</span> ;</span><br><span class="line">    <span class="keyword">var</span> numLength = n.toString().length;</span><br><span class="line">    <span class="keyword">for</span> (<span class="keyword">var</span> i=numLength; i &gt;<span class="number">0</span> ; i --) &#123;</span><br><span class="line">        num = <span class="built_in">Math</span>.floor(n/<span class="built_in">Math</span>.pow(<span class="number">10</span>,(i<span class="number">-1</span>))) ;</span><br><span class="line">        n = n%<span class="built_in">Math</span>.pow(<span class="number">10</span>,(i<span class="number">-1</span>));</span><br><span class="line">        answer += num;</span><br><span class="line">    &#125;</span><br><span class="line">    <span class="keyword">return</span> answer;</span><br><span class="line">&#125;</span><br></pre></td></tr></table></figure>
+</li>
+<li><p><code>Math.pow</code> 제곱 구하는함수 Math.pow(10,1);</p>
+</li>
+</ul>
+<h3 id="제곱근-판별"><a href="#제곱근-판별" class="headerlink" title="제곱근 판별"></a>제곱근 판별</h3><ul>
+<li><p>코드</p>
+<figure class="highlight js"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br></pre></td><td class="code"><pre><span class="line"><span class="function"><span class="keyword">function</span> <span class="title">solution</span>(<span class="params">n</span>) </span>&#123;</span><br><span class="line">    <span class="keyword">var</span> answer = <span class="number">0</span>;</span><br><span class="line">    <span class="keyword">var</span> n1 = <span class="built_in">Math</span>.sqrt(n);</span><br><span class="line">    <span class="keyword">if</span> ( n1 === <span class="built_in">Math</span>.floor(n1)) &#123;</span><br><span class="line">        answer = <span class="built_in">Math</span>.pow(n1+<span class="number">1</span>,<span class="number">2</span>);</span><br><span class="line">    &#125; <span class="keyword">else</span> &#123;</span><br><span class="line">        answer = <span class="number">-1</span>;</span><br><span class="line">    &#125;</span><br><span class="line">    <span class="keyword">return</span> answer;</span><br><span class="line">&#125;</span><br></pre></td></tr></table></figure>
+</li>
+<li><p><code>Math.sqrt</code> 제곱근(루트) 구하는함수 Math.sqrt(n);</p>
+</li>
+</ul>
+<h2 id="TO-DO"><a href="#TO-DO" class="headerlink" title="TO-DO"></a>TO-DO</h2><p>강의듣기<br><del>소용돌이 이쁘게 작성</del><br><del>프래그래머스 알고리즘 2개</del><br>야구 게임<br>영어공부</p>
+<hr>
+
+      
+    </div>
+    <footer class="article-footer">
+      <a data-url="http://yoursite.com/2018/07/30/201807/20180730/" data-id="cjllzogxi000tykv04egwfa4z" class="article-share-link">공유</a>
+      
+      
+  <ul class="article-tag-list"><li class="article-tag-list-item"><a class="article-tag-list-link" href="/tags/TIL/">TIL</a></li></ul>
+
+    </footer>
+  </div>
+  
+</article>
+
+
+  
+    <article id="post-201807/20180729" class="article article-type-post" itemscope itemprop="blogPost">
+  <div class="article-meta">
+    <a href="/2018/07/29/201807/20180729/" class="article-date">
+  <time datetime="2018-07-29T14:23:51.000Z" itemprop="datePublished">2018-07-29</time>
+</a>
+    
+  </div>
+  <div class="article-inner">
+    
+    
+      <header class="article-header">
+        
+  
+    <h1 itemprop="name">
+      <a class="article-title" href="/2018/07/29/201807/20180729/">TIL</a>
+    </h1>
+  
+
+      </header>
+    
+    <div class="article-entry" itemprop="articleBody">
+      
+        <h1 id="오늘의-공부-20180729"><a href="#오늘의-공부-20180729" class="headerlink" title="오늘의 공부 20180729"></a>오늘의 공부 20180729</h1><hr>
+<h2 id="강의"><a href="#강의" class="headerlink" title="강의"></a>강의</h2><ul>
+<li>객체 파트 들음</li>
+<li>객체 를 이용해 소수구하는 코드 작성</li>
+</ul>
+<h3 id="생활코딩"><a href="#생활코딩" class="headerlink" title="생활코딩"></a>생활코딩</h3><ul>
+<li>듣기 시작</li>
+</ul>
+<h2 id="연습문제"><a href="#연습문제" class="headerlink" title="연습문제"></a>연습문제</h2><h3 id="소용돌이-작성함"><a href="#소용돌이-작성함" class="headerlink" title="소용돌이 작성함"></a>소용돌이 작성함</h3><ul>
+<li>오름차순으로 작성 </li>
+<li>숫자가 갈수록 커지니 직사각형이 깨지는 문제 발생</li>
+<li>내림차순으로도 작성해봐야겠다a</li>
+</ul>
+<h2 id="프로그래머스"><a href="#프로그래머스" class="headerlink" title="프로그래머스"></a>프로그래머스</h2><p>2개 풀기</p>
+<p>###</p>
+<h2 id="TO-DO"><a href="#TO-DO" class="headerlink" title="TO-DO"></a>TO-DO</h2><p><del>소수 객체를 이용해서 작성</del><br><del>연습문제2개</del><br>프래그래머스 알고리즘 2개<br><del>강의 1개(인프런)</del><br><del>생활 코딩 1개</del><br>영어공부</p>
+<hr>
+
+      
+    </div>
+    <footer class="article-footer">
+      <a data-url="http://yoursite.com/2018/07/29/201807/20180729/" data-id="cjllzogx5000hykv02e2p462c" class="article-share-link">공유</a>
+      
+      
+  <ul class="article-tag-list"><li class="article-tag-list-item"><a class="article-tag-list-link" href="/tags/TIL/">TIL</a></li></ul>
+
+    </footer>
+  </div>
+  
+</article>
+
+
+  
     <article id="post-201807/20180728" class="article article-type-post" itemscope itemprop="blogPost">
   <div class="article-meta">
     <a href="/2018/07/28/201807/20180728/" class="article-date">
@@ -727,6 +858,14 @@
       <ul>
         
           <li>
+            <a href="/2018/09/21/20180921/">TIL</a>
+          </li>
+        
+          <li>
+            <a href="/2018/09/18/20180927/">TIL</a>
+          </li>
+        
+          <li>
             <a href="/2018/09/18/20180920/">TIL</a>
           </li>
         
@@ -736,14 +875,6 @@
         
           <li>
             <a href="/2018/09/17/20180917/">TIL</a>
-          </li>
-        
-          <li>
-            <a href="/2018/09/14/20180914/">TIL</a>
-          </li>
-        
-          <li>
-            <a href="/2018/09/13/20180913/">TIL</a>
           </li>
         
       </ul>

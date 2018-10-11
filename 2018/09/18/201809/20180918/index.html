@@ -15,7 +15,7 @@
 <meta property="og:site_name" content="jar100 blog">
 <meta property="og:description" content="오늘의 공부 20180918java 코딩연습git 공부 오늘 git 실수로 remote 를 잘못해서 시간을 좀 날렸다. ㅠ프로그래머스 알고리즘 js 로 푼거 java로 풀어보는중  java알게된점과 강의시간에 배운 내용  자바 개발 환경 및 STS(또는 Intellij) 환경을 구축하고 프로젝트를 시작할 수 있는가? static을 언제 사용해야 하는지 이해">
 <meta property="og:locale" content="ko">
-<meta property="og:updated_time" content="2018-10-01T01:40:52.016Z">
+<meta property="og:updated_time" content="2018-10-10T09:04:56.109Z">
 <meta name="twitter:card" content="summary">
 <meta name="twitter:title" content="TIL">
 <meta name="twitter:description" content="오늘의 공부 20180918java 코딩연습git 공부 오늘 git 실수로 remote 를 잘못해서 시간을 좀 날렸다. ㅠ프로그래머스 알고리즘 js 로 푼거 java로 풀어보는중  java알게된점과 강의시간에 배운 내용  자바 개발 환경 및 STS(또는 Intellij) 환경을 구축하고 프로젝트를 시작할 수 있는가? static을 언제 사용해야 하는지 이해">
@@ -158,9 +158,6 @@
 </ul>
 <p>String + String vs StringBuilder<br>String은 불변하기(immutable)이기 때문에 String과 String을 더하면 새로운 String 객체를 생성한다. 따라서 String과 String을 더하는 시점에 메모리 할당과 메모리 해제가 계속 발생한다.<br>StringBuilder는 String과 다르게 기존 데이터에 새로운 데이터를 더하는 방식을 취하기 때문에 속도가 더 빠르다.<br>따라서 긴 문자열을 더하는 상황이 발생하는 경우 StringBuilder를 활용해 구현한다.</p>
 <h3 id="List-와-ArrayList-차이"><a href="#List-와-ArrayList-차이" class="headerlink" title="List 와 ArrayList 차이"></a>List 와 ArrayList 차이</h3><p>클래스를 생성할 때 도형 타입으로 생성하게 되면 정사각형이 아닌 다른 직사각형, 삼각형 등 도형 인터페이스를 구현한 클래스에서 사용 될 수 있다. 하지만 정사각형 클래스로 생성하게 되면 직사각형, 삼각형 등 에서는 사용할 수 없다.<br>도형에 비유하여 풀어보면,<br>List list = new ArrayList();<br>-&gt; 도형 list = new 정사각형();<br>ArrayList list = new ArrayList();<br>-&gt; 정사각형 list = new 정사각형();<br>(List는 interface다. interface는 공통되는 메소드를 추출해 놓은 클래스로 생각하면 된다.)</p>
-<ul>
-<li>list는 </li>
-</ul>
 <h3 id="TDD-단위테스트"><a href="#TDD-단위테스트" class="headerlink" title="TDD 단위테스트"></a>TDD 단위테스트</h3><p> 언제 테스트를 작성하고 수행해야 하는지에 대한 절차이다.</p>
 <ul>
 <li><p>단위 테스트(Unit testing)<br>단위 테스트는 일반적으로 모듈이나 객체를 구성하는 단일함수 정도의 크기에 해당하는 코드 단위에 집중한다. 단일 함수에 대한 구체적인 테스트는 테스트 자체를 단순화하고 빠르게 작성하여 수행해 볼 수 있다는 장점을 갖는다. 이를 통해 많은 수의 단위 테스트들을 빠르게 만들 수 있고 보다 많은 버그를 발견하여 잡아 낼 수 있다. 특히 단위 테스트는 코드를 변경하는 경우 많은 도움을 준다. 구현된 코드에 대한 단위 테스트들을 갖고 있다면 변경과 상관없는 구현코드들이 이상없이 동작할 수 있다는 신뢰를 갖고 마음 편하게 코드를 수정할 수 있다.</p>
@@ -199,7 +196,7 @@
     
 <nav id="article-nav">
   
-    <a href="/2018/09/18/201809/20180920/" id="article-nav-newer" class="article-nav-link-wrap">
+    <a href="/2018/09/21/201809/20180921/" id="article-nav-newer" class="article-nav-link-wrap">
       <strong class="article-nav-caption">최신</strong>
       <div class="article-nav-title">
         
@@ -209,7 +206,7 @@
     </a>
   
   
-    <a href="/2018/09/17/201809/20180917/" id="article-nav-older" class="article-nav-link-wrap">
+    <a href="/2018/09/18/201809/20180920/" id="article-nav-older" class="article-nav-link-wrap">
       <strong class="article-nav-caption">이전</strong>
       <div class="article-nav-title">TIL</div>
     </a>
@@ -262,23 +259,23 @@
       <ul>
         
           <li>
-            <a href="/2018/10/08/20181008/">(no title)</a>
+            <a href="/2018/10/11/20181011/">TIL</a>
           </li>
         
           <li>
-            <a href="/2018/10/04/20181004/">(no title)</a>
+            <a href="/2018/10/10/20181010/">TIL</a>
+          </li>
+        
+          <li>
+            <a href="/2018/10/08/20181008/">TIL</a>
+          </li>
+        
+          <li>
+            <a href="/2018/10/04/20181004/">TIL</a>
           </li>
         
           <li>
             <a href="/2018/10/02/20181002/">TIL</a>
-          </li>
-        
-          <li>
-            <a href="/2018/10/01/20181001/">TIL</a>
-          </li>
-        
-          <li>
-            <a href="/2018/09/29/javaStudy/javaStudy/">javaStudy</a>
           </li>
         
       </ul>

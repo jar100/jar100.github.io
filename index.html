@@ -66,6 +66,74 @@
       <div class="outer">
         <section id="main">
   
+    <article id="post-20181022" class="article article-type-post" itemscope itemprop="blogPost">
+  <div class="article-meta">
+    <a href="/2018/10/22/20181022/" class="article-date">
+  <time datetime="2018-10-22T14:23:51.000Z" itemprop="datePublished">2018-10-22</time>
+</a>
+    
+  </div>
+  <div class="article-inner">
+    
+    
+      <header class="article-header">
+        
+  
+    <h1 itemprop="name">
+      <a class="article-title" href="/2018/10/22/20181022/">TIL</a>
+    </h1>
+  
+
+      </header>
+    
+    <div class="article-entry" itemprop="articleBody">
+      
+        <h1 id="오늘의-공부-20181022"><a href="#오늘의-공부-20181022" class="headerlink" title="오늘의 공부 20181022"></a>오늘의 공부 20181022</h1><h2 id="코드스쿼드-변경사항"><a href="#코드스쿼드-변경사항" class="headerlink" title="코드스쿼드 변경사항"></a>코드스쿼드 변경사항</h2><p>6개월 과정<br>4레벨부터 취업준비를 하는데<br>4레벨 미션에 집중하지 못하는 현상이 발생<br>개인 프로잭트를 하는 사람이 많아짐<br>2 - 2 개월<br>3 - 3 개월<br>프로잭트 1 개월</p>
+<h2 id="이넘과-익명클래스-람다식"><a href="#이넘과-익명클래스-람다식" class="headerlink" title="이넘과 익명클래스 람다식"></a>이넘과 익명클래스 람다식</h2><p>페어 프로그래밍으로 이넘과 람다를 배웠다.</p>
+<h3 id="enum"><a href="#enum" class="headerlink" title="enum"></a>enum</h3><p>인스턴스 변수를 상수처럼 미리 선언 하는 것 쓰면 좋은점</p>
+<ul>
+<li>응용 </li>
+</ul>
+<ol>
+<li>하나의 enum 객체가 두가지 타입의 값을 가질 수 있다.</li>
+</ol>
+<ul>
+<li>예제<figure class="highlight java"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br></pre></td><td class="code"><pre><span class="line"><span class="keyword">private</span> <span class="keyword">enum</span> Type &#123;</span><br><span class="line">        TWO(<span class="number">2</span>, <span class="string">"222"</span>), THREE(<span class="number">3</span>, <span class="string">"3333"</span>), FOUR(<span class="number">4</span>, <span class="string">"44444"</span>);</span><br><span class="line"></span><br><span class="line">        <span class="keyword">private</span> <span class="keyword">final</span> <span class="keyword">int</span> num;</span><br><span class="line">        <span class="keyword">private</span> String a;</span><br><span class="line"></span><br><span class="line">        Type(<span class="keyword">int</span> num, String a) &#123;</span><br><span class="line">            <span class="keyword">this</span>.num = num;</span><br><span class="line">            <span class="keyword">this</span>.a = a;</span><br><span class="line">        &#125;</span><br><span class="line">&#125;</span><br></pre></td></tr></table></figure>
+</li>
+</ul>
+<h3 id="익명-클래스"><a href="#익명-클래스" class="headerlink" title="익명 클래스"></a>익명 클래스</h3><p>인터페이스로 선언된 클래스를 이용해 이름없는 객체를 바로 그 자리에서 정의하고 생성한다.</p>
+<ol>
+<li>굳이 클래스를 따로 안만들어도 사용할 수 있다.</li>
+</ol>
+<ul>
+<li>예제<figure class="highlight java"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br></pre></td><td class="code"><pre><span class="line"><span class="keyword">private</span> <span class="keyword">static</span> Map&lt;Type, FigureCreator&gt; figures = <span class="keyword">new</span> HashMap&lt;&gt;(); </span><br><span class="line">figures.put(Type.THREE, <span class="keyword">new</span> FigureCreator() &#123;</span><br><span class="line">            <span class="meta">@Override</span></span><br><span class="line">            <span class="function"><span class="keyword">public</span> Figure <span class="title">create</span><span class="params">(List&lt;Point&gt; points)</span> </span>&#123;</span><br><span class="line">                <span class="keyword">return</span> <span class="keyword">new</span> Triangle(points);</span><br><span class="line">            &#125;</span><br><span class="line">        &#125;);</span><br><span class="line"><span class="comment">// new figureCreator() &#123;...&#125; 이게 익명 클래스</span></span><br></pre></td></tr></table></figure>
+</li>
+</ul>
+<h3 id="람다식"><a href="#람다식" class="headerlink" title="람다식"></a>람다식</h3><p>인터페이스로 선언된 클래스를 이용해 바로 객체를 생성하는 방식<br>익명클래스에서 좀더 발전된 형식인거 같다.</p>
+<ol>
+<li>참고하는 인터페이스의 메서드가 1개 일 때 만 사용 가능하다.</li>
+<li>2개 이상 이면 익명클래스로 구현해야 할거 같다.</li>
+<li>람다식을 사용할 땐 @FunctionalInterface 어노테이션을 사용하면 추상메소드가 2개 이상이면 컴파일 에러가 난다.<figure class="highlight java"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br></pre></td><td class="code"><pre><span class="line"><span class="keyword">public</span> <span class="class"><span class="keyword">interface</span> <span class="title">FigureCreator</span> </span>&#123;</span><br><span class="line">    <span class="function">Figure <span class="title">create</span><span class="params">(List&lt;Point&gt; points)</span></span>;</span><br><span class="line">&#125;</span><br><span class="line"></span><br><span class="line"><span class="keyword">private</span> <span class="keyword">static</span> Map&lt;Type, FigureCreator&gt; figures = <span class="keyword">new</span> HashMap&lt;&gt;();</span><br><span class="line">figures.put(Type.TWO, points -&gt; <span class="keyword">new</span> Line(points));</span><br><span class="line"><span class="comment">// FigureCreator 인터페이스 에 있는 함수가 1개 이면 points 를 파라미터로 받아 new Line(points)를 return 시키는 방식</span></span><br></pre></td></tr></table></figure>
+</li>
+</ol>
+<p>인터페이스가 2개이상이면 익명 클래스로 구현해야되고<br>메서드가 1개면 람다식으로구현가능   </p>
+<hr>
+
+      
+    </div>
+    <footer class="article-footer">
+      <a data-url="http://yoursite.com/2018/10/22/20181022/" data-id="cjnkee3iq00003cv0hfia45wg" class="article-share-link">공유</a>
+      
+      
+  <ul class="article-tag-list"><li class="article-tag-list-item"><a class="article-tag-list-link" href="/tags/TIL/">TIL</a></li></ul>
+
+    </footer>
+  </div>
+  
+</article>
+
+
+  
     <article id="post-20181019" class="article article-type-post" itemscope itemprop="blogPost">
   <div class="article-meta">
     <a href="/2018/10/19/20181019/" class="article-date">
@@ -534,59 +602,6 @@
 
 
   
-    <article id="post-20181001" class="article article-type-post" itemscope itemprop="blogPost">
-  <div class="article-meta">
-    <a href="/2018/10/01/20181001/" class="article-date">
-  <time datetime="2018-10-01T14:23:51.000Z" itemprop="datePublished">2018-10-01</time>
-</a>
-    
-  </div>
-  <div class="article-inner">
-    
-    
-      <header class="article-header">
-        
-  
-    <h1 itemprop="name">
-      <a class="article-title" href="/2018/10/01/20181001/">TIL</a>
-    </h1>
-  
-
-      </header>
-    
-    <div class="article-entry" itemprop="articleBody">
-      
-        <h1 id="오늘의-공부-20181001"><a href="#오늘의-공부-20181001" class="headerlink" title="오늘의 공부 20181001"></a>오늘의 공부 20181001</h1><h2 id="java"><a href="#java" class="headerlink" title="java"></a>java</h2><h3 id="강의"><a href="#강의" class="headerlink" title="강의"></a>강의</h3><p>DTO java bean<br>model or Domain<br>VO (value object)<br>equals,hashcode,toString<br>HashSet =&gt; ArrayList linkedList</p>
-<ul>
-<li>자료구조<br>get<br>set<br>변수명 잘짓기</li>
-</ul>
-<h4 id="DTO-Data-Transfer-Object"><a href="#DTO-Data-Transfer-Object" class="headerlink" title="DTO (Data Transfer Object)"></a>DTO (Data Transfer Object)</h4><p>main 메서드 컨트롤러 역활<br>DTO는 캡슐화 하는거다<br>값 상태만 새로 만들어 상태를 변화 시키는 메서드등을 다른곳에서 사용 못하게 한다.</p>
-<ol>
-<li>자바 빈 규약 사용하려면 default 생성자를 생성 해야한다.</li>
-<li>getPosition</li>
-<li>boolean 은 isPosition</li>
-</ol>
-<h4 id="Equals-hashcode-toString"><a href="#Equals-hashcode-toString" class="headerlink" title="Equals,hashcode,toString"></a>Equals,hashcode,toString</h4><ol>
-<li>객체를 화면에 출력하면 자동으로 toString() 로 출력된다.</li>
-<li>equals 메소드를 구현 하지 않으면 false , 하면 ture</li>
-<li>arraylist &gt; hashmap &gt; hashset</li>
-</ol>
-
-      
-    </div>
-    <footer class="article-footer">
-      <a data-url="http://yoursite.com/2018/10/01/20181001/" data-id="cjmqe4m030000usv06u0kmcrz" class="article-share-link">공유</a>
-      
-      
-  <ul class="article-tag-list"><li class="article-tag-list-item"><a class="article-tag-list-link" href="/tags/TIL/">TIL</a></li></ul>
-
-    </footer>
-  </div>
-  
-</article>
-
-
-  
 
 
   <nav id="page-nav">
@@ -637,6 +652,10 @@
       <ul>
         
           <li>
+            <a href="/2018/10/22/20181022/">TIL</a>
+          </li>
+        
+          <li>
             <a href="/2018/10/19/20181019/">TIL</a>
           </li>
         
@@ -650,10 +669,6 @@
         
           <li>
             <a href="/2018/10/15/20181015/">TIL</a>
-          </li>
-        
-          <li>
-            <a href="/2018/10/11/20181011/">TIL</a>
           </li>
         
       </ul>

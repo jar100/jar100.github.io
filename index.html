@@ -66,6 +66,180 @@
       <div class="outer">
         <section id="main">
   
+    <article id="post-20181025" class="article article-type-post" itemscope itemprop="blogPost">
+  <div class="article-meta">
+    <a href="/2018/10/25/20181025/" class="article-date">
+  <time datetime="2018-10-25T14:23:51.000Z" itemprop="datePublished">2018-10-25</time>
+</a>
+    
+  </div>
+  <div class="article-inner">
+    
+    
+      <header class="article-header">
+        
+  
+    <h1 itemprop="name">
+      <a class="article-title" href="/2018/10/25/20181025/">TIL</a>
+    </h1>
+  
+
+      </header>
+    
+    <div class="article-entry" itemprop="articleBody">
+      
+        <h1 id="오늘의-공부-20181025"><a href="#오늘의-공부-20181025" class="headerlink" title="오늘의 공부 20181025"></a>오늘의 공부 20181025</h1><p>포비의 강의를 들었다.<br>lotto 1단계 구현</p>
+<h2 id="excetpion-공부"><a href="#excetpion-공부" class="headerlink" title="excetpion 공부"></a>excetpion 공부</h2><p>포비가 강의 한 것과 내가 생각해본 exception</p>
+<h3 id="throw-throws-차이"><a href="#throw-throws-차이" class="headerlink" title="throw throws 차이"></a>throw throws 차이</h3><p>throws는 현재 메서드에서 자신을 호출한 상위 메서드로 Exception을 발생시킴<br>throw는 현재 블록에 exception 발생</p>
+<h3 id="compiletime-runtime-Exception-차이"><a href="#compiletime-runtime-Exception-차이" class="headerlink" title="compiletime, runtime  Exception 차이"></a>compiletime, runtime  Exception 차이</h3><p>둘다 예외 처리하는것 compiletime throws 를 꼭 써야한다. runtime 안써도 됨</p>
+<ul>
+<li>읽는사람을 위해 throws 를 쓰면 좋다. throws 를 적으면 어떤 애러들이 발생하는지 바로 알 수 있다.</li>
+<li>runtime 자주 사용하고 반드시 try catch를 강제하고싶을때만 compiletime 사용하자.<ul>
+<li>이유는 compiletime을 남발하면 코드가 지저분 해진다.</li>
+</ul>
+</li>
+</ul>
+<h2 id="미션"><a href="#미션" class="headerlink" title="미션"></a>미션</h2><p>아직도 객체 설계가 어렵다. 좀더 노력 해야겠다.<br>퍼센트를 구할 때 오버플로우가 발생 했는데 앞에서 부터 곱해 자리수가 커저 발생 한거 같다. 괄호를 잘 쳐야 겠다.<br>long 타입으로 하려면 10L 이런식으로 뒤에 대문자 L을 붙이면 된다. </p>
+
+      
+    </div>
+    <footer class="article-footer">
+      <a data-url="http://yoursite.com/2018/10/25/20181025/" data-id="cjnopc7ns0000isv0251mteqd" class="article-share-link">공유</a>
+      
+      
+  <ul class="article-tag-list"><li class="article-tag-list-item"><a class="article-tag-list-link" href="/tags/TIL/">TIL</a></li></ul>
+
+    </footer>
+  </div>
+  
+</article>
+
+
+  
+    <article id="post-20181024" class="article article-type-post" itemscope itemprop="blogPost">
+  <div class="article-meta">
+    <a href="/2018/10/24/20181024/" class="article-date">
+  <time datetime="2018-10-24T14:23:51.000Z" itemprop="datePublished">2018-10-24</time>
+</a>
+    
+  </div>
+  <div class="article-inner">
+    
+    
+      <header class="article-header">
+        
+  
+    <h1 itemprop="name">
+      <a class="article-title" href="/2018/10/24/20181024/">TIL</a>
+    </h1>
+  
+
+      </header>
+    
+    <div class="article-entry" itemprop="articleBody">
+      
+        <h1 id="오늘의-공부-20181024"><a href="#오늘의-공부-20181024" class="headerlink" title="오늘의 공부 20181024"></a>오늘의 공부 20181024</h1><p>알고리즘 2개<br>객체 지향적 사고에 대해 공부<br>tdd 강연</p>
+<h2 id="프로그래머스"><a href="#프로그래머스" class="headerlink" title="프로그래머스"></a>프로그래머스</h2><h2 id="피드백"><a href="#피드백" class="headerlink" title="피드백"></a>피드백</h2><ol>
+<li>생성자에서 유효성 검사하는게 어떠냐는 피드백을 받았다.<br>처음엔 생성자가 길어져 creator 메소드에 유효성 검사를 시켰는데 생성자에 하면 나중에 좋을 것 같다.<br>creator 로 유효성 검사를 하면 변경이 가능해 오버라이딩 해서 유효성검사를 패스 하는 상황도 발생 할것 같다.</li>
+<li>정보를 전달할 때 List 인터페이스로 전달 하는 이유는 뭘까?</li>
+</ol>
+<h2 id="셀프-테스트"><a href="#셀프-테스트" class="headerlink" title="셀프 테스트"></a>셀프 테스트</h2><p>체크 리스트 *</p>
+<ol>
+<li><p>상속을 이해했는가?</p>
+<ul>
+<li>상속이란 먼저 완성된 클래스 내용을 전부 사용하면서 추가로 새로운 특징이 만들어 졌을 때 중복코드를 제거 하기 위해 사용</li>
+</ul>
+</li>
+<li><p>추상 클래스와 추상 메서드에 대해 이해했는가?</p>
+<ul>
+<li>추상 클래스와 메서드는 미리 추상적으로 선언만 해둔 것 추상 클래스를 사용하면 각 매서드의 공통점은 상속시키고 차이점은 추상메서드로 강제 해 자식클래스들이 꼭 정의하게 할 수 있다.</li>
+</ul>
+</li>
+<li><p>this와 super 키워드에 대해 알고 있는가?</p>
+<ul>
+<li>this 는 본인, 자기 자신, class 내부의 인스턴스를 가리킬 때 사용</li>
+<li>super 는 부모의 인스턴스를 나타낼 때 사용 굳이 붙이지 않아도 알아서 잡아줌 하지만 같은 명칭이 사용되면 super와 this 로 구분</li>
+</ul>
+</li>
+<li><p>인터페이스를 이해했는가?</p>
+<ul>
+<li>외부에 값을 전달하기 위해 미리 정해 놓은 것 </li>
+<li>미리 규격을 약속해 놓으면 협업이나 특정부분 모듈을 바꿀 때 유연하게 사용 할 수 가 있다.</li>
+</ul>
+</li>
+<li><p>업캐스팅에 대해 이해했는가?</p>
+<ul>
+<li>상위 클래스로 형 변환 하는것</li>
+<li>아직 잘 이해를 못했다. 더 공부하면 좋겠다. 다음에 업캐스팅에 더 공부 해보자.</li>
+</ul>
+</li>
+<li><p>다운캐스팅에 대해 이해했는가?</p>
+<ul>
+<li>하위 클래스로 형변환 하는것</li>
+<li>다음에 나오면 같이 더 공부 해봐야 겠다.</li>
+</ul>
+</li>
+<li><p>ArrayList와 LinkedList의 차이점에 대해 이해했는가?</p>
+<ul>
+<li>arrayList는 순서대로 저장하는 느낌</li>
+<li>LinkedList 리스트 에게 다음 순서 리스트 정보를 적어 순서를 이동 시킴</li>
+<li>만들고 찾는건 arrayList 가 빠르지만 특정값을 수정하거나 순서를 추가할 땐 LinkedList가 더 좋다.</li>
+</ul>
+</li>
+<li><p>equals, hashCode, toString 세 메소드의 용도에 대해 알고 있는가?</p>
+<ul>
+<li>object class 메소드 셋다 class 를 생성하고 비교 출력 할 때 override 해서 자주 사용</li>
+<li>equals 는 값을 비교하는 것</li>
+<li>hashCode 는 기본은 주소값을 리턴한다.</li>
+<li>toString 은 객체가 출력할 기본 출력값을 String으로 담고있다.</li>
+</ul>
+</li>
+<li><p>List와 Set의 차이점에 대해 알고 있는가?</p>
+<ul>
+<li>list 는 중복값 허용 값은 get로 뽑아냄</li>
+<li>set 은 중복값 불가 값을 뽑아 올 때 iterator를 사용 해야함.</li>
+</ul>
+</li>
+<li><p>인스턴스를 비교할 때 ==와 equals()를 사용할 때의 차이점에 대해 알고 있는가?</p>
+<ul>
+<li>기본적으로는 equals는 == 로 비교하는데 equals는 override 해서 다른값을 비교 하게 할 수 있다.</li>
+<li>String 같은 객체들은 equals로 비교 해야함.</li>
+</ul>
+</li>
+<li><p>상속과 인터페이스의 차이점과 상속과 인터페이스가 필요한 이유에 대해 설명하시오. *</p>
+<ul>
+<li>상속은 부모클래스에 선언된 모든것을 가져오는 것</li>
+<li>인터페이스는 특정 메소드를 꼭 만들라고 강제 하는 것</li>
+</ul>
+</li>
+<li><p>이번 미션에서 공부한 자바 문법 중에서 학습하기 가장 어려웠던 것은 어떤 것인가요? *</p>
+<ul>
+<li>인터페이스와 다형성이 어려웠다.</li>
+</ul>
+</li>
+<li><p>그 외에 학습하기 어렵거나 시간이 오래 걸린 것은 무엇이고, 어떻게 극복했나요? *</p>
+<ul>
+<li>객체 설계 하는게 어려웠다. 객체는 파도 파도 새로운거같다. 오늘은 여기까지 하고 내일 더 공부 해봐야겠다.</li>
+</ul>
+</li>
+</ol>
+<hr>
+
+      
+    </div>
+    <footer class="article-footer">
+      <a data-url="http://yoursite.com/2018/10/24/20181024/" data-id="cjnopc7ny0001isv00k2onow8" class="article-share-link">공유</a>
+      
+      
+  <ul class="article-tag-list"><li class="article-tag-list-item"><a class="article-tag-list-link" href="/tags/TIL/">TIL</a></li></ul>
+
+    </footer>
+  </div>
+  
+</article>
+
+
+  
     <article id="post-20181023" class="article article-type-post" itemscope itemprop="blogPost">
   <div class="article-meta">
     <a href="/2018/10/23/20181023/" class="article-date">
@@ -223,8 +397,8 @@
   
     <article id="post-20181017" class="article article-type-post" itemscope itemprop="blogPost">
   <div class="article-meta">
-    <a href="/2018/10/16/20181017/" class="article-date">
-  <time datetime="2018-10-16T14:23:51.000Z" itemprop="datePublished">2018-10-16</time>
+    <a href="/2018/10/17/20181017/" class="article-date">
+  <time datetime="2018-10-17T14:23:51.000Z" itemprop="datePublished">2018-10-17</time>
 </a>
     
   </div>
@@ -235,7 +409,7 @@
         
   
     <h1 itemprop="name">
-      <a class="article-title" href="/2018/10/16/20181017/">TIL</a>
+      <a class="article-title" href="/2018/10/17/20181017/">TIL</a>
     </h1>
   
 
@@ -243,7 +417,7 @@
     
     <div class="article-entry" itemprop="articleBody">
       
-        <h1 id="오늘의-공부-20181016"><a href="#오늘의-공부-20181016" class="headerlink" title="오늘의 공부 20181016"></a>오늘의 공부 20181016</h1><h2 id="공부"><a href="#공부" class="headerlink" title="공부"></a>공부</h2><p>오늘은 핀과 짝프로그래밍을 했다.<br>tdd로 구현<br>다른사람들 속도와 나쁘지 않게 구현한거같다.<br>객체지향적 설계</p>
+        <h1 id="오늘의-공부-20181017"><a href="#오늘의-공부-20181017" class="headerlink" title="오늘의 공부 20181017"></a>오늘의 공부 20181017</h1><h2 id="공부"><a href="#공부" class="headerlink" title="공부"></a>공부</h2><p>오늘은 핀과 짝프로그래밍을 했다.<br>tdd로 구현<br>다른사람들 속도와 나쁘지 않게 구현한거같다.<br>객체지향적 설계</p>
 <ul>
 <li>내가 생각한 메소드나 변수 이것을 클래스로 만들어서 생성하는 것 접근은 프라이빗으로 해 외부에 도출 안되게 감싸는것<br>오늘 짝프로그램으로 설계를 하면서 조금 발전했다고 느낌<br>내일은 coordinate 를 리팩토링 하고 pr 보내보기</li>
 </ul>
@@ -252,7 +426,7 @@
       
     </div>
     <footer class="article-footer">
-      <a data-url="http://yoursite.com/2018/10/16/20181017/" data-id="cjnd9rw1200001sv0vybjx2wj" class="article-share-link">공유</a>
+      <a data-url="http://yoursite.com/2018/10/17/20181017/" data-id="cjnd9rw1200001sv0vybjx2wj" class="article-share-link">공유</a>
       
       
   <ul class="article-tag-list"><li class="article-tag-list-item"><a class="article-tag-list-link" href="/tags/TIL/">TIL</a></li></ul>
@@ -267,22 +441,39 @@
     <article id="post-20181016" class="article article-type-post" itemscope itemprop="blogPost">
   <div class="article-meta">
     <a href="/2018/10/16/20181016/" class="article-date">
-  <time datetime="2018-10-16T13:09:07.810Z" itemprop="datePublished">2018-10-16</time>
+  <time datetime="2018-10-16T14:23:51.000Z" itemprop="datePublished">2018-10-16</time>
 </a>
     
   </div>
   <div class="article-inner">
     
     
+      <header class="article-header">
+        
+  
+    <h1 itemprop="name">
+      <a class="article-title" href="/2018/10/16/20181016/">TIL</a>
+    </h1>
+  
+
+      </header>
+    
     <div class="article-entry" itemprop="articleBody">
       
-        
+        <h1 id="오늘의-공부-20181016"><a href="#오늘의-공부-20181016" class="headerlink" title="오늘의 공부 20181016"></a>오늘의 공부 20181016</h1><h2 id="공부"><a href="#공부" class="headerlink" title="공부"></a>공부</h2><p>인터페이스와 추상클래스가 아직 명확하지않은거 같다.<br>추상클래스는 매개변수와 리턴값으로 올 수 없다.<br>인터페이스는 올 수 있다.</p>
+<p>추상 클래스가 아니라 그냥 클래스를 상속하고 한다면? 사용할 수 있겠지<br>모듈에서 view 갈때 인터페이스 한것을 출력?</p>
+<p>다향성이 어렵다.<br>좀더 고민해봐야겠다. 오늘 하루종일 인터페이스와 추상클래스 다향성에 대해 생각만 했다. 결과적으로 달팽이 만큼 나간거 같다.</p>
+<p>내일은 좀더 빠르게 진도를 나가보고 기본서를 좀 읽어봐야겠다.</p>
+<hr>
+
       
     </div>
     <footer class="article-footer">
       <a data-url="http://yoursite.com/2018/10/16/20181016/" data-id="cjnbrxvce0000k8v0gif7yiv1" class="article-share-link">공유</a>
       
       
+  <ul class="article-tag-list"><li class="article-tag-list-item"><a class="article-tag-list-link" href="/tags/TIL/">TIL</a></li></ul>
+
     </footer>
   </div>
   
@@ -461,114 +652,6 @@
 
 
   
-    <article id="post-20181008" class="article article-type-post" itemscope itemprop="blogPost">
-  <div class="article-meta">
-    <a href="/2018/10/08/20181008/" class="article-date">
-  <time datetime="2018-10-08T14:23:51.000Z" itemprop="datePublished">2018-10-08</time>
-</a>
-    
-  </div>
-  <div class="article-inner">
-    
-    
-      <header class="article-header">
-        
-  
-    <h1 itemprop="name">
-      <a class="article-title" href="/2018/10/08/20181008/">TIL</a>
-    </h1>
-  
-
-      </header>
-    
-    <div class="article-entry" itemprop="articleBody">
-      
-        <h1 id="오늘의-공부-20181008"><a href="#오늘의-공부-20181008" class="headerlink" title="오늘의 공부 20181008"></a>오늘의 공부 20181008</h1><h2 id="강의"><a href="#강의" class="headerlink" title="강의"></a>강의</h2><p>컨트롤러</p>
-<h3 id="MVC-MVVM"><a href="#MVC-MVVM" class="headerlink" title="MVC , MVVM"></a>MVC , MVVM</h3><p>사용이유 모듈의 재 사용성이 증가한다.<br>유지보수가 쉽고 비용이 절감된다.</p>
-<ol>
-<li>모듈의 단위태스트를 지향하자.</li>
-</ol>
-<p>DTO 와 VO는 다르다.</p>
-<p>DTO 는 setter, getter 허용</p>
-<p>VO (value object) 변경 불가능<br>value = 변경 불가 (mutable object)<br>variable = 변경 가능 (immutable object) </p>
-<p>뮤터블 set 들어가면됨<br>임뮤터블 string 예로 들자.</p>
-<p>자료구조를 많이 쓴다.<br>데이터를 어떤형태로 저장하고 사용할것이냐<br>자바는 자료구조는 콜렉션 프레임 워크로 사용된다.<br>list set map<br>ArrayList &gt; HashMap &gt; HashSet<br>3가지만 잘 사용하자.</p>
-<ol>
-<li>ArrayList는 배열에 쓰면됨</li>
-<li>Map 은 key value</li>
-</ol>
-
-      
-    </div>
-    <footer class="article-footer">
-      <a data-url="http://yoursite.com/2018/10/08/20181008/" data-id="cjn01r0ko0001tcv0wb92mrke" class="article-share-link">공유</a>
-      
-      
-  <ul class="article-tag-list"><li class="article-tag-list-item"><a class="article-tag-list-link" href="/tags/TIL/">TIL</a></li></ul>
-
-    </footer>
-  </div>
-  
-</article>
-
-
-  
-    <article id="post-20181004" class="article article-type-post" itemscope itemprop="blogPost">
-  <div class="article-meta">
-    <a href="/2018/10/04/20181004/" class="article-date">
-  <time datetime="2018-10-04T14:23:51.000Z" itemprop="datePublished">2018-10-04</time>
-</a>
-    
-  </div>
-  <div class="article-inner">
-    
-    
-      <header class="article-header">
-        
-  
-    <h1 itemprop="name">
-      <a class="article-title" href="/2018/10/04/20181004/">TIL</a>
-    </h1>
-  
-
-      </header>
-    
-    <div class="article-entry" itemprop="articleBody">
-      
-        <h1 id="오늘의-공부-20181004"><a href="#오늘의-공부-20181004" class="headerlink" title="오늘의 공부 20181004"></a>오늘의 공부 20181004</h1><p>포인터가 생성될 때 값이 유효한지 확인 하는게 더 좋다.</p>
-<p>아무것도 안하고 위임하는 메서드 들이 많으면 잘하는것</p>
-<p>tdd 응집도는 높고 결합도는 낮은 컴포넌트</p>
-<ol>
-<li>빨강 : 실패하는 작은 테스트 작성 컴파일조차 되지 않게 만들어도 된다.</li>
-<li>초록 : 빨리 테스트가 통과하게 만듬</li>
-<li>리팩토링 : 중복제거<br>반복</li>
-</ol>
-<p>-&gt; 문제 점 적기 -&gt; 수정 - &gt; 반복</p>
-<p>삼각 측량을 사용 하면 </p>
-<p>추상 클래스</p>
-<p>클래스를 계속 만들어 올리는 작업도 할 수 있음 참 대단하다.</p>
-<p>다함께 쿠차차<br>박재범 cto 기술이사<br>인사팀 이주연<br>채용</p>
-<p>defind?<br>어떻게 문제를 접근하는지<br>1차 면접이 잴 중요</p>
-<p> 제가 실행 했을땐 문제가 없는거 같은데 어디서 문제가 생겼는지 테스트 코드를 모르니 막혀 답답하네요</p>
-<ul>
-<li>혹시 아시는분 힌트좀 주실 수 있나영?<figure class="highlight java"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br></pre></td><td class="code"><pre><span class="line"><span class="class"><span class="keyword">class</span> <span class="title">Solution</span> </span>&#123;</span><br><span class="line">    <span class="function"><span class="keyword">public</span> <span class="keyword">int</span> <span class="title">solution</span><span class="params">(<span class="keyword">int</span> n)</span> </span>&#123;</span><br><span class="line">        <span class="keyword">int</span>[] nums = <span class="keyword">new</span> <span class="keyword">int</span>[n+<span class="number">1</span>];</span><br><span class="line">        nums[<span class="number">0</span>] = <span class="number">0</span>;</span><br><span class="line">        nums[<span class="number">1</span>] = <span class="number">1</span>;</span><br><span class="line">        nums[<span class="number">2</span>] = <span class="number">1</span>;</span><br><span class="line"></span><br><span class="line">        <span class="keyword">for</span> (<span class="keyword">int</span> i = <span class="number">3</span>; i &lt;= n; i++) &#123;</span><br><span class="line">            nums[i] = nums[i-<span class="number">1</span>] + nums[i-<span class="number">2</span>];</span><br><span class="line">        &#125;</span><br><span class="line"></span><br><span class="line">        <span class="keyword">return</span> nums[n] % <span class="number">1234567</span>;</span><br><span class="line">    &#125;</span><br><span class="line">&#125;</span><br></pre></td></tr></table></figure></li>
-</ul>
-
-      
-    </div>
-    <footer class="article-footer">
-      <a data-url="http://yoursite.com/2018/10/04/20181004/" data-id="cjn01r0k80000tcv0nmf8yuqm" class="article-share-link">공유</a>
-      
-      
-  <ul class="article-tag-list"><li class="article-tag-list-item"><a class="article-tag-list-link" href="/tags/TIL/">TIL</a></li></ul>
-
-    </footer>
-  </div>
-  
-</article>
-
-
-  
 
 
   <nav id="page-nav">
@@ -619,6 +702,14 @@
       <ul>
         
           <li>
+            <a href="/2018/10/25/20181025/">TIL</a>
+          </li>
+        
+          <li>
+            <a href="/2018/10/24/20181024/">TIL</a>
+          </li>
+        
+          <li>
             <a href="/2018/10/23/20181023/">TIL</a>
           </li>
         
@@ -628,14 +719,6 @@
         
           <li>
             <a href="/2018/10/19/20181019/">TIL</a>
-          </li>
-        
-          <li>
-            <a href="/2018/10/16/20181017/">TIL</a>
-          </li>
-        
-          <li>
-            <a href="/2018/10/16/20181016/">(no title)</a>
           </li>
         
       </ul>

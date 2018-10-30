@@ -66,6 +66,131 @@
       <div class="outer">
         <section id="main">
   
+    <article id="post-201808/20180828" class="article article-type-post" itemscope itemprop="blogPost">
+  <div class="article-meta">
+    <a href="/2018/08/28/201808/20180828/" class="article-date">
+  <time datetime="2018-08-28T14:23:51.000Z" itemprop="datePublished">2018-08-28</time>
+</a>
+    
+  </div>
+  <div class="article-inner">
+    
+    
+      <header class="article-header">
+        
+  
+    <h1 itemprop="name">
+      <a class="article-title" href="/2018/08/28/201808/20180828/">TIL</a>
+    </h1>
+  
+
+      </header>
+    
+    <div class="article-entry" itemprop="articleBody">
+      
+        <h1 id="오늘의-공부-20180828"><a href="#오늘의-공부-20180828" class="headerlink" title="오늘의 공부 20180828"></a>오늘의 공부 20180828</h1><ul>
+<li>크립토 좀비</li>
+<li>java</li>
+</ul>
+<hr>
+<h2 id="프로그래머스"><a href="#프로그래머스" class="headerlink" title="프로그래머스"></a>프로그래머스</h2><p>알고리즘 풀어보기</p>
+<hr>
+<h2 id="크립토-좀비"><a href="#크립토-좀비" class="headerlink" title="크립토 좀비"></a>크립토 좀비</h2><p>솔리디티를 이용한 코드 구현</p>
+<h3 id="함수-접근-제어자-visibility"><a href="#함수-접근-제어자-visibility" class="headerlink" title="함수 접근 제어자(visibility)"></a>함수 접근 제어자(visibility)</h3><ul>
+<li><code>private</code> 컨트랙트 내부의 다른 함수들에서만 호출됨</li>
+<li><code>internal</code>  해당 컨트랙트를 상속하는 컨트랙트에서 호출됨</li>
+<li><code>external</code> 컨트랙트 외부에서만 호출됨</li>
+<li><code>public</code> 내부 외부 모두 호출가능</li>
+</ul>
+<h3 id="상태-제어자-state-modifier"><a href="#상태-제어자-state-modifier" class="headerlink" title="상태 제어자(state modifier)"></a>상태 제어자(state modifier)</h3><ul>
+<li><code>view</code> 해당 함수를 실행해도 어떤 데이터도 저장/변경되지 않음</li>
+<li><code>pure</code> 함수가 어떤 데이터도 블록체인에 저장하지 않을 뿐만 아니라, 블록체인으로부터 어떤 데이터도 읽지 않음</li>
+</ul>
+<h3 id="payable-제어자"><a href="#payable-제어자" class="headerlink" title="payable 제어자"></a>payable 제어자</h3><p>이더리움에서는 돈(이더), 데이터(transcation payload), 컨트랙트 코드 자체 모두 이더리움 위에 존재하기 때문에, 함수를 실행하는 동시에 컨트랙트에 돈을 지불하는 것이 가능하다.</p>
+<ul>
+<li>예시<figure class="highlight js"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br></pre></td><td class="code"><pre><span class="line">contract OnlineStore &#123;</span><br><span class="line">  <span class="function"><span class="keyword">function</span> <span class="title">buySomething</span>(<span class="params"></span>) <span class="title">external</span> <span class="title">payable</span> </span>&#123;</span><br><span class="line">    <span class="comment">// 함수 실행에 0.001이더가 보내졌는지 확실히 하기 위해 확인:</span></span><br><span class="line">    <span class="built_in">require</span>(msg.value == <span class="number">0.001</span> ether);</span><br><span class="line">    <span class="comment">// 보내졌다면, 함수를 호출한 자에게 디지털 아이템을 전달하기 위한 내용 구성:</span></span><br><span class="line">    transferThing(msg.sender);</span><br><span class="line">  &#125;</span><br><span class="line">&#125;</span><br></pre></td></tr></table></figure>
+</li>
+</ul>
+<hr>
+<h2 id="java"><a href="#java" class="headerlink" title="java"></a>java</h2><p>공부했던것들 정리</p>
+
+      
+    </div>
+    <footer class="article-footer">
+      <a data-url="http://yoursite.com/2018/08/28/201808/20180828/" data-id="cjllzogy3001jykv0cpaxbbl0" class="article-share-link">공유</a>
+      
+      
+  <ul class="article-tag-list"><li class="article-tag-list-item"><a class="article-tag-list-link" href="/tags/TIL/">TIL</a></li></ul>
+
+    </footer>
+  </div>
+  
+</article>
+
+
+  
+    <article id="post-201808/20180824" class="article article-type-post" itemscope itemprop="blogPost">
+  <div class="article-meta">
+    <a href="/2018/08/24/201808/20180824/" class="article-date">
+  <time datetime="2018-08-24T14:23:51.000Z" itemprop="datePublished">2018-08-24</time>
+</a>
+    
+  </div>
+  <div class="article-inner">
+    
+    
+      <header class="article-header">
+        
+  
+    <h1 itemprop="name">
+      <a class="article-title" href="/2018/08/24/201808/20180824/">TIL</a>
+    </h1>
+  
+
+      </header>
+    
+    <div class="article-entry" itemprop="articleBody">
+      
+        <h1 id="오늘의-공부-20180824"><a href="#오늘의-공부-20180824" class="headerlink" title="오늘의 공부 20180824"></a>오늘의 공부 20180824</h1><ul>
+<li>프로그래머스</li>
+<li>크립토 좀비</li>
+</ul>
+<hr>
+<h2 id="프로그래머스"><a href="#프로그래머스" class="headerlink" title="프로그래머스"></a>프로그래머스</h2><p>알고리즘 풀어보기</p>
+<ul>
+<li>제일 작은수 제거<figure class="highlight js"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br></pre></td><td class="code"><pre><span class="line"><span class="function"><span class="keyword">function</span> <span class="title">solution</span>(<span class="params">arr</span>) </span>&#123;</span><br><span class="line">    <span class="keyword">var</span> answer = [];</span><br><span class="line">    <span class="keyword">if</span> ( arr.length == <span class="number">1</span>) &#123;</span><br><span class="line">        answer.push(<span class="number">-1</span>);</span><br><span class="line">    &#125;</span><br><span class="line">    <span class="keyword">else</span> &#123;</span><br><span class="line">        <span class="keyword">var</span> min = <span class="built_in">Math</span>.min(arr);</span><br><span class="line">        arr.splice(arr.indexOf(min),<span class="number">1</span>);</span><br><span class="line">        answer = arr;</span><br><span class="line">    &#125;</span><br><span class="line">    <span class="built_in">console</span>.log(arr.length);</span><br><span class="line">    <span class="keyword">return</span> answer;</span><br><span class="line">&#125;</span><br></pre></td></tr></table></figure>
+</li>
+</ul>
+<p><code>call</code> , <code>apply</code></p>
+<ul>
+<li><code>call</code> 다른 객체의 함수를 자기것인 마냥 사용할수 있다.</li>
+<li><p><code>call</code> , <code>apply</code> 의 null 은 this 의 의미</p>
+</li>
+<li><p>짝수와 홀수</p>
+<figure class="highlight js"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br></pre></td><td class="code"><pre><span class="line"><span class="function"><span class="keyword">function</span> <span class="title">solution</span>(<span class="params">num</span>) </span>&#123;</span><br><span class="line">    <span class="keyword">var</span> answer = <span class="string">''</span>;</span><br><span class="line">    <span class="keyword">if</span>(num % <span class="number">2</span> === <span class="number">0</span>) &#123;</span><br><span class="line">        answer = <span class="string">'Even'</span>;</span><br><span class="line">    &#125;</span><br><span class="line">    <span class="keyword">else</span> &#123;</span><br><span class="line">        answer = <span class="string">'Odd'</span>;</span><br><span class="line">    &#125;</span><br><span class="line">    <span class="keyword">return</span> answer;</span><br><span class="line">&#125;</span><br></pre></td></tr></table></figure>
+</li>
+</ul>
+<p>정수의 범위는 - 0, 음수 , 양수 </p>
+<ul>
+<li>콜라츠 추측<figure class="highlight js"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br><span class="line">15</span><br><span class="line">16</span><br><span class="line">17</span><br><span class="line">18</span><br><span class="line">19</span><br></pre></td><td class="code"><pre><span class="line"><span class="function"><span class="keyword">function</span> <span class="title">solution</span>(<span class="params">num</span>) </span>&#123;</span><br><span class="line">    <span class="keyword">var</span> answer = <span class="number">0</span>;</span><br><span class="line">    <span class="keyword">for</span> (<span class="keyword">var</span> i = <span class="number">0</span>; i &lt; <span class="number">500</span> ; i++) &#123;</span><br><span class="line">        <span class="keyword">if</span> ( num % <span class="number">2</span> === <span class="number">0</span> ) &#123;</span><br><span class="line">            num = <span class="built_in">Math</span>.floor(num/<span class="number">2</span>);</span><br><span class="line">          </span><br><span class="line">        &#125;</span><br><span class="line">        <span class="keyword">else</span> <span class="keyword">if</span> ( num % <span class="number">2</span> === <span class="number">1</span> &amp;&amp; num !==<span class="number">1</span>) &#123;</span><br><span class="line">            num = (num * <span class="number">3</span>) + <span class="number">1</span> ;</span><br><span class="line">            </span><br><span class="line">        &#125;</span><br><span class="line">        <span class="keyword">else</span> <span class="keyword">if</span> ( num === <span class="number">1</span>) &#123;</span><br><span class="line">            answer = i ;</span><br><span class="line">            <span class="keyword">break</span>;</span><br><span class="line">        &#125;</span><br><span class="line">        answer = <span class="number">-1</span>;</span><br><span class="line">    &#125;</span><br><span class="line">    <span class="keyword">return</span> answer;</span><br><span class="line">&#125;</span><br></pre></td></tr></table></figure>
+</li>
+</ul>
+
+      
+    </div>
+    <footer class="article-footer">
+      <a data-url="http://yoursite.com/2018/08/24/201808/20180824/" data-id="cjllzogy8001pykv0sj0sinee" class="article-share-link">공유</a>
+      
+      
+  <ul class="article-tag-list"><li class="article-tag-list-item"><a class="article-tag-list-link" href="/tags/TIL/">TIL</a></li></ul>
+
+    </footer>
+  </div>
+  
+</article>
+
+
+  
     <article id="post-201808/20180821" class="article article-type-post" itemscope itemprop="blogPost">
   <div class="article-meta">
     <a href="/2018/08/21/201808/20180821/" class="article-date">
@@ -323,6 +448,70 @@
 
 
   
+    <article id="post-201808/20180811" class="article article-type-post" itemscope itemprop="blogPost">
+  <div class="article-meta">
+    <a href="/2018/08/10/201808/20180811/" class="article-date">
+  <time datetime="2018-08-10T14:23:51.000Z" itemprop="datePublished">2018-08-10</time>
+</a>
+    
+  </div>
+  <div class="article-inner">
+    
+    
+      <header class="article-header">
+        
+  
+    <h1 itemprop="name">
+      <a class="article-title" href="/2018/08/10/201808/20180811/">TIL</a>
+    </h1>
+  
+
+      </header>
+    
+    <div class="article-entry" itemprop="articleBody">
+      
+        <h1 id="오늘의-공부-20180810"><a href="#오늘의-공부-20180810" class="headerlink" title="오늘의 공부 20180810"></a>오늘의 공부 20180810</h1><ul>
+<li>프로그래머스 알고리즘 1개</li>
+<li>java 강의</li>
+<li>생활코딩 듣기</li>
+</ul>
+<hr>
+<h2 id="java"><a href="#java" class="headerlink" title="java"></a>java</h2><hr>
+<h2 id="js"><a href="#js" class="headerlink" title="js"></a>js</h2><p>숫자 퍼즐 구현중<br>키보드 값 입력받는걸 구현해보자</p>
+<ul>
+<li><p>예제</p>
+<figure class="highlight js"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br><span class="line">15</span><br><span class="line">16</span><br><span class="line">17</span><br><span class="line">18</span><br><span class="line">19</span><br><span class="line">20</span><br><span class="line">21</span><br><span class="line">22</span><br></pre></td><td class="code"><pre><span class="line">&lt;body onkeydown=<span class="string">'on_key_down()'</span>&gt;</span><br><span class="line">        아무 키나 입력해보세요.</span><br><span class="line">        &lt;br&gt;char &lt;input type=<span class="string">'text'</span> id=<span class="string">'keychar'</span> /&gt;</span><br><span class="line">        &lt;br&gt;keycode &lt;input type=<span class="string">'text'</span> id=<span class="string">'keycode'</span> /&gt;</span><br><span class="line">        &lt;br&gt;Alt키 &lt;input type=<span class="string">'checkbox'</span> id=<span class="string">'altkey'</span> /&gt;</span><br><span class="line">        &lt;br&gt;Ctrl키 &lt;input type=<span class="string">'checkbox'</span> id=<span class="string">'ctrlkey'</span> /&gt;</span><br><span class="line">        &lt;br&gt;Shift키 &lt;input type=<span class="string">'checkbox'</span> id=<span class="string">'shiftkey'</span> /&gt;</span><br><span class="line">        </span><br><span class="line">        &lt;script&gt;</span><br><span class="line">        <span class="function"><span class="keyword">function</span> <span class="title">on_key_down</span>(<span class="params"></span>) </span>&#123;</span><br><span class="line">            <span class="keyword">var</span> keycode = event.keyCode;</span><br><span class="line">            <span class="keyword">if</span> ( keycode == <span class="number">8</span> <span class="comment">// 백스페이스 </span></span><br><span class="line">                || keycode == <span class="number">116</span> <span class="comment">// F5</span></span><br><span class="line">            ) event.returnValue = <span class="literal">false</span>; <span class="comment">// 브라우저 기능 키 무효화</span></span><br><span class="line">            <span class="built_in">document</span>.getElementById(<span class="string">'keychar'</span>).value = <span class="built_in">String</span>.fromCharCode( keycode );</span><br><span class="line">            <span class="built_in">document</span>.getElementById(<span class="string">'keycode'</span>).value = keycode;</span><br><span class="line">            <span class="built_in">document</span>.getElementById(<span class="string">'altkey'</span>).checked = event.altKey;</span><br><span class="line">            <span class="built_in">document</span>.getElementById(<span class="string">'ctrlkey'</span>).checked = event.ctrlKey;</span><br><span class="line">            <span class="built_in">document</span>.getElementById(<span class="string">'shiftkey'</span>).checked = event.shiftKey;</span><br><span class="line">        &#125;	</span><br><span class="line">        &lt;<span class="regexp">/script&gt;    </span></span><br><span class="line"><span class="regexp">&lt;/</span>body&gt;</span><br></pre></td></tr></table></figure>
+</li>
+<li><p>숫자퍼즐 구현 완료 하지만 랜덤으로 섞으면 가끔 답이 안맞는 문제가 발생 수정해야겠다.</p>
+</li>
+<li>2차원 배열은 그 값들에 array[y][x] 와 같이 접근할 수도 있고, array[y * X-length + x] 와 같이 1차원 적으로도 접근할 수 있습니다.</li>
+</ul>
+<hr>
+<h2 id="프로그래머스"><a href="#프로그래머스" class="headerlink" title="프로그래머스"></a>프로그래머스</h2><p>시저 암호</p>
+<ul>
+<li>내가 푼 코드</li>
+</ul>
+<hr>
+<h2 id="생활코딩-코딩야학"><a href="#생활코딩-코딩야학" class="headerlink" title="생활코딩 코딩야학"></a>생활코딩 코딩야학</h2><p>크립토좀비 해봐야겠다.</p>
+<ul>
+<li><a href="https://cryptozombies.io/" target="_blank" rel="noopener">https://cryptozombies.io/</a> ko/</li>
+</ul>
+
+      
+    </div>
+    <footer class="article-footer">
+      <a data-url="http://yoursite.com/2018/08/10/201808/20180811/" data-id="cjllzogxz001dykv0mkigoc89" class="article-share-link">공유</a>
+      
+      
+  <ul class="article-tag-list"><li class="article-tag-list-item"><a class="article-tag-list-link" href="/tags/TIL/">TIL</a></li></ul>
+
+    </footer>
+  </div>
+  
+</article>
+
+
+  
     <article id="post-201808/20180810" class="article article-type-post" itemscope itemprop="blogPost">
   <div class="article-meta">
     <a href="/2018/08/10/201808/20180810/" class="article-date">
@@ -387,70 +576,6 @@
     </div>
     <footer class="article-footer">
       <a data-url="http://yoursite.com/2018/08/10/201808/20180810/" data-id="cjllzogxw0019ykv0by39c0uf" class="article-share-link">공유</a>
-      
-      
-  <ul class="article-tag-list"><li class="article-tag-list-item"><a class="article-tag-list-link" href="/tags/TIL/">TIL</a></li></ul>
-
-    </footer>
-  </div>
-  
-</article>
-
-
-  
-    <article id="post-201808/20180811" class="article article-type-post" itemscope itemprop="blogPost">
-  <div class="article-meta">
-    <a href="/2018/08/10/201808/20180811/" class="article-date">
-  <time datetime="2018-08-10T14:23:51.000Z" itemprop="datePublished">2018-08-10</time>
-</a>
-    
-  </div>
-  <div class="article-inner">
-    
-    
-      <header class="article-header">
-        
-  
-    <h1 itemprop="name">
-      <a class="article-title" href="/2018/08/10/201808/20180811/">TIL</a>
-    </h1>
-  
-
-      </header>
-    
-    <div class="article-entry" itemprop="articleBody">
-      
-        <h1 id="오늘의-공부-20180810"><a href="#오늘의-공부-20180810" class="headerlink" title="오늘의 공부 20180810"></a>오늘의 공부 20180810</h1><ul>
-<li>프로그래머스 알고리즘 1개</li>
-<li>java 강의</li>
-<li>생활코딩 듣기</li>
-</ul>
-<hr>
-<h2 id="java"><a href="#java" class="headerlink" title="java"></a>java</h2><hr>
-<h2 id="js"><a href="#js" class="headerlink" title="js"></a>js</h2><p>숫자 퍼즐 구현중<br>키보드 값 입력받는걸 구현해보자</p>
-<ul>
-<li><p>예제</p>
-<figure class="highlight js"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br><span class="line">15</span><br><span class="line">16</span><br><span class="line">17</span><br><span class="line">18</span><br><span class="line">19</span><br><span class="line">20</span><br><span class="line">21</span><br><span class="line">22</span><br></pre></td><td class="code"><pre><span class="line">&lt;body onkeydown=<span class="string">'on_key_down()'</span>&gt;</span><br><span class="line">        아무 키나 입력해보세요.</span><br><span class="line">        &lt;br&gt;char &lt;input type=<span class="string">'text'</span> id=<span class="string">'keychar'</span> /&gt;</span><br><span class="line">        &lt;br&gt;keycode &lt;input type=<span class="string">'text'</span> id=<span class="string">'keycode'</span> /&gt;</span><br><span class="line">        &lt;br&gt;Alt키 &lt;input type=<span class="string">'checkbox'</span> id=<span class="string">'altkey'</span> /&gt;</span><br><span class="line">        &lt;br&gt;Ctrl키 &lt;input type=<span class="string">'checkbox'</span> id=<span class="string">'ctrlkey'</span> /&gt;</span><br><span class="line">        &lt;br&gt;Shift키 &lt;input type=<span class="string">'checkbox'</span> id=<span class="string">'shiftkey'</span> /&gt;</span><br><span class="line">        </span><br><span class="line">        &lt;script&gt;</span><br><span class="line">        <span class="function"><span class="keyword">function</span> <span class="title">on_key_down</span>(<span class="params"></span>) </span>&#123;</span><br><span class="line">            <span class="keyword">var</span> keycode = event.keyCode;</span><br><span class="line">            <span class="keyword">if</span> ( keycode == <span class="number">8</span> <span class="comment">// 백스페이스 </span></span><br><span class="line">                || keycode == <span class="number">116</span> <span class="comment">// F5</span></span><br><span class="line">            ) event.returnValue = <span class="literal">false</span>; <span class="comment">// 브라우저 기능 키 무효화</span></span><br><span class="line">            <span class="built_in">document</span>.getElementById(<span class="string">'keychar'</span>).value = <span class="built_in">String</span>.fromCharCode( keycode );</span><br><span class="line">            <span class="built_in">document</span>.getElementById(<span class="string">'keycode'</span>).value = keycode;</span><br><span class="line">            <span class="built_in">document</span>.getElementById(<span class="string">'altkey'</span>).checked = event.altKey;</span><br><span class="line">            <span class="built_in">document</span>.getElementById(<span class="string">'ctrlkey'</span>).checked = event.ctrlKey;</span><br><span class="line">            <span class="built_in">document</span>.getElementById(<span class="string">'shiftkey'</span>).checked = event.shiftKey;</span><br><span class="line">        &#125;	</span><br><span class="line">        &lt;<span class="regexp">/script&gt;    </span></span><br><span class="line"><span class="regexp">&lt;/</span>body&gt;</span><br></pre></td></tr></table></figure>
-</li>
-<li><p>숫자퍼즐 구현 완료 하지만 랜덤으로 섞으면 가끔 답이 안맞는 문제가 발생 수정해야겠다.</p>
-</li>
-<li>2차원 배열은 그 값들에 array[y][x] 와 같이 접근할 수도 있고, array[y * X-length + x] 와 같이 1차원 적으로도 접근할 수 있습니다.</li>
-</ul>
-<hr>
-<h2 id="프로그래머스"><a href="#프로그래머스" class="headerlink" title="프로그래머스"></a>프로그래머스</h2><p>시저 암호</p>
-<ul>
-<li>내가 푼 코드</li>
-</ul>
-<hr>
-<h2 id="생활코딩-코딩야학"><a href="#생활코딩-코딩야학" class="headerlink" title="생활코딩 코딩야학"></a>생활코딩 코딩야학</h2><p>크립토좀비 해봐야겠다.</p>
-<ul>
-<li><a href="https://cryptozombies.io/" target="_blank" rel="noopener">https://cryptozombies.io/</a> ko/</li>
-</ul>
-
-      
-    </div>
-    <footer class="article-footer">
-      <a data-url="http://yoursite.com/2018/08/10/201808/20180811/" data-id="cjllzogxz001dykv0mkigoc89" class="article-share-link">공유</a>
       
       
   <ul class="article-tag-list"><li class="article-tag-list-item"><a class="article-tag-list-link" href="/tags/TIL/">TIL</a></li></ul>
@@ -597,175 +722,6 @@
 
 
   
-    <article id="post-201808/20180807" class="article article-type-post" itemscope itemprop="blogPost">
-  <div class="article-meta">
-    <a href="/2018/08/07/201808/20180807/" class="article-date">
-  <time datetime="2018-08-07T14:23:51.000Z" itemprop="datePublished">2018-08-07</time>
-</a>
-    
-  </div>
-  <div class="article-inner">
-    
-    
-      <header class="article-header">
-        
-  
-    <h1 itemprop="name">
-      <a class="article-title" href="/2018/08/07/201808/20180807/">TIL</a>
-    </h1>
-  
-
-      </header>
-    
-    <div class="article-entry" itemprop="articleBody">
-      
-        <h1 id="오늘의-공부-20180807"><a href="#오늘의-공부-20180807" class="headerlink" title="오늘의 공부 20180807"></a>오늘의 공부 20180807</h1><ul>
-<li>프로그래머스 알고리즘 1개</li>
-<li>java 공부</li>
-<li>js 공부</li>
-</ul>
-<hr>
-<h2 id="java-공부"><a href="#java-공부" class="headerlink" title="java 공부"></a>java 공부</h2><ul>
-<li>오늘은 안함…</li>
-</ul>
-<hr>
-<h2 id="js-공부"><a href="#js-공부" class="headerlink" title="js 공부"></a>js 공부</h2><p>강의 공부<br>계산기 구현<br>객체 사용을 더 연습해보자</p>
-<h3 id="scope"><a href="#scope" class="headerlink" title="scope"></a>scope</h3><ul>
-<li>변수의 유효 범위 변수가 사용될 수 있는 범위</li>
-</ul>
-<h3 id="전역변수"><a href="#전역변수" class="headerlink" title="전역변수"></a>전역변수</h3><ul>
-<li>함수 외부에서 선언된 변수</li>
-</ul>
-<h3 id="const"><a href="#const" class="headerlink" title="const"></a>const</h3><ul>
-<li>const는 한번 선언하면 바꿀 수 없다.</li>
-</ul>
-<h3 id="let"><a href="#let" class="headerlink" title="let"></a>let</h3><ul>
-<li>읽고 쓰기가 가능하지만 다시 선언은 안된다.</li>
-<li>블록 스코프</li>
-</ul>
-<h3 id="호이스팅"><a href="#호이스팅" class="headerlink" title="호이스팅"></a>호이스팅</h3><ul>
-<li>var 로 선언하면 a<figure class="highlight js"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br></pre></td><td class="code"><pre><span class="line"><span class="built_in">console</span>.log(a);</span><br><span class="line"></span><br><span class="line"><span class="keyword">var</span> a = <span class="number">10</span>;</span><br><span class="line"></span><br><span class="line"><span class="built_in">console</span>.log(a);</span><br><span class="line"></span><br><span class="line"><span class="comment">//undefined</span></span><br><span class="line"><span class="comment">//10</span></span><br></pre></td></tr></table></figure>
-</li>
-</ul>
-<h3 id="재귀-recursion"><a href="#재귀-recursion" class="headerlink" title="재귀 (recursion)"></a>재귀 (recursion)</h3><ul>
-<li>자기 자신 호출</li>
-<li>return 이 꼭 필요하다.</li>
-<li>사용하는 이유 사용하면 더 쉽다.</li>
-<li>점화식 : 수열을 만족하는 해</li>
-<li>memoization<figure class="highlight js"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br></pre></td><td class="code"><pre><span class="line"><span class="keyword">var</span> arr =[<span class="number">0</span>, <span class="number">1</span>];</span><br><span class="line"><span class="function"><span class="keyword">function</span> <span class="title">fibo_d</span>(<span class="params">n</span>) </span>&#123;</span><br><span class="line">    <span class="keyword">if</span>(arr[n] == <span class="literal">undefined</span>) &#123;</span><br><span class="line">        arr[n] = fibo_d(n - <span class="number">1</span>) + fibo_d(n - <span class="number">2</span>);</span><br><span class="line">        &#125;</span><br><span class="line">    <span class="keyword">return</span> arr[n];</span><br><span class="line">&#125;</span><br></pre></td></tr></table></figure>
-</li>
-</ul>
-<hr>
-<h2 id="코딩야학"><a href="#코딩야학" class="headerlink" title="코딩야학"></a>코딩야학</h2><p>아톰 사용법<br>html</p>
-<h3 id="배우면-좋은것"><a href="#배우면-좋은것" class="headerlink" title="배우면 좋은것"></a>배우면 좋은것</h3><ul>
-<li>아톰에 insall 기능에 플러그인 설치가능</li>
-<li>emmet 페키지 설치하면 html태그 빠르게 입력가능</li>
-<li>html&gt;body&gt;h1*3 teb (&gt;는 안에)</li>
-</ul>
-
-      
-    </div>
-    <footer class="article-footer">
-      <a data-url="http://yoursite.com/2018/08/07/201808/20180807/" data-id="cjllzogxo0011ykv008ul6st8" class="article-share-link">공유</a>
-      
-      
-  <ul class="article-tag-list"><li class="article-tag-list-item"><a class="article-tag-list-link" href="/tags/TIL/">TIL</a></li></ul>
-
-    </footer>
-  </div>
-  
-</article>
-
-
-  
-    <article id="post-201808/20180806" class="article article-type-post" itemscope itemprop="blogPost">
-  <div class="article-meta">
-    <a href="/2018/08/06/201808/20180806/" class="article-date">
-  <time datetime="2018-08-06T14:23:51.000Z" itemprop="datePublished">2018-08-06</time>
-</a>
-    
-  </div>
-  <div class="article-inner">
-    
-    
-      <header class="article-header">
-        
-  
-    <h1 itemprop="name">
-      <a class="article-title" href="/2018/08/06/201808/20180806/">TIL</a>
-    </h1>
-  
-
-      </header>
-    
-    <div class="article-entry" itemprop="articleBody">
-      
-        <h1 id="오늘의-공부-20180806"><a href="#오늘의-공부-20180806" class="headerlink" title="오늘의 공부 20180806"></a>오늘의 공부 20180806</h1><ul>
-<li>프로그래머스 알고리즘 1개</li>
-<li>java 공부</li>
-<li>js 공부</li>
-</ul>
-<h2 id="java-공부"><a href="#java-공부" class="headerlink" title="java 공부"></a>java 공부</h2><ul>
-<li>제네릭 타입</li>
-</ul>
-<h2 id="js-공부"><a href="#js-공부" class="headerlink" title="js 공부"></a>js 공부</h2><ul>
-<li><code>sort</code> 명령어 사용</li>
-<li>dom (Document Object Model)<ul>
-<li>문서를 객체를 이용해서 계층 구조로 표현함</li>
-</ul>
-</li>
-<li>Prototype<ul>
-<li>같은 내용을 중복 시키지 않고 하나로 사용</li>
-</ul>
-</li>
-<li><code>document.createElement()</code><ul>
-<li>태그 생성</li>
-<li><code>appenChild(&#39;&#39;);</code> 자식으로 넣는다</li>
-</ul>
-</li>
-</ul>
-<h2 id="프로그래머스"><a href="#프로그래머스" class="headerlink" title="프로그래머스"></a>프로그래머스</h2><ul>
-<li>문자열 마음대로 정렬</li>
-</ul>
-<h3 id="문자열-마음대로-정렬"><a href="#문자열-마음대로-정렬" class="headerlink" title="문자열 마음대로 정렬"></a>문자열 마음대로 정렬</h3><ul>
-<li>배열을 위치의 값으로 정렬하자.</li>
-<li><p>어제 했던 코드 </p>
-<figure class="highlight js"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br><span class="line">15</span><br><span class="line">16</span><br><span class="line">17</span><br><span class="line">18</span><br></pre></td><td class="code"><pre><span class="line"><span class="function"><span class="keyword">function</span> <span class="title">solution</span>(<span class="params">strings, n</span>) </span>&#123;</span><br><span class="line">        <span class="keyword">var</span> answer = [];</span><br><span class="line">        <span class="keyword">var</span> n = n;</span><br><span class="line">        answer = strings.sort(<span class="function"><span class="keyword">function</span> (<span class="params">a,b</span>)</span>&#123;</span><br><span class="line">            <span class="keyword">var</span> x = a[n];</span><br><span class="line">            <span class="keyword">var</span> y = b[n];</span><br><span class="line">            <span class="keyword">var</span> i = <span class="number">0</span>;</span><br><span class="line">            <span class="keyword">while</span>(x == y) &#123;</span><br><span class="line">                i ++;</span><br><span class="line">                x =a[n+i];</span><br><span class="line">                y = b[n+i];</span><br><span class="line">            &#125;</span><br><span class="line">            <span class="keyword">if</span> (x &lt; y) &#123;<span class="keyword">return</span> <span class="number">-1</span>;&#125;</span><br><span class="line">            <span class="keyword">if</span> (x &gt; y) &#123;<span class="keyword">return</span> <span class="number">1</span>;&#125;</span><br><span class="line">            <span class="built_in">console</span>.log[arr];</span><br><span class="line">        &#125;);</span><br><span class="line">        <span class="keyword">return</span> answer;</span><br><span class="line">    &#125;</span><br></pre></td></tr></table></figure>
-</li>
-<li><p>수정을 해봤다 하지만 또 정답이 아니다. </p>
-</li>
-<li>내가 작성해본 테스트 케이스에선 잘 동작 하지만 정답에선 3개만 맞고 다 틀림…</li>
-</ul>
-<figure class="highlight js"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br><span class="line">15</span><br><span class="line">16</span><br><span class="line">17</span><br><span class="line">18</span><br><span class="line">19</span><br></pre></td><td class="code"><pre><span class="line"><span class="function"><span class="keyword">function</span> <span class="title">arr2</span>(<span class="params">strings,n</span>) </span>&#123;</span><br><span class="line">    <span class="keyword">var</span> answer = [];</span><br><span class="line">    <span class="keyword">var</span> n = n;</span><br><span class="line">    answer = strings.sort(<span class="function"><span class="keyword">function</span> (<span class="params">a,b</span>)</span>&#123;</span><br><span class="line">        <span class="keyword">var</span> x = a[n];</span><br><span class="line">        <span class="keyword">var</span> y = b[n];</span><br><span class="line">        <span class="keyword">if</span>(x == y) &#123;</span><br><span class="line">            <span class="keyword">if</span> (a &lt; b) &#123;</span><br><span class="line">                <span class="keyword">return</span> <span class="number">-1</span>;</span><br><span class="line">            &#125; <span class="keyword">else</span> <span class="keyword">if</span>(a&gt;b) &#123;</span><br><span class="line">                <span class="keyword">return</span> <span class="number">1</span>;</span><br><span class="line"></span><br><span class="line">            &#125;</span><br><span class="line">        &#125;</span><br><span class="line">        <span class="keyword">else</span> <span class="keyword">if</span> (x &lt; y) &#123;<span class="keyword">return</span> <span class="number">-1</span>;&#125;</span><br><span class="line">        <span class="keyword">else</span> <span class="keyword">if</span> (x &gt; y) &#123;<span class="keyword">return</span> <span class="number">1</span>;&#125;</span><br><span class="line">        <span class="built_in">console</span>.log[arr];</span><br><span class="line">    &#125;);</span><br><span class="line">    <span class="keyword">return</span> answer;</span><br></pre></td></tr></table></figure>
-<ul>
-<li><p>다른 사람 코드를 참고해서 바꾸니 정답 왜 위에껀 안되는걸까 아직 의문 ㅠㅠ</p>
-</li>
-<li><p>짧은 코드</p>
-<figure class="highlight js"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br></pre></td><td class="code"><pre><span class="line"><span class="function"><span class="keyword">function</span> <span class="title">solution</span>(<span class="params">strings, n</span>) </span>&#123;</span><br><span class="line">    <span class="keyword">return</span> strings.sort(<span class="function">(<span class="params">a, b</span>) =&gt;</span> a[n] === b[n] ? a.localeCompare(b) : a[n].localeCompare(b[n]));</span><br><span class="line">&#125;</span><br></pre></td></tr></table></figure>
-</li>
-<li><p>모르는 문법이 쓰였다 내일 공부해보자</p>
-</li>
-<li>=&gt; ?? </li>
-</ul>
-<h3 id="문자열-내-p와-y의-개수"><a href="#문자열-내-p와-y의-개수" class="headerlink" title="문자열 내 p와 y의 개수"></a>문자열 내 p와 y의 개수</h3><ul>
-<li>ㅁㄴㅇ<figure class="highlight js"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br><span class="line">15</span><br><span class="line">16</span><br></pre></td><td class="code"><pre><span class="line"><span class="function"><span class="keyword">function</span> <span class="title">solution</span>(<span class="params">s</span>)</span>&#123;</span><br><span class="line">    <span class="keyword">var</span> answer = <span class="literal">true</span>;</span><br><span class="line">    <span class="keyword">var</span> input = s.toLowerCase();</span><br><span class="line">    <span class="keyword">var</span> plength =input.match(<span class="regexp">/p/g</span>);</span><br><span class="line">    <span class="keyword">var</span> ylength =input.match(<span class="regexp">/y/g</span>);</span><br><span class="line">    <span class="comment">// match(/p/g) =&gt; match(/p/ig) 하면 대소 문자구분안함</span></span><br><span class="line">    <span class="keyword">if</span> (plength == <span class="literal">null</span> || ylength == <span class="literal">null</span>) &#123;</span><br><span class="line">        answer = <span class="literal">false</span>;</span><br><span class="line">    &#125;</span><br><span class="line">    <span class="keyword">else</span> <span class="keyword">if</span>(plength.length != ylength.length) &#123;</span><br><span class="line">        answer = <span class="literal">false</span>;</span><br><span class="line">    &#125;</span><br><span class="line">    <span class="built_in">console</span>.log(<span class="string">'Hello Javascript'</span>)</span><br><span class="line"></span><br><span class="line">    <span class="keyword">return</span> answer;</span><br><span class="line">&#125;</span><br></pre></td></tr></table></figure></li>
-</ul>
-
-      
-    </div>
-    <footer class="article-footer">
-      <a data-url="http://yoursite.com/2018/08/06/201808/20180806/" data-id="cjllzogxj000vykv0pg6wlo91" class="article-share-link">공유</a>
-      
-      
-  <ul class="article-tag-list"><li class="article-tag-list-item"><a class="article-tag-list-link" href="/tags/TIL/">TIL</a></li></ul>
-
-    </footer>
-  </div>
-  
-</article>
-
-
-  
 
 
   <nav id="page-nav">
@@ -816,6 +772,14 @@
       <ul>
         
           <li>
+            <a href="/2018/10/29/20181030/">TIL</a>
+          </li>
+        
+          <li>
+            <a href="/2018/10/29/20181029/">TIL</a>
+          </li>
+        
+          <li>
             <a href="/2018/10/25/20181025/">TIL</a>
           </li>
         
@@ -825,14 +789,6 @@
         
           <li>
             <a href="/2018/10/23/20181023/">TIL</a>
-          </li>
-        
-          <li>
-            <a href="/2018/10/22/20181022/">TIL</a>
-          </li>
-        
-          <li>
-            <a href="/2018/10/19/20181019/">TIL</a>
           </li>
         
       </ul>

@@ -7,18 +7,18 @@
   
   <title>TIL | jar100 blog</title>
   <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
-  <meta name="description" content="오늘의 공부 20181010미션미션을 하다 맨탈이 파괴됬다.객체 지향적으로 생각하는게 너무 어렵다. 하지만 할 수 있다. 아자… 알고리즘 공부폰켓몬 구현 상속 (inheritance)유산을 상속 받는것을 생각하면 쉽다.  객체를 자신이 만들지 않았다. 그래서 소스를 변경할 수 없다. 변경 할 수 있다고 해도 원 소스를 업데이트 하면 메소드 substarct">
+  <meta name="description" content="오늘의 공부 20181029stream 과 optional 그리고 ramda Stream함수형 인터페이스list 값을 담아 함수형으로 보기 편하게 자료구조를 생성스트림 배열 만들고 람다 쓰고 하면 코드의 길이를 줄일 수 있다.  limit()  자료구조의 크기를 제한한다. filter()  조건에 만족하는 자료구조값만 뽑는다. collect()  자료구조형">
 <meta name="keywords" content="TIL">
 <meta property="og:type" content="article">
 <meta property="og:title" content="TIL">
-<meta property="og:url" content="http://yoursite.com/2018/10/10/20181010/index.html">
+<meta property="og:url" content="http://yoursite.com/2018/10/29/20181029/index.html">
 <meta property="og:site_name" content="jar100 blog">
-<meta property="og:description" content="오늘의 공부 20181010미션미션을 하다 맨탈이 파괴됬다.객체 지향적으로 생각하는게 너무 어렵다. 하지만 할 수 있다. 아자… 알고리즘 공부폰켓몬 구현 상속 (inheritance)유산을 상속 받는것을 생각하면 쉽다.  객체를 자신이 만들지 않았다. 그래서 소스를 변경할 수 없다. 변경 할 수 있다고 해도 원 소스를 업데이트 하면 메소드 substarct">
+<meta property="og:description" content="오늘의 공부 20181029stream 과 optional 그리고 ramda Stream함수형 인터페이스list 값을 담아 함수형으로 보기 편하게 자료구조를 생성스트림 배열 만들고 람다 쓰고 하면 코드의 길이를 줄일 수 있다.  limit()  자료구조의 크기를 제한한다. filter()  조건에 만족하는 자료구조값만 뽑는다. collect()  자료구조형">
 <meta property="og:locale" content="ko">
-<meta property="og:updated_time" content="2018-10-11T12:04:59.842Z">
+<meta property="og:updated_time" content="2018-10-30T14:43:50.773Z">
 <meta name="twitter:card" content="summary">
 <meta name="twitter:title" content="TIL">
-<meta name="twitter:description" content="오늘의 공부 20181010미션미션을 하다 맨탈이 파괴됬다.객체 지향적으로 생각하는게 너무 어렵다. 하지만 할 수 있다. 아자… 알고리즘 공부폰켓몬 구현 상속 (inheritance)유산을 상속 받는것을 생각하면 쉽다.  객체를 자신이 만들지 않았다. 그래서 소스를 변경할 수 없다. 변경 할 수 있다고 해도 원 소스를 업데이트 하면 메소드 substarct">
+<meta name="twitter:description" content="오늘의 공부 20181029stream 과 optional 그리고 ramda Stream함수형 인터페이스list 값을 담아 함수형으로 보기 편하게 자료구조를 생성스트림 배열 만들고 람다 쓰고 하면 코드의 길이를 줄일 수 있다.  limit()  자료구조의 크기를 제한한다. filter()  조건에 만족하는 자료구조값만 뽑는다. collect()  자료구조형">
   
     <link rel="alternate" href="/atom.xml" title="jar100 blog" type="application/atom+xml">
   
@@ -69,10 +69,10 @@
   </div>
 </header>
       <div class="outer">
-        <section id="main"><article id="post-20181010" class="article article-type-post" itemscope itemprop="blogPost">
+        <section id="main"><article id="post-20181029" class="article article-type-post" itemscope itemprop="blogPost">
   <div class="article-meta">
-    <a href="/2018/10/10/20181010/" class="article-date">
-  <time datetime="2018-10-10T14:23:51.000Z" itemprop="datePublished">2018-10-10</time>
+    <a href="/2018/10/29/20181029/" class="article-date">
+  <time datetime="2018-10-29T14:23:51.000Z" itemprop="datePublished">2018-10-29</time>
 </a>
     
   </div>
@@ -91,22 +91,21 @@
     
     <div class="article-entry" itemprop="articleBody">
       
-        <h1 id="오늘의-공부-20181010"><a href="#오늘의-공부-20181010" class="headerlink" title="오늘의 공부 20181010"></a>오늘의 공부 20181010</h1><h2 id="미션"><a href="#미션" class="headerlink" title="미션"></a>미션</h2><p>미션을 하다 맨탈이 파괴됬다.<br>객체 지향적으로 생각하는게 너무 어렵다. 하지만 할 수 있다. 아자…</p>
-<h2 id="알고리즘-공부"><a href="#알고리즘-공부" class="headerlink" title="알고리즘 공부"></a>알고리즘 공부</h2><p>폰켓몬 구현</p>
-<h2 id="상속-inheritance"><a href="#상속-inheritance" class="headerlink" title="상속 (inheritance)"></a>상속 (inheritance)</h2><p>유산을 상속 받는것을 생각하면 쉽다.</p>
-<ol>
-<li>객체를 자신이 만들지 않았다. 그래서 소스를 변경할 수 없다. 변경 할 수 있다고 해도 원 소스를 업데이트 하면 메소드 substarct이 사라진다. 이러한 문제가 일어나지 않게 하기 위해서는 지속적으로 코드를 관리해야 한다.</li>
-<li>객체가 다양한 곳에서 활용되고 있는데 메소드를 추가하면 다른 곳에서는 불필요한 기능이 포함될 수 있다. 이것은 자연스럽게 객체를 사용하는 입장에서 몰라도 되는 것까지 알아야 하는 문제가 된다.</li>
-</ol>
+        <h1 id="오늘의-공부-20181029"><a href="#오늘의-공부-20181029" class="headerlink" title="오늘의 공부 20181029"></a>오늘의 공부 20181029</h1><p>stream 과 optional 그리고 ramda</p>
+<h2 id="Stream"><a href="#Stream" class="headerlink" title="Stream"></a>Stream</h2><p>함수형 인터페이스<br>list 값을 담아 함수형으로 보기 편하게 자료구조를 생성<br>스트림 배열 만들고 람다 쓰고 하면 코드의 길이를 줄일 수 있다.</p>
 <ul>
-<li>부모 클래스와 자식 클래스의 관계를 상위(super) 클래스와 하위(sub) 클래스라고 표현하기도 한다. 또한 기초 클래스(base class), 유도 클래스(derived class)라고도 부른다.</li>
+<li>limit()<br>  자료구조의 크기를 제한한다.</li>
+<li>filter()<br>  조건에 만족하는 자료구조값만 뽑는다.</li>
+<li>collect()<br>  자료구조형으로 다시 생성한다.</li>
+<li>map()<br>  값을 바꾼다.</li>
 </ul>
-<p>자기자신을 메인에서 인스턴스화 시킬 수 있다.</p>
+<h2 id="Optional"><a href="#Optional" class="headerlink" title="Optional"></a>Optional</h2><p>NPE를 유발할 수 있는 null을 직접 다루지 않아도 된다.</p>
+<h2 id="Ramda"><a href="#Ramda" class="headerlink" title="Ramda"></a>Ramda</h2><p>익명클래스의 발전된 형태라고 이해했다.<br>파라미터와 값이 리턴값이 정해진 경우 익명클래스르 좀더 추상화시켜 메소드를 동작시키는것<br>((파라미터) -&gt;  리턴값)</p>
 
       
     </div>
     <footer class="article-footer">
-      <a data-url="http://yoursite.com/2018/10/10/20181010/" data-id="cjn4jdpr20001n4v02n9va6zo" class="article-share-link">공유</a>
+      <a data-url="http://yoursite.com/2018/10/29/20181029/" data-id="cjnvuf5z90000kgv0h077fucb" class="article-share-link">공유</a>
       
       
   <ul class="article-tag-list"><li class="article-tag-list-item"><a class="article-tag-list-link" href="/tags/TIL/">TIL</a></li></ul>
@@ -117,7 +116,7 @@
     
 <nav id="article-nav">
   
-    <a href="/2018/10/11/20181011/" id="article-nav-newer" class="article-nav-link-wrap">
+    <a href="/2018/10/29/20181030/" id="article-nav-newer" class="article-nav-link-wrap">
       <strong class="article-nav-caption">최신</strong>
       <div class="article-nav-title">
         
@@ -127,7 +126,7 @@
     </a>
   
   
-    <a href="/2018/10/08/20181008/" id="article-nav-older" class="article-nav-link-wrap">
+    <a href="/2018/10/25/20181025/" id="article-nav-older" class="article-nav-link-wrap">
       <strong class="article-nav-caption">이전</strong>
       <div class="article-nav-title">TIL</div>
     </a>

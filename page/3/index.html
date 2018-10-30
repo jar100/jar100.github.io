@@ -66,6 +66,207 @@
       <div class="outer">
         <section id="main">
   
+    <article id="post-201809/20180918" class="article article-type-post" itemscope itemprop="blogPost">
+  <div class="article-meta">
+    <a href="/2018/09/18/201809/20180918/" class="article-date">
+  <time datetime="2018-09-18T14:23:51.000Z" itemprop="datePublished">2018-09-18</time>
+</a>
+    
+  </div>
+  <div class="article-inner">
+    
+    
+      <header class="article-header">
+        
+  
+    <h1 itemprop="name">
+      <a class="article-title" href="/2018/09/18/201809/20180918/">TIL</a>
+    </h1>
+  
+
+      </header>
+    
+    <div class="article-entry" itemprop="articleBody">
+      
+        <h1 id="오늘의-공부-20180918"><a href="#오늘의-공부-20180918" class="headerlink" title="오늘의 공부 20180918"></a>오늘의 공부 20180918</h1><p>java 코딩연습<br>git 공부 오늘 git 실수로 remote 를 잘못해서 시간을 좀 날렸다. ㅠ<br>프로그래머스 알고리즘 js 로 푼거 java로 풀어보는중</p>
+<hr>
+<h2 id="java"><a href="#java" class="headerlink" title="java"></a>java</h2><p>알게된점과 강의시간에 배운 내용</p>
+<ol>
+<li>자바 개발 환경 및 STS(또는 Intellij) 환경을 구축하고 프로젝트를 시작할 수 있는가?</li>
+<li>static을 언제 사용해야 하는지 이해했는가?<ul>
+<li>정적 변수를 선언시 사용</li>
+<li>static method 선언할 때 사용 static 메소드는 인스턴스 변수에 접근할 수 없다.</li>
+</ul>
+</li>
+<li>package 문법과 package가 필요한 이유를 이해했는가?<ul>
+<li>페키지가 없다면 클래스명이 중복될 수 없다. 그래서 package로 묶어 특정 그룹에서 중복오류가 발생하지 않게 하도록 사용한다.</li>
+</ul>
+</li>
+<li>import 문법과 import가 필요한 이유는 이해했는가?<ul>
+<li>다른 class의 method (함수) 를 사용할 때 사용</li>
+</ul>
+</li>
+<li>static import가 무엇인지 이해했는가?<ul>
+<li>정적 멤버에 대해 클래스명 없이 접근할 수 있다.</li>
+</ul>
+</li>
+<li>자바에서 상수는 어떻게 구현하는지 알고 있는가?<ul>
+<li>상수는 static final int 를 이용해서 선언.</li>
+<li>static은 전역변수를 선언할 때 쓴다. 정적 선언된 후 공유 된다.</li>
+<li>final은 불변값을 나타낸다.</li>
+</ul>
+</li>
+<li>생성자 문법과 생성자를 언제 사용하는 것이 좋을지 이해했는가?<ul>
+<li>생성자는 클래스 명으로 생성한다.</li>
+<li>인스턴스 생성시 꼭 필요한 값이 있으면 생성자에 파라미터를 넣어 생성 ex) this.name = “pobi”; </li>
+</ul>
+</li>
+<li>junit 사용법을 알고 있는가?<ul>
+<li>완전하게는 알지못하고 특정코드를 test 할 수 있다.</li>
+<li>assertThat(winners).isEqualTo(“podo”); (winners값이 podo 인지))</li>
+</ul>
+</li>
+<li>자바의 package, class, method 이름을 짓는 convention을 알고 있는가?<ul>
+<li>package는 도메인 거꾸로</li>
+<li>class는 단어 앞 글자 대문자</li>
+<li>method는 Camel Case (낙타 표기법) </li>
+</ul>
+</li>
+<li>클래스와 인스턴스(객체)에 대해 각각 설명하시오. *<ul>
+<li>클래스는 특정한 것을 개념화 시키는 작업 ex) 붕어빵틀, 건축 도면</li>
+<li>인스턴스는 클래스에서 특정한 것을 가지고 코드내에 실체화 시킨 것 ex) 팥붕어빵, 코드스쿼드건물</li>
+</ul>
+</li>
+<li>이번 미션에서 공부한 자바 문법 중에서 학습하기 가장 어려웠던 것은 어떤 것인가요? *<ul>
+<li>클래스 나누고 메소드 분리 하는게 어려웠습니다.</li>
+</ul>
+</li>
+<li>그 외에 학습하기 어렵거나 시간이 오래 걸린 것은 무엇이고, 어떻게 극복했나요? *<ul>
+<li>새로운 환경에 적응하는것과 git 사용법이 좀 어려웠습니다. 열심히 구글링을 하였다.</li>
+</ul>
+</li>
+</ol>
+<h3 id="세롭게-알게-된점"><a href="#세롭게-알게-된점" class="headerlink" title="세롭게 알게 된점"></a>세롭게 알게 된점</h3><p>String 종류</p>
+<p>ArrayList<br>제너릭</p>
+<p>문자(char, Character)와 문자열(String)</p>
+<ul>
+<li>char : 문자 1개 ex) p, o, b, i</li>
+<li>String : 문자열 ex) pobi<br>StringBuilder와 StringBuffer</li>
+</ul>
+<p>String + String vs StringBuilder<br>String은 불변하기(immutable)이기 때문에 String과 String을 더하면 새로운 String 객체를 생성한다. 따라서 String과 String을 더하는 시점에 메모리 할당과 메모리 해제가 계속 발생한다.<br>StringBuilder는 String과 다르게 기존 데이터에 새로운 데이터를 더하는 방식을 취하기 때문에 속도가 더 빠르다.<br>따라서 긴 문자열을 더하는 상황이 발생하는 경우 StringBuilder를 활용해 구현한다.</p>
+<h3 id="List-와-ArrayList-차이"><a href="#List-와-ArrayList-차이" class="headerlink" title="List 와 ArrayList 차이"></a>List 와 ArrayList 차이</h3><p>클래스를 생성할 때 도형 타입으로 생성하게 되면 정사각형이 아닌 다른 직사각형, 삼각형 등 도형 인터페이스를 구현한 클래스에서 사용 될 수 있다. 하지만 정사각형 클래스로 생성하게 되면 직사각형, 삼각형 등 에서는 사용할 수 없다.<br>도형에 비유하여 풀어보면,<br>List list = new ArrayList();<br>-&gt; 도형 list = new 정사각형();<br>ArrayList list = new ArrayList();<br>-&gt; 정사각형 list = new 정사각형();<br>(List는 interface다. interface는 공통되는 메소드를 추출해 놓은 클래스로 생각하면 된다.)</p>
+<h3 id="TDD-단위테스트"><a href="#TDD-단위테스트" class="headerlink" title="TDD 단위테스트"></a>TDD 단위테스트</h3><p> 언제 테스트를 작성하고 수행해야 하는지에 대한 절차이다.</p>
+<ul>
+<li><p>단위 테스트(Unit testing)<br>단위 테스트는 일반적으로 모듈이나 객체를 구성하는 단일함수 정도의 크기에 해당하는 코드 단위에 집중한다. 단일 함수에 대한 구체적인 테스트는 테스트 자체를 단순화하고 빠르게 작성하여 수행해 볼 수 있다는 장점을 갖는다. 이를 통해 많은 수의 단위 테스트들을 빠르게 만들 수 있고 보다 많은 버그를 발견하여 잡아 낼 수 있다. 특히 단위 테스트는 코드를 변경하는 경우 많은 도움을 준다. 구현된 코드에 대한 단위 테스트들을 갖고 있다면 변경과 상관없는 구현코드들이 이상없이 동작할 수 있다는 신뢰를 갖고 마음 편하게 코드를 수정할 수 있다.</p>
+</li>
+<li><p>TDD는 다음의 절차로 구성된다.</p>
+<ol>
+<li>테스트 코드를 작성한다.</li>
+<li>작성한 테스트 코드와 기존에 작성된 다른 테스트들을 수행한다. 이 시점에서 새로 추가된 테스트 코드는 실패할 것이다. 만일 실패하지 않는다면 올바른 것을 테스트하고 있지 않은 것이므로 그 안에 버그가 있는 것이다.</li>
+<li>실패한 테스트를 성공시키기 위한 최소한의 코드를 구현부에 작성한다.</li>
+<li>실패한 테스트가 성공하는지 확인하기 위해 테스트를 재수행한다.</li>
+<li>필요에 따라 작성한 코드를 리펙토링한다.</li>
+<li>1번 부터 다시 반복한다.</li>
+</ol>
+</li>
+</ul>
+<hr>
+<h2 id="Github"><a href="#Github" class="headerlink" title="Github"></a>Github</h2><p>알고리즘 연습할 깃허브 저장소를 생성했다.</p>
+<ul>
+<li>git remote add <code>원격저장소 지칭할 이름(origin)</code> <code>저장소 주소</code></li>
+<li>git remote rm <code>삭제할 이름</code> (rm은 삭제 명령어)</li>
+<li>인텔리제이와 연동함 굳이 이제 git bush 사용 안해도 될듯. (하지만 사용하면 더 있어보임)</li>
+</ul>
+<hr>
+
+      
+    </div>
+    <footer class="article-footer">
+      <a data-url="http://yoursite.com/2018/09/18/201809/20180918/" data-id="cjmqe4m13000jusv03ja1x862" class="article-share-link">공유</a>
+      
+      
+  <ul class="article-tag-list"><li class="article-tag-list-item"><a class="article-tag-list-link" href="/tags/TIL/">TIL</a></li></ul>
+
+    </footer>
+  </div>
+  
+</article>
+
+
+  
+    <article id="post-201809/20180917" class="article article-type-post" itemscope itemprop="blogPost">
+  <div class="article-meta">
+    <a href="/2018/09/17/201809/20180917/" class="article-date">
+  <time datetime="2018-09-17T14:23:51.000Z" itemprop="datePublished">2018-09-17</time>
+</a>
+    
+  </div>
+  <div class="article-inner">
+    
+    
+      <header class="article-header">
+        
+  
+    <h1 itemprop="name">
+      <a class="article-title" href="/2018/09/17/201809/20180917/">TIL</a>
+    </h1>
+  
+
+      </header>
+    
+    <div class="article-entry" itemprop="articleBody">
+      
+        <h1 id="오늘의-공부-20180917"><a href="#오늘의-공부-20180917" class="headerlink" title="오늘의 공부 20180917"></a>오늘의 공부 20180917</h1><hr>
+<h2 id="java"><a href="#java" class="headerlink" title="java"></a>java</h2><p>알게된점과 강의시간에 배운 내용</p>
+<h3 id="강의"><a href="#강의" class="headerlink" title="강의"></a>강의</h3><p>필드. 메소드 static 언제 쓰는지<br>생성자 =&gt; 초기화<br>ArrayList =&gt; winner 구할때 지역변수로 하라는 이유<br>getter 와 setter </p>
+<ol>
+<li>String 도 하나의 클래스 import 하지 않는 이유는 java.leng 에 있는건 자주 써서 안써도 된다.</li>
+<li>생성자<ul>
+<li>반환 타입이 없다.</li>
+<li>클래스와 이름이 같다.</li>
+<li>생성할때 파라미터를 강제할 수 있다.</li>
+<li>setter 를 안 쓸 수 있다. (생성자를 생성하면서 파라미터를 넣으면 그자체가 setter);</li>
+<li>this 현제 생성한 인스턴스 의 변수를 찾는다.</li>
+<li>test 코드는 src/test/ 안의 코드, prduction 코드는 실제 사용하는 코드</li>
+</ul>
+</li>
+<li>import<ul>
+<li>import static org.asssertj.core.api.Assertions.assertThat; 메소드를 import 할 수 있다.</li>
+</ul>
+</li>
+<li>liveCoding<ul>
+<li>메소드 이름은 자료구조형태를 적지말자.</li>
+<li>클래스 메소드를 사용하면 인스턴스 메소드보다 검증이 쉽다.</li>
+<li>인스턴스 변수는 진짜 필요할때만 만들어라.</li>
+<li>하나씩 쪼개서 구현해서 하나로 합치는 연습을 해라.</li>
+</ul>
+</li>
+<li>상태 데이터를 갖고있는 메세지를 보내 일을 시켜라.</li>
+<li>getter 를 최대한 줄여보고 어쩔 수 없으면 써라.(output 에선 get 을 쓰는게 낫다.) </li>
+<li>JUnit<ul>
+<li>assertThat(winners[0]).isEqualTo(“podo”) </li>
+</ul>
+</li>
+</ol>
+<h3 id="알게-된점"><a href="#알게-된점" class="headerlink" title="알게 된점"></a>알게 된점</h3><p>처음 프로젝트를 import 할때 gradle 로 해야한다.<br>import project 할 때 gradle로 해야 한다.</p>
+<hr>
+<h2 id="피드백"><a href="#피드백" class="headerlink" title="피드백"></a>피드백</h2><hr>
+
+      
+    </div>
+    <footer class="article-footer">
+      <a data-url="http://yoursite.com/2018/09/17/201809/20180917/" data-id="cjmqe4m0z0009usv0717hdlkb" class="article-share-link">공유</a>
+      
+      
+  <ul class="article-tag-list"><li class="article-tag-list-item"><a class="article-tag-list-link" href="/tags/TIL/">TIL</a></li></ul>
+
+    </footer>
+  </div>
+  
+</article>
+
+
+  
     <article id="post-201809/20180914" class="article article-type-post" itemscope itemprop="blogPost">
   <div class="article-meta">
     <a href="/2018/09/14/201809/20180914/" class="article-date">
@@ -659,131 +860,6 @@
 
 
   
-    <article id="post-201808/20180828" class="article article-type-post" itemscope itemprop="blogPost">
-  <div class="article-meta">
-    <a href="/2018/08/28/201808/20180828/" class="article-date">
-  <time datetime="2018-08-28T14:23:51.000Z" itemprop="datePublished">2018-08-28</time>
-</a>
-    
-  </div>
-  <div class="article-inner">
-    
-    
-      <header class="article-header">
-        
-  
-    <h1 itemprop="name">
-      <a class="article-title" href="/2018/08/28/201808/20180828/">TIL</a>
-    </h1>
-  
-
-      </header>
-    
-    <div class="article-entry" itemprop="articleBody">
-      
-        <h1 id="오늘의-공부-20180828"><a href="#오늘의-공부-20180828" class="headerlink" title="오늘의 공부 20180828"></a>오늘의 공부 20180828</h1><ul>
-<li>크립토 좀비</li>
-<li>java</li>
-</ul>
-<hr>
-<h2 id="프로그래머스"><a href="#프로그래머스" class="headerlink" title="프로그래머스"></a>프로그래머스</h2><p>알고리즘 풀어보기</p>
-<hr>
-<h2 id="크립토-좀비"><a href="#크립토-좀비" class="headerlink" title="크립토 좀비"></a>크립토 좀비</h2><p>솔리디티를 이용한 코드 구현</p>
-<h3 id="함수-접근-제어자-visibility"><a href="#함수-접근-제어자-visibility" class="headerlink" title="함수 접근 제어자(visibility)"></a>함수 접근 제어자(visibility)</h3><ul>
-<li><code>private</code> 컨트랙트 내부의 다른 함수들에서만 호출됨</li>
-<li><code>internal</code>  해당 컨트랙트를 상속하는 컨트랙트에서 호출됨</li>
-<li><code>external</code> 컨트랙트 외부에서만 호출됨</li>
-<li><code>public</code> 내부 외부 모두 호출가능</li>
-</ul>
-<h3 id="상태-제어자-state-modifier"><a href="#상태-제어자-state-modifier" class="headerlink" title="상태 제어자(state modifier)"></a>상태 제어자(state modifier)</h3><ul>
-<li><code>view</code> 해당 함수를 실행해도 어떤 데이터도 저장/변경되지 않음</li>
-<li><code>pure</code> 함수가 어떤 데이터도 블록체인에 저장하지 않을 뿐만 아니라, 블록체인으로부터 어떤 데이터도 읽지 않음</li>
-</ul>
-<h3 id="payable-제어자"><a href="#payable-제어자" class="headerlink" title="payable 제어자"></a>payable 제어자</h3><p>이더리움에서는 돈(이더), 데이터(transcation payload), 컨트랙트 코드 자체 모두 이더리움 위에 존재하기 때문에, 함수를 실행하는 동시에 컨트랙트에 돈을 지불하는 것이 가능하다.</p>
-<ul>
-<li>예시<figure class="highlight js"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br></pre></td><td class="code"><pre><span class="line">contract OnlineStore &#123;</span><br><span class="line">  <span class="function"><span class="keyword">function</span> <span class="title">buySomething</span>(<span class="params"></span>) <span class="title">external</span> <span class="title">payable</span> </span>&#123;</span><br><span class="line">    <span class="comment">// 함수 실행에 0.001이더가 보내졌는지 확실히 하기 위해 확인:</span></span><br><span class="line">    <span class="built_in">require</span>(msg.value == <span class="number">0.001</span> ether);</span><br><span class="line">    <span class="comment">// 보내졌다면, 함수를 호출한 자에게 디지털 아이템을 전달하기 위한 내용 구성:</span></span><br><span class="line">    transferThing(msg.sender);</span><br><span class="line">  &#125;</span><br><span class="line">&#125;</span><br></pre></td></tr></table></figure>
-</li>
-</ul>
-<hr>
-<h2 id="java"><a href="#java" class="headerlink" title="java"></a>java</h2><p>공부했던것들 정리</p>
-
-      
-    </div>
-    <footer class="article-footer">
-      <a data-url="http://yoursite.com/2018/08/28/201808/20180828/" data-id="cjllzogy3001jykv0cpaxbbl0" class="article-share-link">공유</a>
-      
-      
-  <ul class="article-tag-list"><li class="article-tag-list-item"><a class="article-tag-list-link" href="/tags/TIL/">TIL</a></li></ul>
-
-    </footer>
-  </div>
-  
-</article>
-
-
-  
-    <article id="post-201808/20180824" class="article article-type-post" itemscope itemprop="blogPost">
-  <div class="article-meta">
-    <a href="/2018/08/24/201808/20180824/" class="article-date">
-  <time datetime="2018-08-24T14:23:51.000Z" itemprop="datePublished">2018-08-24</time>
-</a>
-    
-  </div>
-  <div class="article-inner">
-    
-    
-      <header class="article-header">
-        
-  
-    <h1 itemprop="name">
-      <a class="article-title" href="/2018/08/24/201808/20180824/">TIL</a>
-    </h1>
-  
-
-      </header>
-    
-    <div class="article-entry" itemprop="articleBody">
-      
-        <h1 id="오늘의-공부-20180824"><a href="#오늘의-공부-20180824" class="headerlink" title="오늘의 공부 20180824"></a>오늘의 공부 20180824</h1><ul>
-<li>프로그래머스</li>
-<li>크립토 좀비</li>
-</ul>
-<hr>
-<h2 id="프로그래머스"><a href="#프로그래머스" class="headerlink" title="프로그래머스"></a>프로그래머스</h2><p>알고리즘 풀어보기</p>
-<ul>
-<li>제일 작은수 제거<figure class="highlight js"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br></pre></td><td class="code"><pre><span class="line"><span class="function"><span class="keyword">function</span> <span class="title">solution</span>(<span class="params">arr</span>) </span>&#123;</span><br><span class="line">    <span class="keyword">var</span> answer = [];</span><br><span class="line">    <span class="keyword">if</span> ( arr.length == <span class="number">1</span>) &#123;</span><br><span class="line">        answer.push(<span class="number">-1</span>);</span><br><span class="line">    &#125;</span><br><span class="line">    <span class="keyword">else</span> &#123;</span><br><span class="line">        <span class="keyword">var</span> min = <span class="built_in">Math</span>.min(arr);</span><br><span class="line">        arr.splice(arr.indexOf(min),<span class="number">1</span>);</span><br><span class="line">        answer = arr;</span><br><span class="line">    &#125;</span><br><span class="line">    <span class="built_in">console</span>.log(arr.length);</span><br><span class="line">    <span class="keyword">return</span> answer;</span><br><span class="line">&#125;</span><br></pre></td></tr></table></figure>
-</li>
-</ul>
-<p><code>call</code> , <code>apply</code></p>
-<ul>
-<li><code>call</code> 다른 객체의 함수를 자기것인 마냥 사용할수 있다.</li>
-<li><p><code>call</code> , <code>apply</code> 의 null 은 this 의 의미</p>
-</li>
-<li><p>짝수와 홀수</p>
-<figure class="highlight js"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br></pre></td><td class="code"><pre><span class="line"><span class="function"><span class="keyword">function</span> <span class="title">solution</span>(<span class="params">num</span>) </span>&#123;</span><br><span class="line">    <span class="keyword">var</span> answer = <span class="string">''</span>;</span><br><span class="line">    <span class="keyword">if</span>(num % <span class="number">2</span> === <span class="number">0</span>) &#123;</span><br><span class="line">        answer = <span class="string">'Even'</span>;</span><br><span class="line">    &#125;</span><br><span class="line">    <span class="keyword">else</span> &#123;</span><br><span class="line">        answer = <span class="string">'Odd'</span>;</span><br><span class="line">    &#125;</span><br><span class="line">    <span class="keyword">return</span> answer;</span><br><span class="line">&#125;</span><br></pre></td></tr></table></figure>
-</li>
-</ul>
-<p>정수의 범위는 - 0, 음수 , 양수 </p>
-<ul>
-<li>콜라츠 추측<figure class="highlight js"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br><span class="line">15</span><br><span class="line">16</span><br><span class="line">17</span><br><span class="line">18</span><br><span class="line">19</span><br></pre></td><td class="code"><pre><span class="line"><span class="function"><span class="keyword">function</span> <span class="title">solution</span>(<span class="params">num</span>) </span>&#123;</span><br><span class="line">    <span class="keyword">var</span> answer = <span class="number">0</span>;</span><br><span class="line">    <span class="keyword">for</span> (<span class="keyword">var</span> i = <span class="number">0</span>; i &lt; <span class="number">500</span> ; i++) &#123;</span><br><span class="line">        <span class="keyword">if</span> ( num % <span class="number">2</span> === <span class="number">0</span> ) &#123;</span><br><span class="line">            num = <span class="built_in">Math</span>.floor(num/<span class="number">2</span>);</span><br><span class="line">          </span><br><span class="line">        &#125;</span><br><span class="line">        <span class="keyword">else</span> <span class="keyword">if</span> ( num % <span class="number">2</span> === <span class="number">1</span> &amp;&amp; num !==<span class="number">1</span>) &#123;</span><br><span class="line">            num = (num * <span class="number">3</span>) + <span class="number">1</span> ;</span><br><span class="line">            </span><br><span class="line">        &#125;</span><br><span class="line">        <span class="keyword">else</span> <span class="keyword">if</span> ( num === <span class="number">1</span>) &#123;</span><br><span class="line">            answer = i ;</span><br><span class="line">            <span class="keyword">break</span>;</span><br><span class="line">        &#125;</span><br><span class="line">        answer = <span class="number">-1</span>;</span><br><span class="line">    &#125;</span><br><span class="line">    <span class="keyword">return</span> answer;</span><br><span class="line">&#125;</span><br></pre></td></tr></table></figure>
-</li>
-</ul>
-
-      
-    </div>
-    <footer class="article-footer">
-      <a data-url="http://yoursite.com/2018/08/24/201808/20180824/" data-id="cjllzogy8001pykv0sj0sinee" class="article-share-link">공유</a>
-      
-      
-  <ul class="article-tag-list"><li class="article-tag-list-item"><a class="article-tag-list-link" href="/tags/TIL/">TIL</a></li></ul>
-
-    </footer>
-  </div>
-  
-</article>
-
-
-  
 
 
   <nav id="page-nav">
@@ -834,6 +910,14 @@
       <ul>
         
           <li>
+            <a href="/2018/10/29/20181030/">TIL</a>
+          </li>
+        
+          <li>
+            <a href="/2018/10/29/20181029/">TIL</a>
+          </li>
+        
+          <li>
             <a href="/2018/10/25/20181025/">TIL</a>
           </li>
         
@@ -843,14 +927,6 @@
         
           <li>
             <a href="/2018/10/23/20181023/">TIL</a>
-          </li>
-        
-          <li>
-            <a href="/2018/10/22/20181022/">TIL</a>
-          </li>
-        
-          <li>
-            <a href="/2018/10/19/20181019/">TIL</a>
           </li>
         
       </ul>

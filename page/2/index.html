@@ -66,6 +66,114 @@
       <div class="outer">
         <section id="main">
   
+    <article id="post-201810/20181030" class="article article-type-post" itemscope itemprop="blogPost">
+  <div class="article-meta">
+    <a href="/2018/10/29/201810/20181030/" class="article-date">
+  <time datetime="2018-10-29T14:23:51.000Z" itemprop="datePublished">2018-10-29</time>
+</a>
+    
+  </div>
+  <div class="article-inner">
+    
+    
+      <header class="article-header">
+        
+  
+    <h1 itemprop="name">
+      <a class="article-title" href="/2018/10/29/201810/20181030/">TIL</a>
+    </h1>
+  
+
+      </header>
+    
+    <div class="article-entry" itemprop="articleBody">
+      
+        <h1 id="오늘의-공부-20181030"><a href="#오늘의-공부-20181030" class="headerlink" title="오늘의 공부 20181030"></a>오늘의 공부 20181030</h1><p>로또 미션 2 단계 구현<br>로또 미션 3 단계 진행</p>
+<h2 id="미션"><a href="#미션" class="headerlink" title="미션"></a>미션</h2><p>피드백</p>
+<ol>
+<li>money 객체를 만들어서 구현해 보는것은 어떨까?</li>
+<li>수동 로또에서 리스트를 받아 왔는데 다른 방식으로 구현 해보는것은 없을까? </li>
+<li>메소드 명 convention 소문자로 시작하기</li>
+</ol>
+<h2 id="공부한-것"><a href="#공부한-것" class="headerlink" title="공부한 것"></a>공부한 것</h2><p>오늘은 로또 미션 2 를 진행하면서 조금 더 stream에 대해 적응한 것 같다.<br>for - if  구문을 스트림을 이용하면 더 간략화 시킬 수 있다. 하지만 더 느려질 수도 있으니 조심히 사용해야겠다.<br>라임이랑 얘기 하다가 Optional 에 대해 얘기 했는데 차이를 잘 모르겠다. 조금 더 공부해야 겠다.<br>아직은 stream 은 배열을 다루는 옵셔널 인거 같고 Optional은 null 포인트를 잡아주기 위해 객체에 사용하는 래퍼클레스?</p>
+<ul>
+<li>stream 예시<figure class="highlight java"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br></pre></td><td class="code"><pre><span class="line"><span class="function"><span class="keyword">public</span> <span class="keyword">static</span> Rank <span class="title">valueOf</span><span class="params">(<span class="keyword">int</span> count, <span class="keyword">boolean</span> bonus)</span> </span>&#123;</span><br><span class="line">    <span class="keyword">return</span> Arrays.stream(Rank.values())</span><br><span class="line">            .filter(type -&gt; type.matchNum(count, bonus))</span><br><span class="line">            .findFirst()</span><br><span class="line">            .orElse(<span class="keyword">null</span>);</span><br><span class="line">&#125;</span><br></pre></td></tr></table></figure>
+</li>
+</ul>
+<p>나중에 stream 까먹으면 다시 봐야 겠다.</p>
+<p>객체의사실과오해 라는 책을 읽었는데 조금 더 객체에 대해 이해가 가는 것 같다. 객체를 구현할 땐 행동을 생각하고 구현하자.</p>
+<h2 id="공부할-것"><a href="#공부할-것" class="headerlink" title="공부할 것"></a>공부할 것</h2><ol>
+<li>DIP 원칙</li>
+<li>stream 과 Optional 명확한 차이</li>
+<li>stream 병렬처리?</li>
+<li>객체의 사실과 오해 읽기</li>
+</ol>
+
+      
+    </div>
+    <footer class="article-footer">
+      <a data-url="http://yoursite.com/2018/10/29/201810/20181030/" data-id="cjo5v0jnp000xcgv0wip0g8jd" class="article-share-link">공유</a>
+      
+      
+  <ul class="article-tag-list"><li class="article-tag-list-item"><a class="article-tag-list-link" href="/tags/TIL/">TIL</a></li></ul>
+
+    </footer>
+  </div>
+  
+</article>
+
+
+  
+    <article id="post-201810/20181025" class="article article-type-post" itemscope itemprop="blogPost">
+  <div class="article-meta">
+    <a href="/2018/10/25/201810/20181025/" class="article-date">
+  <time datetime="2018-10-25T14:23:51.000Z" itemprop="datePublished">2018-10-25</time>
+</a>
+    
+  </div>
+  <div class="article-inner">
+    
+    
+      <header class="article-header">
+        
+  
+    <h1 itemprop="name">
+      <a class="article-title" href="/2018/10/25/201810/20181025/">TIL</a>
+    </h1>
+  
+
+      </header>
+    
+    <div class="article-entry" itemprop="articleBody">
+      
+        <h1 id="오늘의-공부-20181025"><a href="#오늘의-공부-20181025" class="headerlink" title="오늘의 공부 20181025"></a>오늘의 공부 20181025</h1><p>포비의 강의를 들었다.<br>lotto 1단계 구현</p>
+<h2 id="excetpion-공부"><a href="#excetpion-공부" class="headerlink" title="excetpion 공부"></a>excetpion 공부</h2><p>포비가 강의 한 것과 내가 생각해본 exception</p>
+<h3 id="throw-throws-차이"><a href="#throw-throws-차이" class="headerlink" title="throw throws 차이"></a>throw throws 차이</h3><p>throws는 현재 메서드에서 자신을 호출한 상위 메서드로 Exception을 발생시킴<br>throw는 현재 블록에 exception 발생</p>
+<h3 id="compiletime-runtime-Exception-차이"><a href="#compiletime-runtime-Exception-차이" class="headerlink" title="compiletime, runtime  Exception 차이"></a>compiletime, runtime  Exception 차이</h3><p>둘다 예외 처리하는것 compiletime throws 를 꼭 써야한다. runtime 안써도 됨</p>
+<ul>
+<li>읽는사람을 위해 throws 를 쓰면 좋다. throws 를 적으면 어떤 애러들이 발생하는지 바로 알 수 있다.</li>
+<li>runtime 자주 사용하고 반드시 try catch를 강제하고싶을때만 compiletime 사용하자.<ul>
+<li>이유는 compiletime을 남발하면 코드가 지저분 해진다.</li>
+</ul>
+</li>
+</ul>
+<h2 id="미션"><a href="#미션" class="headerlink" title="미션"></a>미션</h2><p>아직도 객체 설계가 어렵다. 좀더 노력 해야겠다.<br>퍼센트를 구할 때 오버플로우가 발생 했는데 앞에서 부터 곱해 자리수가 커저 발생 한거 같다. 괄호를 잘 쳐야 겠다.<br>long 타입으로 하려면 10L 이런식으로 뒤에 대문자 L을 붙이면 된다. </p>
+
+      
+    </div>
+    <footer class="article-footer">
+      <a data-url="http://yoursite.com/2018/10/25/201810/20181025/" data-id="cjo5v0jnf000rcgv0szh25ne5" class="article-share-link">공유</a>
+      
+      
+  <ul class="article-tag-list"><li class="article-tag-list-item"><a class="article-tag-list-link" href="/tags/TIL/">TIL</a></li></ul>
+
+    </footer>
+  </div>
+  
+</article>
+
+
+  
     <article id="post-201810/20181024" class="article article-type-post" itemscope itemprop="blogPost">
   <div class="article-meta">
     <a href="/2018/10/24/201810/20181024/" class="article-date">
@@ -553,107 +661,6 @@
 
 
   
-    <article id="post-201810/20181010" class="article article-type-post" itemscope itemprop="blogPost">
-  <div class="article-meta">
-    <a href="/2018/10/10/201810/20181010/" class="article-date">
-  <time datetime="2018-10-10T14:23:51.000Z" itemprop="datePublished">2018-10-10</time>
-</a>
-    
-  </div>
-  <div class="article-inner">
-    
-    
-      <header class="article-header">
-        
-  
-    <h1 itemprop="name">
-      <a class="article-title" href="/2018/10/10/201810/20181010/">TIL</a>
-    </h1>
-  
-
-      </header>
-    
-    <div class="article-entry" itemprop="articleBody">
-      
-        <h1 id="오늘의-공부-20181010"><a href="#오늘의-공부-20181010" class="headerlink" title="오늘의 공부 20181010"></a>오늘의 공부 20181010</h1><h2 id="미션"><a href="#미션" class="headerlink" title="미션"></a>미션</h2><p>미션을 하다 맨탈이 파괴됬다.<br>객체 지향적으로 생각하는게 너무 어렵다. 하지만 할 수 있다. 아자…</p>
-<h2 id="알고리즘-공부"><a href="#알고리즘-공부" class="headerlink" title="알고리즘 공부"></a>알고리즘 공부</h2><p>폰켓몬 구현</p>
-<h2 id="상속-inheritance"><a href="#상속-inheritance" class="headerlink" title="상속 (inheritance)"></a>상속 (inheritance)</h2><p>유산을 상속 받는것을 생각하면 쉽다.</p>
-<ol>
-<li>객체를 자신이 만들지 않았다. 그래서 소스를 변경할 수 없다. 변경 할 수 있다고 해도 원 소스를 업데이트 하면 메소드 substarct이 사라진다. 이러한 문제가 일어나지 않게 하기 위해서는 지속적으로 코드를 관리해야 한다.</li>
-<li>객체가 다양한 곳에서 활용되고 있는데 메소드를 추가하면 다른 곳에서는 불필요한 기능이 포함될 수 있다. 이것은 자연스럽게 객체를 사용하는 입장에서 몰라도 되는 것까지 알아야 하는 문제가 된다.</li>
-</ol>
-<ul>
-<li>부모 클래스와 자식 클래스의 관계를 상위(super) 클래스와 하위(sub) 클래스라고 표현하기도 한다. 또한 기초 클래스(base class), 유도 클래스(derived class)라고도 부른다.</li>
-</ul>
-<p>자기자신을 메인에서 인스턴스화 시킬 수 있다.</p>
-
-      
-    </div>
-    <footer class="article-footer">
-      <a data-url="http://yoursite.com/2018/10/10/201810/20181010/" data-id="cjo5v0jn0000dcgv0yz910ytf" class="article-share-link">공유</a>
-      
-      
-  <ul class="article-tag-list"><li class="article-tag-list-item"><a class="article-tag-list-link" href="/tags/TIL/">TIL</a></li></ul>
-
-    </footer>
-  </div>
-  
-</article>
-
-
-  
-    <article id="post-201810/20181008" class="article article-type-post" itemscope itemprop="blogPost">
-  <div class="article-meta">
-    <a href="/2018/10/08/201810/20181008/" class="article-date">
-  <time datetime="2018-10-08T14:23:51.000Z" itemprop="datePublished">2018-10-08</time>
-</a>
-    
-  </div>
-  <div class="article-inner">
-    
-    
-      <header class="article-header">
-        
-  
-    <h1 itemprop="name">
-      <a class="article-title" href="/2018/10/08/201810/20181008/">TIL</a>
-    </h1>
-  
-
-      </header>
-    
-    <div class="article-entry" itemprop="articleBody">
-      
-        <h1 id="오늘의-공부-20181008"><a href="#오늘의-공부-20181008" class="headerlink" title="오늘의 공부 20181008"></a>오늘의 공부 20181008</h1><h2 id="강의"><a href="#강의" class="headerlink" title="강의"></a>강의</h2><p>컨트롤러</p>
-<h3 id="MVC-MVVM"><a href="#MVC-MVVM" class="headerlink" title="MVC , MVVM"></a>MVC , MVVM</h3><p>사용이유 모듈의 재 사용성이 증가한다.<br>유지보수가 쉽고 비용이 절감된다.</p>
-<ol>
-<li>모듈의 단위태스트를 지향하자.</li>
-</ol>
-<p>DTO 와 VO는 다르다.</p>
-<p>DTO 는 setter, getter 허용</p>
-<p>VO (value object) 변경 불가능<br>value = 변경 불가 (mutable object)<br>variable = 변경 가능 (immutable object) </p>
-<p>뮤터블 set 들어가면됨<br>임뮤터블 string 예로 들자.</p>
-<p>자료구조를 많이 쓴다.<br>데이터를 어떤형태로 저장하고 사용할것이냐<br>자바는 자료구조는 콜렉션 프레임 워크로 사용된다.<br>list set map<br>ArrayList &gt; HashMap &gt; HashSet<br>3가지만 잘 사용하자.</p>
-<ol>
-<li>ArrayList는 배열에 쓰면됨</li>
-<li>Map 은 key value</li>
-</ol>
-
-      
-    </div>
-    <footer class="article-footer">
-      <a data-url="http://yoursite.com/2018/10/08/201810/20181008/" data-id="cjo5v0jmu0007cgv0dchhb7vs" class="article-share-link">공유</a>
-      
-      
-  <ul class="article-tag-list"><li class="article-tag-list-item"><a class="article-tag-list-link" href="/tags/TIL/">TIL</a></li></ul>
-
-    </footer>
-  </div>
-  
-</article>
-
-
-  
 
 
   <nav id="page-nav">
@@ -704,7 +711,11 @@
       <ul>
         
           <li>
-            <a href="/2018/11/15/javaStudy/나만의용어집/">javaStudy</a>
+            <a href="/2018/11/24/20181122/">TIL</a>
+          </li>
+        
+          <li>
+            <a href="/2018/11/19/20181119/">TIL</a>
           </li>
         
           <li>
@@ -712,15 +723,11 @@
           </li>
         
           <li>
+            <a href="/2018/11/15/javaStudy/나만의용어집/">javaStudy</a>
+          </li>
+        
+          <li>
             <a href="/2018/11/12/20181112/">TIL</a>
-          </li>
-        
-          <li>
-            <a href="/2018/11/09/20181109/">TIL</a>
-          </li>
-        
-          <li>
-            <a href="/2018/11/07/20181107/">TIL</a>
           </li>
         
       </ul>

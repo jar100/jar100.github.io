@@ -5,20 +5,20 @@
   
 
   
-  <title>javaStudy | jar100 blog</title>
+  <title>TIL | jar100 blog</title>
   <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
-  <meta name="description" content="공부 하면서 처음보는 용어들 정리공부하고 정리하고 기억해야 할것을 나만의 말로 정리  update 2018-11-21  JPA데이터베이스 의 설정을 에노테이션으로 정해주는 라이브러리 SPRING(스프링)스프링은 자바를 통해 엔터프라이즈 시스템을 개발하는데 좀 더 나은 방법과 전략을 찾으려고 고민하고 연구한 잘만든 API를 제공하는 것 입니다. 엔터프라이즈">
-<meta name="keywords" content="java">
+  <meta name="description" content="오늘의 공부 20181124강의 LOB(large object) id 이름 convention 들어쓰기 삭제 -&amp;gt; writer(구현방식) html ㅍㄴ xtml jsm view 지정 tdd -&amp;gt; web db 삭제 -&amp;gt; pk  데이터베이스서버 올릴 때 validate : 서버내려도 데이터유지 디폴트 create-drop: 서버 내리면 데이터삭">
+<meta name="keywords" content="TIL">
 <meta property="og:type" content="article">
-<meta property="og:title" content="javaStudy">
-<meta property="og:url" content="http://yoursite.com/2018/11/15/javaStudy/나만의용어집/index.html">
+<meta property="og:title" content="TIL">
+<meta property="og:url" content="http://yoursite.com/2018/11/24/20181122/index.html">
 <meta property="og:site_name" content="jar100 blog">
-<meta property="og:description" content="공부 하면서 처음보는 용어들 정리공부하고 정리하고 기억해야 할것을 나만의 말로 정리  update 2018-11-21  JPA데이터베이스 의 설정을 에노테이션으로 정해주는 라이브러리 SPRING(스프링)스프링은 자바를 통해 엔터프라이즈 시스템을 개발하는데 좀 더 나은 방법과 전략을 찾으려고 고민하고 연구한 잘만든 API를 제공하는 것 입니다. 엔터프라이즈">
+<meta property="og:description" content="오늘의 공부 20181124강의 LOB(large object) id 이름 convention 들어쓰기 삭제 -&amp;gt; writer(구현방식) html ㅍㄴ xtml jsm view 지정 tdd -&amp;gt; web db 삭제 -&amp;gt; pk  데이터베이스서버 올릴 때 validate : 서버내려도 데이터유지 디폴트 create-drop: 서버 내리면 데이터삭">
 <meta property="og:locale" content="ko">
-<meta property="og:updated_time" content="2018-11-22T12:56:09.026Z">
+<meta property="og:updated_time" content="2018-11-23T09:29:50.363Z">
 <meta name="twitter:card" content="summary">
-<meta name="twitter:title" content="javaStudy">
-<meta name="twitter:description" content="공부 하면서 처음보는 용어들 정리공부하고 정리하고 기억해야 할것을 나만의 말로 정리  update 2018-11-21  JPA데이터베이스 의 설정을 에노테이션으로 정해주는 라이브러리 SPRING(스프링)스프링은 자바를 통해 엔터프라이즈 시스템을 개발하는데 좀 더 나은 방법과 전략을 찾으려고 고민하고 연구한 잘만든 API를 제공하는 것 입니다. 엔터프라이즈">
+<meta name="twitter:title" content="TIL">
+<meta name="twitter:description" content="오늘의 공부 20181124강의 LOB(large object) id 이름 convention 들어쓰기 삭제 -&amp;gt; writer(구현방식) html ㅍㄴ xtml jsm view 지정 tdd -&amp;gt; web db 삭제 -&amp;gt; pk  데이터베이스서버 올릴 때 validate : 서버내려도 데이터유지 디폴트 create-drop: 서버 내리면 데이터삭">
   
     <link rel="alternate" href="/atom.xml" title="jar100 blog" type="application/atom+xml">
   
@@ -69,10 +69,10 @@
   </div>
 </header>
       <div class="outer">
-        <section id="main"><article id="post-javaStudy/나만의용어집" class="article article-type-post" itemscope itemprop="blogPost">
+        <section id="main"><article id="post-20181122" class="article article-type-post" itemscope itemprop="blogPost">
   <div class="article-meta">
-    <a href="/2018/11/15/javaStudy/나만의용어집/" class="article-date">
-  <time datetime="2018-11-15T14:23:51.000Z" itemprop="datePublished">2018-11-15</time>
+    <a href="/2018/11/24/20181122/" class="article-date">
+  <time datetime="2018-11-24T14:23:51.000Z" itemprop="datePublished">2018-11-24</time>
 </a>
     
   </div>
@@ -83,7 +83,7 @@
         
   
     <h1 class="article-title" itemprop="name">
-      javaStudy
+      TIL
     </h1>
   
 
@@ -91,35 +91,47 @@
     
     <div class="article-entry" itemprop="articleBody">
       
-        <h1 id="공부-하면서-처음보는-용어들-정리"><a href="#공부-하면서-처음보는-용어들-정리" class="headerlink" title="공부 하면서 처음보는 용어들 정리"></a>공부 하면서 처음보는 용어들 정리</h1><p>공부하고 정리하고 기억해야 할것을 나만의 말로 정리</p>
-<ul>
-<li>update 2018-11-21</li>
+        <h1 id="오늘의-공부-20181124"><a href="#오늘의-공부-20181124" class="headerlink" title="오늘의 공부 20181124"></a>오늘의 공부 20181124</h1><h2 id="강의"><a href="#강의" class="headerlink" title="강의"></a>강의</h2><ul>
+<li>LOB(large object)</li>
+<li>id 이름 convention</li>
+<li>들어쓰기</li>
+<li>삭제 -&gt; writer(구현방식)</li>
+<li>html ㅍㄴ xtml jsm</li>
+<li>view 지정</li>
+<li>tdd -&gt; web</li>
+<li>db 삭제 -&gt; pk</li>
 </ul>
-<h2 id="JPA"><a href="#JPA" class="headerlink" title="JPA"></a>JPA</h2><p>데이터베이스 의 설정을 에노테이션으로 정해주는 라이브러리</p>
-<h2 id="SPRING-스프링"><a href="#SPRING-스프링" class="headerlink" title="SPRING(스프링)"></a>SPRING(스프링)</h2><p>스프링은 자바를 통해 엔터프라이즈 시스템을 개발하는데 좀 더 나은 방법과 전략을 찾으려고 고민하고 연구한 잘만든 API를 제공하는 것 입니다.</p>
-<h2 id="엔터프라이즈-시스템"><a href="#엔터프라이즈-시스템" class="headerlink" title="엔터프라이즈 시스템"></a>엔터프라이즈 시스템</h2><h2 id="Entity-엔티티"><a href="#Entity-엔티티" class="headerlink" title="Entity(엔티티)"></a>Entity(엔티티)</h2><p><code>entity</code>란 존재하는 것, 즉 실체를 의미한다.<br><code>spring</code> 에서 <code>entity</code></p>
+<p>데이터베이스<br>서버 올릴 때 validate : 서버내려도 데이터유지 디폴트 create-drop: 서버 내리면 데이터삭제</p>
+<p>굳이 프리머티브 타입 쓸 필요 없다.</p>
+<h3 id="lob"><a href="#lob" class="headerlink" title="lob"></a>lob</h3><p>데이터 크기 xGB</p>
 <ul>
-<li>메모리영역이 아닌 물리 데이터 저장공간(database)에 저장되어 애플리케이션이 종료되더라도 데이터가 사라지지 않고 남아있음을 의미합니다.</li>
+<li>CLOB : 문서같은 text</li>
+<li>BLOB : 동영상 같은거</li>
 </ul>
-<h2 id="리다이렉트"><a href="#리다이렉트" class="headerlink" title="리다이렉트"></a>리다이렉트</h2><h2 id="포워드"><a href="#포워드" class="headerlink" title="포워드"></a>포워드</h2><h2 id="상태와-무상태"><a href="#상태와-무상태" class="headerlink" title="상태와 무상태"></a>상태와 무상태</h2><p>나의 상태를 유지 시킬 수 있느냐 없느냐의 차이</p>
-<h2 id="쿠키"><a href="#쿠키" class="headerlink" title="쿠키"></a>쿠키</h2><p>상태를 유지 하고싶은 데이터를 유지하고 있다가 계속 보내는것</p>
-<h2 id="세션"><a href="#세션" class="headerlink" title="세션"></a>세션</h2><p>맵으로 아이디와 페스워드를 저장해 그 키를 가지고 돌아다니는 것</p>
-<h2 id="후보키-Candidate-Key"><a href="#후보키-Candidate-Key" class="headerlink" title="후보키 (Candidate Key)"></a>후보키 (Candidate Key)</h2><p>테이블을 구석하는 열 중에서 유일하게 식별할 수 있는 열</p>
-<h2 id="기본키-Primary-Key"><a href="#기본키-Primary-Key" class="headerlink" title="기본키 (Primary Key)"></a>기본키 (Primary Key)</h2><p>테이블에서 유일하게 식별하기 위해 사용하는 키</p>
-<h2 id="외래키-Foreign-Key"><a href="#외래키-Foreign-Key" class="headerlink" title="외래키 (Foreign Key)"></a>외래키 (Foreign Key)</h2><p>외래키란 테이블 내의 열 중 다른 테이블의 기본키를 참조하는 열을 외래키라 한다.</p>
-<h2 id="Logging"><a href="#Logging" class="headerlink" title="Logging"></a>Logging</h2><p>로깅은 어떤 소프트웨어가 실행될 때 발생하는 이벤트를 추적하는 수단입니다<br><code>o</code>는 java world에서 가장 많이 사용하고 있는 <code>logger</code>라고 감히 말씀 드릴수 있습니다.</p>
+<h3 id="id-이름"><a href="#id-이름" class="headerlink" title="id 이름"></a>id 이름</h3><p>편한대로 해라</p>
+<h3 id="tdd"><a href="#tdd" class="headerlink" title="tdd"></a>tdd</h3><p>spring 태스트 힘들다<br>의존성이 있는 코드는 tdd 하기 힘들다.<br>@Entity<br>부분은 tdd로 개발 가능</p>
+<p>##db 삭제 pk는 왜 삭제가 안되는가<br>db 가 많아지면 max값을 찾는게 더 오래걸려서<br>시퀀스 내에 맥스만을 갖고 +1 로 사용한다.</p>
+<h3 id="강의-본문"><a href="#강의-본문" class="headerlink" title="강의 본문"></a>강의 본문</h3><p>객체간의 관계를 파악해 어떤 관계인지 생각하고 설계를 해야한다.<br>m:n<br>1:n<br>n:1<br>1:1</p>
+<p>m:1 일때는 fk 를 m 두는것이 더 효율적으로 관리할수 있다.<br>mappedBy = “”<br>fk 에 name 을 안붙여주면 asdfe223serdf213같이 렌덤으로 부여</p>
+<p>객체관계 접근가능한게 bi-direction<br>한쪽에서만 접근가능한게 uni-direction<br>가능하면 uni-direction으로 구현하는게 성능적 의존적 으로 더 낫다.</p>
+<h2 id="logback-사용해야-하는-이유"><a href="#logback-사용해야-하는-이유" class="headerlink" title="logback 사용해야 하는 이유"></a>logback 사용해야 하는 이유</h2><p>자바 로깅 구현체(logger)로  “LOGBack“을 사용 하고 있습니다.</p>
 <h3 id="log-leve"><a href="#log-leve" class="headerlink" title="log leve"></a>log leve</h3><p>debug &lt; info &lt; warn &lt; error</p>
 <h3 id="spring-boot-에서는-yml-파일-수정만으로-쉽게-사용할-수-있다"><a href="#spring-boot-에서는-yml-파일-수정만으로-쉽게-사용할-수-있다" class="headerlink" title="spring boot 에서는 yml 파일 수정만으로 쉽게 사용할 수 있다."></a>spring boot 에서는 yml 파일 수정만으로 쉽게 사용할 수 있다.</h3><p>application.yml 을 만들고 아래의 내용을 적어주면 된다.<br><figure class="highlight yml"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br></pre></td><td class="code"><pre><span class="line"><span class="attr">logging:</span></span><br><span class="line"><span class="attr">  level:</span></span><br><span class="line"><span class="attr">    root:</span> <span class="string">info</span></span><br><span class="line"><span class="attr">    codesquad:</span> <span class="string">info</span></span><br></pre></td></tr></table></figure></p>
 <figure class="highlight java"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br></pre></td><td class="code"><pre><span class="line">log.debug(<span class="string">"user:&#123;&#125;"</span> + user);</span><br><span class="line"><span class="comment">//log 레벨을 올려도 아규먼트에 있는 내용을 처리하고 method 가 실행하기 때문에 아규먼트를 읽어오는 비용이 발생 한다. 아래와 같이 구현하면 낭비가 없어진다.</span></span><br><span class="line">log.debug(<span class="string">"user:&#123;&#125;"</span>,user);</span><br></pre></td></tr></table></figure>
-<p>logging level을 적절하게 나눠 구현하는 것이 신경쓰면서 개발하자.<br>ERROR – something terribly wrong had happened, that must be investigated immediately.<br>WARN – the process might be continued, but take extra caution.<br>INFO – Important business process has finished.<br>DEBUG – Developers stuff.<br>TRACE – Very detailed information, intended only for development.</p>
+<h3 id="logging-level을-적절하게-나눠-구현하는-것이-신경쓰면서-개발하자"><a href="#logging-level을-적절하게-나눠-구현하는-것이-신경쓰면서-개발하자" class="headerlink" title="logging level을 적절하게 나눠 구현하는 것이 신경쓰면서 개발하자."></a>logging level을 적절하게 나눠 구현하는 것이 신경쓰면서 개발하자.</h3><p>ERROR – something terribly wrong had happened, that must be investigated immediately.<br>WARN – the process might be continued, but take extra caution.<br>INFO – Important business process has finished.<br>DEBUG – Developers stuff.<br>TRACE – Very detailed information, intended only for development.</p>
+<hr>
+<h2 id="내일-할일"><a href="#내일-할일" class="headerlink" title="내일 할일"></a>내일 할일</h2><ul>
+<li>오랜만에 알고리즘 풀기</li>
+<li>아이디가 다르면 exception 발생시켜 html 호출시키면 코드를 줄일 수 있지않을까?</li>
+</ul>
 
       
     </div>
     <footer class="article-footer">
-      <a data-url="http://yoursite.com/2018/11/15/javaStudy/나만의용어집/" data-id="cjoiq2ko00004tov0p1ee45t2" class="article-share-link">공유</a>
+      <a data-url="http://yoursite.com/2018/11/24/20181122/" data-id="cjottru0s0000kgv0w5323axw" class="article-share-link">공유</a>
       
       
-  <ul class="article-tag-list"><li class="article-tag-list-item"><a class="article-tag-list-link" href="/tags/java/">java</a></li></ul>
+  <ul class="article-tag-list"><li class="article-tag-list-item"><a class="article-tag-list-link" href="/tags/TIL/">TIL</a></li></ul>
 
     </footer>
   </div>
@@ -127,17 +139,8 @@
     
 <nav id="article-nav">
   
-    <a href="/2018/11/15/20181115/" id="article-nav-newer" class="article-nav-link-wrap">
-      <strong class="article-nav-caption">최신</strong>
-      <div class="article-nav-title">
-        
-          TIL
-        
-      </div>
-    </a>
   
-  
-    <a href="/2018/11/12/20181112/" id="article-nav-older" class="article-nav-link-wrap">
+    <a href="/2018/11/19/20181119/" id="article-nav-older" class="article-nav-link-wrap">
       <strong class="article-nav-caption">이전</strong>
       <div class="article-nav-title">TIL</div>
     </a>

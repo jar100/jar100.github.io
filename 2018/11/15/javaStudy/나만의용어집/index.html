@@ -15,7 +15,7 @@
 <meta property="og:site_name" content="jar100 blog">
 <meta property="og:description" content="공부 하면서 처음보는 용어들 정리공부하고 정리하고 기억해야 할것을 나만의 말로 정리  update 2018-11-21  JPA데이터베이스 의 설정을 에노테이션으로 정해주는 라이브러리 SPRING(스프링)스프링은 자바를 통해 엔터프라이즈 시스템을 개발하는데 좀 더 나은 방법과 전략을 찾으려고 고민하고 연구한 잘만든 API를 제공하는 것 입니다. 엔터프라이즈">
 <meta property="og:locale" content="ko">
-<meta property="og:updated_time" content="2018-11-22T12:56:09.026Z">
+<meta property="og:updated_time" content="2018-11-27T13:35:48.210Z">
 <meta name="twitter:card" content="summary">
 <meta name="twitter:title" content="javaStudy">
 <meta name="twitter:description" content="공부 하면서 처음보는 용어들 정리공부하고 정리하고 기억해야 할것을 나만의 말로 정리  update 2018-11-21  JPA데이터베이스 의 설정을 에노테이션으로 정해주는 라이브러리 SPRING(스프링)스프링은 자바를 통해 엔터프라이즈 시스템을 개발하는데 좀 더 나은 방법과 전략을 찾으려고 고민하고 연구한 잘만든 API를 제공하는 것 입니다. 엔터프라이즈">
@@ -101,17 +101,22 @@
 <ul>
 <li>메모리영역이 아닌 물리 데이터 저장공간(database)에 저장되어 애플리케이션이 종료되더라도 데이터가 사라지지 않고 남아있음을 의미합니다.</li>
 </ul>
-<h2 id="리다이렉트"><a href="#리다이렉트" class="headerlink" title="리다이렉트"></a>리다이렉트</h2><h2 id="포워드"><a href="#포워드" class="headerlink" title="포워드"></a>포워드</h2><h2 id="상태와-무상태"><a href="#상태와-무상태" class="headerlink" title="상태와 무상태"></a>상태와 무상태</h2><p>나의 상태를 유지 시킬 수 있느냐 없느냐의 차이</p>
+<h2 id="리다이렉트"><a href="#리다이렉트" class="headerlink" title="리다이렉트"></a>리다이렉트</h2><h2 id="포워드"><a href="#포워드" class="headerlink" title="포워드"></a>포워드</h2><p>서블릿에서 jsp로 이동은 브라우저를 통하지 않는다. 애플리케이션 서버 내에서만 진행되는 이동을 포워드라고 한다.</p>
+<h2 id="상태와-무상태"><a href="#상태와-무상태" class="headerlink" title="상태와 무상태"></a>상태와 무상태</h2><p>나의 상태를 유지 시킬 수 있느냐 없느냐의 차이</p>
 <h2 id="쿠키"><a href="#쿠키" class="headerlink" title="쿠키"></a>쿠키</h2><p>상태를 유지 하고싶은 데이터를 유지하고 있다가 계속 보내는것</p>
 <h2 id="세션"><a href="#세션" class="headerlink" title="세션"></a>세션</h2><p>맵으로 아이디와 페스워드를 저장해 그 키를 가지고 돌아다니는 것</p>
 <h2 id="후보키-Candidate-Key"><a href="#후보키-Candidate-Key" class="headerlink" title="후보키 (Candidate Key)"></a>후보키 (Candidate Key)</h2><p>테이블을 구석하는 열 중에서 유일하게 식별할 수 있는 열</p>
 <h2 id="기본키-Primary-Key"><a href="#기본키-Primary-Key" class="headerlink" title="기본키 (Primary Key)"></a>기본키 (Primary Key)</h2><p>테이블에서 유일하게 식별하기 위해 사용하는 키</p>
 <h2 id="외래키-Foreign-Key"><a href="#외래키-Foreign-Key" class="headerlink" title="외래키 (Foreign Key)"></a>외래키 (Foreign Key)</h2><p>외래키란 테이블 내의 열 중 다른 테이블의 기본키를 참조하는 열을 외래키라 한다.</p>
-<h2 id="Logging"><a href="#Logging" class="headerlink" title="Logging"></a>Logging</h2><p>로깅은 어떤 소프트웨어가 실행될 때 발생하는 이벤트를 추적하는 수단입니다<br><code>o</code>는 java world에서 가장 많이 사용하고 있는 <code>logger</code>라고 감히 말씀 드릴수 있습니다.</p>
-<h3 id="log-leve"><a href="#log-leve" class="headerlink" title="log leve"></a>log leve</h3><p>debug &lt; info &lt; warn &lt; error</p>
-<h3 id="spring-boot-에서는-yml-파일-수정만으로-쉽게-사용할-수-있다"><a href="#spring-boot-에서는-yml-파일-수정만으로-쉽게-사용할-수-있다" class="headerlink" title="spring boot 에서는 yml 파일 수정만으로 쉽게 사용할 수 있다."></a>spring boot 에서는 yml 파일 수정만으로 쉽게 사용할 수 있다.</h3><p>application.yml 을 만들고 아래의 내용을 적어주면 된다.<br><figure class="highlight yml"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br></pre></td><td class="code"><pre><span class="line"><span class="attr">logging:</span></span><br><span class="line"><span class="attr">  level:</span></span><br><span class="line"><span class="attr">    root:</span> <span class="string">info</span></span><br><span class="line"><span class="attr">    codesquad:</span> <span class="string">info</span></span><br></pre></td></tr></table></figure></p>
-<figure class="highlight java"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br></pre></td><td class="code"><pre><span class="line">log.debug(<span class="string">"user:&#123;&#125;"</span> + user);</span><br><span class="line"><span class="comment">//log 레벨을 올려도 아규먼트에 있는 내용을 처리하고 method 가 실행하기 때문에 아규먼트를 읽어오는 비용이 발생 한다. 아래와 같이 구현하면 낭비가 없어진다.</span></span><br><span class="line">log.debug(<span class="string">"user:&#123;&#125;"</span>,user);</span><br></pre></td></tr></table></figure>
-<p>logging level을 적절하게 나눠 구현하는 것이 신경쓰면서 개발하자.<br>ERROR – something terribly wrong had happened, that must be investigated immediately.<br>WARN – the process might be continued, but take extra caution.<br>INFO – Important business process has finished.<br>DEBUG – Developers stuff.<br>TRACE – Very detailed information, intended only for development.</p>
+<h2 id="Logging"><a href="#Logging" class="headerlink" title="Logging"></a>Logging</h2><p>로깅은 어떤 소프트웨어가 실행될 때 발생하는 이벤트를 추적하는 수단이다.</p>
+<h2 id="idempotent"><a href="#idempotent" class="headerlink" title="idempotent"></a>idempotent</h2><p>멱등성, 그 연산자를 한 번 적용한 결과나 두 번 반복하여 적용한 결과가 같다</p>
+<h2 id="웹-서버"><a href="#웹-서버" class="headerlink" title="웹 서버"></a>웹 서버</h2><h2 id="애플리케이션-서버"><a href="#애플리케이션-서버" class="headerlink" title="애플리케이션 서버"></a>애플리케이션 서버</h2><p>애플리케이션들을 작동 시키기 위한 서버 (jsp 나 서블릿)<br>대부분 애플리케이션 서버는 웹서버의 기능도 가지고 있다. 톰켓으로도 웹서버를 동작시킬 수 있다. 애플리케이션 서버가 웹서버 기능을 겸비하면 시스템 구성이 단순해지는 이점이 있다.<br>기능 : 세션 관리 , 트랜잭션 관리, 데이터베이스 접속 관리</p>
+<h2 id="아파치"><a href="#아파치" class="headerlink" title="아파치"></a>아파치</h2><p>웹 서버</p>
+<h2 id="톰켓"><a href="#톰켓" class="headerlink" title="톰켓"></a>톰켓</h2><p>아파치 재단에서 만든 애플리케이션 서버</p>
+<h2 id="톰켓-워커"><a href="#톰켓-워커" class="headerlink" title="톰켓 워커"></a>톰켓 워커</h2><p>mod_jk를 통한 연동에서는 접속처가 되는 톰캣 프로세스를 톰캣 워커라고 한다.</p>
+<h2 id="트랜젝션"><a href="#트랜젝션" class="headerlink" title="트랜젝션"></a>트랜젝션</h2><p>둘다 동시에 일어나야하는 작업 한쪽이 동작하지않으면 원상태로 되돌려야한다.<br>ex) 상품을 구매하면 재고에서 상품이 빠진다.</p>
+<h2 id="DAO-패턴"><a href="#DAO-패턴" class="headerlink" title="DAO 패턴"></a>DAO 패턴</h2><p>데이터베이스에 대한 연결 기능을 DAO라고 하는 객체로 분리해 재사용성과 유지보수성을 향상시킨 것<br>DAO 는 데이터베이스의 테이블별로 작성 하고 테이블에 대한 CRUD 처리를 각각 메서드로서 구현하는것이 일반적이다.</p>
+<h2 id="프로퍼티"><a href="#프로퍼티" class="headerlink" title="프로퍼티"></a>프로퍼티</h2><p>자바빈 규약을 따르는 get과 set 을 사용하는 변수를 property 라 한다.</p>
 
       
     </div>
@@ -127,7 +132,7 @@
     
 <nav id="article-nav">
   
-    <a href="/2018/11/15/20181115/" id="article-nav-newer" class="article-nav-link-wrap">
+    <a href="/2018/11/19/20181119/" id="article-nav-newer" class="article-nav-link-wrap">
       <strong class="article-nav-caption">최신</strong>
       <div class="article-nav-title">
         
@@ -137,7 +142,7 @@
     </a>
   
   
-    <a href="/2018/11/12/20181112/" id="article-nav-older" class="article-nav-link-wrap">
+    <a href="/2018/11/15/20181115/" id="article-nav-older" class="article-nav-link-wrap">
       <strong class="article-nav-caption">이전</strong>
       <div class="article-nav-title">TIL</div>
     </a>
@@ -190,23 +195,23 @@
       <ul>
         
           <li>
+            <a href="/2018/11/27/20181127/">TIL</a>
+          </li>
+        
+          <li>
+            <a href="/2018/11/26/20181126/">TIL</a>
+          </li>
+        
+          <li>
+            <a href="/2018/11/24/jpa정리/">TIL</a>
+          </li>
+        
+          <li>
             <a href="/2018/11/24/20181122/">TIL</a>
           </li>
         
           <li>
             <a href="/2018/11/19/20181119/">TIL</a>
-          </li>
-        
-          <li>
-            <a href="/2018/11/15/20181115/">TIL</a>
-          </li>
-        
-          <li>
-            <a href="/2018/11/15/javaStudy/나만의용어집/">javaStudy</a>
-          </li>
-        
-          <li>
-            <a href="/2018/11/12/20181112/">TIL</a>
           </li>
         
       </ul>

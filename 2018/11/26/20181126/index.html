@@ -1,0 +1,249 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <meta charset="utf-8">
+  
+
+  
+  <title>TIL | jar100 blog</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
+  <meta name="description" content="오늘의 공부 20181126강의aop oop 상호 보완적인 관계 상태/ 무상태 =&amp;gt; nextstep slipp상태기반으로 할 때 사용하는게 쿠키,세션 무상태는 한번 요청을 보내고 받으면 연결이 끊어진다.html은 기본적으로 무상태 기반이라 쿠키 라는 것을 이용 응답이 올때 지속적으로 보내 상태를 유지 시키는 방법으로 상태를 구현하지만 무상태에서 상태를">
+<meta name="keywords" content="TIL">
+<meta property="og:type" content="article">
+<meta property="og:title" content="TIL">
+<meta property="og:url" content="http://yoursite.com/2018/11/26/20181126/index.html">
+<meta property="og:site_name" content="jar100 blog">
+<meta property="og:description" content="오늘의 공부 20181126강의aop oop 상호 보완적인 관계 상태/ 무상태 =&amp;gt; nextstep slipp상태기반으로 할 때 사용하는게 쿠키,세션 무상태는 한번 요청을 보내고 받으면 연결이 끊어진다.html은 기본적으로 무상태 기반이라 쿠키 라는 것을 이용 응답이 올때 지속적으로 보내 상태를 유지 시키는 방법으로 상태를 구현하지만 무상태에서 상태를">
+<meta property="og:locale" content="ko">
+<meta property="og:updated_time" content="2018-11-27T13:35:38.053Z">
+<meta name="twitter:card" content="summary">
+<meta name="twitter:title" content="TIL">
+<meta name="twitter:description" content="오늘의 공부 20181126강의aop oop 상호 보완적인 관계 상태/ 무상태 =&amp;gt; nextstep slipp상태기반으로 할 때 사용하는게 쿠키,세션 무상태는 한번 요청을 보내고 받으면 연결이 끊어진다.html은 기본적으로 무상태 기반이라 쿠키 라는 것을 이용 응답이 올때 지속적으로 보내 상태를 유지 시키는 방법으로 상태를 구현하지만 무상태에서 상태를">
+  
+    <link rel="alternate" href="/atom.xml" title="jar100 blog" type="application/atom+xml">
+  
+  
+    <link rel="icon" href="/favicon.png">
+  
+  
+    <link href="//fonts.googleapis.com/css?family=Source+Code+Pro" rel="stylesheet" type="text/css">
+  
+  <link rel="stylesheet" href="/css/style.css">
+</head>
+
+<body>
+  <div id="container">
+    <div id="wrap">
+      <header id="header">
+  <div id="banner"></div>
+  <div id="header-outer" class="outer">
+    <div id="header-title" class="inner">
+      <h1 id="logo-wrap">
+        <a href="/" id="logo">jar100 blog</a>
+      </h1>
+      
+        <h2 id="subtitle-wrap">
+          <a href="/" id="subtitle">Daily TIL writing</a>
+        </h2>
+      
+    </div>
+    <div id="header-inner" class="inner">
+      <nav id="main-nav">
+        <a id="main-nav-toggle" class="nav-icon"></a>
+        
+          <a class="main-nav-link" href="/">Home</a>
+        
+          <a class="main-nav-link" href="/archives">Archives</a>
+        
+      </nav>
+      <nav id="sub-nav">
+        
+          <a id="nav-rss-link" class="nav-icon" href="/atom.xml" title="RSS Feed"></a>
+        
+        <a id="nav-search-btn" class="nav-icon" title="검색"></a>
+      </nav>
+      <div id="search-form-wrap">
+        <form action="//google.com/search" method="get" accept-charset="UTF-8" class="search-form"><input type="search" name="q" class="search-form-input" placeholder="Search"><button type="submit" class="search-form-submit">&#xF002;</button><input type="hidden" name="sitesearch" value="http://yoursite.com"></form>
+      </div>
+    </div>
+  </div>
+</header>
+      <div class="outer">
+        <section id="main"><article id="post-20181126" class="article article-type-post" itemscope itemprop="blogPost">
+  <div class="article-meta">
+    <a href="/2018/11/26/20181126/" class="article-date">
+  <time datetime="2018-11-26T14:23:51.000Z" itemprop="datePublished">2018-11-26</time>
+</a>
+    
+  </div>
+  <div class="article-inner">
+    
+    
+      <header class="article-header">
+        
+  
+    <h1 class="article-title" itemprop="name">
+      TIL
+    </h1>
+  
+
+      </header>
+    
+    <div class="article-entry" itemprop="articleBody">
+      
+        <h1 id="오늘의-공부-20181126"><a href="#오늘의-공부-20181126" class="headerlink" title="오늘의 공부 20181126"></a>오늘의 공부 20181126</h1><h2 id="강의"><a href="#강의" class="headerlink" title="강의"></a>강의</h2><p>aop oop 상호 보완적인 관계</p>
+<h3 id="상태-무상태-gt-nextstep-slipp"><a href="#상태-무상태-gt-nextstep-slipp" class="headerlink" title="상태/ 무상태 =&gt; nextstep slipp"></a>상태/ 무상태 =&gt; nextstep slipp</h3><p>상태기반으로 할 때 사용하는게 쿠키,세션</p>
+<p>무상태는 한번 요청을 보내고 받으면 연결이 끊어진다.<br><code>html</code>은 기본적으로 무상태 기반이라 <code>쿠키</code> 라는 것을 이용 응답이 올때 지속적으로 보내 상태를 유지 시키는 방법으로 상태를 구현<br>하지만 무상태에서 상태를 구현한것이라 업데이트 된것이 바로바로 클라이언트 눈에 보이지 않는다.(새로고침을 해야한다.)<br>ex) 네이버 야구 10초마다 서버에 요청해 정보를 받아온다.</p>
+<p>상태는 나한테 연결되있는 클라이언트의 정보를 가지고있다가 서버에서 변경사항을 바로 클라이언트에게 알려준다.<br>즉 상태기반 클라이언트의 정보를 계속 가지고있으면서 반영해준다.<br>http가 발전하면서 <code>WebSocket</code> 이 나오면서 상태기반으로 구현할 수 있게 됬다.<br>하지만 상태 기반으로 웹페이지 전부를 구현하게 되면 한번에 많은 유저데이터를 지속해서 가지고 있어야한다. (서버에 부담이 커진다.)<br>그래서 요즘 웹페이지는 특정 부분은 <code>WebSocket</code> 을 이용해 상태로 구현 하고 나머지 부담이 많은 부분은 무상태로 구현하는 것을 지향한다.<br>ex) 페이스북 dm , 웹페이지의 쪽지나 알람기능</p>
+<p>상태 : push<br>무상태 : polling</p>
+<h3 id="도메인-나누는-기반"><a href="#도메인-나누는-기반" class="headerlink" title="도메인 나누는 기반"></a>도메인 나누는 기반</h3><p>여러가지가 있는데 가장 일반적으로 레이어드 아키텍처 기반으로 나눈다<br>(컨트롤러 서비스 리파지토리,dao) =&gt; 도매인,모델,엔티티<br>뷰 (핸들바)</p>
+<h3 id="cascade-orphanRemoval"><a href="#cascade-orphanRemoval" class="headerlink" title="cascade/orphanRemoval"></a>cascade/orphanRemoval</h3><p>cascade : 폭포수<br>cascade 를 지정해주면 부모 데이터 베이스가 삭제되면 자식도 같이 삭제되게 할 수 있다.</p>
+<p>orphanRemoval=true</p>
+<ul>
+<li>Emp 엔티티가 삭제될 때 참조가 끊어진 연관된 Addr 엔티티도 삭제하라는 의미이며 DB에서도 삭제되는데 참조(연결)가 끊어진 Addr 객체는 DB에서도 삭제된다는 뜻이다.</li>
+</ul>
+<p>cascade=CascadeType.REMOVE</p>
+<ul>
+<li>Emp 엔티티가 삭제될 때 연관된 Addr 엔티티도 삭제하라는 의미이며 DB에서도 삭제된다.</li>
+</ul>
+<p>연결이 끊어진다고 해서 자동 삭제되는 것은 아니고 명시적으로 연관 엔티티가 삭제될 때 같이 삭제하라는 영속성 전이와 관련된 옵션이다.</p>
+<h3 id="스프링-빈"><a href="#스프링-빈" class="headerlink" title="스프링 빈"></a>스프링 빈</h3><p>스프링 빈 은 자바 인스턴스<br>자바 리플렉션을 쓰면 프라이빗 도 바꿔치기할 수 있다.<br>생성자나 세터메서드를 이용해서 하는게 일반적</p>
+<h2 id="알고리즘"><a href="#알고리즘" class="headerlink" title="알고리즘"></a>알고리즘</h2><p>카카오 2번째 문제를 풀었다.<br>어렵지 않게 진행했는데 <code>Comparable</code> 로 비교하는 부분에서 실수해 값이 안나왔다.<br><code>compareto</code> 로 o2-o1 을 했는데 <code>compareto</code>는 int 형을 리턴해 소숫점 단위에서 0 으로 결과가 나오는 것이었다.<br>다음 부턴 이런 실수를 하면 안되겠다.<br>오랜만에 알고리즘문제를 풀어봤는데 다시 java 메서드에 대해 다시 공부해야겠다는 생각이 들었다.</p>
+
+      
+    </div>
+    <footer class="article-footer">
+      <a data-url="http://yoursite.com/2018/11/26/20181126/" data-id="cjozy2pi70000h4v06j64y1jq" class="article-share-link">공유</a>
+      
+      
+  <ul class="article-tag-list"><li class="article-tag-list-item"><a class="article-tag-list-link" href="/tags/TIL/">TIL</a></li></ul>
+
+    </footer>
+  </div>
+  
+    
+<nav id="article-nav">
+  
+    <a href="/2018/11/27/20181127/" id="article-nav-newer" class="article-nav-link-wrap">
+      <strong class="article-nav-caption">최신</strong>
+      <div class="article-nav-title">
+        
+          TIL
+        
+      </div>
+    </a>
+  
+  
+    <a href="/2018/11/24/jpa정리/" id="article-nav-older" class="article-nav-link-wrap">
+      <strong class="article-nav-caption">이전</strong>
+      <div class="article-nav-title">TIL</div>
+    </a>
+  
+</nav>
+
+  
+</article>
+
+</section>
+        
+          <aside id="sidebar">
+  
+    
+
+  
+    
+  <div class="widget-wrap">
+    <h3 class="widget-title">태그</h3>
+    <div class="widget">
+      <ul class="tag-list"><li class="tag-list-item"><a class="tag-list-link" href="/tags/TIL/">TIL</a></li><li class="tag-list-item"><a class="tag-list-link" href="/tags/java/">java</a></li></ul>
+    </div>
+  </div>
+
+
+  
+    
+  <div class="widget-wrap">
+    <h3 class="widget-title">태그 클라우드</h3>
+    <div class="widget tagcloud">
+      <a href="/tags/TIL/" style="font-size: 20px;">TIL</a> <a href="/tags/java/" style="font-size: 10px;">java</a>
+    </div>
+  </div>
+
+  
+    
+  <div class="widget-wrap">
+    <h3 class="widget-title">아카이브</h3>
+    <div class="widget">
+      <ul class="archive-list"><li class="archive-list-item"><a class="archive-list-link" href="/archives/2018/11/">11월 2018</a></li><li class="archive-list-item"><a class="archive-list-link" href="/archives/2018/10/">10월 2018</a></li><li class="archive-list-item"><a class="archive-list-link" href="/archives/2018/09/">9월 2018</a></li><li class="archive-list-item"><a class="archive-list-link" href="/archives/2018/08/">8월 2018</a></li><li class="archive-list-item"><a class="archive-list-link" href="/archives/2018/07/">7월 2018</a></li></ul>
+    </div>
+  </div>
+
+
+  
+    
+  <div class="widget-wrap">
+    <h3 class="widget-title">최근 포스트</h3>
+    <div class="widget">
+      <ul>
+        
+          <li>
+            <a href="/2018/11/27/20181127/">TIL</a>
+          </li>
+        
+          <li>
+            <a href="/2018/11/26/20181126/">TIL</a>
+          </li>
+        
+          <li>
+            <a href="/2018/11/24/jpa정리/">TIL</a>
+          </li>
+        
+          <li>
+            <a href="/2018/11/24/20181122/">TIL</a>
+          </li>
+        
+          <li>
+            <a href="/2018/11/19/20181119/">TIL</a>
+          </li>
+        
+      </ul>
+    </div>
+  </div>
+
+  
+</aside>
+        
+      </div>
+      <footer id="footer">
+  
+  <div class="outer">
+    <div id="footer-info" class="inner">
+      &copy; 2018 John Doe<br>
+      Powered by <a href="http://hexo.io/" target="_blank">Hexo</a>
+    </div>
+  </div>
+</footer>
+    </div>
+    <nav id="mobile-nav">
+  
+    <a href="/" class="mobile-nav-link">Home</a>
+  
+    <a href="/archives" class="mobile-nav-link">Archives</a>
+  
+</nav>
+    
+
+<script src="//ajax.googleapis.com/ajax/libs/jquery/2.0.3/jquery.min.js"></script>
+
+
+  <link rel="stylesheet" href="/fancybox/jquery.fancybox.css">
+  <script src="/fancybox/jquery.fancybox.pack.js"></script>
+
+
+<script src="/js/script.js"></script>
+
+
+
+  </div>
+</body>
+</html>

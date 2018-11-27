@@ -66,6 +66,222 @@
       <div class="outer">
         <section id="main">
   
+    <article id="post-201808/20180809" class="article article-type-post" itemscope itemprop="blogPost">
+  <div class="article-meta">
+    <a href="/2018/08/09/201808/20180809/" class="article-date">
+  <time datetime="2018-08-09T14:23:51.000Z" itemprop="datePublished">2018-08-09</time>
+</a>
+    
+  </div>
+  <div class="article-inner">
+    
+    
+      <header class="article-header">
+        
+  
+    <h1 itemprop="name">
+      <a class="article-title" href="/2018/08/09/201808/20180809/">TIL</a>
+    </h1>
+  
+
+      </header>
+    
+    <div class="article-entry" itemprop="articleBody">
+      
+        <h1 id="오늘의-공부-20180809"><a href="#오늘의-공부-20180809" class="headerlink" title="오늘의 공부 20180809"></a>오늘의 공부 20180809</h1><ul>
+<li>java 야구 코드 수정</li>
+<li>js 야구 코드 수정</li>
+<li>프로그래머스 알고리즘 1개</li>
+<li>java 강의</li>
+<li>생활코딩 듣기</li>
+</ul>
+<hr>
+<h2 id="java"><a href="#java" class="headerlink" title="java"></a>java</h2><p>야구 코드를 수정 해봤다. 아직도 어렵다 두리뭉실</p>
+<h3 id="static-final-상수"><a href="#static-final-상수" class="headerlink" title="static final 상수"></a>static final 상수</h3><p>final로 선언된 변수는 상수이다.<br>final로 선언되면 수정이 불가능.</p>
+<ul>
+<li><p>예제</p>
+<figure class="highlight java"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br></pre></td><td class="code"><pre><span class="line"><span class="keyword">package</span> learntojava;</span><br><span class="line"></span><br><span class="line"><span class="keyword">public</span> <span class="class"><span class="keyword">class</span> <span class="title">constant</span> </span>&#123;</span><br><span class="line">	<span class="keyword">static</span> <span class="keyword">final</span> <span class="keyword">int</span> baseballnumLength = <span class="number">3</span>;</span><br><span class="line"></span><br><span class="line">&#125;</span><br></pre></td></tr></table></figure>
+</li>
+<li><p>다른 클래스에서 <code>constant.baseballnumLength</code> 라고 선언 하면 3 값이 들어감</p>
+</li>
+</ul>
+<h3 id="StringBuffer"><a href="#StringBuffer" class="headerlink" title="StringBuffer"></a>StringBuffer</h3><p>StringBuffer는 문자열을 추가하거나 변경 할 때 주로 사용하는 자료형이다.<br>StringBuffer는 다음과 같이 사용된다.</p>
+<ul>
+<li><code>append</code><figure class="highlight java"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br></pre></td><td class="code"><pre><span class="line"><span class="keyword">public</span> <span class="class"><span class="keyword">class</span> <span class="title">Test</span> </span>&#123;</span><br><span class="line">    <span class="function"><span class="keyword">public</span> <span class="keyword">static</span> <span class="keyword">void</span> <span class="title">main</span><span class="params">(String[] args)</span> </span>&#123;</span><br><span class="line">        StringBuffer sb = <span class="keyword">new</span> StringBuffer();</span><br><span class="line">        sb.append(<span class="string">"hello"</span>);</span><br><span class="line">        sb.append(<span class="string">" "</span>);</span><br><span class="line">        sb.append(<span class="string">"jump to java"</span>);</span><br><span class="line">        System.out.println(sb.toString());</span><br><span class="line">    &#125;</span><br><span class="line">&#125;</span><br></pre></td></tr></table></figure>
+</li>
+</ul>
+<p>결과값은 다음과 같다.<br><figure class="highlight java"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">hello jump to java</span><br></pre></td></tr></table></figure></p>
+<p><code>StringBuffer</code> 자료형은 <code>append</code> 라는 메소드를 이용하여 계속해서 문자열을 추가해 나갈 수 있다. 그리고 위 예제와 같이 <code>toString()</code> 메소드를 이용하면 String 자료형으로 변경할 수 있다.</p>
+<hr>
+<h2 id="js"><a href="#js" class="headerlink" title="js"></a>js</h2><p>야구 코드를 수정사항에 맞춰 수정해보자.</p>
+<hr>
+<h2 id="생활코딩-코딩야학"><a href="#생활코딩-코딩야학" class="headerlink" title="생활코딩 코딩야학"></a>생활코딩 코딩야학</h2><p>크립토좀비 해봐야겠다.</p>
+<ul>
+<li><a href="https://cryptozombies.io/ko/" target="_blank" rel="noopener">https://cryptozombies.io/ko/</a></li>
+</ul>
+
+      
+    </div>
+    <footer class="article-footer">
+      <a data-url="http://yoursite.com/2018/08/09/201808/20180809/" data-id="cjllzogxl000xykv0drzn3q6t" class="article-share-link">공유</a>
+      
+      
+  <ul class="article-tag-list"><li class="article-tag-list-item"><a class="article-tag-list-link" href="/tags/TIL/">TIL</a></li></ul>
+
+    </footer>
+  </div>
+  
+</article>
+
+
+  
+    <article id="post-201808/20180808" class="article article-type-post" itemscope itemprop="blogPost">
+  <div class="article-meta">
+    <a href="/2018/08/08/201808/20180808/" class="article-date">
+  <time datetime="2018-08-08T14:23:51.000Z" itemprop="datePublished">2018-08-08</time>
+</a>
+    
+  </div>
+  <div class="article-inner">
+    
+    
+      <header class="article-header">
+        
+  
+    <h1 itemprop="name">
+      <a class="article-title" href="/2018/08/08/201808/20180808/">TIL</a>
+    </h1>
+  
+
+      </header>
+    
+    <div class="article-entry" itemprop="articleBody">
+      
+        <h1 id="오늘의-공부-20180808"><a href="#오늘의-공부-20180808" class="headerlink" title="오늘의 공부 20180808"></a>오늘의 공부 20180808</h1><hr>
+<h2 id="오프라인-강의"><a href="#오프라인-강의" class="headerlink" title="오프라인 강의"></a>오프라인 강의</h2><ul>
+<li>cope 기계어 프로그램</li>
+<li>data 전역 변수</li>
+<li>heap 객체 저장 </li>
+<li>stack 지역변수 넘치면 스텍 오버플로우 발생 <ul>
+<li>함수를 닫으면 전역변수 스텍에서 제거</li>
+</ul>
+</li>
+<li>안정정렬 이면 더쉽게 할 수 있다. ( 편법 )</li>
+</ul>
+<h3 id="js"><a href="#js" class="headerlink" title="js"></a>js</h3><p>켄버스를 이용해 다양한것을 그릴 수 있다.</p>
+<h3 id="공부하는데-도움될만한-것들"><a href="#공부하는데-도움될만한-것들" class="headerlink" title="공부하는데 도움될만한 것들"></a>공부하는데 도움될만한 것들</h3><ul>
+<li>취업하는데 필요할것들<br><a href="https://codeburst.io/the-2018-web-developer-roadmap-826b1b806e8d" target="_blank" rel="noopener">https://codeburst.io/the-2018-web-developer-roadmap-826b1b806e8d</a></li>
+</ul>
+<h2 id="프로그래머스"><a href="#프로그래머스" class="headerlink" title="프로그래머스"></a>프로그래머스</h2><ul>
+<li><p>문자열 내림차순 정렬</p>
+<figure class="highlight js"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br><span class="line">15</span><br><span class="line">16</span><br><span class="line">17</span><br><span class="line">18</span><br></pre></td><td class="code"><pre><span class="line"><span class="function"><span class="keyword">function</span> <span class="title">solution</span>(<span class="params">s</span>) </span>&#123;</span><br><span class="line">    <span class="keyword">var</span> answer = <span class="string">''</span>;</span><br><span class="line">    <span class="keyword">var</span> output = s.split(<span class="string">""</span>);</span><br><span class="line">        answer = output.sort(com);</span><br><span class="line">        answer = answer.join(<span class="string">""</span>);</span><br><span class="line">    <span class="function"><span class="keyword">function</span> <span class="title">com</span>(<span class="params">a, b</span>) </span>&#123;</span><br><span class="line">        <span class="keyword">if</span> (a &gt; b) &#123;</span><br><span class="line">            <span class="keyword">return</span> <span class="number">-1</span>;</span><br><span class="line">        &#125;</span><br><span class="line">        <span class="keyword">if</span> (b &gt; a) &#123;</span><br><span class="line">            <span class="keyword">return</span> <span class="number">1</span>;</span><br><span class="line">        &#125; <span class="keyword">else</span> &#123;</span><br><span class="line">            <span class="keyword">return</span> <span class="number">0</span>;</span><br><span class="line">        &#125;</span><br><span class="line">    &#125;</span><br><span class="line">    <span class="built_in">console</span>.log(output)</span><br><span class="line">    <span class="keyword">return</span> answer;</span><br><span class="line">&#125;</span><br></pre></td></tr></table></figure>
+</li>
+<li><p>sort 를 이용해서 구현 함수 값을 반환시켜 구현했다.</p>
+</li>
+</ul>
+<h2 id="반성"><a href="#반성" class="headerlink" title="반성"></a>반성</h2><p>오늘은 오프라인강의도 있고 해서 혼자 공부를 많이 못했다.<br>내일 많이 해야겠다.<br>내일 해보고싶은것</p>
+<ul>
+<li>15퍼즐</li>
+<li>벽돌깨기</li>
+<li>java로 야구게임 더 수정해보기</li>
+</ul>
+
+      
+    </div>
+    <footer class="article-footer">
+      <a data-url="http://yoursite.com/2018/08/08/201808/20180808/" data-id="cjllzogxn000zykv0i6n0d39v" class="article-share-link">공유</a>
+      
+      
+  <ul class="article-tag-list"><li class="article-tag-list-item"><a class="article-tag-list-link" href="/tags/TIL/">TIL</a></li></ul>
+
+    </footer>
+  </div>
+  
+</article>
+
+
+  
+    <article id="post-201808/20180807" class="article article-type-post" itemscope itemprop="blogPost">
+  <div class="article-meta">
+    <a href="/2018/08/07/201808/20180807/" class="article-date">
+  <time datetime="2018-08-07T14:23:51.000Z" itemprop="datePublished">2018-08-07</time>
+</a>
+    
+  </div>
+  <div class="article-inner">
+    
+    
+      <header class="article-header">
+        
+  
+    <h1 itemprop="name">
+      <a class="article-title" href="/2018/08/07/201808/20180807/">TIL</a>
+    </h1>
+  
+
+      </header>
+    
+    <div class="article-entry" itemprop="articleBody">
+      
+        <h1 id="오늘의-공부-20180807"><a href="#오늘의-공부-20180807" class="headerlink" title="오늘의 공부 20180807"></a>오늘의 공부 20180807</h1><ul>
+<li>프로그래머스 알고리즘 1개</li>
+<li>java 공부</li>
+<li>js 공부</li>
+</ul>
+<hr>
+<h2 id="java-공부"><a href="#java-공부" class="headerlink" title="java 공부"></a>java 공부</h2><ul>
+<li>오늘은 안함…</li>
+</ul>
+<hr>
+<h2 id="js-공부"><a href="#js-공부" class="headerlink" title="js 공부"></a>js 공부</h2><p>강의 공부<br>계산기 구현<br>객체 사용을 더 연습해보자</p>
+<h3 id="scope"><a href="#scope" class="headerlink" title="scope"></a>scope</h3><ul>
+<li>변수의 유효 범위 변수가 사용될 수 있는 범위</li>
+</ul>
+<h3 id="전역변수"><a href="#전역변수" class="headerlink" title="전역변수"></a>전역변수</h3><ul>
+<li>함수 외부에서 선언된 변수</li>
+</ul>
+<h3 id="const"><a href="#const" class="headerlink" title="const"></a>const</h3><ul>
+<li>const는 한번 선언하면 바꿀 수 없다.</li>
+</ul>
+<h3 id="let"><a href="#let" class="headerlink" title="let"></a>let</h3><ul>
+<li>읽고 쓰기가 가능하지만 다시 선언은 안된다.</li>
+<li>블록 스코프</li>
+</ul>
+<h3 id="호이스팅"><a href="#호이스팅" class="headerlink" title="호이스팅"></a>호이스팅</h3><ul>
+<li>var 로 선언하면 a<figure class="highlight js"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br></pre></td><td class="code"><pre><span class="line"><span class="built_in">console</span>.log(a);</span><br><span class="line"></span><br><span class="line"><span class="keyword">var</span> a = <span class="number">10</span>;</span><br><span class="line"></span><br><span class="line"><span class="built_in">console</span>.log(a);</span><br><span class="line"></span><br><span class="line"><span class="comment">//undefined</span></span><br><span class="line"><span class="comment">//10</span></span><br></pre></td></tr></table></figure>
+</li>
+</ul>
+<h3 id="재귀-recursion"><a href="#재귀-recursion" class="headerlink" title="재귀 (recursion)"></a>재귀 (recursion)</h3><ul>
+<li>자기 자신 호출</li>
+<li>return 이 꼭 필요하다.</li>
+<li>사용하는 이유 사용하면 더 쉽다.</li>
+<li>점화식 : 수열을 만족하는 해</li>
+<li>memoization<figure class="highlight js"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br></pre></td><td class="code"><pre><span class="line"><span class="keyword">var</span> arr =[<span class="number">0</span>, <span class="number">1</span>];</span><br><span class="line"><span class="function"><span class="keyword">function</span> <span class="title">fibo_d</span>(<span class="params">n</span>) </span>&#123;</span><br><span class="line">    <span class="keyword">if</span>(arr[n] == <span class="literal">undefined</span>) &#123;</span><br><span class="line">        arr[n] = fibo_d(n - <span class="number">1</span>) + fibo_d(n - <span class="number">2</span>);</span><br><span class="line">        &#125;</span><br><span class="line">    <span class="keyword">return</span> arr[n];</span><br><span class="line">&#125;</span><br></pre></td></tr></table></figure>
+</li>
+</ul>
+<hr>
+<h2 id="코딩야학"><a href="#코딩야학" class="headerlink" title="코딩야학"></a>코딩야학</h2><p>아톰 사용법<br>html</p>
+<h3 id="배우면-좋은것"><a href="#배우면-좋은것" class="headerlink" title="배우면 좋은것"></a>배우면 좋은것</h3><ul>
+<li>아톰에 insall 기능에 플러그인 설치가능</li>
+<li>emmet 페키지 설치하면 html태그 빠르게 입력가능</li>
+<li>html&gt;body&gt;h1*3 teb (&gt;는 안에)</li>
+</ul>
+
+      
+    </div>
+    <footer class="article-footer">
+      <a data-url="http://yoursite.com/2018/08/07/201808/20180807/" data-id="cjllzogxo0011ykv008ul6st8" class="article-share-link">공유</a>
+      
+      
+  <ul class="article-tag-list"><li class="article-tag-list-item"><a class="article-tag-list-link" href="/tags/TIL/">TIL</a></li></ul>
+
+    </footer>
+  </div>
+  
+</article>
+
+
+  
     <article id="post-201808/20180806" class="article article-type-post" itemscope itemprop="blogPost">
   <div class="article-meta">
     <a href="/2018/08/06/201808/20180806/" class="article-date">
@@ -648,255 +864,6 @@
 
 
   
-    <article id="post-201807/20180729" class="article article-type-post" itemscope itemprop="blogPost">
-  <div class="article-meta">
-    <a href="/2018/07/29/201807/20180729/" class="article-date">
-  <time datetime="2018-07-29T14:23:51.000Z" itemprop="datePublished">2018-07-29</time>
-</a>
-    
-  </div>
-  <div class="article-inner">
-    
-    
-      <header class="article-header">
-        
-  
-    <h1 itemprop="name">
-      <a class="article-title" href="/2018/07/29/201807/20180729/">TIL</a>
-    </h1>
-  
-
-      </header>
-    
-    <div class="article-entry" itemprop="articleBody">
-      
-        <h1 id="오늘의-공부-20180729"><a href="#오늘의-공부-20180729" class="headerlink" title="오늘의 공부 20180729"></a>오늘의 공부 20180729</h1><hr>
-<h2 id="강의"><a href="#강의" class="headerlink" title="강의"></a>강의</h2><ul>
-<li>객체 파트 들음</li>
-<li>객체 를 이용해 소수구하는 코드 작성</li>
-</ul>
-<h3 id="생활코딩"><a href="#생활코딩" class="headerlink" title="생활코딩"></a>생활코딩</h3><ul>
-<li>듣기 시작</li>
-</ul>
-<h2 id="연습문제"><a href="#연습문제" class="headerlink" title="연습문제"></a>연습문제</h2><h3 id="소용돌이-작성함"><a href="#소용돌이-작성함" class="headerlink" title="소용돌이 작성함"></a>소용돌이 작성함</h3><ul>
-<li>오름차순으로 작성 </li>
-<li>숫자가 갈수록 커지니 직사각형이 깨지는 문제 발생</li>
-<li>내림차순으로도 작성해봐야겠다a</li>
-</ul>
-<h2 id="프로그래머스"><a href="#프로그래머스" class="headerlink" title="프로그래머스"></a>프로그래머스</h2><p>2개 풀기</p>
-<p>###</p>
-<h2 id="TO-DO"><a href="#TO-DO" class="headerlink" title="TO-DO"></a>TO-DO</h2><p><del>소수 객체를 이용해서 작성</del><br><del>연습문제2개</del><br>프래그래머스 알고리즘 2개<br><del>강의 1개(인프런)</del><br><del>생활 코딩 1개</del><br>영어공부</p>
-<hr>
-
-      
-    </div>
-    <footer class="article-footer">
-      <a data-url="http://yoursite.com/2018/07/29/201807/20180729/" data-id="cjllzogx5000hykv02e2p462c" class="article-share-link">공유</a>
-      
-      
-  <ul class="article-tag-list"><li class="article-tag-list-item"><a class="article-tag-list-link" href="/tags/TIL/">TIL</a></li></ul>
-
-    </footer>
-  </div>
-  
-</article>
-
-
-  
-    <article id="post-201807/20180728" class="article article-type-post" itemscope itemprop="blogPost">
-  <div class="article-meta">
-    <a href="/2018/07/28/201807/20180728/" class="article-date">
-  <time datetime="2018-07-28T14:23:51.000Z" itemprop="datePublished">2018-07-28</time>
-</a>
-    
-  </div>
-  <div class="article-inner">
-    
-    
-      <header class="article-header">
-        
-  
-    <h1 itemprop="name">
-      <a class="article-title" href="/2018/07/28/201807/20180728/">TIL</a>
-    </h1>
-  
-
-      </header>
-    
-    <div class="article-entry" itemprop="articleBody">
-      
-        <h1 id="오늘의-공부-20180728"><a href="#오늘의-공부-20180728" class="headerlink" title="오늘의 공부 20180728"></a>오늘의 공부 20180728</h1><hr>
-<h2 id="강의"><a href="#강의" class="headerlink" title="강의"></a>강의</h2><ul>
-<li>2개 듣기</li>
-<li>새롭게 알게된점 적기</li>
-</ul>
-<h3 id="함수"><a href="#함수" class="headerlink" title="함수"></a>함수</h3><ul>
-<li>리턴은 1개의 값만 리턴해준다.</li>
-<li>변수에 값을 넣을 수 있다.</li>
-<li><code>return</code> 에 값을 입력하지않으면 함수를 끝내라 라는 뜻</li>
-<li>함수안에 var a = 0; 같이 정의해버리면 밖에서 인식불가</li>
-</ul>
-<h3 id="객체"><a href="#객체" class="headerlink" title="객체"></a>객체</h3><ul>
-<li>opject</li>
-<li>변수와 함수를 한번에 묶어서 관리하는것</li>
-<li>속성과 메소드를 갖는다.</li>
-<li>{} 객체</li>
-<li>속성: 객체의 변수</li>
-<li>메소드: 객체의 함수</li>
-<li>this<ul>
-<li>메소드 안에서 사용시 함수를 소유한 객체를 가리킨다.</li>
-</ul>
-</li>
-</ul>
-<h3 id="JSON"><a href="#JSON" class="headerlink" title="JSON"></a>JSON</h3><ul>
-<li>객체 만들때 사용 </li>
-<li>예제 코드<figure class="highlight js"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br></pre></td><td class="code"><pre><span class="line"><span class="keyword">var</span> m1 = &#123;</span><br><span class="line">  <span class="string">"name"</span>: <span class="string">"Honux"</span>,</span><br><span class="line">  <span class="string">"hp"</span>: <span class="number">100</span>,</span><br><span class="line">  <span class="string">"power"</span>: <span class="number">10</span>,</span><br><span class="line">  <span class="string">"attack"</span>: <span class="function"><span class="keyword">function</span>(<span class="params">target</span>) </span>&#123;</span><br><span class="line">    target.hp -= <span class="keyword">this</span>.power;</span><br><span class="line">  &#125;</span><br><span class="line">&#125;;</span><br><span class="line"></span><br><span class="line"><span class="keyword">var</span> c1 = &#123;</span><br><span class="line">   type: <span class="string">"Coffee"</span>,</span><br><span class="line">   energy: <span class="number">10</span></span><br><span class="line"></span><br><span class="line">&#125;;</span><br></pre></td></tr></table></figure>
-</li>
-</ul>
-<h2 id="연습문제"><a href="#연습문제" class="headerlink" title="연습문제"></a>연습문제</h2><h3 id="모래시계-코드-수정중-막히던거-해결"><a href="#모래시계-코드-수정중-막히던거-해결" class="headerlink" title="모래시계 코드 수정중 막히던거 해결"></a>모래시계 코드 수정중 막히던거 해결</h3><ul>
-<li>자꾸 setInterval 이 정지 안해서 이상했는데 함수 선언할때 함수내에 변수를 선언해서 cleaerInterval 이 인식을 못하는거였음</li>
-<li>담부턴 실수하지 말아야지</li>
-<li>계속 작성하다보니 난잡해 진다 어렵다</li>
-</ul>
-<h3 id="소용돌이"><a href="#소용돌이" class="headerlink" title="소용돌이"></a>소용돌이</h3><ul>
-<li>풀어보자</li>
-<li>a,a 배열 </li>
-<li><ol>
-<li>[0][0] 에서 [0][a] 까지 j 증가</li>
-</ol>
-</li>
-<li><ol start="2">
-<li>[0][a] 에서 [a][a] 까지 i 증가</li>
-</ol>
-</li>
-<li><ol start="3">
-<li>[a][a] 에서 [a][1] 까지 j 감소</li>
-</ol>
-</li>
-<li><ol start="4">
-<li>[a][1] 에서 [1][1] 까지 i 감소 </li>
-</ol>
-</li>
-<li><ol start="5">
-<li>이거 계속 시행</li>
-</ol>
-</li>
-</ul>
-<h2 id="프로그래머스"><a href="#프로그래머스" class="headerlink" title="프로그래머스"></a>프로그래머스</h2><p>알고리즘 풀기</p>
-<h3 id="문자열을-정수형으로-변환"><a href="#문자열을-정수형으로-변환" class="headerlink" title="문자열을 정수형으로 변환"></a>문자열을 정수형으로 변환</h3><p>문자열 s를 숫자로 변환한 결과를 반환하는 함수, solution을 완성하세요.</p>
-<ul>
-<li><p>코드</p>
-<figure class="highlight js"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br></pre></td><td class="code"><pre><span class="line"><span class="function"><span class="keyword">function</span> <span class="title">solution</span>(<span class="params">s</span>) </span>&#123;</span><br><span class="line">    <span class="keyword">var</span> answer = <span class="number">0</span>;</span><br><span class="line">    <span class="keyword">if</span> (s[<span class="number">0</span>] === <span class="string">'-'</span> &amp;&amp; s[<span class="number">1</span>] === <span class="string">'0'</span>) &#123;</span><br><span class="line">        answer = <span class="number">0</span> ;</span><br><span class="line">    &#125; <span class="keyword">else</span> &#123;</span><br><span class="line">        answer = <span class="built_in">Number</span>(s);</span><br><span class="line">    &#125;</span><br><span class="line">    <span class="keyword">return</span> answer;</span><br><span class="line">&#125;</span><br></pre></td></tr></table></figure>
-</li>
-<li><p>2번째에서 계속 틀렸는데 -0 이 들어가 있으면 0을 출력하게 바꿔야한다.</p>
-</li>
-<li>이상하다.. 그럼 +0 이 들어가면 0으로 바꿔야 하는건가</li>
-</ul>
-<hr>
-<h2 id="TO-DO"><a href="#TO-DO" class="headerlink" title="TO-DO"></a>TO-DO</h2><p><del>모래시계 배열</del><br><del>연습문제2개</del><br><del>프래그래머스 알고리즘 1개</del><br><del>강의 2개(인프런)</del></p>
-<hr>
-
-      
-    </div>
-    <footer class="article-footer">
-      <a data-url="http://yoursite.com/2018/07/28/201807/20180728/" data-id="cjllzogx8000jykv0yiov9mrv" class="article-share-link">공유</a>
-      
-      
-  <ul class="article-tag-list"><li class="article-tag-list-item"><a class="article-tag-list-link" href="/tags/TIL/">TIL</a></li></ul>
-
-    </footer>
-  </div>
-  
-</article>
-
-
-  
-    <article id="post-201807/20180727" class="article article-type-post" itemscope itemprop="blogPost">
-  <div class="article-meta">
-    <a href="/2018/07/27/201807/20180727/" class="article-date">
-  <time datetime="2018-07-27T14:23:51.000Z" itemprop="datePublished">2018-07-27</time>
-</a>
-    
-  </div>
-  <div class="article-inner">
-    
-    
-      <header class="article-header">
-        
-  
-    <h1 itemprop="name">
-      <a class="article-title" href="/2018/07/27/201807/20180727/">TIL</a>
-    </h1>
-  
-
-      </header>
-    
-    <div class="article-entry" itemprop="articleBody">
-      
-        <h1 id="오늘의-공부-20180727"><a href="#오늘의-공부-20180727" class="headerlink" title="오늘의 공부 20180727"></a>오늘의 공부 20180727</h1><hr>
-<h2 id="강의"><a href="#강의" class="headerlink" title="강의"></a>강의</h2><ul>
-<li>2개 듣기</li>
-<li>새롭게 알게된점 적기</li>
-<li>배열이 정말 중요한거 같다.</li>
-</ul>
-<h2 id="모래시계-수정"><a href="#모래시계-수정" class="headerlink" title="모래시계 수정"></a>모래시계 수정</h2><p>작성했던 코드 수정</p>
-<ul>
-<li><a href="https://github.com/jar100/CS-level1/blob/master/Hourglass.html" target="_blank" rel="noopener">https://github.com/jar100/CS-level1/blob/master/Hourglass.html</a></li>
-</ul>
-<h2 id="연습문제"><a href="#연습문제" class="headerlink" title="연습문제"></a>연습문제</h2><p>하루에 2개 풀기</p>
-<h3 id="다이아몬드-출력하기"><a href="#다이아몬드-출력하기" class="headerlink" title="다이아몬드 출력하기"></a>다이아몬드 출력하기</h3><ul>
-<li>배열과 함수를 이용해 출력해보자</li>
-<li><p>코드</p>
-<figure class="highlight js"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br></pre></td><td class="code"><pre><span class="line"><span class="keyword">var</span> display = <span class="function"><span class="keyword">function</span>(<span class="params"></span>) </span>&#123;</span><br><span class="line">    <span class="keyword">var</span> str = <span class="string">''</span>;</span><br><span class="line">    <span class="keyword">for</span> (<span class="keyword">var</span> i = <span class="number">0</span>; i &lt; <span class="number">5</span>; i ++ ) &#123;</span><br><span class="line">       str += di[i].join(<span class="string">''</span>) + <span class="string">'&lt;br&gt;'</span>;</span><br><span class="line">    &#125;</span><br><span class="line">    screen.innerHTML = str;</span><br><span class="line">&#125;</span><br><span class="line">display();</span><br></pre></td></tr></table></figure>
-</li>
-<li><p>배열을 Html 창에 띄우는 코드 계속 햇갈린다 더 연습해야겠다.</p>
-</li>
-<li><a href="https://github.com/jar100/CS-level1/blob/master/diamond.html" target="_blank" rel="noopener">https://github.com/jar100/CS-level1/blob/master/diamond.html</a></li>
-</ul>
-<h3 id="모래시계-모양-출력하기"><a href="#모래시계-모양-출력하기" class="headerlink" title="모래시계 모양 출력하기"></a>모래시계 모양 출력하기</h3><ul>
-<li><a href="https://github.com/jar100/CS-level1/blob/master/hourglasDisplay.html" target="_blank" rel="noopener">https://github.com/jar100/CS-level1/blob/master/hourglasDisplay.html</a></li>
-</ul>
-<h2 id="프로그래머스"><a href="#프로그래머스" class="headerlink" title="프로그래머스"></a>프로그래머스</h2><p>알고리즘 문제 구현</p>
-<h3 id="2016년"><a href="#2016년" class="headerlink" title="2016년"></a>2016년</h3><p>저번에 노가다로 푼 코드를 배열을 통해 다시 구현</p>
-<ul>
-<li><p>코드</p>
-<figure class="highlight js"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br></pre></td><td class="code"><pre><span class="line"><span class="function"><span class="keyword">function</span> <span class="title">solution</span>(<span class="params">a, b</span>) </span>&#123;</span><br><span class="line">    <span class="keyword">var</span> answer = <span class="string">''</span>;</span><br><span class="line">    <span class="keyword">var</span> day = [<span class="string">'THU'</span>,<span class="string">'FRI'</span>,<span class="string">'SAT'</span>,<span class="string">'SUN'</span>,<span class="string">'MON'</span>,<span class="string">'TUE'</span>,<span class="string">'WED'</span>];</span><br><span class="line">    <span class="keyword">var</span> result = <span class="number">0</span> ;</span><br><span class="line">    <span class="keyword">var</span> count = <span class="number">0</span> ;</span><br><span class="line">    <span class="keyword">var</span> month = [<span class="number">31</span>,<span class="number">29</span>,<span class="number">31</span>,<span class="number">30</span>,<span class="number">31</span>,<span class="number">30</span>,<span class="number">31</span>,<span class="number">31</span>,<span class="number">30</span>,<span class="number">31</span>,<span class="number">30</span>,<span class="number">31</span>];</span><br><span class="line">    <span class="keyword">for</span> (<span class="keyword">var</span> i = <span class="number">0</span>; i &lt; a<span class="number">-1</span>; i++) &#123;</span><br><span class="line">        count += month[i];</span><br><span class="line">    &#125;    </span><br><span class="line">    result = (count+ b)%<span class="number">7</span>;</span><br><span class="line">    answer = day[result];</span><br><span class="line">    <span class="keyword">return</span> answer;</span><br><span class="line">&#125;</span><br></pre></td></tr></table></figure>
-</li>
-<li><p>a 달 요일을 구하려면 그 전달까지의 날을 다 더하고 b를 더한후 나누면됨</p>
-</li>
-</ul>
-<h3 id="서울에서-김서방-찾기"><a href="#서울에서-김서방-찾기" class="headerlink" title="서울에서 김서방 찾기"></a>서울에서 김서방 찾기</h3><p>String형 배열 seoul의 element중 Kim의 위치 x를 찾아, 김서방은 x에 있다는 String을 반환하는 함수, solution을 완성하세요. seoul에 Kim은 오직 한 번만 나타나며 잘못된 값이 입력되는 경우는 없습니다.</p>
-<ul>
-<li><p>코드</p>
-<figure class="highlight js"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br></pre></td><td class="code"><pre><span class="line"><span class="function"><span class="keyword">function</span> <span class="title">solution</span>(<span class="params">seoul</span>) </span>&#123;</span><br><span class="line">    <span class="keyword">var</span> answer = <span class="string">''</span>;</span><br><span class="line">    <span class="keyword">for</span> (<span class="keyword">var</span> i = <span class="number">0</span>; i &lt; seoul.length; i++) &#123;</span><br><span class="line">        <span class="keyword">if</span> (seoul[i] === <span class="string">'Kim'</span>) &#123;</span><br><span class="line">            answer = <span class="string">'김서방은 '</span> + i + <span class="string">'에 있다'</span>;</span><br><span class="line">            <span class="keyword">break</span>;</span><br><span class="line">        &#125;</span><br><span class="line">    &#125;</span><br><span class="line">    <span class="keyword">return</span> answer;</span><br><span class="line">&#125;</span><br></pre></td></tr></table></figure>
-</li>
-<li><p>재밌다</p>
-</li>
-</ul>
-<h3 id="수박수박"><a href="#수박수박" class="headerlink" title="수박수박"></a>수박수박</h3><p>길이가 n이고, 수박수박수박수….와 같은 패턴을 유지하는 문자열을 리턴하는 함수, solution을 완성하세요. 예를들어 n이 4이면 수박수박을 리턴하고 3이라면 수박수를 리턴하면 됩니다.</p>
-<ul>
-<li>코드<figure class="highlight js"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br></pre></td><td class="code"><pre><span class="line"><span class="function"><span class="keyword">function</span> <span class="title">solution</span>(<span class="params">n</span>) </span>&#123;</span><br><span class="line">    <span class="keyword">var</span> answer = <span class="string">''</span>;</span><br><span class="line">    <span class="keyword">var</span> subak = [<span class="string">'수'</span>,<span class="string">'박'</span>];</span><br><span class="line">    <span class="keyword">var</span> str = <span class="string">''</span>;</span><br><span class="line">    <span class="keyword">for</span> ( <span class="keyword">var</span> i = <span class="number">0</span> ; i &lt; n ; i++) &#123;</span><br><span class="line">        <span class="keyword">if</span>(i%<span class="number">2</span> === <span class="number">1</span>) &#123;</span><br><span class="line">            str += subak[<span class="number">1</span>];</span><br><span class="line">        &#125; <span class="keyword">else</span> &#123;</span><br><span class="line">            str += subak[<span class="number">0</span>];</span><br><span class="line">        &#125;</span><br><span class="line">    &#125;</span><br><span class="line">    answer = str;</span><br><span class="line">    <span class="keyword">return</span> answer;</span><br><span class="line">&#125;</span><br></pre></td></tr></table></figure>
-</li>
-</ul>
-<hr>
-<h2 id="TO-DO"><a href="#TO-DO" class="headerlink" title="TO-DO"></a>TO-DO</h2><p><del>모래시계 배열</del><br><del>연습문제2개</del><br><del>프래그래머스 알고리즘 1개</del><br>강의 2개(인프런)</p>
-<hr>
-
-      
-    </div>
-    <footer class="article-footer">
-      <a data-url="http://yoursite.com/2018/07/27/201807/20180727/" data-id="cjllzogx1000dykv08u3ctg09" class="article-share-link">공유</a>
-      
-      
-  <ul class="article-tag-list"><li class="article-tag-list-item"><a class="article-tag-list-link" href="/tags/TIL/">TIL</a></li></ul>
-
-    </footer>
-  </div>
-  
-</article>
-
-
-  
 
 
   <nav id="page-nav">
@@ -947,23 +914,23 @@
       <ul>
         
           <li>
+            <a href="/2018/11/27/20181127/">TIL</a>
+          </li>
+        
+          <li>
+            <a href="/2018/11/26/20181126/">TIL</a>
+          </li>
+        
+          <li>
+            <a href="/2018/11/24/jpa정리/">TIL</a>
+          </li>
+        
+          <li>
             <a href="/2018/11/24/20181122/">TIL</a>
           </li>
         
           <li>
             <a href="/2018/11/19/20181119/">TIL</a>
-          </li>
-        
-          <li>
-            <a href="/2018/11/15/20181115/">TIL</a>
-          </li>
-        
-          <li>
-            <a href="/2018/11/15/javaStudy/나만의용어집/">javaStudy</a>
-          </li>
-        
-          <li>
-            <a href="/2018/11/12/20181112/">TIL</a>
           </li>
         
       </ul>

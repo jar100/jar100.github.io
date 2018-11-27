@@ -66,6 +66,159 @@
       <div class="outer">
         <section id="main">
   
+    <article id="post-20181127" class="article article-type-post" itemscope itemprop="blogPost">
+  <div class="article-meta">
+    <a href="/2018/11/27/20181127/" class="article-date">
+  <time datetime="2018-11-27T14:23:51.000Z" itemprop="datePublished">2018-11-27</time>
+</a>
+    
+  </div>
+  <div class="article-inner">
+    
+    
+      <header class="article-header">
+        
+  
+    <h1 itemprop="name">
+      <a class="article-title" href="/2018/11/27/20181127/">TIL</a>
+    </h1>
+  
+
+      </header>
+    
+    <div class="article-entry" itemprop="articleBody">
+      
+        <h1 id="오늘의-공부-20181127"><a href="#오늘의-공부-20181127" class="headerlink" title="오늘의 공부 20181127"></a>오늘의 공부 20181127</h1><p>spring 공부<br>spring data jpa pageable 공부</p>
+<h2 id="spring-공부"><a href="#spring-공부" class="headerlink" title="spring 공부"></a>spring 공부</h2><p>step4 하면 서 영속성에 대해 좀더 알게 된거같다.<br>영속성이란 데이터베이스에 엔티티가 저장되는것을 말한다.<br>영구적인 속성이라고 풀이하면 될듯하다.</p>
+<p>영속성전이는 영속성이 전이된다. 즉 부모 엔티티가 가지고있는 자식도 부모가 저장되면 같이 저장된다.</p>
+<h2 id="반성"><a href="#반성" class="headerlink" title="반성"></a>반성</h2><p>레벨2 에서는 tdd tdd 했는데 레벨3에서 웹 백엔드에 대해 공부하니 test case를 잊고 있었다.<br>spring 을 사용한다고 domain 단도 일일이 수동 태스트를 하고 있었다.<br>배운것을 다 잊었다는 생각이 들어 자괴감이 든다…<br>이제 부터라도 test case를 만들고 tdd 하는 방식을 다시 적용해야 겠다.</p>
+
+      
+    </div>
+    <footer class="article-footer">
+      <a data-url="http://yoursite.com/2018/11/27/20181127/" data-id="cjozy2pif0001h4v0m5oym7h4" class="article-share-link">공유</a>
+      
+      
+  <ul class="article-tag-list"><li class="article-tag-list-item"><a class="article-tag-list-link" href="/tags/TIL/">TIL</a></li></ul>
+
+    </footer>
+  </div>
+  
+</article>
+
+
+  
+    <article id="post-20181126" class="article article-type-post" itemscope itemprop="blogPost">
+  <div class="article-meta">
+    <a href="/2018/11/26/20181126/" class="article-date">
+  <time datetime="2018-11-26T14:23:51.000Z" itemprop="datePublished">2018-11-26</time>
+</a>
+    
+  </div>
+  <div class="article-inner">
+    
+    
+      <header class="article-header">
+        
+  
+    <h1 itemprop="name">
+      <a class="article-title" href="/2018/11/26/20181126/">TIL</a>
+    </h1>
+  
+
+      </header>
+    
+    <div class="article-entry" itemprop="articleBody">
+      
+        <h1 id="오늘의-공부-20181126"><a href="#오늘의-공부-20181126" class="headerlink" title="오늘의 공부 20181126"></a>오늘의 공부 20181126</h1><h2 id="강의"><a href="#강의" class="headerlink" title="강의"></a>강의</h2><p>aop oop 상호 보완적인 관계</p>
+<h3 id="상태-무상태-gt-nextstep-slipp"><a href="#상태-무상태-gt-nextstep-slipp" class="headerlink" title="상태/ 무상태 =&gt; nextstep slipp"></a>상태/ 무상태 =&gt; nextstep slipp</h3><p>상태기반으로 할 때 사용하는게 쿠키,세션</p>
+<p>무상태는 한번 요청을 보내고 받으면 연결이 끊어진다.<br><code>html</code>은 기본적으로 무상태 기반이라 <code>쿠키</code> 라는 것을 이용 응답이 올때 지속적으로 보내 상태를 유지 시키는 방법으로 상태를 구현<br>하지만 무상태에서 상태를 구현한것이라 업데이트 된것이 바로바로 클라이언트 눈에 보이지 않는다.(새로고침을 해야한다.)<br>ex) 네이버 야구 10초마다 서버에 요청해 정보를 받아온다.</p>
+<p>상태는 나한테 연결되있는 클라이언트의 정보를 가지고있다가 서버에서 변경사항을 바로 클라이언트에게 알려준다.<br>즉 상태기반 클라이언트의 정보를 계속 가지고있으면서 반영해준다.<br>http가 발전하면서 <code>WebSocket</code> 이 나오면서 상태기반으로 구현할 수 있게 됬다.<br>하지만 상태 기반으로 웹페이지 전부를 구현하게 되면 한번에 많은 유저데이터를 지속해서 가지고 있어야한다. (서버에 부담이 커진다.)<br>그래서 요즘 웹페이지는 특정 부분은 <code>WebSocket</code> 을 이용해 상태로 구현 하고 나머지 부담이 많은 부분은 무상태로 구현하는 것을 지향한다.<br>ex) 페이스북 dm , 웹페이지의 쪽지나 알람기능</p>
+<p>상태 : push<br>무상태 : polling</p>
+<h3 id="도메인-나누는-기반"><a href="#도메인-나누는-기반" class="headerlink" title="도메인 나누는 기반"></a>도메인 나누는 기반</h3><p>여러가지가 있는데 가장 일반적으로 레이어드 아키텍처 기반으로 나눈다<br>(컨트롤러 서비스 리파지토리,dao) =&gt; 도매인,모델,엔티티<br>뷰 (핸들바)</p>
+<h3 id="cascade-orphanRemoval"><a href="#cascade-orphanRemoval" class="headerlink" title="cascade/orphanRemoval"></a>cascade/orphanRemoval</h3><p>cascade : 폭포수<br>cascade 를 지정해주면 부모 데이터 베이스가 삭제되면 자식도 같이 삭제되게 할 수 있다.</p>
+<p>orphanRemoval=true</p>
+<ul>
+<li>Emp 엔티티가 삭제될 때 참조가 끊어진 연관된 Addr 엔티티도 삭제하라는 의미이며 DB에서도 삭제되는데 참조(연결)가 끊어진 Addr 객체는 DB에서도 삭제된다는 뜻이다.</li>
+</ul>
+<p>cascade=CascadeType.REMOVE</p>
+<ul>
+<li>Emp 엔티티가 삭제될 때 연관된 Addr 엔티티도 삭제하라는 의미이며 DB에서도 삭제된다.</li>
+</ul>
+<p>연결이 끊어진다고 해서 자동 삭제되는 것은 아니고 명시적으로 연관 엔티티가 삭제될 때 같이 삭제하라는 영속성 전이와 관련된 옵션이다.</p>
+<h3 id="스프링-빈"><a href="#스프링-빈" class="headerlink" title="스프링 빈"></a>스프링 빈</h3><p>스프링 빈 은 자바 인스턴스<br>자바 리플렉션을 쓰면 프라이빗 도 바꿔치기할 수 있다.<br>생성자나 세터메서드를 이용해서 하는게 일반적</p>
+<h2 id="알고리즘"><a href="#알고리즘" class="headerlink" title="알고리즘"></a>알고리즘</h2><p>카카오 2번째 문제를 풀었다.<br>어렵지 않게 진행했는데 <code>Comparable</code> 로 비교하는 부분에서 실수해 값이 안나왔다.<br><code>compareto</code> 로 o2-o1 을 했는데 <code>compareto</code>는 int 형을 리턴해 소숫점 단위에서 0 으로 결과가 나오는 것이었다.<br>다음 부턴 이런 실수를 하면 안되겠다.<br>오랜만에 알고리즘문제를 풀어봤는데 다시 java 메서드에 대해 다시 공부해야겠다는 생각이 들었다.</p>
+
+      
+    </div>
+    <footer class="article-footer">
+      <a data-url="http://yoursite.com/2018/11/26/20181126/" data-id="cjozy2pi70000h4v06j64y1jq" class="article-share-link">공유</a>
+      
+      
+  <ul class="article-tag-list"><li class="article-tag-list-item"><a class="article-tag-list-link" href="/tags/TIL/">TIL</a></li></ul>
+
+    </footer>
+  </div>
+  
+</article>
+
+
+  
+    <article id="post-jpa정리" class="article article-type-post" itemscope itemprop="blogPost">
+  <div class="article-meta">
+    <a href="/2018/11/24/jpa정리/" class="article-date">
+  <time datetime="2018-11-24T14:23:51.000Z" itemprop="datePublished">2018-11-24</time>
+</a>
+    
+  </div>
+  <div class="article-inner">
+    
+    
+      <header class="article-header">
+        
+  
+    <h1 itemprop="name">
+      <a class="article-title" href="/2018/11/24/jpa정리/">TIL</a>
+    </h1>
+  
+
+      </header>
+    
+    <div class="article-entry" itemprop="articleBody">
+      
+        <h1 id="jpa-와-orm"><a href="#jpa-와-orm" class="headerlink" title="jpa 와 orm"></a>jpa 와 orm</h1><ul>
+<li>JPA란 자바 ORM 기술에 대한 API 표준 명세를 의미합니다.<br>JPA는 ORM을 사용하기 위한 인터페이스를 모아둔 것이며, JPA를 사용하기 위해서는 JPA를 구현한 Hibernate, EclipseLink, DataNucleus 같은 ORM 프레임워크를 사용해야 합니다.</li>
+</ul>
+<p>jpa 는 저장 조회 삭제 기능</p>
+<ul>
+<li>ORM이란 객체와 DB의 테이블이 매핑을 이루는 것을 말합니다.<br>즉 객체가 테이블이 되도록 매핑 시켜주는 것을 말합니다.<br>ORM을 이용하면 SQL Query가 아닌 직관적인 코드(메서드)로서 데이터를 조작할 수 있습니다.</li>
+</ul>
+<p>query를 직접 작성하지 않고 메서드 호출만으로 query가 수행되다 보니, ORM을 사용하면 생산성이 매우 높아집니다.</p>
+<p>그러나 query가 복잡해지면 ORM으로 표현하는데 한계가 있고, 성능이 raw query에 비해 느리다는 단점이 있습니다.</p>
+<ul>
+<li><p>query 란?<br>데이터베이스에 자료를 요청하는 방법</p>
+</li>
+<li><p>영속성이란?<br>데이터베이스에 등록된것</p>
+</li>
+<li><p>영속성전이<br>데이터베이스에 부모 클래스를 등록시키면 영속성전이를 걸어둔 자식클래스도 데이터베이스에 등록된다.</p>
+</li>
+</ul>
+
+      
+    </div>
+    <footer class="article-footer">
+      <a data-url="http://yoursite.com/2018/11/24/jpa정리/" data-id="cjozy2pil0003h4v0qhsk0jdp" class="article-share-link">공유</a>
+      
+      
+  <ul class="article-tag-list"><li class="article-tag-list-item"><a class="article-tag-list-link" href="/tags/TIL/">TIL</a></li></ul>
+
+    </footer>
+  </div>
+  
+</article>
+
+
+  
     <article id="post-20181122" class="article article-type-post" itemscope itemprop="blogPost">
   <div class="article-meta">
     <a href="/2018/11/24/20181122/" class="article-date">
@@ -181,6 +334,70 @@
 
 
   
+    <article id="post-javaStudy/나만의용어집" class="article article-type-post" itemscope itemprop="blogPost">
+  <div class="article-meta">
+    <a href="/2018/11/15/javaStudy/나만의용어집/" class="article-date">
+  <time datetime="2018-11-15T14:23:51.000Z" itemprop="datePublished">2018-11-15</time>
+</a>
+    
+  </div>
+  <div class="article-inner">
+    
+    
+      <header class="article-header">
+        
+  
+    <h1 itemprop="name">
+      <a class="article-title" href="/2018/11/15/javaStudy/나만의용어집/">javaStudy</a>
+    </h1>
+  
+
+      </header>
+    
+    <div class="article-entry" itemprop="articleBody">
+      
+        <h1 id="공부-하면서-처음보는-용어들-정리"><a href="#공부-하면서-처음보는-용어들-정리" class="headerlink" title="공부 하면서 처음보는 용어들 정리"></a>공부 하면서 처음보는 용어들 정리</h1><p>공부하고 정리하고 기억해야 할것을 나만의 말로 정리</p>
+<ul>
+<li>update 2018-11-21</li>
+</ul>
+<h2 id="JPA"><a href="#JPA" class="headerlink" title="JPA"></a>JPA</h2><p>데이터베이스 의 설정을 에노테이션으로 정해주는 라이브러리</p>
+<h2 id="SPRING-스프링"><a href="#SPRING-스프링" class="headerlink" title="SPRING(스프링)"></a>SPRING(스프링)</h2><p>스프링은 자바를 통해 엔터프라이즈 시스템을 개발하는데 좀 더 나은 방법과 전략을 찾으려고 고민하고 연구한 잘만든 API를 제공하는 것 입니다.</p>
+<h2 id="엔터프라이즈-시스템"><a href="#엔터프라이즈-시스템" class="headerlink" title="엔터프라이즈 시스템"></a>엔터프라이즈 시스템</h2><h2 id="Entity-엔티티"><a href="#Entity-엔티티" class="headerlink" title="Entity(엔티티)"></a>Entity(엔티티)</h2><p><code>entity</code>란 존재하는 것, 즉 실체를 의미한다.<br><code>spring</code> 에서 <code>entity</code></p>
+<ul>
+<li>메모리영역이 아닌 물리 데이터 저장공간(database)에 저장되어 애플리케이션이 종료되더라도 데이터가 사라지지 않고 남아있음을 의미합니다.</li>
+</ul>
+<h2 id="리다이렉트"><a href="#리다이렉트" class="headerlink" title="리다이렉트"></a>리다이렉트</h2><h2 id="포워드"><a href="#포워드" class="headerlink" title="포워드"></a>포워드</h2><p>서블릿에서 jsp로 이동은 브라우저를 통하지 않는다. 애플리케이션 서버 내에서만 진행되는 이동을 포워드라고 한다.</p>
+<h2 id="상태와-무상태"><a href="#상태와-무상태" class="headerlink" title="상태와 무상태"></a>상태와 무상태</h2><p>나의 상태를 유지 시킬 수 있느냐 없느냐의 차이</p>
+<h2 id="쿠키"><a href="#쿠키" class="headerlink" title="쿠키"></a>쿠키</h2><p>상태를 유지 하고싶은 데이터를 유지하고 있다가 계속 보내는것</p>
+<h2 id="세션"><a href="#세션" class="headerlink" title="세션"></a>세션</h2><p>맵으로 아이디와 페스워드를 저장해 그 키를 가지고 돌아다니는 것</p>
+<h2 id="후보키-Candidate-Key"><a href="#후보키-Candidate-Key" class="headerlink" title="후보키 (Candidate Key)"></a>후보키 (Candidate Key)</h2><p>테이블을 구석하는 열 중에서 유일하게 식별할 수 있는 열</p>
+<h2 id="기본키-Primary-Key"><a href="#기본키-Primary-Key" class="headerlink" title="기본키 (Primary Key)"></a>기본키 (Primary Key)</h2><p>테이블에서 유일하게 식별하기 위해 사용하는 키</p>
+<h2 id="외래키-Foreign-Key"><a href="#외래키-Foreign-Key" class="headerlink" title="외래키 (Foreign Key)"></a>외래키 (Foreign Key)</h2><p>외래키란 테이블 내의 열 중 다른 테이블의 기본키를 참조하는 열을 외래키라 한다.</p>
+<h2 id="Logging"><a href="#Logging" class="headerlink" title="Logging"></a>Logging</h2><p>로깅은 어떤 소프트웨어가 실행될 때 발생하는 이벤트를 추적하는 수단이다.</p>
+<h2 id="idempotent"><a href="#idempotent" class="headerlink" title="idempotent"></a>idempotent</h2><p>멱등성, 그 연산자를 한 번 적용한 결과나 두 번 반복하여 적용한 결과가 같다</p>
+<h2 id="웹-서버"><a href="#웹-서버" class="headerlink" title="웹 서버"></a>웹 서버</h2><h2 id="애플리케이션-서버"><a href="#애플리케이션-서버" class="headerlink" title="애플리케이션 서버"></a>애플리케이션 서버</h2><p>애플리케이션들을 작동 시키기 위한 서버 (jsp 나 서블릿)<br>대부분 애플리케이션 서버는 웹서버의 기능도 가지고 있다. 톰켓으로도 웹서버를 동작시킬 수 있다. 애플리케이션 서버가 웹서버 기능을 겸비하면 시스템 구성이 단순해지는 이점이 있다.<br>기능 : 세션 관리 , 트랜잭션 관리, 데이터베이스 접속 관리</p>
+<h2 id="아파치"><a href="#아파치" class="headerlink" title="아파치"></a>아파치</h2><p>웹 서버</p>
+<h2 id="톰켓"><a href="#톰켓" class="headerlink" title="톰켓"></a>톰켓</h2><p>아파치 재단에서 만든 애플리케이션 서버</p>
+<h2 id="톰켓-워커"><a href="#톰켓-워커" class="headerlink" title="톰켓 워커"></a>톰켓 워커</h2><p>mod_jk를 통한 연동에서는 접속처가 되는 톰캣 프로세스를 톰캣 워커라고 한다.</p>
+<h2 id="트랜젝션"><a href="#트랜젝션" class="headerlink" title="트랜젝션"></a>트랜젝션</h2><p>둘다 동시에 일어나야하는 작업 한쪽이 동작하지않으면 원상태로 되돌려야한다.<br>ex) 상품을 구매하면 재고에서 상품이 빠진다.</p>
+<h2 id="DAO-패턴"><a href="#DAO-패턴" class="headerlink" title="DAO 패턴"></a>DAO 패턴</h2><p>데이터베이스에 대한 연결 기능을 DAO라고 하는 객체로 분리해 재사용성과 유지보수성을 향상시킨 것<br>DAO 는 데이터베이스의 테이블별로 작성 하고 테이블에 대한 CRUD 처리를 각각 메서드로서 구현하는것이 일반적이다.</p>
+<h2 id="프로퍼티"><a href="#프로퍼티" class="headerlink" title="프로퍼티"></a>프로퍼티</h2><p>자바빈 규약을 따르는 get과 set 을 사용하는 변수를 property 라 한다.</p>
+
+      
+    </div>
+    <footer class="article-footer">
+      <a data-url="http://yoursite.com/2018/11/15/javaStudy/나만의용어집/" data-id="cjoiq2ko00004tov0p1ee45t2" class="article-share-link">공유</a>
+      
+      
+  <ul class="article-tag-list"><li class="article-tag-list-item"><a class="article-tag-list-link" href="/tags/java/">java</a></li></ul>
+
+    </footer>
+  </div>
+  
+</article>
+
+
+  
     <article id="post-20181115" class="article article-type-post" itemscope itemprop="blogPost">
   <div class="article-meta">
     <a href="/2018/11/15/20181115/" class="article-date">
@@ -232,65 +449,6 @@
       
       
   <ul class="article-tag-list"><li class="article-tag-list-item"><a class="article-tag-list-link" href="/tags/TIL/">TIL</a></li></ul>
-
-    </footer>
-  </div>
-  
-</article>
-
-
-  
-    <article id="post-javaStudy/나만의용어집" class="article article-type-post" itemscope itemprop="blogPost">
-  <div class="article-meta">
-    <a href="/2018/11/15/javaStudy/나만의용어집/" class="article-date">
-  <time datetime="2018-11-15T14:23:51.000Z" itemprop="datePublished">2018-11-15</time>
-</a>
-    
-  </div>
-  <div class="article-inner">
-    
-    
-      <header class="article-header">
-        
-  
-    <h1 itemprop="name">
-      <a class="article-title" href="/2018/11/15/javaStudy/나만의용어집/">javaStudy</a>
-    </h1>
-  
-
-      </header>
-    
-    <div class="article-entry" itemprop="articleBody">
-      
-        <h1 id="공부-하면서-처음보는-용어들-정리"><a href="#공부-하면서-처음보는-용어들-정리" class="headerlink" title="공부 하면서 처음보는 용어들 정리"></a>공부 하면서 처음보는 용어들 정리</h1><p>공부하고 정리하고 기억해야 할것을 나만의 말로 정리</p>
-<ul>
-<li>update 2018-11-21</li>
-</ul>
-<h2 id="JPA"><a href="#JPA" class="headerlink" title="JPA"></a>JPA</h2><p>데이터베이스 의 설정을 에노테이션으로 정해주는 라이브러리</p>
-<h2 id="SPRING-스프링"><a href="#SPRING-스프링" class="headerlink" title="SPRING(스프링)"></a>SPRING(스프링)</h2><p>스프링은 자바를 통해 엔터프라이즈 시스템을 개발하는데 좀 더 나은 방법과 전략을 찾으려고 고민하고 연구한 잘만든 API를 제공하는 것 입니다.</p>
-<h2 id="엔터프라이즈-시스템"><a href="#엔터프라이즈-시스템" class="headerlink" title="엔터프라이즈 시스템"></a>엔터프라이즈 시스템</h2><h2 id="Entity-엔티티"><a href="#Entity-엔티티" class="headerlink" title="Entity(엔티티)"></a>Entity(엔티티)</h2><p><code>entity</code>란 존재하는 것, 즉 실체를 의미한다.<br><code>spring</code> 에서 <code>entity</code></p>
-<ul>
-<li>메모리영역이 아닌 물리 데이터 저장공간(database)에 저장되어 애플리케이션이 종료되더라도 데이터가 사라지지 않고 남아있음을 의미합니다.</li>
-</ul>
-<h2 id="리다이렉트"><a href="#리다이렉트" class="headerlink" title="리다이렉트"></a>리다이렉트</h2><h2 id="포워드"><a href="#포워드" class="headerlink" title="포워드"></a>포워드</h2><h2 id="상태와-무상태"><a href="#상태와-무상태" class="headerlink" title="상태와 무상태"></a>상태와 무상태</h2><p>나의 상태를 유지 시킬 수 있느냐 없느냐의 차이</p>
-<h2 id="쿠키"><a href="#쿠키" class="headerlink" title="쿠키"></a>쿠키</h2><p>상태를 유지 하고싶은 데이터를 유지하고 있다가 계속 보내는것</p>
-<h2 id="세션"><a href="#세션" class="headerlink" title="세션"></a>세션</h2><p>맵으로 아이디와 페스워드를 저장해 그 키를 가지고 돌아다니는 것</p>
-<h2 id="후보키-Candidate-Key"><a href="#후보키-Candidate-Key" class="headerlink" title="후보키 (Candidate Key)"></a>후보키 (Candidate Key)</h2><p>테이블을 구석하는 열 중에서 유일하게 식별할 수 있는 열</p>
-<h2 id="기본키-Primary-Key"><a href="#기본키-Primary-Key" class="headerlink" title="기본키 (Primary Key)"></a>기본키 (Primary Key)</h2><p>테이블에서 유일하게 식별하기 위해 사용하는 키</p>
-<h2 id="외래키-Foreign-Key"><a href="#외래키-Foreign-Key" class="headerlink" title="외래키 (Foreign Key)"></a>외래키 (Foreign Key)</h2><p>외래키란 테이블 내의 열 중 다른 테이블의 기본키를 참조하는 열을 외래키라 한다.</p>
-<h2 id="Logging"><a href="#Logging" class="headerlink" title="Logging"></a>Logging</h2><p>로깅은 어떤 소프트웨어가 실행될 때 발생하는 이벤트를 추적하는 수단입니다<br><code>o</code>는 java world에서 가장 많이 사용하고 있는 <code>logger</code>라고 감히 말씀 드릴수 있습니다.</p>
-<h3 id="log-leve"><a href="#log-leve" class="headerlink" title="log leve"></a>log leve</h3><p>debug &lt; info &lt; warn &lt; error</p>
-<h3 id="spring-boot-에서는-yml-파일-수정만으로-쉽게-사용할-수-있다"><a href="#spring-boot-에서는-yml-파일-수정만으로-쉽게-사용할-수-있다" class="headerlink" title="spring boot 에서는 yml 파일 수정만으로 쉽게 사용할 수 있다."></a>spring boot 에서는 yml 파일 수정만으로 쉽게 사용할 수 있다.</h3><p>application.yml 을 만들고 아래의 내용을 적어주면 된다.<br><figure class="highlight yml"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br></pre></td><td class="code"><pre><span class="line"><span class="attr">logging:</span></span><br><span class="line"><span class="attr">  level:</span></span><br><span class="line"><span class="attr">    root:</span> <span class="string">info</span></span><br><span class="line"><span class="attr">    codesquad:</span> <span class="string">info</span></span><br></pre></td></tr></table></figure></p>
-<figure class="highlight java"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br></pre></td><td class="code"><pre><span class="line">log.debug(<span class="string">"user:&#123;&#125;"</span> + user);</span><br><span class="line"><span class="comment">//log 레벨을 올려도 아규먼트에 있는 내용을 처리하고 method 가 실행하기 때문에 아규먼트를 읽어오는 비용이 발생 한다. 아래와 같이 구현하면 낭비가 없어진다.</span></span><br><span class="line">log.debug(<span class="string">"user:&#123;&#125;"</span>,user);</span><br></pre></td></tr></table></figure>
-<p>logging level을 적절하게 나눠 구현하는 것이 신경쓰면서 개발하자.<br>ERROR – something terribly wrong had happened, that must be investigated immediately.<br>WARN – the process might be continued, but take extra caution.<br>INFO – Important business process has finished.<br>DEBUG – Developers stuff.<br>TRACE – Very detailed information, intended only for development.</p>
-
-      
-    </div>
-    <footer class="article-footer">
-      <a data-url="http://yoursite.com/2018/11/15/javaStudy/나만의용어집/" data-id="cjoiq2ko00004tov0p1ee45t2" class="article-share-link">공유</a>
-      
-      
-  <ul class="article-tag-list"><li class="article-tag-list-item"><a class="article-tag-list-link" href="/tags/java/">java</a></li></ul>
 
     </footer>
   </div>
@@ -483,167 +641,6 @@
 
 
   
-    <article id="post-20181106" class="article article-type-post" itemscope itemprop="blogPost">
-  <div class="article-meta">
-    <a href="/2018/11/06/20181106/" class="article-date">
-  <time datetime="2018-11-06T14:23:51.000Z" itemprop="datePublished">2018-11-06</time>
-</a>
-    
-  </div>
-  <div class="article-inner">
-    
-    
-      <header class="article-header">
-        
-  
-    <h1 itemprop="name">
-      <a class="article-title" href="/2018/11/06/20181106/">TIL</a>
-    </h1>
-  
-
-      </header>
-    
-    <div class="article-entry" itemprop="articleBody">
-      
-        <h1 id="오늘의-공부-20181106"><a href="#오늘의-공부-20181106" class="headerlink" title="오늘의 공부 20181106"></a>오늘의 공부 20181106</h1><ol>
-<li>lotto 4단계 공부</li>
-<li>웹프로그래밍 대여</li>
-</ol>
-<h2 id="lotto-step4"><a href="#lotto-step4" class="headerlink" title="lotto step4"></a>lotto step4</h2><p>input 을 웹쪽으로 변경해서 다시 구현</p>
-<h3 id="SparkJava-알게-된점"><a href="#SparkJava-알게-된점" class="headerlink" title="SparkJava 알게 된점"></a>SparkJava 알게 된점</h3><p>port(8080);</p>
-<ul>
-<li>포트 주소 설정</li>
-</ul>
-<p>get(“/“, (req, res) -&gt; {<br>            input.clear();<br>            return render(input, “/index.html”);<br>        });</p>
-<ul>
-<li>람다식을 이용하여 “/“ 주소에 리턴값 출력 </li>
-</ul>
-<p>post(“/buyLotto”, (req, res) -&gt; {<br>            return render(input, “show.html”);<br>        });</p>
-<ul>
-<li>get 과 동일 </li>
-</ul>
-<h4 id="get방식과-post-방식-차이"><a href="#get방식과-post-방식-차이" class="headerlink" title="get방식과 post 방식 차이"></a>get방식과 post 방식 차이</h4><p>get 은 웹페이지 주소값에 값이 출력된다.<br>post 를 이용하면 주소에 값을 숨길 수 있다. html 에서 형식을 선언 해줘야함</p>
-<h3 id="핸들러-알게-된점"><a href="#핸들러-알게-된점" class="headerlink" title="핸들러 알게 된점"></a>핸들러 알게 된점</h3><pre><code>{{#result}}
-        &lt;tr&gt;
-            &lt;th&gt;{{this}}&lt;/th&gt;
-        &lt;/tr&gt;
-{{/result}}
-</code></pre><h3 id="stream-알게-된점"><a href="#stream-알게-된점" class="headerlink" title="stream 알게 된점"></a>stream 알게 된점</h3><p>sort(Comparator.reverseOrder()) 하면 순서를 거꾸로 정렬한다.</p>
-<h2 id="할것들"><a href="#할것들" class="headerlink" title="할것들"></a>할것들</h2><ol start="2">
-<li>레벨 2 미션 CarsGame 처음부터 다시 구현 해보기</li>
-</ol>
-
-      
-    </div>
-    <footer class="article-footer">
-      <a data-url="http://yoursite.com/2018/11/06/20181106/" data-id="cjo5v0jls0000cgv0dcamnglf" class="article-share-link">공유</a>
-      
-      
-  <ul class="article-tag-list"><li class="article-tag-list-item"><a class="article-tag-list-link" href="/tags/TIL/">TIL</a></li></ul>
-
-    </footer>
-  </div>
-  
-</article>
-
-
-  
-    <article id="post-20181105" class="article article-type-post" itemscope itemprop="blogPost">
-  <div class="article-meta">
-    <a href="/2018/11/05/20181105/" class="article-date">
-  <time datetime="2018-11-05T14:23:51.000Z" itemprop="datePublished">2018-11-05</time>
-</a>
-    
-  </div>
-  <div class="article-inner">
-    
-    
-      <header class="article-header">
-        
-  
-    <h1 itemprop="name">
-      <a class="article-title" href="/2018/11/05/20181105/">TIL</a>
-    </h1>
-  
-
-      </header>
-    
-    <div class="article-entry" itemprop="articleBody">
-      
-        <h1 id="오늘의-공부-20181105"><a href="#오늘의-공부-20181105" class="headerlink" title="오늘의 공부 20181105"></a>오늘의 공부 20181105</h1><ol>
-<li>객체지향의 사실과 오해 완독</li>
-<li>lotto 4단계 공부</li>
-</ol>
-<h2 id="객체지향의-사실과-오해-읽고-느낀점"><a href="#객체지향의-사실과-오해-읽고-느낀점" class="headerlink" title="객체지향의 사실과 오해 읽고 느낀점"></a>객체지향의 사실과 오해 읽고 느낀점</h2><p>이 책을 읽고 객체지향적 사고에 대해 전반적인 이해가 증가한거 같다.<br>나는 엘리스에 대한 설명보다 전반부의 커피 내용과 후반부의 이자율에 대한 설명이 더 인싱 깊었다.<br>객체를 설계할 때 많이 막혔는데 객체란 추상화 해서 의인화 한다는 글을 보고 조금 깨달은거 같다.<br>인터페이스를 사용하는 이유와 객체에게 메세지를 보내는 방식이 어떤 것인지 조금 더 알게 된거같다.<br>이해가 안가는 부분은 그냥 이런게 있다 하고 넘어갔는데 한번더 읽어보며 넘어간 부분에 대해 메모 하고 공부를 따로 해봐야겠다.</p>
-<h2 id="lotto-step4"><a href="#lotto-step4" class="headerlink" title="lotto step4"></a>lotto step4</h2><p>input 을 웹쪽으로 변경해서 다시 구현</p>
-<h2 id="할것들"><a href="#할것들" class="headerlink" title="할것들"></a>할것들</h2><ol>
-<li>객체지향의 사실과 오해 1번 더 읽어보기</li>
-<li>레벨 2 미션 CarsGame 처음부터 다시 구현 해보기</li>
-</ol>
-
-      
-    </div>
-    <footer class="article-footer">
-      <a data-url="http://yoursite.com/2018/11/05/20181105/" data-id="cjo5v0jlx0001cgv0se250xp5" class="article-share-link">공유</a>
-      
-      
-  <ul class="article-tag-list"><li class="article-tag-list-item"><a class="article-tag-list-link" href="/tags/TIL/">TIL</a></li></ul>
-
-    </footer>
-  </div>
-  
-</article>
-
-
-  
-    <article id="post-201810/20181029" class="article article-type-post" itemscope itemprop="blogPost">
-  <div class="article-meta">
-    <a href="/2018/10/29/201810/20181029/" class="article-date">
-  <time datetime="2018-10-29T14:23:51.000Z" itemprop="datePublished">2018-10-29</time>
-</a>
-    
-  </div>
-  <div class="article-inner">
-    
-    
-      <header class="article-header">
-        
-  
-    <h1 itemprop="name">
-      <a class="article-title" href="/2018/10/29/201810/20181029/">TIL</a>
-    </h1>
-  
-
-      </header>
-    
-    <div class="article-entry" itemprop="articleBody">
-      
-        <h1 id="오늘의-공부-20181029"><a href="#오늘의-공부-20181029" class="headerlink" title="오늘의 공부 20181029"></a>오늘의 공부 20181029</h1><p>stream 과 optional 그리고 ramda</p>
-<h2 id="Stream"><a href="#Stream" class="headerlink" title="Stream"></a>Stream</h2><p>함수형 인터페이스<br>list 값을 담아 함수형으로 보기 편하게 자료구조를 생성<br>스트림 배열 만들고 람다 쓰고 하면 코드의 길이를 줄일 수 있다.</p>
-<ul>
-<li>limit()<br>  자료구조의 크기를 제한한다.</li>
-<li>filter()<br>  조건에 만족하는 자료구조값만 뽑는다.</li>
-<li>collect()<br>  자료구조형으로 다시 생성한다.</li>
-<li>map()<br>  값을 바꾼다.</li>
-</ul>
-<h2 id="Optional"><a href="#Optional" class="headerlink" title="Optional"></a>Optional</h2><p>NPE를 유발할 수 있는 null을 직접 다루지 않아도 된다.</p>
-<h2 id="Ramda"><a href="#Ramda" class="headerlink" title="Ramda"></a>Ramda</h2><p>익명클래스의 발전된 형태라고 이해했다.<br>파라미터와 값이 리턴값이 정해진 경우 익명클래스르 좀더 추상화시켜 메소드를 동작시키는것<br>((파라미터) -&gt;  리턴값)</p>
-
-      
-    </div>
-    <footer class="article-footer">
-      <a data-url="http://yoursite.com/2018/10/29/201810/20181029/" data-id="cjo5v0jno000wcgv0k8ylzr22" class="article-share-link">공유</a>
-      
-      
-  <ul class="article-tag-list"><li class="article-tag-list-item"><a class="article-tag-list-link" href="/tags/TIL/">TIL</a></li></ul>
-
-    </footer>
-  </div>
-  
-</article>
-
-
-  
 
 
   <nav id="page-nav">
@@ -694,23 +691,23 @@
       <ul>
         
           <li>
+            <a href="/2018/11/27/20181127/">TIL</a>
+          </li>
+        
+          <li>
+            <a href="/2018/11/26/20181126/">TIL</a>
+          </li>
+        
+          <li>
+            <a href="/2018/11/24/jpa정리/">TIL</a>
+          </li>
+        
+          <li>
             <a href="/2018/11/24/20181122/">TIL</a>
           </li>
         
           <li>
             <a href="/2018/11/19/20181119/">TIL</a>
-          </li>
-        
-          <li>
-            <a href="/2018/11/15/20181115/">TIL</a>
-          </li>
-        
-          <li>
-            <a href="/2018/11/15/javaStudy/나만의용어집/">javaStudy</a>
-          </li>
-        
-          <li>
-            <a href="/2018/11/12/20181112/">TIL</a>
           </li>
         
       </ul>

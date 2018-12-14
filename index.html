@@ -66,6 +66,53 @@
       <div class="outer">
         <section id="main">
   
+    <article id="post-20181213" class="article article-type-post" itemscope itemprop="blogPost">
+  <div class="article-meta">
+    <a href="/2018/12/13/20181213/" class="article-date">
+  <time datetime="2018-12-13T14:23:51.000Z" itemprop="datePublished">2018-12-13</time>
+</a>
+    
+  </div>
+  <div class="article-inner">
+    
+    
+      <header class="article-header">
+        
+  
+    <h1 itemprop="name">
+      <a class="article-title" href="/2018/12/13/20181213/">TIL</a>
+    </h1>
+  
+
+      </header>
+    
+    <div class="article-entry" itemprop="articleBody">
+      
+        <h1 id="오늘의-공부-20181213"><a href="#오늘의-공부-20181213" class="headerlink" title="오늘의 공부 20181213"></a>오늘의 공부 20181213</h1><p>서비스레이어는 비지니스 로직을 구현하는게 아니다.<br>상태 데이터와 행위를 객체가 담당한다.<br>서비스 레이어는 가능한 가볍게 구현을 한다.</p>
+<p>mock test 가짜 모의 객체를 생성 해서 만드는거.<br>디비에 의존하지 않고 태스트를 가능하게 하는게 목테스트</p>
+<p>테스트를 위한 데이터를 Fixture 라고 한다.</p>
+<p>validation 데이터형식이 올바른지 확인하는것</p>
+<p>예외를 제이슨으로 주고싶으면 @RestControllerAdvice 를 사용하면 된다.</p>
+<p>aop의 3가지 (타겟 어드바이스 포인트컷)</p>
+<p>서블릿은 자바진영에서 만든 표준 (인터페이스의 조합)</p>
+<h2 id="spring"><a href="#spring" class="headerlink" title="spring"></a>spring</h2><p>httpheader</p>
+<p>property</p>
+
+      
+    </div>
+    <footer class="article-footer">
+      <a data-url="http://yoursite.com/2018/12/13/20181213/" data-id="cjpnlq0tq000024v0qup5qswu" class="article-share-link">공유</a>
+      
+      
+  <ul class="article-tag-list"><li class="article-tag-list-item"><a class="article-tag-list-link" href="/tags/TIL/">TIL</a></li></ul>
+
+    </footer>
+  </div>
+  
+</article>
+
+
+  
     <article id="post-jpa정리" class="article article-type-post" itemscope itemprop="blogPost">
   <div class="article-meta">
     <a href="/2018/12/12/jpa정리/" class="article-date">
@@ -471,6 +518,65 @@
 
 
   
+    <article id="post-201811/20181115" class="article article-type-post" itemscope itemprop="blogPost">
+  <div class="article-meta">
+    <a href="/2018/11/15/201811/20181115/" class="article-date">
+  <time datetime="2018-11-15T14:23:51.000Z" itemprop="datePublished">2018-11-15</time>
+</a>
+    
+  </div>
+  <div class="article-inner">
+    
+    
+      <header class="article-header">
+        
+  
+    <h1 itemprop="name">
+      <a class="article-title" href="/2018/11/15/201811/20181115/">TIL</a>
+    </h1>
+  
+
+      </header>
+    
+    <div class="article-entry" itemprop="articleBody">
+      
+        <h1 id="오늘의-공부-20181115"><a href="#오늘의-공부-20181115" class="headerlink" title="오늘의 공부 20181115"></a>오늘의 공부 20181115</h1><p>코드 스쿼드 강의</p>
+<h2 id="강의"><a href="#강의" class="headerlink" title="강의"></a>강의</h2><p>spring 프레임워크는 name 의 값과 변수가 같은걸 찾아 set으로 할당한다.</p>
+<h2 id="spring-api"><a href="#spring-api" class="headerlink" title="spring api"></a>spring api</h2><p>추상화가 많이 되서 동작하는게 잘 안보인다.<br>스프링을 사용하면 아파치진영의 톰켓이라는 오픈소스를 이용해 사용.<br>동적인 웹서비스를 웹에플리케이션 서버 라고 한다.<br>스프링프레임워크 웹에플리케이션을 구현하면<br>Spring api 는 자식에 있는 @controller 에노테이션을 찾아 맵핑해준다.<br>컨트롤러를 타게 되면 templates 패키지에서 찾게된다.<br>/partial “ content” 을 사용하면 블럭을 나누어 특정블럭을 가변으로 사용할 수 있다.<br>백엔드는 데이터만 내려주는 방식으로 발전하고 있다.<br>jsp 보다는 템플릿엔진을 추천하고 싶다.<br>runtime(‘com.h2database:h2’)<br>학습으로 사용하는 데이터베이스(java로 재작)</p>
+<h3 id="db-적용"><a href="#db-적용" class="headerlink" title="db 적용"></a>db 적용</h3><h3 id="spring-devtools"><a href="#spring-devtools" class="headerlink" title="spring devtools"></a>spring devtools</h3><p>스프링 애플리케이션 사용시 빌드를 자동으로 해주는 툴</p>
+<ol>
+<li>그래들에 devtools 컴파일 <ul>
+<li>compile(‘org.springframework.boot:spring-boot-devtools’) </li>
+</ul>
+</li>
+<li>인텔리제이 setting 의 compile 에 build project automatically 를 채크</li>
+<li>Registry 에 commpiler.automake.allow.when.app.running 채크</li>
+<li>application.properties 작성 (안해도 디폴트 true 로 동작하는것 같다. ) <ul>
+<li>spring.devtools.livereload.enabled=true</li>
+<li>spring.devtools.restart.enabled=true</li>
+<li>spring.thymeleaf.cache=false</li>
+</ul>
+</li>
+</ol>
+<h3 id="url-기능"><a href="#url-기능" class="headerlink" title="url 기능"></a>url 기능</h3><p>GET /todos      =    List all todos<br>POST /todos     =   Create a new todo<br>GET /todos/:id   =     Get a todo<br>PUT /todos/:id   =     Update a todo<br>DELETE /todos/:id    =  Delete a todo and its items<br>GET /todos/:id/items    =   Get a todo item<br>PUT /todos/:id/items    =      Update a todo item<br>DELETE /todos/:id/items     =      Delete a todo item</p>
+<h3 id="crud"><a href="#crud" class="headerlink" title="crud"></a>crud</h3><p>create read(retrieve) update delete </p>
+<hr>
+<h2 id="JPA가-뭐지"><a href="#JPA가-뭐지" class="headerlink" title="JPA가 뭐지?"></a>JPA가 뭐지?</h2>
+      
+    </div>
+    <footer class="article-footer">
+      <a data-url="http://yoursite.com/2018/11/15/201811/20181115/" data-id="cjpkwx6pd000dv8v0ufz309kd" class="article-share-link">공유</a>
+      
+      
+  <ul class="article-tag-list"><li class="article-tag-list-item"><a class="article-tag-list-link" href="/tags/TIL/">TIL</a></li></ul>
+
+    </footer>
+  </div>
+  
+</article>
+
+
+  
     <article id="post-javaStudy/나만의용어집" class="article article-type-post" itemscope itemprop="blogPost">
   <div class="article-meta">
     <a href="/2018/11/15/javaStudy/나만의용어집/" class="article-date">
@@ -537,108 +643,6 @@
 
 
   
-    <article id="post-201811/20181115" class="article article-type-post" itemscope itemprop="blogPost">
-  <div class="article-meta">
-    <a href="/2018/11/15/201811/20181115/" class="article-date">
-  <time datetime="2018-11-15T14:23:51.000Z" itemprop="datePublished">2018-11-15</time>
-</a>
-    
-  </div>
-  <div class="article-inner">
-    
-    
-      <header class="article-header">
-        
-  
-    <h1 itemprop="name">
-      <a class="article-title" href="/2018/11/15/201811/20181115/">TIL</a>
-    </h1>
-  
-
-      </header>
-    
-    <div class="article-entry" itemprop="articleBody">
-      
-        <h1 id="오늘의-공부-20181115"><a href="#오늘의-공부-20181115" class="headerlink" title="오늘의 공부 20181115"></a>오늘의 공부 20181115</h1><p>코드 스쿼드 강의</p>
-<h2 id="강의"><a href="#강의" class="headerlink" title="강의"></a>강의</h2><p>spring 프레임워크는 name 의 값과 변수가 같은걸 찾아 set으로 할당한다.</p>
-<h2 id="spring-api"><a href="#spring-api" class="headerlink" title="spring api"></a>spring api</h2><p>추상화가 많이 되서 동작하는게 잘 안보인다.<br>스프링을 사용하면 아파치진영의 톰켓이라는 오픈소스를 이용해 사용.<br>동적인 웹서비스를 웹에플리케이션 서버 라고 한다.<br>스프링프레임워크 웹에플리케이션을 구현하면<br>Spring api 는 자식에 있는 @controller 에노테이션을 찾아 맵핑해준다.<br>컨트롤러를 타게 되면 templates 패키지에서 찾게된다.<br>/partial “ content” 을 사용하면 블럭을 나누어 특정블럭을 가변으로 사용할 수 있다.<br>백엔드는 데이터만 내려주는 방식으로 발전하고 있다.<br>jsp 보다는 템플릿엔진을 추천하고 싶다.<br>runtime(‘com.h2database:h2’)<br>학습으로 사용하는 데이터베이스(java로 재작)</p>
-<h3 id="db-적용"><a href="#db-적용" class="headerlink" title="db 적용"></a>db 적용</h3><h3 id="spring-devtools"><a href="#spring-devtools" class="headerlink" title="spring devtools"></a>spring devtools</h3><p>스프링 애플리케이션 사용시 빌드를 자동으로 해주는 툴</p>
-<ol>
-<li>그래들에 devtools 컴파일 <ul>
-<li>compile(‘org.springframework.boot:spring-boot-devtools’) </li>
-</ul>
-</li>
-<li>인텔리제이 setting 의 compile 에 build project automatically 를 채크</li>
-<li>Registry 에 commpiler.automake.allow.when.app.running 채크</li>
-<li>application.properties 작성 (안해도 디폴트 true 로 동작하는것 같다. ) <ul>
-<li>spring.devtools.livereload.enabled=true</li>
-<li>spring.devtools.restart.enabled=true</li>
-<li>spring.thymeleaf.cache=false</li>
-</ul>
-</li>
-</ol>
-<h3 id="url-기능"><a href="#url-기능" class="headerlink" title="url 기능"></a>url 기능</h3><p>GET /todos      =    List all todos<br>POST /todos     =   Create a new todo<br>GET /todos/:id   =     Get a todo<br>PUT /todos/:id   =     Update a todo<br>DELETE /todos/:id    =  Delete a todo and its items<br>GET /todos/:id/items    =   Get a todo item<br>PUT /todos/:id/items    =      Update a todo item<br>DELETE /todos/:id/items     =      Delete a todo item</p>
-<h3 id="crud"><a href="#crud" class="headerlink" title="crud"></a>crud</h3><p>create read(retrieve) update delete </p>
-<hr>
-<h2 id="JPA가-뭐지"><a href="#JPA가-뭐지" class="headerlink" title="JPA가 뭐지?"></a>JPA가 뭐지?</h2>
-      
-    </div>
-    <footer class="article-footer">
-      <a data-url="http://yoursite.com/2018/11/15/201811/20181115/" data-id="cjpkwx6pd000dv8v0ufz309kd" class="article-share-link">공유</a>
-      
-      
-  <ul class="article-tag-list"><li class="article-tag-list-item"><a class="article-tag-list-link" href="/tags/TIL/">TIL</a></li></ul>
-
-    </footer>
-  </div>
-  
-</article>
-
-
-  
-    <article id="post-201811/20181112" class="article article-type-post" itemscope itemprop="blogPost">
-  <div class="article-meta">
-    <a href="/2018/11/12/201811/20181112/" class="article-date">
-  <time datetime="2018-11-12T14:23:51.000Z" itemprop="datePublished">2018-11-12</time>
-</a>
-    
-  </div>
-  <div class="article-inner">
-    
-    
-      <header class="article-header">
-        
-  
-    <h1 itemprop="name">
-      <a class="article-title" href="/2018/11/12/201811/20181112/">TIL</a>
-    </h1>
-  
-
-      </header>
-    
-    <div class="article-entry" itemprop="articleBody">
-      
-        <h1 id="오늘의-공부-20181112"><a href="#오늘의-공부-20181112" class="headerlink" title="오늘의 공부 20181112"></a>오늘의 공부 20181112</h1><p>코드 스쿼드 강의</p>
-<h2 id="강의"><a href="#강의" class="headerlink" title="강의"></a>강의</h2><p>서버는 </p>
-<p>DNS의 역할 : 도메인 네임을 ip주소로 변경 시켜준다.<br>ip :컴퓨터(서버)의 인터넷 주소 </p>
-<p>http : 디폴트 80<br>https<br>port :<br>@get : 서버에서 클라이언트로 데이터를 가져올때?<br>@post : 클라이언트가 서버로 데이터를 보낼때</p>
-<p>spring 프레임워크는 name 의 값과 변수가 같은걸 찾아 set으로 할당한다.</p>
-
-      
-    </div>
-    <footer class="article-footer">
-      <a data-url="http://yoursite.com/2018/11/12/201811/20181112/" data-id="cjpkwx6pf000fv8v03il309jp" class="article-share-link">공유</a>
-      
-      
-  <ul class="article-tag-list"><li class="article-tag-list-item"><a class="article-tag-list-link" href="/tags/TIL/">TIL</a></li></ul>
-
-    </footer>
-  </div>
-  
-</article>
-
-
-  
 
 
   <nav id="page-nav">
@@ -689,6 +693,10 @@
       <ul>
         
           <li>
+            <a href="/2018/12/13/20181213/">TIL</a>
+          </li>
+        
+          <li>
             <a href="/2018/12/12/jpa정리/">JPA, ORM 그리고 영속성</a>
           </li>
         
@@ -702,10 +710,6 @@
         
           <li>
             <a href="/2018/11/27/201811/20181127/">TIL</a>
-          </li>
-        
-          <li>
-            <a href="/2018/11/26/201811/20181126/">TIL</a>
           </li>
         
       </ul>

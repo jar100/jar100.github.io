@@ -66,6 +66,65 @@
       <div class="outer">
         <section id="main">
   
+    <article id="post-201811/20181115" class="article article-type-post" itemscope itemprop="blogPost">
+  <div class="article-meta">
+    <a href="/2018/11/15/201811/20181115/" class="article-date">
+  <time datetime="2018-11-15T14:23:51.000Z" itemprop="datePublished">2018-11-15</time>
+</a>
+    
+  </div>
+  <div class="article-inner">
+    
+    
+      <header class="article-header">
+        
+  
+    <h1 itemprop="name">
+      <a class="article-title" href="/2018/11/15/201811/20181115/">TIL</a>
+    </h1>
+  
+
+      </header>
+    
+    <div class="article-entry" itemprop="articleBody">
+      
+        <h1 id="오늘의-공부-20181115"><a href="#오늘의-공부-20181115" class="headerlink" title="오늘의 공부 20181115"></a>오늘의 공부 20181115</h1><p>코드 스쿼드 강의</p>
+<h2 id="강의"><a href="#강의" class="headerlink" title="강의"></a>강의</h2><p>spring 프레임워크는 name 의 값과 변수가 같은걸 찾아 set으로 할당한다.</p>
+<h2 id="spring-api"><a href="#spring-api" class="headerlink" title="spring api"></a>spring api</h2><p>추상화가 많이 되서 동작하는게 잘 안보인다.<br>스프링을 사용하면 아파치진영의 톰켓이라는 오픈소스를 이용해 사용.<br>동적인 웹서비스를 웹에플리케이션 서버 라고 한다.<br>스프링프레임워크 웹에플리케이션을 구현하면<br>Spring api 는 자식에 있는 @controller 에노테이션을 찾아 맵핑해준다.<br>컨트롤러를 타게 되면 templates 패키지에서 찾게된다.<br>/partial “ content” 을 사용하면 블럭을 나누어 특정블럭을 가변으로 사용할 수 있다.<br>백엔드는 데이터만 내려주는 방식으로 발전하고 있다.<br>jsp 보다는 템플릿엔진을 추천하고 싶다.<br>runtime(‘com.h2database:h2’)<br>학습으로 사용하는 데이터베이스(java로 재작)</p>
+<h3 id="db-적용"><a href="#db-적용" class="headerlink" title="db 적용"></a>db 적용</h3><h3 id="spring-devtools"><a href="#spring-devtools" class="headerlink" title="spring devtools"></a>spring devtools</h3><p>스프링 애플리케이션 사용시 빌드를 자동으로 해주는 툴</p>
+<ol>
+<li>그래들에 devtools 컴파일 <ul>
+<li>compile(‘org.springframework.boot:spring-boot-devtools’) </li>
+</ul>
+</li>
+<li>인텔리제이 setting 의 compile 에 build project automatically 를 채크</li>
+<li>Registry 에 commpiler.automake.allow.when.app.running 채크</li>
+<li>application.properties 작성 (안해도 디폴트 true 로 동작하는것 같다. ) <ul>
+<li>spring.devtools.livereload.enabled=true</li>
+<li>spring.devtools.restart.enabled=true</li>
+<li>spring.thymeleaf.cache=false</li>
+</ul>
+</li>
+</ol>
+<h3 id="url-기능"><a href="#url-기능" class="headerlink" title="url 기능"></a>url 기능</h3><p>GET /todos      =    List all todos<br>POST /todos     =   Create a new todo<br>GET /todos/:id   =     Get a todo<br>PUT /todos/:id   =     Update a todo<br>DELETE /todos/:id    =  Delete a todo and its items<br>GET /todos/:id/items    =   Get a todo item<br>PUT /todos/:id/items    =      Update a todo item<br>DELETE /todos/:id/items     =      Delete a todo item</p>
+<h3 id="crud"><a href="#crud" class="headerlink" title="crud"></a>crud</h3><p>create read(retrieve) update delete </p>
+<hr>
+<h2 id="JPA가-뭐지"><a href="#JPA가-뭐지" class="headerlink" title="JPA가 뭐지?"></a>JPA가 뭐지?</h2>
+      
+    </div>
+    <footer class="article-footer">
+      <a data-url="http://yoursite.com/2018/11/15/201811/20181115/" data-id="cjpp0481u003rzwv01x4x7jej" class="article-share-link">공유</a>
+      
+      
+  <ul class="article-tag-list"><li class="article-tag-list-item"><a class="article-tag-list-link" href="/tags/TIL/">TIL</a></li></ul>
+
+    </footer>
+  </div>
+  
+</article>
+
+
+  
     <article id="post-201811/20181112" class="article article-type-post" itemscope itemprop="blogPost">
   <div class="article-meta">
     <a href="/2018/11/12/201811/20181112/" class="article-date">
@@ -97,7 +156,7 @@
       
     </div>
     <footer class="article-footer">
-      <a data-url="http://yoursite.com/2018/11/12/201811/20181112/" data-id="cjpkwx6pf000fv8v03il309jp" class="article-share-link">공유</a>
+      <a data-url="http://yoursite.com/2018/11/12/201811/20181112/" data-id="cjpp0481n003lzwv03ae2f9gm" class="article-share-link">공유</a>
       
       
   <ul class="article-tag-list"><li class="article-tag-list-item"><a class="article-tag-list-link" href="/tags/TIL/">TIL</a></li></ul>
@@ -157,7 +216,7 @@
       
     </div>
     <footer class="article-footer">
-      <a data-url="http://yoursite.com/2018/11/09/201811/20181109/" data-id="cjpkwx6p90009v8v0mmnflqmm" class="article-share-link">공유</a>
+      <a data-url="http://yoursite.com/2018/11/09/201811/20181109/" data-id="cjpp0481h003hzwv0jzbn8ioj" class="article-share-link">공유</a>
       
       
   <ul class="article-tag-list"><li class="article-tag-list-item"><a class="article-tag-list-link" href="/tags/TIL/">TIL</a></li></ul>
@@ -238,7 +297,7 @@
       
     </div>
     <footer class="article-footer">
-      <a data-url="http://yoursite.com/2018/11/07/201811/20181107/" data-id="cjpkwx6op0002v8v0zuagq6qh" class="article-share-link">공유</a>
+      <a data-url="http://yoursite.com/2018/11/07/201811/20181107/" data-id="cjpp0481a003bzwv02s41sx0o" class="article-share-link">공유</a>
       
       
   <ul class="article-tag-list"><li class="article-tag-list-item"><a class="article-tag-list-link" href="/tags/TIL/">TIL</a></li></ul>
@@ -303,7 +362,7 @@
       
     </div>
     <footer class="article-footer">
-      <a data-url="http://yoursite.com/2018/11/06/201811/20181106/" data-id="cjpkwx6ov0005v8v0nxcdsh2v" class="article-share-link">공유</a>
+      <a data-url="http://yoursite.com/2018/11/06/201811/20181106/" data-id="cjpp0481p003nzwv0yw2600lv" class="article-share-link">공유</a>
       
       
   <ul class="article-tag-list"><li class="article-tag-list-item"><a class="article-tag-list-link" href="/tags/TIL/">TIL</a></li></ul>
@@ -351,7 +410,55 @@
       
     </div>
     <footer class="article-footer">
-      <a data-url="http://yoursite.com/2018/11/05/201811/20181105/" data-id="cjpkwx6os0003v8v0sid67qid" class="article-share-link">공유</a>
+      <a data-url="http://yoursite.com/2018/11/05/201811/20181105/" data-id="cjpp0481k003jzwv0yocaak10" class="article-share-link">공유</a>
+      
+      
+  <ul class="article-tag-list"><li class="article-tag-list-item"><a class="article-tag-list-link" href="/tags/TIL/">TIL</a></li></ul>
+
+    </footer>
+  </div>
+  
+</article>
+
+
+  
+    <article id="post-201810/20181029" class="article article-type-post" itemscope itemprop="blogPost">
+  <div class="article-meta">
+    <a href="/2018/10/29/201810/20181029/" class="article-date">
+  <time datetime="2018-10-29T14:23:51.000Z" itemprop="datePublished">2018-10-29</time>
+</a>
+    
+  </div>
+  <div class="article-inner">
+    
+    
+      <header class="article-header">
+        
+  
+    <h1 itemprop="name">
+      <a class="article-title" href="/2018/10/29/201810/20181029/">TIL</a>
+    </h1>
+  
+
+      </header>
+    
+    <div class="article-entry" itemprop="articleBody">
+      
+        <h1 id="오늘의-공부-20181029"><a href="#오늘의-공부-20181029" class="headerlink" title="오늘의 공부 20181029"></a>오늘의 공부 20181029</h1><p>stream 과 optional 그리고 ramda</p>
+<h2 id="Stream"><a href="#Stream" class="headerlink" title="Stream"></a>Stream</h2><p>함수형 인터페이스<br>list 값을 담아 함수형으로 보기 편하게 자료구조를 생성<br>스트림 배열 만들고 람다 쓰고 하면 코드의 길이를 줄일 수 있다.</p>
+<ul>
+<li>limit()<br>  자료구조의 크기를 제한한다.</li>
+<li>filter()<br>  조건에 만족하는 자료구조값만 뽑는다.</li>
+<li>collect()<br>  자료구조형으로 다시 생성한다.</li>
+<li>map()<br>  값을 바꾼다.</li>
+</ul>
+<h2 id="Optional"><a href="#Optional" class="headerlink" title="Optional"></a>Optional</h2><p>NPE를 유발할 수 있는 null을 직접 다루지 않아도 된다.</p>
+<h2 id="Ramda"><a href="#Ramda" class="headerlink" title="Ramda"></a>Ramda</h2><p>익명클래스의 발전된 형태라고 이해했다.<br>파라미터와 값이 리턴값이 정해진 경우 익명클래스르 좀더 추상화시켜 메소드를 동작시키는것<br>((파라미터) -&gt;  리턴값)</p>
+
+      
+    </div>
+    <footer class="article-footer">
+      <a data-url="http://yoursite.com/2018/10/29/201810/20181029/" data-id="cjpp0481e003fzwv0hfurmpn1" class="article-share-link">공유</a>
       
       
   <ul class="article-tag-list"><li class="article-tag-list-item"><a class="article-tag-list-link" href="/tags/TIL/">TIL</a></li></ul>
@@ -409,55 +516,7 @@
       
     </div>
     <footer class="article-footer">
-      <a data-url="http://yoursite.com/2018/10/29/201810/20181030/" data-id="cjo5v0jnp000xcgv0wip0g8jd" class="article-share-link">공유</a>
-      
-      
-  <ul class="article-tag-list"><li class="article-tag-list-item"><a class="article-tag-list-link" href="/tags/TIL/">TIL</a></li></ul>
-
-    </footer>
-  </div>
-  
-</article>
-
-
-  
-    <article id="post-201810/20181029" class="article article-type-post" itemscope itemprop="blogPost">
-  <div class="article-meta">
-    <a href="/2018/10/29/201810/20181029/" class="article-date">
-  <time datetime="2018-10-29T14:23:51.000Z" itemprop="datePublished">2018-10-29</time>
-</a>
-    
-  </div>
-  <div class="article-inner">
-    
-    
-      <header class="article-header">
-        
-  
-    <h1 itemprop="name">
-      <a class="article-title" href="/2018/10/29/201810/20181029/">TIL</a>
-    </h1>
-  
-
-      </header>
-    
-    <div class="article-entry" itemprop="articleBody">
-      
-        <h1 id="오늘의-공부-20181029"><a href="#오늘의-공부-20181029" class="headerlink" title="오늘의 공부 20181029"></a>오늘의 공부 20181029</h1><p>stream 과 optional 그리고 ramda</p>
-<h2 id="Stream"><a href="#Stream" class="headerlink" title="Stream"></a>Stream</h2><p>함수형 인터페이스<br>list 값을 담아 함수형으로 보기 편하게 자료구조를 생성<br>스트림 배열 만들고 람다 쓰고 하면 코드의 길이를 줄일 수 있다.</p>
-<ul>
-<li>limit()<br>  자료구조의 크기를 제한한다.</li>
-<li>filter()<br>  조건에 만족하는 자료구조값만 뽑는다.</li>
-<li>collect()<br>  자료구조형으로 다시 생성한다.</li>
-<li>map()<br>  값을 바꾼다.</li>
-</ul>
-<h2 id="Optional"><a href="#Optional" class="headerlink" title="Optional"></a>Optional</h2><p>NPE를 유발할 수 있는 null을 직접 다루지 않아도 된다.</p>
-<h2 id="Ramda"><a href="#Ramda" class="headerlink" title="Ramda"></a>Ramda</h2><p>익명클래스의 발전된 형태라고 이해했다.<br>파라미터와 값이 리턴값이 정해진 경우 익명클래스르 좀더 추상화시켜 메소드를 동작시키는것<br>((파라미터) -&gt;  리턴값)</p>
-
-      
-    </div>
-    <footer class="article-footer">
-      <a data-url="http://yoursite.com/2018/10/29/201810/20181029/" data-id="cjo5v0jno000wcgv0k8ylzr22" class="article-share-link">공유</a>
+      <a data-url="http://yoursite.com/2018/10/29/201810/20181030/" data-id="cjpp0481c003dzwv0l2ld8cef" class="article-share-link">공유</a>
       
       
   <ul class="article-tag-list"><li class="article-tag-list-item"><a class="article-tag-list-link" href="/tags/TIL/">TIL</a></li></ul>
@@ -507,7 +566,7 @@
       
     </div>
     <footer class="article-footer">
-      <a data-url="http://yoursite.com/2018/10/25/201810/20181025/" data-id="cjo5v0jnf000rcgv0szh25ne5" class="article-share-link">공유</a>
+      <a data-url="http://yoursite.com/2018/10/25/201810/20181025/" data-id="cjpp048170037zwv0nfn31xr8" class="article-share-link">공유</a>
       
       
   <ul class="article-tag-list"><li class="article-tag-list-item"><a class="article-tag-list-link" href="/tags/TIL/">TIL</a></li></ul>
@@ -631,54 +690,7 @@
       
     </div>
     <footer class="article-footer">
-      <a data-url="http://yoursite.com/2018/10/24/201810/20181024/" data-id="cjo5v0jnf000tcgv04paa7wzn" class="article-share-link">공유</a>
-      
-      
-  <ul class="article-tag-list"><li class="article-tag-list-item"><a class="article-tag-list-link" href="/tags/TIL/">TIL</a></li></ul>
-
-    </footer>
-  </div>
-  
-</article>
-
-
-  
-    <article id="post-201810/20181023" class="article article-type-post" itemscope itemprop="blogPost">
-  <div class="article-meta">
-    <a href="/2018/10/23/201810/20181023/" class="article-date">
-  <time datetime="2018-10-23T14:23:51.000Z" itemprop="datePublished">2018-10-23</time>
-</a>
-    
-  </div>
-  <div class="article-inner">
-    
-    
-      <header class="article-header">
-        
-  
-    <h1 itemprop="name">
-      <a class="article-title" href="/2018/10/23/201810/20181023/">TIL</a>
-    </h1>
-  
-
-      </header>
-    
-    <div class="article-entry" itemprop="articleBody">
-      
-        <h1 id="오늘의-공부-20181023"><a href="#오늘의-공부-20181023" class="headerlink" title="오늘의 공부 20181023"></a>오늘의 공부 20181023</h1><p>오늘은 lotto 시작했다.</p>
-<h2 id="미션"><a href="#미션" class="headerlink" title="미션"></a>미션</h2><p>lotto 게임을 구현 중</p>
-<ol>
-<li>구현은 성공</li>
-<li>리팩토링 시작</li>
-</ol>
-<h3 id="exception"><a href="#exception" class="headerlink" title="exception"></a>exception</h3><p>try cach 문법을 좀 공부 해봐야 겠다.</p>
-<h3 id="enum"><a href="#enum" class="headerlink" title="enum"></a>enum</h3><p>이넘을 잘 활용해야겠다.</p>
-<hr>
-
-      
-    </div>
-    <footer class="article-footer">
-      <a data-url="http://yoursite.com/2018/10/23/201810/20181023/" data-id="cjo5v0jnf000pcgv0lwnlv83j" class="article-share-link">공유</a>
+      <a data-url="http://yoursite.com/2018/10/24/201810/20181024/" data-id="cjpp048180039zwv0yolxfsvf" class="article-share-link">공유</a>
       
       
   <ul class="article-tag-list"><li class="article-tag-list-item"><a class="article-tag-list-link" href="/tags/TIL/">TIL</a></li></ul>
@@ -740,6 +752,10 @@
       <ul>
         
           <li>
+            <a href="/2018/12/14/20181214/">TIL</a>
+          </li>
+        
+          <li>
             <a href="/2018/12/13/20181213/">TIL</a>
           </li>
         
@@ -753,10 +769,6 @@
         
           <li>
             <a href="/2018/11/29/201811/20181129/">TIL</a>
-          </li>
-        
-          <li>
-            <a href="/2018/11/27/201811/20181127/">TIL</a>
           </li>
         
       </ul>

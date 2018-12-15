@@ -66,6 +66,61 @@
       <div class="outer">
         <section id="main">
   
+    <article id="post-20181214" class="article article-type-post" itemscope itemprop="blogPost">
+  <div class="article-meta">
+    <a href="/2018/12/14/20181214/" class="article-date">
+  <time datetime="2018-12-14T14:23:51.000Z" itemprop="datePublished">2018-12-14</time>
+</a>
+    
+  </div>
+  <div class="article-inner">
+    
+    
+      <header class="article-header">
+        
+  
+    <h1 itemprop="name">
+      <a class="article-title" href="/2018/12/14/20181214/">TIL</a>
+    </h1>
+  
+
+      </header>
+    
+    <div class="article-entry" itemprop="articleBody">
+      
+        <h1 id="오늘의-공부-20181214"><a href="#오늘의-공부-20181214" class="headerlink" title="오늘의 공부 20181214"></a>오늘의 공부 20181214</h1><p>atdd 로 구현하기<br>미션2 진행중</p>
+<ul>
+<li>@Rule<figure class="highlight java"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br></pre></td><td class="code"><pre><span class="line"><span class="meta">@Rule</span></span><br><span class="line"><span class="keyword">public</span> JUnitSoftAssertions softly = <span class="keyword">new</span> JUnitSoftAssertions();</span><br></pre></td></tr></table></figure>
+</li>
+</ul>
+<p>junit에서 rule이란 테스트 케이스 내에서 동작을 유연하게 추가하거나 재정의 할 수 있는 목적으로 만들어 졌다.<br>다른 룰들도 있는데 이건 다음에 알아봐야겠다.</p>
+<ul>
+<li><p>ResponseEntity</p>
+<figure class="highlight java"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br></pre></td><td class="code"><pre><span class="line">ResponseEntity&lt;String&gt; response = basicAuthTemplate().postForEntity(<span class="string">"/questions/1/"</span>, request, String.class);</span><br><span class="line"><span class="comment">// postForEntity 포스트로 request를 보내겠다.</span></span><br></pre></td></tr></table></figure>
+</li>
+<li><p>test 코드 해석</p>
+<figure class="highlight java"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br></pre></td><td class="code"><pre><span class="line"><span class="meta">@Test</span></span><br><span class="line"><span class="function"><span class="keyword">public</span> <span class="keyword">void</span> <span class="title">deleted</span><span class="params">()</span> <span class="keyword">throws</span> Exception </span>&#123;</span><br><span class="line">    ResponseEntity&lt;String&gt; response = getStringResponseEntity(basicAuthTemplate());</span><br><span class="line">    log.debug(<span class="string">"body : &#123;&#125;"</span>, response.getBody());</span><br><span class="line">    softly.assertThat(response.getStatusCode()).isEqualTo(HttpStatus.FOUND);</span><br><span class="line">    softly.assertThat(response.getHeaders().getLocation().getPath()).startsWith(<span class="string">"/"</span>);</span><br><span class="line">&#125;</span><br><span class="line"><span class="comment">// response.getStatusCode() 요청코드가 무엇이 보내졌는지 확인</span></span><br><span class="line"><span class="comment">// getBody()  htmp body 부분 반환</span></span><br></pre></td></tr></table></figure>
+</li>
+</ul>
+<h2 id="TODO"><a href="#TODO" class="headerlink" title="TODO"></a>TODO</h2><ol>
+<li>블로그를 바꿔보고싶다.</li>
+</ol>
+
+      
+    </div>
+    <footer class="article-footer">
+      <a data-url="http://yoursite.com/2018/12/14/20181214/" data-id="cjpp047wd0000zwv0b5i71g1e" class="article-share-link">공유</a>
+      
+      
+  <ul class="article-tag-list"><li class="article-tag-list-item"><a class="article-tag-list-link" href="/tags/TIL/">TIL</a></li></ul>
+
+    </footer>
+  </div>
+  
+</article>
+
+
+  
     <article id="post-20181213" class="article article-type-post" itemscope itemprop="blogPost">
   <div class="article-meta">
     <a href="/2018/12/13/20181213/" class="article-date">
@@ -101,7 +156,7 @@
       
     </div>
     <footer class="article-footer">
-      <a data-url="http://yoursite.com/2018/12/13/20181213/" data-id="cjpnlq0tq000024v0qup5qswu" class="article-share-link">공유</a>
+      <a data-url="http://yoursite.com/2018/12/13/20181213/" data-id="cjpp047wk0001zwv0e3ibres3" class="article-share-link">공유</a>
       
       
   <ul class="article-tag-list"><li class="article-tag-list-item"><a class="article-tag-list-link" href="/tags/TIL/">TIL</a></li></ul>
@@ -202,7 +257,7 @@
       
     </div>
     <footer class="article-footer">
-      <a data-url="http://yoursite.com/2018/12/12/jpa정리/" data-id="cjozy2pil0003h4v0qhsk0jdp" class="article-share-link">공유</a>
+      <a data-url="http://yoursite.com/2018/12/12/jpa정리/" data-id="cjpp047ws0004zwv05a8j5r4o" class="article-share-link">공유</a>
       
       
   <ul class="article-tag-list"><li class="article-tag-list-item"><a class="article-tag-list-link" href="/tags/JPA/">JPA</a></li></ul>
@@ -248,7 +303,7 @@
       
     </div>
     <footer class="article-footer">
-      <a data-url="http://yoursite.com/2018/12/06/20181206/" data-id="cjpkwx6nj0000v8v0c79tjk2y" class="article-share-link">공유</a>
+      <a data-url="http://yoursite.com/2018/12/06/20181206/" data-id="cjpp047wq0003zwv0wibmvsd6" class="article-share-link">공유</a>
       
       
   <ul class="article-tag-list"><li class="article-tag-list-item"><a class="article-tag-list-link" href="/tags/TIL/">TIL</a></li></ul>
@@ -289,7 +344,7 @@
       
     </div>
     <footer class="article-footer">
-      <a data-url="http://yoursite.com/2018/11/29/201811/20181129/" data-id="cjpkwx6pj000jv8v0be3xcq5z" class="article-share-link">공유</a>
+      <a data-url="http://yoursite.com/2018/11/29/201811/20181129/" data-id="cjpp04822003xzwv0he9m0exy" class="article-share-link">공유</a>
       
       
   <ul class="article-tag-list"><li class="article-tag-list-item"><a class="article-tag-list-link" href="/tags/TIL/">TIL</a></li></ul>
@@ -335,7 +390,7 @@
       
     </div>
     <footer class="article-footer">
-      <a data-url="http://yoursite.com/2018/11/27/201811/20181127/" data-id="cjpkwx6pk000lv8v0igfvn6qw" class="article-share-link">공유</a>
+      <a data-url="http://yoursite.com/2018/11/27/201811/20181127/" data-id="cjpp048280041zwv00c5tmx6n" class="article-share-link">공유</a>
       
       
   <ul class="article-tag-list"><li class="article-tag-list-item"><a class="article-tag-list-link" href="/tags/TIL/">TIL</a></li></ul>
@@ -391,7 +446,7 @@
       
     </div>
     <footer class="article-footer">
-      <a data-url="http://yoursite.com/2018/11/26/201811/20181126/" data-id="cjpkwx6p80008v8v0fv7gkc9d" class="article-share-link">공유</a>
+      <a data-url="http://yoursite.com/2018/11/26/201811/20181126/" data-id="cjpp0481z003vzwv05dsr86kq" class="article-share-link">공유</a>
       
       
   <ul class="article-tag-list"><li class="article-tag-list-item"><a class="article-tag-list-link" href="/tags/TIL/">TIL</a></li></ul>
@@ -462,7 +517,7 @@
       
     </div>
     <footer class="article-footer">
-      <a data-url="http://yoursite.com/2018/11/24/201811/20181122/" data-id="cjpkwx6pi000hv8v06wko8uy4" class="article-share-link">공유</a>
+      <a data-url="http://yoursite.com/2018/11/24/201811/20181122/" data-id="cjpp0481x003tzwv000vj221n" class="article-share-link">공유</a>
       
       
   <ul class="article-tag-list"><li class="article-tag-list-item"><a class="article-tag-list-link" href="/tags/TIL/">TIL</a></li></ul>
@@ -506,66 +561,7 @@
       
     </div>
     <footer class="article-footer">
-      <a data-url="http://yoursite.com/2018/11/19/201811/20181119/" data-id="cjpkwx6pb000bv8v0f1cfci5y" class="article-share-link">공유</a>
-      
-      
-  <ul class="article-tag-list"><li class="article-tag-list-item"><a class="article-tag-list-link" href="/tags/TIL/">TIL</a></li></ul>
-
-    </footer>
-  </div>
-  
-</article>
-
-
-  
-    <article id="post-201811/20181115" class="article article-type-post" itemscope itemprop="blogPost">
-  <div class="article-meta">
-    <a href="/2018/11/15/201811/20181115/" class="article-date">
-  <time datetime="2018-11-15T14:23:51.000Z" itemprop="datePublished">2018-11-15</time>
-</a>
-    
-  </div>
-  <div class="article-inner">
-    
-    
-      <header class="article-header">
-        
-  
-    <h1 itemprop="name">
-      <a class="article-title" href="/2018/11/15/201811/20181115/">TIL</a>
-    </h1>
-  
-
-      </header>
-    
-    <div class="article-entry" itemprop="articleBody">
-      
-        <h1 id="오늘의-공부-20181115"><a href="#오늘의-공부-20181115" class="headerlink" title="오늘의 공부 20181115"></a>오늘의 공부 20181115</h1><p>코드 스쿼드 강의</p>
-<h2 id="강의"><a href="#강의" class="headerlink" title="강의"></a>강의</h2><p>spring 프레임워크는 name 의 값과 변수가 같은걸 찾아 set으로 할당한다.</p>
-<h2 id="spring-api"><a href="#spring-api" class="headerlink" title="spring api"></a>spring api</h2><p>추상화가 많이 되서 동작하는게 잘 안보인다.<br>스프링을 사용하면 아파치진영의 톰켓이라는 오픈소스를 이용해 사용.<br>동적인 웹서비스를 웹에플리케이션 서버 라고 한다.<br>스프링프레임워크 웹에플리케이션을 구현하면<br>Spring api 는 자식에 있는 @controller 에노테이션을 찾아 맵핑해준다.<br>컨트롤러를 타게 되면 templates 패키지에서 찾게된다.<br>/partial “ content” 을 사용하면 블럭을 나누어 특정블럭을 가변으로 사용할 수 있다.<br>백엔드는 데이터만 내려주는 방식으로 발전하고 있다.<br>jsp 보다는 템플릿엔진을 추천하고 싶다.<br>runtime(‘com.h2database:h2’)<br>학습으로 사용하는 데이터베이스(java로 재작)</p>
-<h3 id="db-적용"><a href="#db-적용" class="headerlink" title="db 적용"></a>db 적용</h3><h3 id="spring-devtools"><a href="#spring-devtools" class="headerlink" title="spring devtools"></a>spring devtools</h3><p>스프링 애플리케이션 사용시 빌드를 자동으로 해주는 툴</p>
-<ol>
-<li>그래들에 devtools 컴파일 <ul>
-<li>compile(‘org.springframework.boot:spring-boot-devtools’) </li>
-</ul>
-</li>
-<li>인텔리제이 setting 의 compile 에 build project automatically 를 채크</li>
-<li>Registry 에 commpiler.automake.allow.when.app.running 채크</li>
-<li>application.properties 작성 (안해도 디폴트 true 로 동작하는것 같다. ) <ul>
-<li>spring.devtools.livereload.enabled=true</li>
-<li>spring.devtools.restart.enabled=true</li>
-<li>spring.thymeleaf.cache=false</li>
-</ul>
-</li>
-</ol>
-<h3 id="url-기능"><a href="#url-기능" class="headerlink" title="url 기능"></a>url 기능</h3><p>GET /todos      =    List all todos<br>POST /todos     =   Create a new todo<br>GET /todos/:id   =     Get a todo<br>PUT /todos/:id   =     Update a todo<br>DELETE /todos/:id    =  Delete a todo and its items<br>GET /todos/:id/items    =   Get a todo item<br>PUT /todos/:id/items    =      Update a todo item<br>DELETE /todos/:id/items     =      Delete a todo item</p>
-<h3 id="crud"><a href="#crud" class="headerlink" title="crud"></a>crud</h3><p>create read(retrieve) update delete </p>
-<hr>
-<h2 id="JPA가-뭐지"><a href="#JPA가-뭐지" class="headerlink" title="JPA가 뭐지?"></a>JPA가 뭐지?</h2>
-      
-    </div>
-    <footer class="article-footer">
-      <a data-url="http://yoursite.com/2018/11/15/201811/20181115/" data-id="cjpkwx6pd000dv8v0ufz309kd" class="article-share-link">공유</a>
+      <a data-url="http://yoursite.com/2018/11/19/201811/20181119/" data-id="cjpp0481s003pzwv04jgkztyf" class="article-share-link">공유</a>
       
       
   <ul class="article-tag-list"><li class="article-tag-list-item"><a class="article-tag-list-link" href="/tags/TIL/">TIL</a></li></ul>
@@ -627,11 +623,11 @@
 <h2 id="프로퍼티"><a href="#프로퍼티" class="headerlink" title="프로퍼티"></a>프로퍼티</h2><p>자바빈 규약을 따르는 get과 set 을 사용하는 변수를 property 라 한다.</p>
 <h2 id="javabean"><a href="#javabean" class="headerlink" title="javabean"></a>javabean</h2><p>자바빈? 인스턴스</p>
 <h2 id="spring-bean"><a href="#spring-bean" class="headerlink" title="spring bean"></a>spring bean</h2><p>현재 실행되고 있는 JVM 프로세스 내에서 실행되고 있는 인스턴스이며 이 중 어떤 인스턴스들은 필요에 따라 내가 호출하여 사용할 수 있는 인스턴스이다.<br>스프링 컨테이너(Spring Container)에 의해서 자바 객체가 만들어 지게 되면 이 객체를 스프링은 스프링 빈이라고 부르는 것.</p>
-<h2 id="API"><a href="#API" class="headerlink" title="API"></a>API</h2>
+<h2 id="API"><a href="#API" class="headerlink" title="API"></a>API</h2><h2 id="스키마"><a href="#스키마" class="headerlink" title="스키마"></a>스키마</h2><h2 id="ddl"><a href="#ddl" class="headerlink" title="ddl"></a>ddl</h2>
       
     </div>
     <footer class="article-footer">
-      <a data-url="http://yoursite.com/2018/11/15/javaStudy/나만의용어집/" data-id="cjoiq2ko00004tov0p1ee45t2" class="article-share-link">공유</a>
+      <a data-url="http://yoursite.com/2018/11/15/javaStudy/나만의용어집/" data-id="cjpp04825003zzwv0qyzo4qmz" class="article-share-link">공유</a>
       
       
   <ul class="article-tag-list"><li class="article-tag-list-item"><a class="article-tag-list-link" href="/tags/java/">java</a></li></ul>
@@ -693,6 +689,10 @@
       <ul>
         
           <li>
+            <a href="/2018/12/14/20181214/">TIL</a>
+          </li>
+        
+          <li>
             <a href="/2018/12/13/20181213/">TIL</a>
           </li>
         
@@ -706,10 +706,6 @@
         
           <li>
             <a href="/2018/11/29/201811/20181129/">TIL</a>
-          </li>
-        
-          <li>
-            <a href="/2018/11/27/201811/20181127/">TIL</a>
           </li>
         
       </ul>
